@@ -1,30 +1,4 @@
-let a;
-let choiceTrue = null;
-
-function randomNumber(min, max) {
-  return Math.floor(Math.random() * (max - min) + min);
-};
-
-
-const trainer = {
-  get name() {
-    return window.prompt('What is your name?')
-  },
-  choosePokemon: () => {
-    a = window.prompt('Choose your Pokemon (Pikachu)').toLowerCase();
-    switch (a) {
-      case 'pikachu':
-        choiceTrue = true;
-        break;
-      default:
-        choiceTrue = false;
-    };
-  },
-};
-
-
-
-
+import { randomNumber } from "./randomnumbergen";
 
 const pokemon = {
   pikachu: {
