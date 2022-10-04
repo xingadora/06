@@ -1,4 +1,4 @@
-import { randomNumber } from "./randomnumbergen";
+import { randomNumber } from "./functions/randomnumbergen";
 
 const pokemon = {
   pikachu: {
