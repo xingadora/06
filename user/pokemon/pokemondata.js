@@ -1,20 +1,6 @@
 import { randomNumber } from "/functions/randomnumbergen.js";
 
 
-/*
-class pokemon {
-  constructor(name, hp) {
-    this.name = name;
-    this.hp = hp;
-  }
-};
-
-
-class attack extends pokemon {
-
-};
-*/
-
 
 const pokemon = {
   pikachu: {
