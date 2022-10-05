@@ -1,21 +1,42 @@
-import { randomNumber } from "./functions/randomnumbergen";
+import { randomNumber } from "/functions/randomnumbergen.js";
+
+
+/*
+class pokemon {
+  constructor(name, hp) {
+    this.name = name;
+    this.hp = hp;
+  }
+};
+
+
+class attack extends pokemon {
+
+};
+*/
+
 
 const pokemon = {
   pikachu: {
+
     name: 'Pikachu',
-    id: 025,
+    id: 25,
     hp: 60,
     type: 'Electric',
     evoloution: 'Basic',
     retreatCost: 1,
-    // retreatType: 'Normal',
+
+
     wknsRsts: {
       weakness: 'Strength',
       weaknessMulti: 2,
       resistanse: 'Metal',
       rstsSub: -20
     },
+
+
     attacks: {
+
       attack1: {
         name: 'Gnaw',
         type: 'Normal',
@@ -25,6 +46,7 @@ const pokemon = {
         damage: randomNumber(8, 13),
         damageCritical: randomNumber(8, 13) * 2
       },
+
       attack2: {
         name: 'Thunder Jolt',
         type: ['normal', 'electric'],
