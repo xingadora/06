@@ -6,6 +6,6 @@ class pokemon {
 };
 
 
-class attack extends pokemon {
+class userPokemon extends pokemon {
 
 };
