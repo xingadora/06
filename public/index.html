@@ -4,15 +4,33 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
+  <title>idk</title>
   <link href="/src/style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
+  <script src="/src/function/randomnumbergen.js"></script>
+  <script src="/src/function/pokemonattacks.js"></script>
+  <script src="/src/class/newuser.js"></script>
+  <script type="module" src="/src/class/newpokemon.js"></script>
+  <h1>Pokemon Game</h1>
   
-  <button onclick="">Start</button>
-  <script type="module" src="/src/module/pokemondata.js"></script>
-
+  <button onclick="">Start</button><br>
+  <p>============================</p>
+  <form>
+    <label for="username">Welcome! Please enter your name:</label><br>
+    <input type="text" id="username" name="username"><br><br>
+    <input type="submit" value="Submit"><br>
+  </form>
+  <p>============================</p>
+  <form>
+    <p>Hi there, (name), What pokemon would you like to use?</p>
+    <input type="radio" id="pikachu" name="pokemon" value="Pikachu">
+    <label for="pikachu">Pikachu</label><br>
+    <input type="radio" id="charmander" name="pokemon" value="Charmander">
+    <label for="charmander">Charmander</label><br><br>
+    <input type="submit" value="Submit"><br>
+  </form>
 </body>
 
 </html>
