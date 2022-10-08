@@ -1,4 +1,4 @@
-import { randomNumber } from "/functions/randomnumbergen.js";
+import { randomNumber } from "/src/function/randomnumbergen.js";
 
 
 
@@ -16,8 +16,8 @@ const pokemon = {
     wknsRsts: {
       weakness: 'Strength',
       weaknessMulti: 2,
-      resistanse: 'Metal',
-      rstsSub: -20
+      resistance: 'Metal',
+      rstsSub: 0.5,
     },
 
 
