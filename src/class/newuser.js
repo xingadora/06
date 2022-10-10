@@ -15,16 +15,19 @@ class userPlayer extends user {
     }
 
     getName() {
-        return document.getElementById('username');
-        // something like the above... update ASAP
-    };
+        let input = document.getElementById('username').value;
+        if (input === '') {
+            showInvalid();
+        } else {
+            this.name = input;
+            document.getElementById('whatPokemonParsed').innerHTML = this.name;
+            hideInvalid()
+            showNext();
+        }
+    }
     getPokemon() {
-        // "what pokemon do you want to use?"
+
     };
 };
 
 const user1 = new userPlayer()
-//console.log(user1.getName())
-let test = document.getElementById('username')
-console.log(test)
-
