@@ -14,14 +14,14 @@ types.forEach(element => {
 });
 
 
-function getWeaknesses(type1, type2) {
+export function getWeaknesses(type1, type2) {
     return type[type1].weakness.concat(type[type2].weakness);
 };
 
-function getStrengths(type1, type2) {
+export function getStrengths(type1, type2) {
     return type[type1].strength.concat(type[type2].strength);
 };
 
-function getImmunities(type1, type2) {
+export function getImmunities(type1, type2) {
     return type[type1].immune.concat(type[type2].immune);
 };

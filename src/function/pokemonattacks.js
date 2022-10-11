@@ -5,7 +5,7 @@ class attack {
         this.type = type;
         this.description = description;
         this.energyCost = energyCost;
-        this.damage = randomNumber(damage - damage * 0.2, damage + damage * 0.2 + 1)
+        this.damage = damageCalculation(damage);
     }
 
     isCritical() {
@@ -16,7 +16,7 @@ class attack {
     criticalHit() {
         // update ASAP
         if (this.isCritical) {
-            return Math.floor(this.damage * 1.5);
+            return Math.floor(this.damage * 2);
         }
     };
 
