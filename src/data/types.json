@@ -1,5 +1,11 @@
 [
     {
+        "name": "none",
+        "immunes": [],
+        "weaknesses": [],
+        "strengths": []
+    },
+    {
         "name": "Normal",
         "immunes": [
             "Ghost"
