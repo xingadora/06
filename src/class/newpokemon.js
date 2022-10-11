@@ -5,7 +5,18 @@ import { getWeaknesses, getStrengths, getImmunities } from '/src/function/typesc
 
 
 class pokemon {
-    constructor(id, name, hp, type1, type2, attack, defence, spAtk, spDef, speed) {
+
+    get weaknesses() {
+        return getWeaknesses(this.type1, this.type2);
+    };
+    get strengths() {
+        return getStrengths(this.type1, this.type2);
+    };
+    get immunities() {
+        return getImmunities(this.type1, this.type2);
+    };
+
+    constructor(id, name, hp, type1, type2, attack, defence, spAtk, spDef, speed, total) {
         this.id = id
         this.name = name;
         this.hp = hp;
@@ -16,13 +27,14 @@ class pokemon {
         this.spAtk = spAtk;
         this.spDef = spDef;
         this.speed = speed;
+        this.total = total;
         this.level = randomNumber(1, 100);
-        this.weaknesses = null;//getWeaknesses(type1, type2);
-        this.strengths = null;//getStrengths(type1, type2);
-        this.immunities = null;//getImmunities(type1, type2);
-        this.attacktype = null;// getAttackType();
+        this._weaknesses = undefined;//getWeaknesses(type1, type2);
+        this._strengths = undefined;//getStrengths(type1, type2);
+        this._immunities = undefined;//getImmunities(type1, type2);
+        this.attacktype = undefined;// getAttackType();
         this.retreatCost = 2;
-        this.damage = damageCalculation(this.level, this.speed, this.attack, this.defence, this.spAtk, this.spDef, this.type1, this.type2, this.attacktype);
+        // this.damage = damageCalculation(this.level, this.speed, this.attack, this.defence, this.spAtk, this.spDef, this.type1, this.type2, this.attacktype);
     }
 
     /* retreat() { };
@@ -73,10 +85,16 @@ class userPokemon extends pokemon {
 }; */
 
 stats.forEach(element => {
-    // window[element.name] = new pokemon(element.id, element.name, element.hp, element.type1, element.type2, element.attack, element.defence, element.spAtk, element.spDef, element.speed);
-    pokemon[element.id] = new pokemon(element.id, element.name, element.hp, element.type1, element.type2, element.attack, element.defence, element.spAtk, element.spDef, element.speed);
+    if (element.type2 === undefined) {
+        element.type2 = 'none';
+        pokemon[element.id] = new pokemon(element.id, element.name, element.hp, element.type1, element.type2, element.attack, element.defence, element.specialattack, element.specialdefence, element.speed, element.total);
+
+    } else {
+        pokemon[element.id] = new pokemon(element.id, element.name, element.hp, element.type1, element.type2, element.attack, element.defence, element.specialattack, element.specialdefence, element.speed, element.total);
+    }
 });
 
-console.log(pokemon[85])
-console.log(stats[84])
+// console.log(pokemon[68].strengths)
+// console.log(pokemon[1].weaknesses)
+// console.log(stats[67])
 
