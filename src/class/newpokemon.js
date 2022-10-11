@@ -1,7 +1,7 @@
 import stats from '/src/data/pokemonstats.json' assert {type: 'json'};
-import {randomNumber} from '/src/function/randomnumbergen.js';
-import {damageCalculation} from '/src/function/damagecalculator.js';
-import {getWeaknesses, getStrengths, getImmunities} from '/src/function/typescalculator.js';
+import { randomNumber } from '/src/function/randomnumbergen.js';
+import { damageCalculation } from '/src/function/damagecalculator.js';
+import { getWeaknesses, getStrengths, getImmunities } from '/src/function/typescalculator.js';
 
 
 class pokemon {
@@ -17,11 +17,12 @@ class pokemon {
         this.spDef = spDef;
         this.speed = speed;
         this.level = randomNumber(1, 100);
-        this.weaknesses = getWeaknesses(type1, type2);
-        this.strengths = getStrengths(type1, type2);
-        this.immunities = getImmunities(type1, type2);
+        this.weaknesses = null;//getWeaknesses(type1, type2);
+        this.strengths = null;//getStrengths(type1, type2);
+        this.immunities = null;//getImmunities(type1, type2);
+        this.attacktype = null;// getAttackType();
         this.retreatCost = 2;
-        this.damage = damageCalculation(this.level, this.speed, this.attack, this.defence, this.spAtk, this.spDef);
+        this.damage = damageCalculation(this.level, this.speed, this.attack, this.defence, this.spAtk, this.spDef, this.type1, this.type2, this.attacktype);
     }
 
     /* retreat() { };
@@ -76,5 +77,6 @@ stats.forEach(element => {
     pokemon[element.id] = new pokemon(element.id, element.name, element.hp, element.type1, element.type2, element.attack, element.defence, element.spAtk, element.spDef, element.speed);
 });
 
-// console.log(pokemon[1].name)
-// console.log(stats[0].name)
+console.log(pokemon[85])
+console.log(stats[84])
+
