@@ -2,6 +2,7 @@ import stats from '/src/data/pokemonstats.json' assert {type: 'json'};
 import { randomNumber } from '/src/function/randomnumbergen.js';
 import { damageCalculation } from '/src/function/damagecalculator.js';
 import { getWeaknesses, getStrengths, getImmunities } from '/src/function/typescalculator.js';
+import { getLearnSet } from '/src/function/getlearnset.js';
 
 
 class pokemon {
@@ -14,6 +15,9 @@ class pokemon {
     };
     get immunities() {
         return getImmunities(this.type1, this.type2);
+    };
+    get learnset() {
+        return getLearnSet(this.name);
     };
 
     constructor(id, name, hp, type1, type2, attack, defence, spAtk, spDef, speed, total) {
@@ -32,6 +36,7 @@ class pokemon {
         this._weaknesses = undefined;//getWeaknesses(type1, type2);
         this._strengths = undefined;//getStrengths(type1, type2);
         this._immunities = undefined;//getImmunities(type1, type2);
+        this._learnset = undefined;//getLearnSet(name);
         this.attacktype = undefined;// getAttackType();
         this.retreatCost = 2;
         // this.damage = damageCalculation(this.level, this.speed, this.attack, this.defence, this.spAtk, this.spDef, this.type1, this.type2, this.attacktype);
@@ -97,4 +102,4 @@ stats.forEach(element => {
 // console.log(pokemon[68].strengths)
 // console.log(pokemon[1].weaknesses)
 // console.log(stats[67])
-
+//console.log(pokemon[1].learnset)
