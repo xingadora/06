@@ -6,11 +6,11 @@
                 "2": "Tackle",
                 "7": "Leech Seed",
                 "13": "Vine Whip",
-                "20": "PoisonPowder",
+                "20": "Poison Powder",
                 "27": "Razor Leaf",
                 "34": "Growth",
                 "41": "Sleep Powder",
-                "48": "SolarBeam"
+                "48": "Solar Beam"
             }
         ]
     },
@@ -22,11 +22,11 @@
                 "3": "Tackle",
                 "7": "Leech Seed",
                 "13": "Vine Whip",
-                "22": "PoisonPowder",
+                "22": "Poison Powder",
                 "30": "Razor Leaf",
                 "38": "Growth",
                 "46": "Sleep Powder",
-                "54": "SolarBeam"
+                "54": "Solar Beam"
             }
         ]
     },
@@ -39,11 +39,11 @@
                 "4": "Vine Whip",
                 "7": "Leech Seed",
                 "13": "Vine Whip",
-                "22": "PoisonPowder",
+                "22": "Poison Powder",
                 "30": "Razor Leaf",
                 "43": "Growth",
                 "55": "Sleep Powder",
-                "65": "SolarBeam"
+                "65": "Solar Beam"
             }
         ]
     },
@@ -157,7 +157,7 @@
             {
                 "1": "Confusion",
                 "12": "Confusion",
-                "15": "PoisonPowder",
+                "15": "Poison Powder",
                 "16": "Stun Spore",
                 "17": "Sleep Powder",
                 "21": "Supersonic",
@@ -319,7 +319,7 @@
         "Pikachu": [
             {
                 "1": "Growl",
-                "2": "ThunderShock",
+                "2": "Thunder Shock",
                 "9": "Thunder Wave",
                 "16": "Quick Attack",
                 "26": "Swift",
@@ -332,7 +332,7 @@
         "Raichu": [
             {
                 "1": "Growl",
-                "2": "ThunderShock",
+                "2": "Thunder Shock",
                 "3": "Thunder Wave"
             }
         ]
@@ -452,7 +452,7 @@
                 "1": "Growl",
                 "2": "Pound",
                 "13": "Sing",
-                "18": "DoubleSlap",
+                "18": "Double Slap",
                 "24": "Minimize",
                 "31": "Metronome",
                 "39": "Defense Curl",
@@ -463,7 +463,7 @@
     {
         "Clefable": [
             {
-                "1": "DoubleSlap",
+                "1": "Double Slap",
                 "2": "Metronome",
                 "3": "Minimize",
                 "4": "Sing"
@@ -500,7 +500,7 @@
                 "9": "Pound",
                 "14": "Disable",
                 "19": "Defense Curl",
-                "24": "DoubleSlap",
+                "24": "Double Slap",
                 "29": "Rest",
                 "34": "Body Slam",
                 "39": "Double-Edge"
@@ -512,7 +512,7 @@
             {
                 "1": "Defense Curl",
                 "2": "Disable",
-                "3": "DoubleSlap",
+                "3": "Double Slap",
                 "4": "Sing"
             }
         ]
@@ -547,12 +547,12 @@
         "Oddish": [
             {
                 "1": "Absorb",
-                "15": "PoisonPowder",
+                "15": "Poison Powder",
                 "17": "Stun Spore",
                 "19": "Sleep Powder",
                 "24": "Acid",
                 "33": "Petal Dance",
-                "46": "SolarBeam"
+                "46": "Solar Beam"
             }
         ]
     },
@@ -560,14 +560,14 @@
         "Gloom": [
             {
                 "1": "Absorb",
-                "2": "PoisonPowder",
+                "2": "Poison Powder",
                 "3": "Stun Spore",
-                "15": "PoisonPowder",
+                "15": "Poison Powder",
                 "17": "Stun Spore",
                 "19": "Sleep Powder",
                 "28": "Acid",
                 "38": "Petal Dance",
-                "52": "SolarBeam"
+                "52": "Solar Beam"
             }
         ]
     },
@@ -578,7 +578,7 @@
                 "2": "Petal Dance",
                 "3": "Sleep Powder",
                 "4": "Stun Spore",
-                "15": "PoisonPowder",
+                "15": "Poison Powder",
                 "17": "Stun Spore",
                 "19": "Sleep Powder"
             }
@@ -615,7 +615,7 @@
             {
                 "1": "Disable",
                 "2": "Tackle",
-                "24": "PoisonPowder",
+                "24": "Poison Powder",
                 "27": "Leech Life",
                 "30": "Stun Spore",
                 "35": "Psybeam",
@@ -629,9 +629,9 @@
             {
                 "1": "Disable",
                 "2": "Leech Life",
-                "3": "PoisonPowder",
+                "3": "Poison Powder",
                 "4": "Tackle",
-                "24": "PoisonPowder",
+                "24": "Poison Powder",
                 "27": "Leech Life",
                 "30": "Stun Spore",
                 "38": "Psybeam",
@@ -777,7 +777,7 @@
                 "1": "Bubble",
                 "16": "Hypnosis",
                 "19": "Water Gun",
-                "25": "DoubleSlap",
+                "25": "Double Slap",
                 "31": "Body Slam",
                 "38": "Amnesia",
                 "45": "Hydro Pump"
@@ -792,7 +792,7 @@
                 "3": "Water Gun",
                 "16": "Hypnosis",
                 "19": "Water Gun",
-                "26": "DoubleSlap",
+                "26": "Double Slap",
                 "33": "Body Slam",
                 "41": "Amnesia",
                 "49": "Hydro Pump"
@@ -803,7 +803,7 @@
         "Poliwrath": [
             {
                 "1": "Body Slam",
-                "2": "DoubleSlap",
+                "2": "Double Slap",
                 "3": "Hypnosis",
                 "4": "Water Gun",
                 "16": "Hypnosis",
@@ -894,7 +894,7 @@
                 "1": "Growth",
                 "2": "Vine Whip",
                 "13": "Wrap",
-                "15": "PoisonPowder",
+                "15": "Poison Powder",
                 "18": "Sleep Powder",
                 "21": "Stun Spore",
                 "26": "Acid",
@@ -910,7 +910,7 @@
                 "2": "Vine Whip",
                 "3": "Wrap",
                 "13": "Wrap",
-                "15": "PoisonPowder",
+                "15": "Poison Powder",
                 "18": "Sleep Powder",
                 "23": "Stun Spore",
                 "29": "Acid",
@@ -927,7 +927,7 @@
                 "3": "Sleep Powder",
                 "4": "Stun Spore",
                 "13": "Wrap",
-                "15": "PoisonPowder",
+                "15": "Poison Powder",
                 "18": "Sleep Powder"
             }
         ]
@@ -970,7 +970,7 @@
                 "1": "Tackle",
                 "11": "Defense Curl",
                 "16": "Rock Throw",
-                "21": "Selfdestruct",
+                "21": "Self-Destruct",
                 "26": "Harden",
                 "31": "Earthquake",
                 "36": "Explosion"
@@ -984,7 +984,7 @@
                 "2": "Tackle",
                 "11": "Defense Curl",
                 "16": "Rock Throw",
-                "21": "Selfdestruct",
+                "21": "Self-Destruct",
                 "29": "Harden",
                 "36": "Earthquake",
                 "43": "Explosion"
@@ -998,7 +998,7 @@
                 "2": "Tackle",
                 "11": "Defense Curl",
                 "16": "Rock Throw",
-                "21": "Selfdestruct",
+                "21": "Self-Destruct",
                 "29": "Harden",
                 "36": "Earthquake",
                 "43": "Explosion"
@@ -1068,7 +1068,7 @@
             {
                 "1": "Tackle",
                 "21": "SonicBoom",
-                "25": "ThunderShock",
+                "25": "Thunder Shock",
                 "29": "Supersonic",
                 "35": "Thunder Wave",
                 "41": "Swift",
@@ -1081,9 +1081,9 @@
             {
                 "1": "SonicBoom",
                 "2": "Tackle",
-                "3": "ThunderShock",
+                "3": "Thunder Shock",
                 "21": "SonicBoom",
-                "25": "ThunderShock",
+                "25": "Thunder Shock",
                 "29": "Supersonic",
                 "38": "Thunder Wave",
                 "46": "Swift",
@@ -1320,7 +1320,7 @@
                 "1": "Screech",
                 "2": "Tackle",
                 "17": "SonicBoom",
-                "22": "Selfdestruct",
+                "22": "Self-Destruct",
                 "29": "Light Screen",
                 "36": "Swift",
                 "43": "Explosion"
@@ -1334,7 +1334,7 @@
                 "2": "SonicBoom",
                 "3": "Tackle",
                 "17": "SonicBoom",
-                "22": "Selfdestruct",
+                "22": "Self-Destruct",
                 "29": "Light Screen",
                 "40": "Swift",
                 "50": "Explosion"
@@ -1349,8 +1349,8 @@
                 "25": "Reflect",
                 "28": "Leech Seed",
                 "32": "Stun Spore",
-                "37": "PoisonPowder",
-                "42": "SolarBeam",
+                "37": "Poison Powder",
+                "42": "Solar Beam",
                 "48": "Sleep Powder"
             }
         ]
@@ -1412,7 +1412,7 @@
                 "2": "Comet Punch",
                 "33": "Fire Punch",
                 "38": "Ice Punch",
-                "43": "ThunderPunch",
+                "43": "Thunder Punch",
                 "48": "Mega Punch",
                 "53": "Counter"
             }
@@ -1437,8 +1437,8 @@
                 "1": "Smog",
                 "2": "Tackle",
                 "32": "Sludge",
-                "37": "SmokeScreen",
-                "40": "Selfdestruct",
+                "37": "Smokescreen",
+                "40": "Self-Destruct",
                 "45": "Haze",
                 "48": "Explosion"
             }
@@ -1451,8 +1451,8 @@
                 "2": "Smog",
                 "3": "Tackle",
                 "32": "Sludge",
-                "39": "SmokeScreen",
-                "43": "Selfdestruct",
+                "39": "Smokescreen",
+                "43": "Self-Destruct",
                 "49": "Haze",
                 "53": "Explosion"
             }
@@ -1490,7 +1490,7 @@
     {
         "Chansey": [
             {
-                "1": "DoubleSlap",
+                "1": "Double Slap",
                 "2": "Pound",
                 "24": "Sing",
                 "30": "Growl",
@@ -1507,7 +1507,7 @@
                 "1": "Bind",
                 "2": "Constrict",
                 "29": "Absorb",
-                "32": "PoisonPowder",
+                "32": "Poison Powder",
                 "36": "Stun Spore",
                 "39": "Sleep Powder",
                 "45": "Slam",
@@ -1532,7 +1532,7 @@
         "Horsea": [
             {
                 "1": "Bubble",
-                "19": "SmokeScreen",
+                "19": "Smokescreen",
                 "24": "Leer",
                 "30": "Water Gun",
                 "37": "Agility",
@@ -1544,8 +1544,8 @@
         "Seadra": [
             {
                 "1": "Bubble",
-                "2": "SmokeScreen",
-                "19": "SmokeScreen",
+                "2": "Smokescreen",
+                "19": "Smokescreen",
                 "24": "Leer",
                 "30": "Water Gun",
                 "41": "Agility",
@@ -1612,7 +1612,7 @@
                 "2": "Confusion",
                 "15": "Confusion",
                 "23": "Light Screen",
-                "31": "DoubleSlap",
+                "31": "Double Slap",
                 "39": "Meditate",
                 "47": "Substitute"
             }
@@ -1637,7 +1637,7 @@
                 "1": "Lovely Kiss",
                 "2": "Pound",
                 "18": "Lick",
-                "23": "DoubleSlap",
+                "23": "Double Slap",
                 "31": "Ice Punch",
                 "39": "Body Slam",
                 "47": "Thrash",
@@ -1650,9 +1650,9 @@
             {
                 "1": "Leer",
                 "2": "Quick Attack",
-                "34": "ThunderShock",
+                "34": "Thunder Shock",
                 "37": "Screech",
-                "42": "ThunderPunch",
+                "42": "Thunder Punch",
                 "49": "Light Screen",
                 "54": "Thunder"
             }
@@ -1665,7 +1665,7 @@
                 "36": "Leer",
                 "39": "Confuse Ray",
                 "43": "Fire Punch",
-                "48": "SmokeScreen",
+                "48": "Smokescreen",
                 "52": "Smog",
                 "55": "Flamethrower"
             }
@@ -1776,9 +1776,9 @@
                 "1": "Quick Attack",
                 "2": "Sand-Attack",
                 "3": "Tackle",
-                "4": "ThunderShock",
+                "4": "Thunder Shock",
                 "27": "Quick Attack",
-                "31": "ThunderShock",
+                "31": "Thunder Shock",
                 "37": "Tail Whip",
                 "40": "Thunder Wave",
                 "42": "Double Kick",
@@ -1909,7 +1909,7 @@
         "Zapdos": [
             {
                 "1": "Drill Peck",
-                "2": "ThunderShock",
+                "2": "Thunder Shock",
                 "51": "Thunder",
                 "55": "Agility",
                 "60": "Light Screen"
