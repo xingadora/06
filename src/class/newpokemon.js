@@ -3,6 +3,8 @@ import { randomNumber } from '/src/function/randomnumbergen.js';
 import { damageCalculation } from '/src/function/damagecalculator.js';
 import { getWeaknesses, getStrengths, getImmunities } from '/src/function/typescalculator.js';
 import { getLearnSet } from '/src/function/getlearnset.js';
+//import { getLevel } from '/src/function/getlevel.js';
+
 
 
 class pokemon {
