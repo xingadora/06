@@ -3,7 +3,7 @@ import { randomNumber } from '/src/function/randomnumbergen.js';
 import { damageCalculation } from '/src/function/damagecalculator.js';
 import { getWeaknesses, getStrengths, getImmunities } from '/src/function/typescalculator.js';
 import { getLearnSet } from '/src/function/getlearnset.js';
-//import { getLevel } from '/src/function/getlevel.js';
+import { getLevel } from '/src/function/getlevel.js';
 
 
 
@@ -34,7 +34,7 @@ class pokemon {
         this.spDef = spDef;
         this.speed = speed;
         this.total = total;
-        this.level = randomNumber(1, 100);
+        this.level = getLevel();
         this._weaknesses = undefined;//getWeaknesses(type1, type2);
         this._strengths = undefined;//getStrengths(type1, type2);
         this._immunities = undefined;//getImmunities(type1, type2);
@@ -102,6 +102,6 @@ stats.forEach(element => {
 });
 
 // console.log(pokemon[68].strengths)
-// console.log(pokemon[1].weaknesses)
+//console.log(pokemon[1].level)
 // console.log(stats[67])
 //console.log(pokemon[1].learnset)
