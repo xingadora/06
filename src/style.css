@@ -1,11 +1,45 @@
-html, body {
+body,
+html {
   height: 100%;
-  width: 100%;
 }
 
-body {
-  background-image: url("img/start_background.jpg");
-  background-color: #cccccc;
+div {
+  background-image: none;
+}
+
+.start {
+  background-image: url("img/start_background.png");
+  background-color: transparent;
   background-size: cover;
   background-position: center;
+  height: 100%;
+}
+
+.start-button {
+  background-image: url("img/start.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 140px;
+  width: 140px;
+  animation-name: pulse;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(.95);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(.95);
+  }
 }
