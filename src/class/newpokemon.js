@@ -137,8 +137,8 @@ stats.forEach((element) => {
   }
 });
 
-console.log(pokemon[1].weaknesses);
-// console.log(pokemon[1].level)
+//console.log(pokemon[1].weaknesses);
+console.log(pokemon[1]);
 // console.log(stats[67])
 // console.log(pokemon[1].learnset)
 
@@ -154,4 +154,4 @@ duplicateElements.forEach((element) => {
   array.splice(i, 1);
 });
 
-console.log(array);
+// console.log(array);

@@ -30,12 +30,13 @@ function hideStart() {
 
 function showStart() {
   overlay.removeEventListener("animationend", showStart);
-  document.body.classList.remove("container")
+  document.body.classList.remove("container");
   document.body.style.backgroundImage = "url('/src/img/start_background.jpg')";
   overlay.classList.remove("overlay");
   void overlay.offsetWidth;
   overlay.classList.add("overlay");
   overlay.style.animationDirection = "reverse";
   overlay.style.animationFillMode = "none";
-  typewriter();
+  document.getElementById("textbox").classList.add("textbox");
+  overlay.addEventListener("animationend", typewriter);
 }

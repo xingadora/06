@@ -1,4 +1,4 @@
-@import "sprites.css";
+@import "pokemonsprites.css";
 
 body,
 html {
@@ -29,7 +29,24 @@ div {
   animation-iteration-count: 1;
 }
 
+.textbox {
+  text-shadow: 3px 3px grey;
+  font-family: pokeFont;
+  font-size: 35px;
+  background-image: url("img/textbox.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30%;
+  height: 100%;
+  position: relative;
+  top: 40%
+}
 
+.textboxtext {
+  position: absolute;
+  top: 44%;
+  left:37%;
+}
 
 .start {
   background-image: url("img/start_background.png");
