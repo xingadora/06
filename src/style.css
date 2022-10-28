@@ -1,33 +1,73 @@
+
+
 body,
 html {
   height: 100%;
 }
 
+@font-face {
+  font-family: pokeFont;
+  src: url(fonts/pokemon-ds-font.ttf);
+}
+
 div {
+  font-family: pokeFont;
+  font-size: 50px;
   background-image: none;
 }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  animation-name: fadeout;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  z-index: 100;
+  animation-iteration-count: 1;
+}
+
+
 
 .start {
   background-image: url("img/start_background.png");
   background-color: transparent;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   height: 100%;
 }
 
-.start-button {
-  background-image: url("img/start.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 140px;
-  width: 140px;
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.press-enter {
+  position: relative;
+  top: 10%;
+  height: 28px;
+  width: 356px;
   animation-name: pulse;
-  animation-duration: 1.5s;
+  animation-duration: 1.3s;
   animation-iteration-count: infinite;
-  position: absolute;
-  top: 50%;
-  left: 50%;
+}
+
+.pressed-enter {
+  position: relative;
+  top: 10%;
+  height: 28px;
+  width: 356px;
+  animation-name: pressed;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+* {
+  overflow: hidden;
 }
 
 @keyframes pulse {
@@ -41,5 +81,27 @@ div {
 
   100% {
     transform: scale(.95);
+  }
+}
+
+@keyframes fadeout {
+  0% {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    background-color: rgb(0, 0, 0);
+  }
+}
+
+@keyframes pressed {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(20);
+    opacity: 0;
   }
 }
