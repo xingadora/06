@@ -1,0 +1,8309 @@
+.pokemon {
+  background-image: url(spritesheet.png);
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.pokemon-pokemon-battle-sprites_101 {
+  width: 80px;
+  height: 80px;
+  background-position: -5px -5px;
+}
+
+.pokemon-pokemon-battle-sprites_103 {
+  width: 80px;
+  height: 80px;
+  background-position: -95px -5px;
+}
+
+.pokemon-pokemon-battle-sprites_105 {
+  width: 80px;
+  height: 80px;
+  background-position: -185px -5px;
+}
+
+.pokemon-pokemon-battle-sprites_1055 {
+  width: 80px;
+  height: 80px;
+  background-position: -275px -5px;
+}
+
+.pokemon-pokemon-battle-sprites_1057 {
+  width: 80px;
+  height: 80px;
+  background-position: -365px -5px;
+}
+
+.pokemon-pokemon-battle-sprites_1059 {
+  width: 80px;
+  height: 80px;
+  background-position: -455px -5px;
+}
+
+.pokemon-pokemon-battle-sprites_1061 {
+  width: 80px;
+  height: 80px;
+  background-position: -545px -5px;
+}
+
+.pokemon-pokemon-battle-sprites_1063 {
+  width: 80px;
+  height: 80px;
+  background-position: -635px -5px;
+}
+
+.pokemon-pokemon-battle-sprites_1065 {
+  width: 80px;
+  height: 80px;
+  background-position: -725px -5px;
+}
+
+.pokemon-pokemon-battle-sprites_1067 {
+  width: 80px;
+  height: 80px;
+  background-position: -815px -5px;
+}
+
+.pokemon-pokemon-battle-sprites_1069 {
+  width: 80px;
+  height: 80px;
+  background-position: -905px -5px;
+}
+
+.pokemon-pokemon-battle-sprites_107 {
+  width: 80px;
+  height: 80px;
+  background-position: -995px -5px;
+}
+
+.pokemon-pokemon-battle-sprites_1071 {
+  width: 80px;
+  height: 80px;
+  background-position: -1085px -5px;
+}
+
+.pokemon-pokemon-battle-sprites_1073 {
+  width: 80px;
+  height: 80px;
+  background-position: -1175px -5px;
+}
+
+.pokemon-pokemon-battle-sprites_1075 {
+  width: 80px;
+  height: 80px;
+  background-position: -1265px -5px;
+}
+
+.pokemon-pokemon-battle-sprites_1077 {
+  width: 80px;
+  height: 80px;
+  background-position: -1355px -5px;
+}
+
+.pokemon-pokemon-battle-sprites_1079 {
+  width: 80px;
+  height: 80px;
+  background-position: -1445px -5px;
+}
+
+.pokemon-pokemon-battle-sprites_1081 {
+  width: 80px;
+  height: 80px;
+  background-position: -1535px -5px;
+}
+
+.pokemon-pokemon-battle-sprites_1083 {
+  width: 80px;
+  height: 80px;
+  background-position: -1625px -5px;
+}
+
+.pokemon-pokemon-battle-sprites_1085 {
+  width: 80px;
+  height: 80px;
+  background-position: -1715px -5px;
+}
+
+.pokemon-pokemon-battle-sprites_1087 {
+  width: 80px;
+  height: 80px;
+  background-position: -1805px -5px;
+}
+
+.pokemon-pokemon-battle-sprites_1089 {
+  width: 80px;
+  height: 80px;
+  background-position: -1895px -5px;
+}
+
+.pokemon-pokemon-battle-sprites_109 {
+  width: 80px;
+  height: 80px;
+  background-position: -1985px -5px;
+}
+
+.pokemon-pokemon-battle-sprites_1091 {
+  width: 80px;
+  height: 80px;
+  background-position: -2075px -5px;
+}
+
+.pokemon-pokemon-battle-sprites_1093 {
+  width: 80px;
+  height: 80px;
+  background-position: -2165px -5px;
+}
+
+.pokemon-pokemon-battle-sprites_1095 {
+  width: 80px;
+  height: 80px;
+  background-position: -2255px -5px;
+}
+
+.pokemon-pokemon-battle-sprites_1097 {
+  width: 80px;
+  height: 80px;
+  background-position: -2345px -5px;
+}
+
+.pokemon-pokemon-battle-sprites_1099 {
+  width: 80px;
+  height: 80px;
+  background-position: -2435px -5px;
+}
+
+.pokemon-pokemon-battle-sprites_1101 {
+  width: 80px;
+  height: 80px;
+  background-position: -2525px -5px;
+}
+
+.pokemon-pokemon-battle-sprites_1103 {
+  width: 80px;
+  height: 80px;
+  background-position: -2615px -5px;
+}
+
+.pokemon-pokemon-battle-sprites_1105 {
+  width: 80px;
+  height: 80px;
+  background-position: -2705px -5px;
+}
+
+.pokemon-pokemon-battle-sprites_1107 {
+  width: 80px;
+  height: 80px;
+  background-position: -2795px -5px;
+}
+
+.pokemon-pokemon-battle-sprites_1109 {
+  width: 80px;
+  height: 80px;
+  background-position: -2885px -5px;
+}
+
+.pokemon-pokemon-battle-sprites_111 {
+  width: 80px;
+  height: 80px;
+  background-position: -2975px -5px;
+}
+
+.pokemon-pokemon-battle-sprites_1111 {
+  width: 80px;
+  height: 80px;
+  background-position: -3065px -5px;
+}
+
+.pokemon-pokemon-battle-sprites_1113 {
+  width: 80px;
+  height: 80px;
+  background-position: -3155px -5px;
+}
+
+.pokemon-pokemon-battle-sprites_1115 {
+  width: 80px;
+  height: 80px;
+  background-position: -3245px -5px;
+}
+
+.pokemon-pokemon-battle-sprites_1117 {
+  width: 80px;
+  height: 80px;
+  background-position: -5px -95px;
+}
+
+.pokemon-pokemon-battle-sprites_1119 {
+  width: 80px;
+  height: 80px;
+  background-position: -95px -95px;
+}
+
+.pokemon-pokemon-battle-sprites_1121 {
+  width: 80px;
+  height: 80px;
+  background-position: -185px -95px;
+}
+
+.pokemon-pokemon-battle-sprites_1123 {
+  width: 80px;
+  height: 80px;
+  background-position: -275px -95px;
+}
+
+.pokemon-pokemon-battle-sprites_1125 {
+  width: 80px;
+  height: 80px;
+  background-position: -365px -95px;
+}
+
+.pokemon-pokemon-battle-sprites_1127 {
+  width: 80px;
+  height: 80px;
+  background-position: -455px -95px;
+}
+
+.pokemon-pokemon-battle-sprites_1129 {
+  width: 80px;
+  height: 80px;
+  background-position: -545px -95px;
+}
+
+.pokemon-pokemon-battle-sprites_113 {
+  width: 80px;
+  height: 80px;
+  background-position: -635px -95px;
+}
+
+.pokemon-pokemon-battle-sprites_1131 {
+  width: 80px;
+  height: 80px;
+  background-position: -725px -95px;
+}
+
+.pokemon-pokemon-battle-sprites_1133 {
+  width: 80px;
+  height: 80px;
+  background-position: -815px -95px;
+}
+
+.pokemon-pokemon-battle-sprites_115 {
+  width: 80px;
+  height: 80px;
+  background-position: -905px -95px;
+}
+
+.pokemon-pokemon-battle-sprites_117 {
+  width: 80px;
+  height: 80px;
+  background-position: -995px -95px;
+}
+
+.pokemon-pokemon-battle-sprites_119 {
+  width: 80px;
+  height: 80px;
+  background-position: -1085px -95px;
+}
+
+.pokemon-pokemon-battle-sprites_121 {
+  width: 80px;
+  height: 80px;
+  background-position: -1175px -95px;
+}
+
+.pokemon-pokemon-battle-sprites_1217 {
+  width: 80px;
+  height: 80px;
+  background-position: -1265px -95px;
+}
+
+.pokemon-pokemon-battle-sprites_1219 {
+  width: 80px;
+  height: 80px;
+  background-position: -1355px -95px;
+}
+
+.pokemon-pokemon-battle-sprites_1221 {
+  width: 80px;
+  height: 80px;
+  background-position: -1445px -95px;
+}
+
+.pokemon-pokemon-battle-sprites_1223 {
+  width: 80px;
+  height: 80px;
+  background-position: -1535px -95px;
+}
+
+.pokemon-pokemon-battle-sprites_1225 {
+  width: 80px;
+  height: 80px;
+  background-position: -1625px -95px;
+}
+
+.pokemon-pokemon-battle-sprites_1227 {
+  width: 80px;
+  height: 80px;
+  background-position: -1715px -95px;
+}
+
+.pokemon-pokemon-battle-sprites_1229 {
+  width: 80px;
+  height: 80px;
+  background-position: -1805px -95px;
+}
+
+.pokemon-pokemon-battle-sprites_123 {
+  width: 80px;
+  height: 80px;
+  background-position: -1895px -95px;
+}
+
+.pokemon-pokemon-battle-sprites_1231 {
+  width: 80px;
+  height: 80px;
+  background-position: -1985px -95px;
+}
+
+.pokemon-pokemon-battle-sprites_1233 {
+  width: 80px;
+  height: 80px;
+  background-position: -2075px -95px;
+}
+
+.pokemon-pokemon-battle-sprites_1235 {
+  width: 80px;
+  height: 80px;
+  background-position: -2165px -95px;
+}
+
+.pokemon-pokemon-battle-sprites_1237 {
+  width: 80px;
+  height: 80px;
+  background-position: -2255px -95px;
+}
+
+.pokemon-pokemon-battle-sprites_1239 {
+  width: 80px;
+  height: 80px;
+  background-position: -2345px -95px;
+}
+
+.pokemon-pokemon-battle-sprites_1241 {
+  width: 80px;
+  height: 80px;
+  background-position: -2435px -95px;
+}
+
+.pokemon-pokemon-battle-sprites_1243 {
+  width: 80px;
+  height: 80px;
+  background-position: -2525px -95px;
+}
+
+.pokemon-pokemon-battle-sprites_1245 {
+  width: 80px;
+  height: 80px;
+  background-position: -2615px -95px;
+}
+
+.pokemon-pokemon-battle-sprites_1247 {
+  width: 80px;
+  height: 80px;
+  background-position: -2705px -95px;
+}
+
+.pokemon-pokemon-battle-sprites_1249 {
+  width: 80px;
+  height: 80px;
+  background-position: -2795px -95px;
+}
+
+.pokemon-pokemon-battle-sprites_125 {
+  width: 80px;
+  height: 80px;
+  background-position: -2885px -95px;
+}
+
+.pokemon-pokemon-battle-sprites_1251 {
+  width: 80px;
+  height: 80px;
+  background-position: -2975px -95px;
+}
+
+.pokemon-pokemon-battle-sprites_1253 {
+  width: 80px;
+  height: 80px;
+  background-position: -3065px -95px;
+}
+
+.pokemon-pokemon-battle-sprites_1255 {
+  width: 80px;
+  height: 80px;
+  background-position: -3155px -95px;
+}
+
+.pokemon-pokemon-battle-sprites_1257 {
+  width: 80px;
+  height: 80px;
+  background-position: -3245px -95px;
+}
+
+.pokemon-pokemon-battle-sprites_1259 {
+  width: 80px;
+  height: 80px;
+  background-position: -5px -185px;
+}
+
+.pokemon-pokemon-battle-sprites_1261 {
+  width: 80px;
+  height: 80px;
+  background-position: -95px -185px;
+}
+
+.pokemon-pokemon-battle-sprites_1263 {
+  width: 80px;
+  height: 80px;
+  background-position: -185px -185px;
+}
+
+.pokemon-pokemon-battle-sprites_1265 {
+  width: 80px;
+  height: 80px;
+  background-position: -275px -185px;
+}
+
+.pokemon-pokemon-battle-sprites_1267 {
+  width: 80px;
+  height: 80px;
+  background-position: -365px -185px;
+}
+
+.pokemon-pokemon-battle-sprites_1269 {
+  width: 80px;
+  height: 80px;
+  background-position: -455px -185px;
+}
+
+.pokemon-pokemon-battle-sprites_127 {
+  width: 80px;
+  height: 80px;
+  background-position: -545px -185px;
+}
+
+.pokemon-pokemon-battle-sprites_1271 {
+  width: 80px;
+  height: 80px;
+  background-position: -635px -185px;
+}
+
+.pokemon-pokemon-battle-sprites_1273 {
+  width: 80px;
+  height: 80px;
+  background-position: -725px -185px;
+}
+
+.pokemon-pokemon-battle-sprites_1275 {
+  width: 80px;
+  height: 80px;
+  background-position: -815px -185px;
+}
+
+.pokemon-pokemon-battle-sprites_1277 {
+  width: 80px;
+  height: 80px;
+  background-position: -905px -185px;
+}
+
+.pokemon-pokemon-battle-sprites_1279 {
+  width: 80px;
+  height: 80px;
+  background-position: -995px -185px;
+}
+
+.pokemon-pokemon-battle-sprites_1281 {
+  width: 80px;
+  height: 80px;
+  background-position: -1085px -185px;
+}
+
+.pokemon-pokemon-battle-sprites_1283 {
+  width: 80px;
+  height: 80px;
+  background-position: -1175px -185px;
+}
+
+.pokemon-pokemon-battle-sprites_1285 {
+  width: 80px;
+  height: 80px;
+  background-position: -1265px -185px;
+}
+
+.pokemon-pokemon-battle-sprites_1287 {
+  width: 80px;
+  height: 80px;
+  background-position: -1355px -185px;
+}
+
+.pokemon-pokemon-battle-sprites_1289 {
+  width: 80px;
+  height: 80px;
+  background-position: -1445px -185px;
+}
+
+.pokemon-pokemon-battle-sprites_129 {
+  width: 80px;
+  height: 80px;
+  background-position: -1535px -185px;
+}
+
+.pokemon-pokemon-battle-sprites_1291 {
+  width: 80px;
+  height: 80px;
+  background-position: -1625px -185px;
+}
+
+.pokemon-pokemon-battle-sprites_1293 {
+  width: 80px;
+  height: 80px;
+  background-position: -1715px -185px;
+}
+
+.pokemon-pokemon-battle-sprites_1295 {
+  width: 80px;
+  height: 80px;
+  background-position: -1805px -185px;
+}
+
+.pokemon-pokemon-battle-sprites_131 {
+  width: 80px;
+  height: 80px;
+  background-position: -1895px -185px;
+}
+
+.pokemon-pokemon-battle-sprites_133 {
+  width: 80px;
+  height: 80px;
+  background-position: -1985px -185px;
+}
+
+.pokemon-pokemon-battle-sprites_135 {
+  width: 80px;
+  height: 80px;
+  background-position: -2075px -185px;
+}
+
+.pokemon-pokemon-battle-sprites_137 {
+  width: 80px;
+  height: 80px;
+  background-position: -2165px -185px;
+}
+
+.pokemon-pokemon-battle-sprites_1379 {
+  width: 80px;
+  height: 80px;
+  background-position: -2255px -185px;
+}
+
+.pokemon-pokemon-battle-sprites_1381 {
+  width: 80px;
+  height: 80px;
+  background-position: -2345px -185px;
+}
+
+.pokemon-pokemon-battle-sprites_1383 {
+  width: 80px;
+  height: 80px;
+  background-position: -2435px -185px;
+}
+
+.pokemon-pokemon-battle-sprites_1385 {
+  width: 80px;
+  height: 80px;
+  background-position: -2525px -185px;
+}
+
+.pokemon-pokemon-battle-sprites_1387 {
+  width: 80px;
+  height: 80px;
+  background-position: -2615px -185px;
+}
+
+.pokemon-pokemon-battle-sprites_1389 {
+  width: 80px;
+  height: 80px;
+  background-position: -2705px -185px;
+}
+
+.pokemon-pokemon-battle-sprites_139 {
+  width: 80px;
+  height: 80px;
+  background-position: -2795px -185px;
+}
+
+.pokemon-pokemon-battle-sprites_1391 {
+  width: 80px;
+  height: 80px;
+  background-position: -2885px -185px;
+}
+
+.pokemon-pokemon-battle-sprites_1393 {
+  width: 80px;
+  height: 80px;
+  background-position: -2975px -185px;
+}
+
+.pokemon-pokemon-battle-sprites_1395 {
+  width: 80px;
+  height: 80px;
+  background-position: -3065px -185px;
+}
+
+.pokemon-pokemon-battle-sprites_1397 {
+  width: 80px;
+  height: 80px;
+  background-position: -3155px -185px;
+}
+
+.pokemon-pokemon-battle-sprites_1399 {
+  width: 80px;
+  height: 80px;
+  background-position: -3245px -185px;
+}
+
+.pokemon-pokemon-battle-sprites_1401 {
+  width: 80px;
+  height: 80px;
+  background-position: -5px -275px;
+}
+
+.pokemon-pokemon-battle-sprites_1403 {
+  width: 80px;
+  height: 80px;
+  background-position: -95px -275px;
+}
+
+.pokemon-pokemon-battle-sprites_1405 {
+  width: 80px;
+  height: 80px;
+  background-position: -185px -275px;
+}
+
+.pokemon-pokemon-battle-sprites_1407 {
+  width: 80px;
+  height: 80px;
+  background-position: -275px -275px;
+}
+
+.pokemon-pokemon-battle-sprites_1409 {
+  width: 80px;
+  height: 80px;
+  background-position: -365px -275px;
+}
+
+.pokemon-pokemon-battle-sprites_141 {
+  width: 80px;
+  height: 80px;
+  background-position: -455px -275px;
+}
+
+.pokemon-pokemon-battle-sprites_1411 {
+  width: 80px;
+  height: 80px;
+  background-position: -545px -275px;
+}
+
+.pokemon-pokemon-battle-sprites_1413 {
+  width: 80px;
+  height: 80px;
+  background-position: -635px -275px;
+}
+
+.pokemon-pokemon-battle-sprites_1415 {
+  width: 80px;
+  height: 80px;
+  background-position: -725px -275px;
+}
+
+.pokemon-pokemon-battle-sprites_1417 {
+  width: 80px;
+  height: 80px;
+  background-position: -815px -275px;
+}
+
+.pokemon-pokemon-battle-sprites_1419 {
+  width: 80px;
+  height: 80px;
+  background-position: -905px -275px;
+}
+
+.pokemon-pokemon-battle-sprites_1421 {
+  width: 80px;
+  height: 80px;
+  background-position: -995px -275px;
+}
+
+.pokemon-pokemon-battle-sprites_1423 {
+  width: 80px;
+  height: 80px;
+  background-position: -1085px -275px;
+}
+
+.pokemon-pokemon-battle-sprites_1425 {
+  width: 80px;
+  height: 80px;
+  background-position: -1175px -275px;
+}
+
+.pokemon-pokemon-battle-sprites_1427 {
+  width: 80px;
+  height: 80px;
+  background-position: -1265px -275px;
+}
+
+.pokemon-pokemon-battle-sprites_1429 {
+  width: 80px;
+  height: 80px;
+  background-position: -1355px -275px;
+}
+
+.pokemon-pokemon-battle-sprites_143 {
+  width: 80px;
+  height: 80px;
+  background-position: -1445px -275px;
+}
+
+.pokemon-pokemon-battle-sprites_1431 {
+  width: 80px;
+  height: 80px;
+  background-position: -1535px -275px;
+}
+
+.pokemon-pokemon-battle-sprites_1433 {
+  width: 80px;
+  height: 80px;
+  background-position: -1625px -275px;
+}
+
+.pokemon-pokemon-battle-sprites_1435 {
+  width: 80px;
+  height: 80px;
+  background-position: -1715px -275px;
+}
+
+.pokemon-pokemon-battle-sprites_1437 {
+  width: 80px;
+  height: 80px;
+  background-position: -1805px -275px;
+}
+
+.pokemon-pokemon-battle-sprites_1439 {
+  width: 80px;
+  height: 80px;
+  background-position: -1895px -275px;
+}
+
+.pokemon-pokemon-battle-sprites_1441 {
+  width: 80px;
+  height: 80px;
+  background-position: -1985px -275px;
+}
+
+.pokemon-pokemon-battle-sprites_1443 {
+  width: 80px;
+  height: 80px;
+  background-position: -2075px -275px;
+}
+
+.pokemon-pokemon-battle-sprites_1445 {
+  width: 80px;
+  height: 80px;
+  background-position: -2165px -275px;
+}
+
+.pokemon-pokemon-battle-sprites_1447 {
+  width: 80px;
+  height: 80px;
+  background-position: -2255px -275px;
+}
+
+.pokemon-pokemon-battle-sprites_1449 {
+  width: 80px;
+  height: 80px;
+  background-position: -2345px -275px;
+}
+
+.pokemon-pokemon-battle-sprites_145 {
+  width: 80px;
+  height: 80px;
+  background-position: -2435px -275px;
+}
+
+.pokemon-pokemon-battle-sprites_1451 {
+  width: 80px;
+  height: 80px;
+  background-position: -2525px -275px;
+}
+
+.pokemon-pokemon-battle-sprites_1453 {
+  width: 80px;
+  height: 80px;
+  background-position: -2615px -275px;
+}
+
+.pokemon-pokemon-battle-sprites_1455 {
+  width: 80px;
+  height: 80px;
+  background-position: -2705px -275px;
+}
+
+.pokemon-pokemon-battle-sprites_1457 {
+  width: 80px;
+  height: 80px;
+  background-position: -2795px -275px;
+}
+
+.pokemon-pokemon-battle-sprites_147 {
+  width: 80px;
+  height: 80px;
+  background-position: -2885px -275px;
+}
+
+.pokemon-pokemon-battle-sprites_149 {
+  width: 80px;
+  height: 80px;
+  background-position: -2975px -275px;
+}
+
+.pokemon-pokemon-battle-sprites_151 {
+  width: 80px;
+  height: 80px;
+  background-position: -3065px -275px;
+}
+
+.pokemon-pokemon-battle-sprites_153 {
+  width: 80px;
+  height: 80px;
+  background-position: -3155px -275px;
+}
+
+.pokemon-pokemon-battle-sprites_1541 {
+  width: 80px;
+  height: 80px;
+  background-position: -3245px -275px;
+}
+
+.pokemon-pokemon-battle-sprites_1543 {
+  width: 80px;
+  height: 80px;
+  background-position: -5px -365px;
+}
+
+.pokemon-pokemon-battle-sprites_1545 {
+  width: 80px;
+  height: 80px;
+  background-position: -95px -365px;
+}
+
+.pokemon-pokemon-battle-sprites_1547 {
+  width: 80px;
+  height: 80px;
+  background-position: -185px -365px;
+}
+
+.pokemon-pokemon-battle-sprites_1549 {
+  width: 80px;
+  height: 80px;
+  background-position: -275px -365px;
+}
+
+.pokemon-pokemon-battle-sprites_155 {
+  width: 80px;
+  height: 80px;
+  background-position: -365px -365px;
+}
+
+.pokemon-pokemon-battle-sprites_1551 {
+  width: 80px;
+  height: 80px;
+  background-position: -455px -365px;
+}
+
+.pokemon-pokemon-battle-sprites_1553 {
+  width: 80px;
+  height: 80px;
+  background-position: -545px -365px;
+}
+
+.pokemon-pokemon-battle-sprites_1555 {
+  width: 80px;
+  height: 80px;
+  background-position: -635px -365px;
+}
+
+.pokemon-pokemon-battle-sprites_1557 {
+  width: 80px;
+  height: 80px;
+  background-position: -725px -365px;
+}
+
+.pokemon-pokemon-battle-sprites_1559 {
+  width: 80px;
+  height: 80px;
+  background-position: -815px -365px;
+}
+
+.pokemon-pokemon-battle-sprites_1561 {
+  width: 80px;
+  height: 80px;
+  background-position: -905px -365px;
+}
+
+.pokemon-pokemon-battle-sprites_1563 {
+  width: 80px;
+  height: 80px;
+  background-position: -995px -365px;
+}
+
+.pokemon-pokemon-battle-sprites_1565 {
+  width: 80px;
+  height: 80px;
+  background-position: -1085px -365px;
+}
+
+.pokemon-pokemon-battle-sprites_1567 {
+  width: 80px;
+  height: 80px;
+  background-position: -1175px -365px;
+}
+
+.pokemon-pokemon-battle-sprites_1569 {
+  width: 80px;
+  height: 80px;
+  background-position: -1265px -365px;
+}
+
+.pokemon-pokemon-battle-sprites_157 {
+  width: 80px;
+  height: 80px;
+  background-position: -1355px -365px;
+}
+
+.pokemon-pokemon-battle-sprites_1571 {
+  width: 80px;
+  height: 80px;
+  background-position: -1445px -365px;
+}
+
+.pokemon-pokemon-battle-sprites_1573 {
+  width: 80px;
+  height: 80px;
+  background-position: -1535px -365px;
+}
+
+.pokemon-pokemon-battle-sprites_1575 {
+  width: 80px;
+  height: 80px;
+  background-position: -1625px -365px;
+}
+
+.pokemon-pokemon-battle-sprites_1577 {
+  width: 80px;
+  height: 80px;
+  background-position: -1715px -365px;
+}
+
+.pokemon-pokemon-battle-sprites_1579 {
+  width: 80px;
+  height: 80px;
+  background-position: -1805px -365px;
+}
+
+.pokemon-pokemon-battle-sprites_1581 {
+  width: 80px;
+  height: 80px;
+  background-position: -1895px -365px;
+}
+
+.pokemon-pokemon-battle-sprites_1583 {
+  width: 80px;
+  height: 80px;
+  background-position: -1985px -365px;
+}
+
+.pokemon-pokemon-battle-sprites_1585 {
+  width: 80px;
+  height: 80px;
+  background-position: -2075px -365px;
+}
+
+.pokemon-pokemon-battle-sprites_1587 {
+  width: 80px;
+  height: 80px;
+  background-position: -2165px -365px;
+}
+
+.pokemon-pokemon-battle-sprites_1589 {
+  width: 80px;
+  height: 80px;
+  background-position: -2255px -365px;
+}
+
+.pokemon-pokemon-battle-sprites_159 {
+  width: 80px;
+  height: 80px;
+  background-position: -2345px -365px;
+}
+
+.pokemon-pokemon-battle-sprites_1591 {
+  width: 80px;
+  height: 80px;
+  background-position: -2435px -365px;
+}
+
+.pokemon-pokemon-battle-sprites_1593 {
+  width: 80px;
+  height: 80px;
+  background-position: -2525px -365px;
+}
+
+.pokemon-pokemon-battle-sprites_1595 {
+  width: 80px;
+  height: 80px;
+  background-position: -2615px -365px;
+}
+
+.pokemon-pokemon-battle-sprites_1597 {
+  width: 80px;
+  height: 80px;
+  background-position: -2705px -365px;
+}
+
+.pokemon-pokemon-battle-sprites_1599 {
+  width: 80px;
+  height: 80px;
+  background-position: -2795px -365px;
+}
+
+.pokemon-pokemon-battle-sprites_1601 {
+  width: 80px;
+  height: 80px;
+  background-position: -2885px -365px;
+}
+
+.pokemon-pokemon-battle-sprites_1603 {
+  width: 80px;
+  height: 80px;
+  background-position: -2975px -365px;
+}
+
+.pokemon-pokemon-battle-sprites_1605 {
+  width: 80px;
+  height: 80px;
+  background-position: -3065px -365px;
+}
+
+.pokemon-pokemon-battle-sprites_1607 {
+  width: 80px;
+  height: 80px;
+  background-position: -3155px -365px;
+}
+
+.pokemon-pokemon-battle-sprites_1609 {
+  width: 80px;
+  height: 80px;
+  background-position: -3245px -365px;
+}
+
+.pokemon-pokemon-battle-sprites_161 {
+  width: 80px;
+  height: 80px;
+  background-position: -5px -455px;
+}
+
+.pokemon-pokemon-battle-sprites_1611 {
+  width: 80px;
+  height: 80px;
+  background-position: -95px -455px;
+}
+
+.pokemon-pokemon-battle-sprites_1613 {
+  width: 80px;
+  height: 80px;
+  background-position: -185px -455px;
+}
+
+.pokemon-pokemon-battle-sprites_1615 {
+  width: 80px;
+  height: 80px;
+  background-position: -275px -455px;
+}
+
+.pokemon-pokemon-battle-sprites_1617 {
+  width: 80px;
+  height: 80px;
+  background-position: -365px -455px;
+}
+
+.pokemon-pokemon-battle-sprites_1619 {
+  width: 80px;
+  height: 80px;
+  background-position: -455px -455px;
+}
+
+.pokemon-pokemon-battle-sprites_1703 {
+  width: 80px;
+  height: 80px;
+  background-position: -545px -455px;
+}
+
+.pokemon-pokemon-battle-sprites_1705 {
+  width: 80px;
+  height: 80px;
+  background-position: -635px -455px;
+}
+
+.pokemon-pokemon-battle-sprites_1707 {
+  width: 80px;
+  height: 80px;
+  background-position: -725px -455px;
+}
+
+.pokemon-pokemon-battle-sprites_1709 {
+  width: 80px;
+  height: 80px;
+  background-position: -815px -455px;
+}
+
+.pokemon-pokemon-battle-sprites_1711 {
+  width: 80px;
+  height: 80px;
+  background-position: -905px -455px;
+}
+
+.pokemon-pokemon-battle-sprites_1713 {
+  width: 80px;
+  height: 80px;
+  background-position: -995px -455px;
+}
+
+.pokemon-pokemon-battle-sprites_1715 {
+  width: 80px;
+  height: 80px;
+  background-position: -1085px -455px;
+}
+
+.pokemon-pokemon-battle-sprites_1717 {
+  width: 80px;
+  height: 80px;
+  background-position: -1175px -455px;
+}
+
+.pokemon-pokemon-battle-sprites_1719 {
+  width: 80px;
+  height: 80px;
+  background-position: -1265px -455px;
+}
+
+.pokemon-pokemon-battle-sprites_1721 {
+  width: 80px;
+  height: 80px;
+  background-position: -1355px -455px;
+}
+
+.pokemon-pokemon-battle-sprites_1723 {
+  width: 80px;
+  height: 80px;
+  background-position: -1445px -455px;
+}
+
+.pokemon-pokemon-battle-sprites_1725 {
+  width: 80px;
+  height: 80px;
+  background-position: -1535px -455px;
+}
+
+.pokemon-pokemon-battle-sprites_1727 {
+  width: 80px;
+  height: 80px;
+  background-position: -1625px -455px;
+}
+
+.pokemon-pokemon-battle-sprites_1729 {
+  width: 80px;
+  height: 80px;
+  background-position: -1715px -455px;
+}
+
+.pokemon-pokemon-battle-sprites_1731 {
+  width: 80px;
+  height: 80px;
+  background-position: -1805px -455px;
+}
+
+.pokemon-pokemon-battle-sprites_1733 {
+  width: 80px;
+  height: 80px;
+  background-position: -1895px -455px;
+}
+
+.pokemon-pokemon-battle-sprites_1735 {
+  width: 80px;
+  height: 80px;
+  background-position: -1985px -455px;
+}
+
+.pokemon-pokemon-battle-sprites_1737 {
+  width: 80px;
+  height: 80px;
+  background-position: -2075px -455px;
+}
+
+.pokemon-pokemon-battle-sprites_1739 {
+  width: 80px;
+  height: 80px;
+  background-position: -2165px -455px;
+}
+
+.pokemon-pokemon-battle-sprites_1741 {
+  width: 80px;
+  height: 80px;
+  background-position: -2255px -455px;
+}
+
+.pokemon-pokemon-battle-sprites_1743 {
+  width: 80px;
+  height: 80px;
+  background-position: -2345px -455px;
+}
+
+.pokemon-pokemon-battle-sprites_1745 {
+  width: 80px;
+  height: 80px;
+  background-position: -2435px -455px;
+}
+
+.pokemon-pokemon-battle-sprites_1747 {
+  width: 80px;
+  height: 80px;
+  background-position: -2525px -455px;
+}
+
+.pokemon-pokemon-battle-sprites_1749 {
+  width: 80px;
+  height: 80px;
+  background-position: -2615px -455px;
+}
+
+.pokemon-pokemon-battle-sprites_1751 {
+  width: 80px;
+  height: 80px;
+  background-position: -2705px -455px;
+}
+
+.pokemon-pokemon-battle-sprites_1753 {
+  width: 80px;
+  height: 80px;
+  background-position: -2795px -455px;
+}
+
+.pokemon-pokemon-battle-sprites_1755 {
+  width: 80px;
+  height: 80px;
+  background-position: -2885px -455px;
+}
+
+.pokemon-pokemon-battle-sprites_1757 {
+  width: 80px;
+  height: 80px;
+  background-position: -2975px -455px;
+}
+
+.pokemon-pokemon-battle-sprites_1759 {
+  width: 80px;
+  height: 80px;
+  background-position: -3065px -455px;
+}
+
+.pokemon-pokemon-battle-sprites_1761 {
+  width: 80px;
+  height: 80px;
+  background-position: -3155px -455px;
+}
+
+.pokemon-pokemon-battle-sprites_1763 {
+  width: 80px;
+  height: 80px;
+  background-position: -3245px -455px;
+}
+
+.pokemon-pokemon-battle-sprites_1765 {
+  width: 80px;
+  height: 80px;
+  background-position: -5px -545px;
+}
+
+.pokemon-pokemon-battle-sprites_1767 {
+  width: 80px;
+  height: 80px;
+  background-position: -95px -545px;
+}
+
+.pokemon-pokemon-battle-sprites_1769 {
+  width: 80px;
+  height: 80px;
+  background-position: -185px -545px;
+}
+
+.pokemon-pokemon-battle-sprites_1771 {
+  width: 80px;
+  height: 80px;
+  background-position: -275px -545px;
+}
+
+.pokemon-pokemon-battle-sprites_1773 {
+  width: 80px;
+  height: 80px;
+  background-position: -365px -545px;
+}
+
+.pokemon-pokemon-battle-sprites_1775 {
+  width: 80px;
+  height: 80px;
+  background-position: -455px -545px;
+}
+
+.pokemon-pokemon-battle-sprites_1777 {
+  width: 80px;
+  height: 80px;
+  background-position: -545px -545px;
+}
+
+.pokemon-pokemon-battle-sprites_1779 {
+  width: 80px;
+  height: 80px;
+  background-position: -635px -545px;
+}
+
+.pokemon-pokemon-battle-sprites_1781 {
+  width: 80px;
+  height: 80px;
+  background-position: -725px -545px;
+}
+
+.pokemon-pokemon-battle-sprites_1865 {
+  width: 80px;
+  height: 80px;
+  background-position: -815px -545px;
+}
+
+.pokemon-pokemon-battle-sprites_1867 {
+  width: 80px;
+  height: 80px;
+  background-position: -905px -545px;
+}
+
+.pokemon-pokemon-battle-sprites_1869 {
+  width: 80px;
+  height: 80px;
+  background-position: -995px -545px;
+}
+
+.pokemon-pokemon-battle-sprites_1871 {
+  width: 80px;
+  height: 80px;
+  background-position: -1085px -545px;
+}
+
+.pokemon-pokemon-battle-sprites_1873 {
+  width: 80px;
+  height: 80px;
+  background-position: -1175px -545px;
+}
+
+.pokemon-pokemon-battle-sprites_1875 {
+  width: 80px;
+  height: 80px;
+  background-position: -1265px -545px;
+}
+
+.pokemon-pokemon-battle-sprites_1877 {
+  width: 80px;
+  height: 80px;
+  background-position: -1355px -545px;
+}
+
+.pokemon-pokemon-battle-sprites_1879 {
+  width: 80px;
+  height: 80px;
+  background-position: -1445px -545px;
+}
+
+.pokemon-pokemon-battle-sprites_1881 {
+  width: 80px;
+  height: 80px;
+  background-position: -1535px -545px;
+}
+
+.pokemon-pokemon-battle-sprites_1883 {
+  width: 80px;
+  height: 80px;
+  background-position: -1625px -545px;
+}
+
+.pokemon-pokemon-battle-sprites_1885 {
+  width: 80px;
+  height: 80px;
+  background-position: -1715px -545px;
+}
+
+.pokemon-pokemon-battle-sprites_1887 {
+  width: 80px;
+  height: 80px;
+  background-position: -1805px -545px;
+}
+
+.pokemon-pokemon-battle-sprites_1889 {
+  width: 80px;
+  height: 80px;
+  background-position: -1895px -545px;
+}
+
+.pokemon-pokemon-battle-sprites_1891 {
+  width: 80px;
+  height: 80px;
+  background-position: -1985px -545px;
+}
+
+.pokemon-pokemon-battle-sprites_1893 {
+  width: 80px;
+  height: 80px;
+  background-position: -2075px -545px;
+}
+
+.pokemon-pokemon-battle-sprites_1895 {
+  width: 80px;
+  height: 80px;
+  background-position: -2165px -545px;
+}
+
+.pokemon-pokemon-battle-sprites_1897 {
+  width: 80px;
+  height: 80px;
+  background-position: -2255px -545px;
+}
+
+.pokemon-pokemon-battle-sprites_1899 {
+  width: 80px;
+  height: 80px;
+  background-position: -2345px -545px;
+}
+
+.pokemon-pokemon-battle-sprites_1901 {
+  width: 80px;
+  height: 80px;
+  background-position: -2435px -545px;
+}
+
+.pokemon-pokemon-battle-sprites_1903 {
+  width: 80px;
+  height: 80px;
+  background-position: -2525px -545px;
+}
+
+.pokemon-pokemon-battle-sprites_1905 {
+  width: 80px;
+  height: 80px;
+  background-position: -2615px -545px;
+}
+
+.pokemon-pokemon-battle-sprites_1907 {
+  width: 80px;
+  height: 80px;
+  background-position: -2705px -545px;
+}
+
+.pokemon-pokemon-battle-sprites_1909 {
+  width: 80px;
+  height: 80px;
+  background-position: -2795px -545px;
+}
+
+.pokemon-pokemon-battle-sprites_1911 {
+  width: 80px;
+  height: 80px;
+  background-position: -2885px -545px;
+}
+
+.pokemon-pokemon-battle-sprites_1913 {
+  width: 80px;
+  height: 80px;
+  background-position: -2975px -545px;
+}
+
+.pokemon-pokemon-battle-sprites_1915 {
+  width: 80px;
+  height: 80px;
+  background-position: -3065px -545px;
+}
+
+.pokemon-pokemon-battle-sprites_1917 {
+  width: 80px;
+  height: 80px;
+  background-position: -3155px -545px;
+}
+
+.pokemon-pokemon-battle-sprites_1919 {
+  width: 80px;
+  height: 80px;
+  background-position: -3245px -545px;
+}
+
+.pokemon-pokemon-battle-sprites_1921 {
+  width: 80px;
+  height: 80px;
+  background-position: -5px -635px;
+}
+
+.pokemon-pokemon-battle-sprites_1923 {
+  width: 80px;
+  height: 80px;
+  background-position: -95px -635px;
+}
+
+.pokemon-pokemon-battle-sprites_1925 {
+  width: 80px;
+  height: 80px;
+  background-position: -185px -635px;
+}
+
+.pokemon-pokemon-battle-sprites_1927 {
+  width: 80px;
+  height: 80px;
+  background-position: -275px -635px;
+}
+
+.pokemon-pokemon-battle-sprites_1929 {
+  width: 80px;
+  height: 80px;
+  background-position: -365px -635px;
+}
+
+.pokemon-pokemon-battle-sprites_1931 {
+  width: 80px;
+  height: 80px;
+  background-position: -455px -635px;
+}
+
+.pokemon-pokemon-battle-sprites_1933 {
+  width: 80px;
+  height: 80px;
+  background-position: -545px -635px;
+}
+
+.pokemon-pokemon-battle-sprites_1935 {
+  width: 80px;
+  height: 80px;
+  background-position: -635px -635px;
+}
+
+.pokemon-pokemon-battle-sprites_1937 {
+  width: 80px;
+  height: 80px;
+  background-position: -725px -635px;
+}
+
+.pokemon-pokemon-battle-sprites_1939 {
+  width: 80px;
+  height: 80px;
+  background-position: -815px -635px;
+}
+
+.pokemon-pokemon-battle-sprites_1941 {
+  width: 80px;
+  height: 80px;
+  background-position: -905px -635px;
+}
+
+.pokemon-pokemon-battle-sprites_1943 {
+  width: 80px;
+  height: 80px;
+  background-position: -995px -635px;
+}
+
+.pokemon-pokemon-battle-sprites_2027 {
+  width: 80px;
+  height: 80px;
+  background-position: -1085px -635px;
+}
+
+.pokemon-pokemon-battle-sprites_2029 {
+  width: 80px;
+  height: 80px;
+  background-position: -1175px -635px;
+}
+
+.pokemon-pokemon-battle-sprites_2031 {
+  width: 80px;
+  height: 80px;
+  background-position: -1265px -635px;
+}
+
+.pokemon-pokemon-battle-sprites_2033 {
+  width: 80px;
+  height: 80px;
+  background-position: -1355px -635px;
+}
+
+.pokemon-pokemon-battle-sprites_2035 {
+  width: 80px;
+  height: 80px;
+  background-position: -1445px -635px;
+}
+
+.pokemon-pokemon-battle-sprites_2037 {
+  width: 80px;
+  height: 80px;
+  background-position: -1535px -635px;
+}
+
+.pokemon-pokemon-battle-sprites_2039 {
+  width: 80px;
+  height: 80px;
+  background-position: -1625px -635px;
+}
+
+.pokemon-pokemon-battle-sprites_2041 {
+  width: 80px;
+  height: 80px;
+  background-position: -1715px -635px;
+}
+
+.pokemon-pokemon-battle-sprites_2043 {
+  width: 80px;
+  height: 80px;
+  background-position: -1805px -635px;
+}
+
+.pokemon-pokemon-battle-sprites_2045 {
+  width: 80px;
+  height: 80px;
+  background-position: -1895px -635px;
+}
+
+.pokemon-pokemon-battle-sprites_2047 {
+  width: 80px;
+  height: 80px;
+  background-position: -1985px -635px;
+}
+
+.pokemon-pokemon-battle-sprites_2049 {
+  width: 80px;
+  height: 80px;
+  background-position: -2075px -635px;
+}
+
+.pokemon-pokemon-battle-sprites_2051 {
+  width: 80px;
+  height: 80px;
+  background-position: -2165px -635px;
+}
+
+.pokemon-pokemon-battle-sprites_2053 {
+  width: 80px;
+  height: 80px;
+  background-position: -2255px -635px;
+}
+
+.pokemon-pokemon-battle-sprites_2055 {
+  width: 80px;
+  height: 80px;
+  background-position: -2345px -635px;
+}
+
+.pokemon-pokemon-battle-sprites_2057 {
+  width: 80px;
+  height: 80px;
+  background-position: -2435px -635px;
+}
+
+.pokemon-pokemon-battle-sprites_2059 {
+  width: 80px;
+  height: 80px;
+  background-position: -2525px -635px;
+}
+
+.pokemon-pokemon-battle-sprites_2061 {
+  width: 80px;
+  height: 80px;
+  background-position: -2615px -635px;
+}
+
+.pokemon-pokemon-battle-sprites_2063 {
+  width: 80px;
+  height: 80px;
+  background-position: -2705px -635px;
+}
+
+.pokemon-pokemon-battle-sprites_2065 {
+  width: 80px;
+  height: 80px;
+  background-position: -2795px -635px;
+}
+
+.pokemon-pokemon-battle-sprites_2067 {
+  width: 80px;
+  height: 80px;
+  background-position: -2885px -635px;
+}
+
+.pokemon-pokemon-battle-sprites_2069 {
+  width: 80px;
+  height: 80px;
+  background-position: -2975px -635px;
+}
+
+.pokemon-pokemon-battle-sprites_2071 {
+  width: 80px;
+  height: 80px;
+  background-position: -3065px -635px;
+}
+
+.pokemon-pokemon-battle-sprites_2073 {
+  width: 80px;
+  height: 80px;
+  background-position: -3155px -635px;
+}
+
+.pokemon-pokemon-battle-sprites_2075 {
+  width: 80px;
+  height: 80px;
+  background-position: -3245px -635px;
+}
+
+.pokemon-pokemon-battle-sprites_2077 {
+  width: 80px;
+  height: 80px;
+  background-position: -5px -725px;
+}
+
+.pokemon-pokemon-battle-sprites_2079 {
+  width: 80px;
+  height: 80px;
+  background-position: -95px -725px;
+}
+
+.pokemon-pokemon-battle-sprites_2081 {
+  width: 80px;
+  height: 80px;
+  background-position: -185px -725px;
+}
+
+.pokemon-pokemon-battle-sprites_2083 {
+  width: 80px;
+  height: 80px;
+  background-position: -275px -725px;
+}
+
+.pokemon-pokemon-battle-sprites_2085 {
+  width: 80px;
+  height: 80px;
+  background-position: -365px -725px;
+}
+
+.pokemon-pokemon-battle-sprites_2087 {
+  width: 80px;
+  height: 80px;
+  background-position: -455px -725px;
+}
+
+.pokemon-pokemon-battle-sprites_2089 {
+  width: 80px;
+  height: 80px;
+  background-position: -545px -725px;
+}
+
+.pokemon-pokemon-battle-sprites_2091 {
+  width: 80px;
+  height: 80px;
+  background-position: -635px -725px;
+}
+
+.pokemon-pokemon-battle-sprites_2093 {
+  width: 80px;
+  height: 80px;
+  background-position: -725px -725px;
+}
+
+.pokemon-pokemon-battle-sprites_2095 {
+  width: 80px;
+  height: 80px;
+  background-position: -815px -725px;
+}
+
+.pokemon-pokemon-battle-sprites_2097 {
+  width: 80px;
+  height: 80px;
+  background-position: -905px -725px;
+}
+
+.pokemon-pokemon-battle-sprites_2099 {
+  width: 80px;
+  height: 80px;
+  background-position: -995px -725px;
+}
+
+.pokemon-pokemon-battle-sprites_2101 {
+  width: 80px;
+  height: 80px;
+  background-position: -1085px -725px;
+}
+
+.pokemon-pokemon-battle-sprites_2103 {
+  width: 80px;
+  height: 80px;
+  background-position: -1175px -725px;
+}
+
+.pokemon-pokemon-battle-sprites_2105 {
+  width: 80px;
+  height: 80px;
+  background-position: -1265px -725px;
+}
+
+.pokemon-pokemon-battle-sprites_2189 {
+  width: 80px;
+  height: 80px;
+  background-position: -1355px -725px;
+}
+
+.pokemon-pokemon-battle-sprites_2191 {
+  width: 80px;
+  height: 80px;
+  background-position: -1445px -725px;
+}
+
+.pokemon-pokemon-battle-sprites_2193 {
+  width: 80px;
+  height: 80px;
+  background-position: -1535px -725px;
+}
+
+.pokemon-pokemon-battle-sprites_2195 {
+  width: 80px;
+  height: 80px;
+  background-position: -1625px -725px;
+}
+
+.pokemon-pokemon-battle-sprites_2197 {
+  width: 80px;
+  height: 80px;
+  background-position: -1715px -725px;
+}
+
+.pokemon-pokemon-battle-sprites_2199 {
+  width: 80px;
+  height: 80px;
+  background-position: -1805px -725px;
+}
+
+.pokemon-pokemon-battle-sprites_2201 {
+  width: 80px;
+  height: 80px;
+  background-position: -1895px -725px;
+}
+
+.pokemon-pokemon-battle-sprites_2203 {
+  width: 80px;
+  height: 80px;
+  background-position: -1985px -725px;
+}
+
+.pokemon-pokemon-battle-sprites_2205 {
+  width: 80px;
+  height: 80px;
+  background-position: -2075px -725px;
+}
+
+.pokemon-pokemon-battle-sprites_2207 {
+  width: 80px;
+  height: 80px;
+  background-position: -2165px -725px;
+}
+
+.pokemon-pokemon-battle-sprites_2209 {
+  width: 80px;
+  height: 80px;
+  background-position: -2255px -725px;
+}
+
+.pokemon-pokemon-battle-sprites_2211 {
+  width: 80px;
+  height: 80px;
+  background-position: -2345px -725px;
+}
+
+.pokemon-pokemon-battle-sprites_2213 {
+  width: 80px;
+  height: 80px;
+  background-position: -2435px -725px;
+}
+
+.pokemon-pokemon-battle-sprites_2215 {
+  width: 80px;
+  height: 80px;
+  background-position: -2525px -725px;
+}
+
+.pokemon-pokemon-battle-sprites_2217 {
+  width: 80px;
+  height: 80px;
+  background-position: -2615px -725px;
+}
+
+.pokemon-pokemon-battle-sprites_2219 {
+  width: 80px;
+  height: 80px;
+  background-position: -2705px -725px;
+}
+
+.pokemon-pokemon-battle-sprites_2221 {
+  width: 80px;
+  height: 80px;
+  background-position: -2795px -725px;
+}
+
+.pokemon-pokemon-battle-sprites_2223 {
+  width: 80px;
+  height: 80px;
+  background-position: -2885px -725px;
+}
+
+.pokemon-pokemon-battle-sprites_2225 {
+  width: 80px;
+  height: 80px;
+  background-position: -2975px -725px;
+}
+
+.pokemon-pokemon-battle-sprites_2227 {
+  width: 80px;
+  height: 80px;
+  background-position: -3065px -725px;
+}
+
+.pokemon-pokemon-battle-sprites_2229 {
+  width: 80px;
+  height: 80px;
+  background-position: -3155px -725px;
+}
+
+.pokemon-pokemon-battle-sprites_2231 {
+  width: 80px;
+  height: 80px;
+  background-position: -3245px -725px;
+}
+
+.pokemon-pokemon-battle-sprites_2233 {
+  width: 80px;
+  height: 80px;
+  background-position: -5px -815px;
+}
+
+.pokemon-pokemon-battle-sprites_2235 {
+  width: 80px;
+  height: 80px;
+  background-position: -95px -815px;
+}
+
+.pokemon-pokemon-battle-sprites_2237 {
+  width: 80px;
+  height: 80px;
+  background-position: -185px -815px;
+}
+
+.pokemon-pokemon-battle-sprites_2239 {
+  width: 80px;
+  height: 80px;
+  background-position: -275px -815px;
+}
+
+.pokemon-pokemon-battle-sprites_2241 {
+  width: 80px;
+  height: 80px;
+  background-position: -365px -815px;
+}
+
+.pokemon-pokemon-battle-sprites_2243 {
+  width: 80px;
+  height: 80px;
+  background-position: -455px -815px;
+}
+
+.pokemon-pokemon-battle-sprites_2245 {
+  width: 80px;
+  height: 80px;
+  background-position: -545px -815px;
+}
+
+.pokemon-pokemon-battle-sprites_2247 {
+  width: 80px;
+  height: 80px;
+  background-position: -635px -815px;
+}
+
+.pokemon-pokemon-battle-sprites_2249 {
+  width: 80px;
+  height: 80px;
+  background-position: -725px -815px;
+}
+
+.pokemon-pokemon-battle-sprites_2251 {
+  width: 80px;
+  height: 80px;
+  background-position: -815px -815px;
+}
+
+.pokemon-pokemon-battle-sprites_2253 {
+  width: 80px;
+  height: 80px;
+  background-position: -905px -815px;
+}
+
+.pokemon-pokemon-battle-sprites_2255 {
+  width: 80px;
+  height: 80px;
+  background-position: -995px -815px;
+}
+
+.pokemon-pokemon-battle-sprites_2257 {
+  width: 80px;
+  height: 80px;
+  background-position: -1085px -815px;
+}
+
+.pokemon-pokemon-battle-sprites_2259 {
+  width: 80px;
+  height: 80px;
+  background-position: -1175px -815px;
+}
+
+.pokemon-pokemon-battle-sprites_2261 {
+  width: 80px;
+  height: 80px;
+  background-position: -1265px -815px;
+}
+
+.pokemon-pokemon-battle-sprites_2263 {
+  width: 80px;
+  height: 80px;
+  background-position: -1355px -815px;
+}
+
+.pokemon-pokemon-battle-sprites_2265 {
+  width: 80px;
+  height: 80px;
+  background-position: -1445px -815px;
+}
+
+.pokemon-pokemon-battle-sprites_2267 {
+  width: 80px;
+  height: 80px;
+  background-position: -1535px -815px;
+}
+
+.pokemon-pokemon-battle-sprites_2351 {
+  width: 80px;
+  height: 80px;
+  background-position: -1625px -815px;
+}
+
+.pokemon-pokemon-battle-sprites_2353 {
+  width: 80px;
+  height: 80px;
+  background-position: -1715px -815px;
+}
+
+.pokemon-pokemon-battle-sprites_2355 {
+  width: 80px;
+  height: 80px;
+  background-position: -1805px -815px;
+}
+
+.pokemon-pokemon-battle-sprites_2357 {
+  width: 80px;
+  height: 80px;
+  background-position: -1895px -815px;
+}
+
+.pokemon-pokemon-battle-sprites_2359 {
+  width: 80px;
+  height: 80px;
+  background-position: -1985px -815px;
+}
+
+.pokemon-pokemon-battle-sprites_2361 {
+  width: 80px;
+  height: 80px;
+  background-position: -2075px -815px;
+}
+
+.pokemon-pokemon-battle-sprites_2363 {
+  width: 80px;
+  height: 80px;
+  background-position: -2165px -815px;
+}
+
+.pokemon-pokemon-battle-sprites_2365 {
+  width: 80px;
+  height: 80px;
+  background-position: -2255px -815px;
+}
+
+.pokemon-pokemon-battle-sprites_2367 {
+  width: 80px;
+  height: 80px;
+  background-position: -2345px -815px;
+}
+
+.pokemon-pokemon-battle-sprites_2369 {
+  width: 80px;
+  height: 80px;
+  background-position: -2435px -815px;
+}
+
+.pokemon-pokemon-battle-sprites_2371 {
+  width: 80px;
+  height: 80px;
+  background-position: -2525px -815px;
+}
+
+.pokemon-pokemon-battle-sprites_2373 {
+  width: 80px;
+  height: 80px;
+  background-position: -2615px -815px;
+}
+
+.pokemon-pokemon-battle-sprites_2375 {
+  width: 80px;
+  height: 80px;
+  background-position: -2705px -815px;
+}
+
+.pokemon-pokemon-battle-sprites_2377 {
+  width: 80px;
+  height: 80px;
+  background-position: -2795px -815px;
+}
+
+.pokemon-pokemon-battle-sprites_2379 {
+  width: 80px;
+  height: 80px;
+  background-position: -2885px -815px;
+}
+
+.pokemon-pokemon-battle-sprites_2381 {
+  width: 80px;
+  height: 80px;
+  background-position: -2975px -815px;
+}
+
+.pokemon-pokemon-battle-sprites_2383 {
+  width: 80px;
+  height: 80px;
+  background-position: -3065px -815px;
+}
+
+.pokemon-pokemon-battle-sprites_2385 {
+  width: 80px;
+  height: 80px;
+  background-position: -3155px -815px;
+}
+
+.pokemon-pokemon-battle-sprites_2387 {
+  width: 80px;
+  height: 80px;
+  background-position: -3245px -815px;
+}
+
+.pokemon-pokemon-battle-sprites_2389 {
+  width: 80px;
+  height: 80px;
+  background-position: -5px -905px;
+}
+
+.pokemon-pokemon-battle-sprites_2391 {
+  width: 80px;
+  height: 80px;
+  background-position: -95px -905px;
+}
+
+.pokemon-pokemon-battle-sprites_2393 {
+  width: 80px;
+  height: 80px;
+  background-position: -185px -905px;
+}
+
+.pokemon-pokemon-battle-sprites_2395 {
+  width: 80px;
+  height: 80px;
+  background-position: -275px -905px;
+}
+
+.pokemon-pokemon-battle-sprites_2397 {
+  width: 80px;
+  height: 80px;
+  background-position: -365px -905px;
+}
+
+.pokemon-pokemon-battle-sprites_2399 {
+  width: 80px;
+  height: 80px;
+  background-position: -455px -905px;
+}
+
+.pokemon-pokemon-battle-sprites_2401 {
+  width: 80px;
+  height: 80px;
+  background-position: -545px -905px;
+}
+
+.pokemon-pokemon-battle-sprites_2403 {
+  width: 80px;
+  height: 80px;
+  background-position: -635px -905px;
+}
+
+.pokemon-pokemon-battle-sprites_2405 {
+  width: 80px;
+  height: 80px;
+  background-position: -725px -905px;
+}
+
+.pokemon-pokemon-battle-sprites_2407 {
+  width: 80px;
+  height: 80px;
+  background-position: -815px -905px;
+}
+
+.pokemon-pokemon-battle-sprites_2409 {
+  width: 80px;
+  height: 80px;
+  background-position: -905px -905px;
+}
+
+.pokemon-pokemon-battle-sprites_2411 {
+  width: 80px;
+  height: 80px;
+  background-position: -995px -905px;
+}
+
+.pokemon-pokemon-battle-sprites_2413 {
+  width: 80px;
+  height: 80px;
+  background-position: -1085px -905px;
+}
+
+.pokemon-pokemon-battle-sprites_2415 {
+  width: 80px;
+  height: 80px;
+  background-position: -1175px -905px;
+}
+
+.pokemon-pokemon-battle-sprites_2417 {
+  width: 80px;
+  height: 80px;
+  background-position: -1265px -905px;
+}
+
+.pokemon-pokemon-battle-sprites_2419 {
+  width: 80px;
+  height: 80px;
+  background-position: -1355px -905px;
+}
+
+.pokemon-pokemon-battle-sprites_2421 {
+  width: 80px;
+  height: 80px;
+  background-position: -1445px -905px;
+}
+
+.pokemon-pokemon-battle-sprites_2423 {
+  width: 80px;
+  height: 80px;
+  background-position: -1535px -905px;
+}
+
+.pokemon-pokemon-battle-sprites_2425 {
+  width: 80px;
+  height: 80px;
+  background-position: -1625px -905px;
+}
+
+.pokemon-pokemon-battle-sprites_2427 {
+  width: 80px;
+  height: 80px;
+  background-position: -1715px -905px;
+}
+
+.pokemon-pokemon-battle-sprites_2429 {
+  width: 80px;
+  height: 80px;
+  background-position: -1805px -905px;
+}
+
+.pokemon-pokemon-battle-sprites_245 {
+  width: 80px;
+  height: 80px;
+  background-position: -1895px -905px;
+}
+
+.pokemon-pokemon-battle-sprites_247 {
+  width: 80px;
+  height: 80px;
+  background-position: -1985px -905px;
+}
+
+.pokemon-pokemon-battle-sprites_249 {
+  width: 80px;
+  height: 80px;
+  background-position: -2075px -905px;
+}
+
+.pokemon-pokemon-battle-sprites_251 {
+  width: 80px;
+  height: 80px;
+  background-position: -2165px -905px;
+}
+
+.pokemon-pokemon-battle-sprites_2513 {
+  width: 80px;
+  height: 80px;
+  background-position: -2255px -905px;
+}
+
+.pokemon-pokemon-battle-sprites_2515 {
+  width: 80px;
+  height: 80px;
+  background-position: -2345px -905px;
+}
+
+.pokemon-pokemon-battle-sprites_2517 {
+  width: 80px;
+  height: 80px;
+  background-position: -2435px -905px;
+}
+
+.pokemon-pokemon-battle-sprites_2519 {
+  width: 80px;
+  height: 80px;
+  background-position: -2525px -905px;
+}
+
+.pokemon-pokemon-battle-sprites_2521 {
+  width: 80px;
+  height: 80px;
+  background-position: -2615px -905px;
+}
+
+.pokemon-pokemon-battle-sprites_2523 {
+  width: 80px;
+  height: 80px;
+  background-position: -2705px -905px;
+}
+
+.pokemon-pokemon-battle-sprites_2525 {
+  width: 80px;
+  height: 80px;
+  background-position: -2795px -905px;
+}
+
+.pokemon-pokemon-battle-sprites_2527 {
+  width: 80px;
+  height: 80px;
+  background-position: -2885px -905px;
+}
+
+.pokemon-pokemon-battle-sprites_2529 {
+  width: 80px;
+  height: 80px;
+  background-position: -2975px -905px;
+}
+
+.pokemon-pokemon-battle-sprites_253 {
+  width: 80px;
+  height: 80px;
+  background-position: -3065px -905px;
+}
+
+.pokemon-pokemon-battle-sprites_2531 {
+  width: 80px;
+  height: 80px;
+  background-position: -3155px -905px;
+}
+
+.pokemon-pokemon-battle-sprites_2533 {
+  width: 80px;
+  height: 80px;
+  background-position: -3245px -905px;
+}
+
+.pokemon-pokemon-battle-sprites_2535 {
+  width: 80px;
+  height: 80px;
+  background-position: -5px -995px;
+}
+
+.pokemon-pokemon-battle-sprites_2537 {
+  width: 80px;
+  height: 80px;
+  background-position: -95px -995px;
+}
+
+.pokemon-pokemon-battle-sprites_2539 {
+  width: 80px;
+  height: 80px;
+  background-position: -185px -995px;
+}
+
+.pokemon-pokemon-battle-sprites_2541 {
+  width: 80px;
+  height: 80px;
+  background-position: -275px -995px;
+}
+
+.pokemon-pokemon-battle-sprites_2543 {
+  width: 80px;
+  height: 80px;
+  background-position: -365px -995px;
+}
+
+.pokemon-pokemon-battle-sprites_2545 {
+  width: 80px;
+  height: 80px;
+  background-position: -455px -995px;
+}
+
+.pokemon-pokemon-battle-sprites_2547 {
+  width: 80px;
+  height: 80px;
+  background-position: -545px -995px;
+}
+
+.pokemon-pokemon-battle-sprites_2549 {
+  width: 80px;
+  height: 80px;
+  background-position: -635px -995px;
+}
+
+.pokemon-pokemon-battle-sprites_255 {
+  width: 80px;
+  height: 80px;
+  background-position: -725px -995px;
+}
+
+.pokemon-pokemon-battle-sprites_2551 {
+  width: 80px;
+  height: 80px;
+  background-position: -815px -995px;
+}
+
+.pokemon-pokemon-battle-sprites_2553 {
+  width: 80px;
+  height: 80px;
+  background-position: -905px -995px;
+}
+
+.pokemon-pokemon-battle-sprites_2555 {
+  width: 80px;
+  height: 80px;
+  background-position: -995px -995px;
+}
+
+.pokemon-pokemon-battle-sprites_2557 {
+  width: 80px;
+  height: 80px;
+  background-position: -1085px -995px;
+}
+
+.pokemon-pokemon-battle-sprites_2559 {
+  width: 80px;
+  height: 80px;
+  background-position: -1175px -995px;
+}
+
+.pokemon-pokemon-battle-sprites_2561 {
+  width: 80px;
+  height: 80px;
+  background-position: -1265px -995px;
+}
+
+.pokemon-pokemon-battle-sprites_2563 {
+  width: 80px;
+  height: 80px;
+  background-position: -1355px -995px;
+}
+
+.pokemon-pokemon-battle-sprites_2565 {
+  width: 80px;
+  height: 80px;
+  background-position: -1445px -995px;
+}
+
+.pokemon-pokemon-battle-sprites_2567 {
+  width: 80px;
+  height: 80px;
+  background-position: -1535px -995px;
+}
+
+.pokemon-pokemon-battle-sprites_2569 {
+  width: 80px;
+  height: 80px;
+  background-position: -1625px -995px;
+}
+
+.pokemon-pokemon-battle-sprites_257 {
+  width: 80px;
+  height: 80px;
+  background-position: -1715px -995px;
+}
+
+.pokemon-pokemon-battle-sprites_2571 {
+  width: 80px;
+  height: 80px;
+  background-position: -1805px -995px;
+}
+
+.pokemon-pokemon-battle-sprites_2573 {
+  width: 80px;
+  height: 80px;
+  background-position: -1895px -995px;
+}
+
+.pokemon-pokemon-battle-sprites_2575 {
+  width: 80px;
+  height: 80px;
+  background-position: -1985px -995px;
+}
+
+.pokemon-pokemon-battle-sprites_2577 {
+  width: 80px;
+  height: 80px;
+  background-position: -2075px -995px;
+}
+
+.pokemon-pokemon-battle-sprites_2579 {
+  width: 80px;
+  height: 80px;
+  background-position: -2165px -995px;
+}
+
+.pokemon-pokemon-battle-sprites_2581 {
+  width: 80px;
+  height: 80px;
+  background-position: -2255px -995px;
+}
+
+.pokemon-pokemon-battle-sprites_2583 {
+  width: 80px;
+  height: 80px;
+  background-position: -2345px -995px;
+}
+
+.pokemon-pokemon-battle-sprites_2585 {
+  width: 80px;
+  height: 80px;
+  background-position: -2435px -995px;
+}
+
+.pokemon-pokemon-battle-sprites_2587 {
+  width: 80px;
+  height: 80px;
+  background-position: -2525px -995px;
+}
+
+.pokemon-pokemon-battle-sprites_2589 {
+  width: 80px;
+  height: 80px;
+  background-position: -2615px -995px;
+}
+
+.pokemon-pokemon-battle-sprites_259 {
+  width: 80px;
+  height: 80px;
+  background-position: -2705px -995px;
+}
+
+.pokemon-pokemon-battle-sprites_2591 {
+  width: 80px;
+  height: 80px;
+  background-position: -2795px -995px;
+}
+
+.pokemon-pokemon-battle-sprites_261 {
+  width: 80px;
+  height: 80px;
+  background-position: -2885px -995px;
+}
+
+.pokemon-pokemon-battle-sprites_263 {
+  width: 80px;
+  height: 80px;
+  background-position: -2975px -995px;
+}
+
+.pokemon-pokemon-battle-sprites_265 {
+  width: 80px;
+  height: 80px;
+  background-position: -3065px -995px;
+}
+
+.pokemon-pokemon-battle-sprites_267 {
+  width: 80px;
+  height: 80px;
+  background-position: -3155px -995px;
+}
+
+.pokemon-pokemon-battle-sprites_2675 {
+  width: 80px;
+  height: 80px;
+  background-position: -3245px -995px;
+}
+
+.pokemon-pokemon-battle-sprites_2677 {
+  width: 80px;
+  height: 80px;
+  background-position: -5px -1085px;
+}
+
+.pokemon-pokemon-battle-sprites_2679 {
+  width: 80px;
+  height: 80px;
+  background-position: -95px -1085px;
+}
+
+.pokemon-pokemon-battle-sprites_2681 {
+  width: 80px;
+  height: 80px;
+  background-position: -185px -1085px;
+}
+
+.pokemon-pokemon-battle-sprites_2683 {
+  width: 80px;
+  height: 80px;
+  background-position: -275px -1085px;
+}
+
+.pokemon-pokemon-battle-sprites_2685 {
+  width: 80px;
+  height: 80px;
+  background-position: -365px -1085px;
+}
+
+.pokemon-pokemon-battle-sprites_2687 {
+  width: 80px;
+  height: 80px;
+  background-position: -455px -1085px;
+}
+
+.pokemon-pokemon-battle-sprites_2689 {
+  width: 80px;
+  height: 80px;
+  background-position: -545px -1085px;
+}
+
+.pokemon-pokemon-battle-sprites_269 {
+  width: 80px;
+  height: 80px;
+  background-position: -635px -1085px;
+}
+
+.pokemon-pokemon-battle-sprites_2691 {
+  width: 80px;
+  height: 80px;
+  background-position: -725px -1085px;
+}
+
+.pokemon-pokemon-battle-sprites_2693 {
+  width: 80px;
+  height: 80px;
+  background-position: -815px -1085px;
+}
+
+.pokemon-pokemon-battle-sprites_2695 {
+  width: 80px;
+  height: 80px;
+  background-position: -905px -1085px;
+}
+
+.pokemon-pokemon-battle-sprites_2697 {
+  width: 80px;
+  height: 80px;
+  background-position: -995px -1085px;
+}
+
+.pokemon-pokemon-battle-sprites_2699 {
+  width: 80px;
+  height: 80px;
+  background-position: -1085px -1085px;
+}
+
+.pokemon-pokemon-battle-sprites_2701 {
+  width: 80px;
+  height: 80px;
+  background-position: -1175px -1085px;
+}
+
+.pokemon-pokemon-battle-sprites_2703 {
+  width: 80px;
+  height: 80px;
+  background-position: -1265px -1085px;
+}
+
+.pokemon-pokemon-battle-sprites_2705 {
+  width: 80px;
+  height: 80px;
+  background-position: -1355px -1085px;
+}
+
+.pokemon-pokemon-battle-sprites_2707 {
+  width: 80px;
+  height: 80px;
+  background-position: -1445px -1085px;
+}
+
+.pokemon-pokemon-battle-sprites_2709 {
+  width: 80px;
+  height: 80px;
+  background-position: -1535px -1085px;
+}
+
+.pokemon-pokemon-battle-sprites_271 {
+  width: 80px;
+  height: 80px;
+  background-position: -1625px -1085px;
+}
+
+.pokemon-pokemon-battle-sprites_2711 {
+  width: 80px;
+  height: 80px;
+  background-position: -1715px -1085px;
+}
+
+.pokemon-pokemon-battle-sprites_2713 {
+  width: 80px;
+  height: 80px;
+  background-position: -1805px -1085px;
+}
+
+.pokemon-pokemon-battle-sprites_2715 {
+  width: 80px;
+  height: 80px;
+  background-position: -1895px -1085px;
+}
+
+.pokemon-pokemon-battle-sprites_2717 {
+  width: 80px;
+  height: 80px;
+  background-position: -1985px -1085px;
+}
+
+.pokemon-pokemon-battle-sprites_2719 {
+  width: 80px;
+  height: 80px;
+  background-position: -2075px -1085px;
+}
+
+.pokemon-pokemon-battle-sprites_2721 {
+  width: 80px;
+  height: 80px;
+  background-position: -2165px -1085px;
+}
+
+.pokemon-pokemon-battle-sprites_2723 {
+  width: 80px;
+  height: 80px;
+  background-position: -2255px -1085px;
+}
+
+.pokemon-pokemon-battle-sprites_2725 {
+  width: 80px;
+  height: 80px;
+  background-position: -2345px -1085px;
+}
+
+.pokemon-pokemon-battle-sprites_2727 {
+  width: 80px;
+  height: 80px;
+  background-position: -2435px -1085px;
+}
+
+.pokemon-pokemon-battle-sprites_2729 {
+  width: 80px;
+  height: 80px;
+  background-position: -2525px -1085px;
+}
+
+.pokemon-pokemon-battle-sprites_273 {
+  width: 80px;
+  height: 80px;
+  background-position: -2615px -1085px;
+}
+
+.pokemon-pokemon-battle-sprites_2731 {
+  width: 80px;
+  height: 80px;
+  background-position: -2705px -1085px;
+}
+
+.pokemon-pokemon-battle-sprites_2733 {
+  width: 80px;
+  height: 80px;
+  background-position: -2795px -1085px;
+}
+
+.pokemon-pokemon-battle-sprites_2735 {
+  width: 80px;
+  height: 80px;
+  background-position: -2885px -1085px;
+}
+
+.pokemon-pokemon-battle-sprites_2737 {
+  width: 80px;
+  height: 80px;
+  background-position: -2975px -1085px;
+}
+
+.pokemon-pokemon-battle-sprites_2739 {
+  width: 80px;
+  height: 80px;
+  background-position: -3065px -1085px;
+}
+
+.pokemon-pokemon-battle-sprites_2741 {
+  width: 80px;
+  height: 80px;
+  background-position: -3155px -1085px;
+}
+
+.pokemon-pokemon-battle-sprites_2743 {
+  width: 80px;
+  height: 80px;
+  background-position: -3245px -1085px;
+}
+
+.pokemon-pokemon-battle-sprites_2745 {
+  width: 80px;
+  height: 80px;
+  background-position: -5px -1175px;
+}
+
+.pokemon-pokemon-battle-sprites_2747 {
+  width: 80px;
+  height: 80px;
+  background-position: -95px -1175px;
+}
+
+.pokemon-pokemon-battle-sprites_2749 {
+  width: 80px;
+  height: 80px;
+  background-position: -185px -1175px;
+}
+
+.pokemon-pokemon-battle-sprites_275 {
+  width: 80px;
+  height: 80px;
+  background-position: -275px -1175px;
+}
+
+.pokemon-pokemon-battle-sprites_2751 {
+  width: 80px;
+  height: 80px;
+  background-position: -365px -1175px;
+}
+
+.pokemon-pokemon-battle-sprites_2753 {
+  width: 80px;
+  height: 80px;
+  background-position: -455px -1175px;
+}
+
+.pokemon-pokemon-battle-sprites_277 {
+  width: 80px;
+  height: 80px;
+  background-position: -545px -1175px;
+}
+
+.pokemon-pokemon-battle-sprites_279 {
+  width: 80px;
+  height: 80px;
+  background-position: -635px -1175px;
+}
+
+.pokemon-pokemon-battle-sprites_281 {
+  width: 80px;
+  height: 80px;
+  background-position: -725px -1175px;
+}
+
+.pokemon-pokemon-battle-sprites_283 {
+  width: 80px;
+  height: 80px;
+  background-position: -815px -1175px;
+}
+
+.pokemon-pokemon-battle-sprites_2837 {
+  width: 80px;
+  height: 80px;
+  background-position: -905px -1175px;
+}
+
+.pokemon-pokemon-battle-sprites_2839 {
+  width: 80px;
+  height: 80px;
+  background-position: -995px -1175px;
+}
+
+.pokemon-pokemon-battle-sprites_2841 {
+  width: 80px;
+  height: 80px;
+  background-position: -1085px -1175px;
+}
+
+.pokemon-pokemon-battle-sprites_2843 {
+  width: 80px;
+  height: 80px;
+  background-position: -1175px -1175px;
+}
+
+.pokemon-pokemon-battle-sprites_2845 {
+  width: 80px;
+  height: 80px;
+  background-position: -1265px -1175px;
+}
+
+.pokemon-pokemon-battle-sprites_2847 {
+  width: 80px;
+  height: 80px;
+  background-position: -1355px -1175px;
+}
+
+.pokemon-pokemon-battle-sprites_2849 {
+  width: 80px;
+  height: 80px;
+  background-position: -1445px -1175px;
+}
+
+.pokemon-pokemon-battle-sprites_285 {
+  width: 80px;
+  height: 80px;
+  background-position: -1535px -1175px;
+}
+
+.pokemon-pokemon-battle-sprites_2851 {
+  width: 80px;
+  height: 80px;
+  background-position: -1625px -1175px;
+}
+
+.pokemon-pokemon-battle-sprites_2853 {
+  width: 80px;
+  height: 80px;
+  background-position: -1715px -1175px;
+}
+
+.pokemon-pokemon-battle-sprites_2855 {
+  width: 80px;
+  height: 80px;
+  background-position: -1805px -1175px;
+}
+
+.pokemon-pokemon-battle-sprites_2857 {
+  width: 80px;
+  height: 80px;
+  background-position: -1895px -1175px;
+}
+
+.pokemon-pokemon-battle-sprites_2859 {
+  width: 80px;
+  height: 80px;
+  background-position: -1985px -1175px;
+}
+
+.pokemon-pokemon-battle-sprites_2861 {
+  width: 80px;
+  height: 80px;
+  background-position: -2075px -1175px;
+}
+
+.pokemon-pokemon-battle-sprites_2863 {
+  width: 80px;
+  height: 80px;
+  background-position: -2165px -1175px;
+}
+
+.pokemon-pokemon-battle-sprites_2865 {
+  width: 80px;
+  height: 80px;
+  background-position: -2255px -1175px;
+}
+
+.pokemon-pokemon-battle-sprites_2867 {
+  width: 80px;
+  height: 80px;
+  background-position: -2345px -1175px;
+}
+
+.pokemon-pokemon-battle-sprites_2869 {
+  width: 80px;
+  height: 80px;
+  background-position: -2435px -1175px;
+}
+
+.pokemon-pokemon-battle-sprites_287 {
+  width: 80px;
+  height: 80px;
+  background-position: -2525px -1175px;
+}
+
+.pokemon-pokemon-battle-sprites_2871 {
+  width: 80px;
+  height: 80px;
+  background-position: -2615px -1175px;
+}
+
+.pokemon-pokemon-battle-sprites_2873 {
+  width: 80px;
+  height: 80px;
+  background-position: -2705px -1175px;
+}
+
+.pokemon-pokemon-battle-sprites_2875 {
+  width: 80px;
+  height: 80px;
+  background-position: -2795px -1175px;
+}
+
+.pokemon-pokemon-battle-sprites_2877 {
+  width: 80px;
+  height: 80px;
+  background-position: -2885px -1175px;
+}
+
+.pokemon-pokemon-battle-sprites_2879 {
+  width: 80px;
+  height: 80px;
+  background-position: -2975px -1175px;
+}
+
+.pokemon-pokemon-battle-sprites_2881 {
+  width: 80px;
+  height: 80px;
+  background-position: -3065px -1175px;
+}
+
+.pokemon-pokemon-battle-sprites_2883 {
+  width: 80px;
+  height: 80px;
+  background-position: -3155px -1175px;
+}
+
+.pokemon-pokemon-battle-sprites_2885 {
+  width: 80px;
+  height: 80px;
+  background-position: -3245px -1175px;
+}
+
+.pokemon-pokemon-battle-sprites_2887 {
+  width: 80px;
+  height: 80px;
+  background-position: -5px -1265px;
+}
+
+.pokemon-pokemon-battle-sprites_2889 {
+  width: 80px;
+  height: 80px;
+  background-position: -95px -1265px;
+}
+
+.pokemon-pokemon-battle-sprites_289 {
+  width: 80px;
+  height: 80px;
+  background-position: -185px -1265px;
+}
+
+.pokemon-pokemon-battle-sprites_2891 {
+  width: 80px;
+  height: 80px;
+  background-position: -275px -1265px;
+}
+
+.pokemon-pokemon-battle-sprites_2893 {
+  width: 80px;
+  height: 80px;
+  background-position: -365px -1265px;
+}
+
+.pokemon-pokemon-battle-sprites_2895 {
+  width: 80px;
+  height: 80px;
+  background-position: -455px -1265px;
+}
+
+.pokemon-pokemon-battle-sprites_2897 {
+  width: 80px;
+  height: 80px;
+  background-position: -545px -1265px;
+}
+
+.pokemon-pokemon-battle-sprites_2899 {
+  width: 80px;
+  height: 80px;
+  background-position: -635px -1265px;
+}
+
+.pokemon-pokemon-battle-sprites_2901 {
+  width: 80px;
+  height: 80px;
+  background-position: -725px -1265px;
+}
+
+.pokemon-pokemon-battle-sprites_2903 {
+  width: 80px;
+  height: 80px;
+  background-position: -815px -1265px;
+}
+
+.pokemon-pokemon-battle-sprites_2905 {
+  width: 80px;
+  height: 80px;
+  background-position: -905px -1265px;
+}
+
+.pokemon-pokemon-battle-sprites_2907 {
+  width: 80px;
+  height: 80px;
+  background-position: -995px -1265px;
+}
+
+.pokemon-pokemon-battle-sprites_2909 {
+  width: 80px;
+  height: 80px;
+  background-position: -1085px -1265px;
+}
+
+.pokemon-pokemon-battle-sprites_291 {
+  width: 80px;
+  height: 80px;
+  background-position: -1175px -1265px;
+}
+
+.pokemon-pokemon-battle-sprites_2911 {
+  width: 80px;
+  height: 80px;
+  background-position: -1265px -1265px;
+}
+
+.pokemon-pokemon-battle-sprites_2913 {
+  width: 80px;
+  height: 80px;
+  background-position: -1355px -1265px;
+}
+
+.pokemon-pokemon-battle-sprites_2915 {
+  width: 80px;
+  height: 80px;
+  background-position: -1445px -1265px;
+}
+
+.pokemon-pokemon-battle-sprites_293 {
+  width: 80px;
+  height: 80px;
+  background-position: -1535px -1265px;
+}
+
+.pokemon-pokemon-battle-sprites_295 {
+  width: 80px;
+  height: 80px;
+  background-position: -1625px -1265px;
+}
+
+.pokemon-pokemon-battle-sprites_297 {
+  width: 80px;
+  height: 80px;
+  background-position: -1715px -1265px;
+}
+
+.pokemon-pokemon-battle-sprites_299 {
+  width: 80px;
+  height: 80px;
+  background-position: -1805px -1265px;
+}
+
+.pokemon-pokemon-battle-sprites_2999 {
+  width: 80px;
+  height: 80px;
+  background-position: -1895px -1265px;
+}
+
+.pokemon-pokemon-battle-sprites_3001 {
+  width: 80px;
+  height: 80px;
+  background-position: -1985px -1265px;
+}
+
+.pokemon-pokemon-battle-sprites_3003 {
+  width: 80px;
+  height: 80px;
+  background-position: -2075px -1265px;
+}
+
+.pokemon-pokemon-battle-sprites_3005 {
+  width: 80px;
+  height: 80px;
+  background-position: -2165px -1265px;
+}
+
+.pokemon-pokemon-battle-sprites_3007 {
+  width: 80px;
+  height: 80px;
+  background-position: -2255px -1265px;
+}
+
+.pokemon-pokemon-battle-sprites_3009 {
+  width: 80px;
+  height: 80px;
+  background-position: -2345px -1265px;
+}
+
+.pokemon-pokemon-battle-sprites_301 {
+  width: 80px;
+  height: 80px;
+  background-position: -2435px -1265px;
+}
+
+.pokemon-pokemon-battle-sprites_3011 {
+  width: 80px;
+  height: 80px;
+  background-position: -2525px -1265px;
+}
+
+.pokemon-pokemon-battle-sprites_3013 {
+  width: 80px;
+  height: 80px;
+  background-position: -2615px -1265px;
+}
+
+.pokemon-pokemon-battle-sprites_3015 {
+  width: 80px;
+  height: 80px;
+  background-position: -2705px -1265px;
+}
+
+.pokemon-pokemon-battle-sprites_3017 {
+  width: 80px;
+  height: 80px;
+  background-position: -2795px -1265px;
+}
+
+.pokemon-pokemon-battle-sprites_3019 {
+  width: 80px;
+  height: 80px;
+  background-position: -2885px -1265px;
+}
+
+.pokemon-pokemon-battle-sprites_3021 {
+  width: 80px;
+  height: 80px;
+  background-position: -2975px -1265px;
+}
+
+.pokemon-pokemon-battle-sprites_3023 {
+  width: 80px;
+  height: 80px;
+  background-position: -3065px -1265px;
+}
+
+.pokemon-pokemon-battle-sprites_3025 {
+  width: 80px;
+  height: 80px;
+  background-position: -3155px -1265px;
+}
+
+.pokemon-pokemon-battle-sprites_3027 {
+  width: 80px;
+  height: 80px;
+  background-position: -3245px -1265px;
+}
+
+.pokemon-pokemon-battle-sprites_3029 {
+  width: 80px;
+  height: 80px;
+  background-position: -5px -1355px;
+}
+
+.pokemon-pokemon-battle-sprites_303 {
+  width: 80px;
+  height: 80px;
+  background-position: -95px -1355px;
+}
+
+.pokemon-pokemon-battle-sprites_3031 {
+  width: 80px;
+  height: 80px;
+  background-position: -185px -1355px;
+}
+
+.pokemon-pokemon-battle-sprites_3033 {
+  width: 80px;
+  height: 80px;
+  background-position: -275px -1355px;
+}
+
+.pokemon-pokemon-battle-sprites_3035 {
+  width: 80px;
+  height: 80px;
+  background-position: -365px -1355px;
+}
+
+.pokemon-pokemon-battle-sprites_3037 {
+  width: 80px;
+  height: 80px;
+  background-position: -455px -1355px;
+}
+
+.pokemon-pokemon-battle-sprites_3039 {
+  width: 80px;
+  height: 80px;
+  background-position: -545px -1355px;
+}
+
+.pokemon-pokemon-battle-sprites_3041 {
+  width: 80px;
+  height: 80px;
+  background-position: -635px -1355px;
+}
+
+.pokemon-pokemon-battle-sprites_3043 {
+  width: 80px;
+  height: 80px;
+  background-position: -725px -1355px;
+}
+
+.pokemon-pokemon-battle-sprites_3045 {
+  width: 80px;
+  height: 80px;
+  background-position: -815px -1355px;
+}
+
+.pokemon-pokemon-battle-sprites_3047 {
+  width: 80px;
+  height: 80px;
+  background-position: -905px -1355px;
+}
+
+.pokemon-pokemon-battle-sprites_3049 {
+  width: 80px;
+  height: 80px;
+  background-position: -995px -1355px;
+}
+
+.pokemon-pokemon-battle-sprites_305 {
+  width: 80px;
+  height: 80px;
+  background-position: -1085px -1355px;
+}
+
+.pokemon-pokemon-battle-sprites_3051 {
+  width: 80px;
+  height: 80px;
+  background-position: -1175px -1355px;
+}
+
+.pokemon-pokemon-battle-sprites_3053 {
+  width: 80px;
+  height: 80px;
+  background-position: -1265px -1355px;
+}
+
+.pokemon-pokemon-battle-sprites_3055 {
+  width: 80px;
+  height: 80px;
+  background-position: -1355px -1355px;
+}
+
+.pokemon-pokemon-battle-sprites_3057 {
+  width: 80px;
+  height: 80px;
+  background-position: -1445px -1355px;
+}
+
+.pokemon-pokemon-battle-sprites_3059 {
+  width: 80px;
+  height: 80px;
+  background-position: -1535px -1355px;
+}
+
+.pokemon-pokemon-battle-sprites_3061 {
+  width: 80px;
+  height: 80px;
+  background-position: -1625px -1355px;
+}
+
+.pokemon-pokemon-battle-sprites_3063 {
+  width: 80px;
+  height: 80px;
+  background-position: -1715px -1355px;
+}
+
+.pokemon-pokemon-battle-sprites_3065 {
+  width: 80px;
+  height: 80px;
+  background-position: -1805px -1355px;
+}
+
+.pokemon-pokemon-battle-sprites_3067 {
+  width: 80px;
+  height: 80px;
+  background-position: -1895px -1355px;
+}
+
+.pokemon-pokemon-battle-sprites_3069 {
+  width: 80px;
+  height: 80px;
+  background-position: -1985px -1355px;
+}
+
+.pokemon-pokemon-battle-sprites_307 {
+  width: 80px;
+  height: 80px;
+  background-position: -2075px -1355px;
+}
+
+.pokemon-pokemon-battle-sprites_3071 {
+  width: 80px;
+  height: 80px;
+  background-position: -2165px -1355px;
+}
+
+.pokemon-pokemon-battle-sprites_3073 {
+  width: 80px;
+  height: 80px;
+  background-position: -2255px -1355px;
+}
+
+.pokemon-pokemon-battle-sprites_3075 {
+  width: 80px;
+  height: 80px;
+  background-position: -2345px -1355px;
+}
+
+.pokemon-pokemon-battle-sprites_3077 {
+  width: 80px;
+  height: 80px;
+  background-position: -2435px -1355px;
+}
+
+.pokemon-pokemon-battle-sprites_309 {
+  width: 80px;
+  height: 80px;
+  background-position: -2525px -1355px;
+}
+
+.pokemon-pokemon-battle-sprites_311 {
+  width: 80px;
+  height: 80px;
+  background-position: -2615px -1355px;
+}
+
+.pokemon-pokemon-battle-sprites_313 {
+  width: 80px;
+  height: 80px;
+  background-position: -2705px -1355px;
+}
+
+.pokemon-pokemon-battle-sprites_315 {
+  width: 80px;
+  height: 80px;
+  background-position: -2795px -1355px;
+}
+
+.pokemon-pokemon-battle-sprites_3161 {
+  width: 80px;
+  height: 80px;
+  background-position: -2885px -1355px;
+}
+
+.pokemon-pokemon-battle-sprites_3163 {
+  width: 80px;
+  height: 80px;
+  background-position: -2975px -1355px;
+}
+
+.pokemon-pokemon-battle-sprites_3165 {
+  width: 80px;
+  height: 80px;
+  background-position: -3065px -1355px;
+}
+
+.pokemon-pokemon-battle-sprites_3167 {
+  width: 80px;
+  height: 80px;
+  background-position: -3155px -1355px;
+}
+
+.pokemon-pokemon-battle-sprites_3169 {
+  width: 80px;
+  height: 80px;
+  background-position: -3245px -1355px;
+}
+
+.pokemon-pokemon-battle-sprites_317 {
+  width: 80px;
+  height: 80px;
+  background-position: -5px -1445px;
+}
+
+.pokemon-pokemon-battle-sprites_3171 {
+  width: 80px;
+  height: 80px;
+  background-position: -95px -1445px;
+}
+
+.pokemon-pokemon-battle-sprites_3173 {
+  width: 80px;
+  height: 80px;
+  background-position: -185px -1445px;
+}
+
+.pokemon-pokemon-battle-sprites_3175 {
+  width: 80px;
+  height: 80px;
+  background-position: -275px -1445px;
+}
+
+.pokemon-pokemon-battle-sprites_3177 {
+  width: 80px;
+  height: 80px;
+  background-position: -365px -1445px;
+}
+
+.pokemon-pokemon-battle-sprites_3179 {
+  width: 80px;
+  height: 80px;
+  background-position: -455px -1445px;
+}
+
+.pokemon-pokemon-battle-sprites_3181 {
+  width: 80px;
+  height: 80px;
+  background-position: -545px -1445px;
+}
+
+.pokemon-pokemon-battle-sprites_3183 {
+  width: 80px;
+  height: 80px;
+  background-position: -635px -1445px;
+}
+
+.pokemon-pokemon-battle-sprites_3185 {
+  width: 80px;
+  height: 80px;
+  background-position: -725px -1445px;
+}
+
+.pokemon-pokemon-battle-sprites_3187 {
+  width: 80px;
+  height: 80px;
+  background-position: -815px -1445px;
+}
+
+.pokemon-pokemon-battle-sprites_3189 {
+  width: 80px;
+  height: 80px;
+  background-position: -905px -1445px;
+}
+
+.pokemon-pokemon-battle-sprites_319 {
+  width: 80px;
+  height: 80px;
+  background-position: -995px -1445px;
+}
+
+.pokemon-pokemon-battle-sprites_3191 {
+  width: 80px;
+  height: 80px;
+  background-position: -1085px -1445px;
+}
+
+.pokemon-pokemon-battle-sprites_3193 {
+  width: 80px;
+  height: 80px;
+  background-position: -1175px -1445px;
+}
+
+.pokemon-pokemon-battle-sprites_3195 {
+  width: 80px;
+  height: 80px;
+  background-position: -1265px -1445px;
+}
+
+.pokemon-pokemon-battle-sprites_3197 {
+  width: 80px;
+  height: 80px;
+  background-position: -1355px -1445px;
+}
+
+.pokemon-pokemon-battle-sprites_3199 {
+  width: 80px;
+  height: 80px;
+  background-position: -1445px -1445px;
+}
+
+.pokemon-pokemon-battle-sprites_3201 {
+  width: 80px;
+  height: 80px;
+  background-position: -1535px -1445px;
+}
+
+.pokemon-pokemon-battle-sprites_3203 {
+  width: 80px;
+  height: 80px;
+  background-position: -1625px -1445px;
+}
+
+.pokemon-pokemon-battle-sprites_3205 {
+  width: 80px;
+  height: 80px;
+  background-position: -1715px -1445px;
+}
+
+.pokemon-pokemon-battle-sprites_3207 {
+  width: 80px;
+  height: 80px;
+  background-position: -1805px -1445px;
+}
+
+.pokemon-pokemon-battle-sprites_3209 {
+  width: 80px;
+  height: 80px;
+  background-position: -1895px -1445px;
+}
+
+.pokemon-pokemon-battle-sprites_321 {
+  width: 80px;
+  height: 80px;
+  background-position: -1985px -1445px;
+}
+
+.pokemon-pokemon-battle-sprites_3211 {
+  width: 80px;
+  height: 80px;
+  background-position: -2075px -1445px;
+}
+
+.pokemon-pokemon-battle-sprites_3213 {
+  width: 80px;
+  height: 80px;
+  background-position: -2165px -1445px;
+}
+
+.pokemon-pokemon-battle-sprites_3215 {
+  width: 80px;
+  height: 80px;
+  background-position: -2255px -1445px;
+}
+
+.pokemon-pokemon-battle-sprites_3217 {
+  width: 80px;
+  height: 80px;
+  background-position: -2345px -1445px;
+}
+
+.pokemon-pokemon-battle-sprites_3219 {
+  width: 80px;
+  height: 80px;
+  background-position: -2435px -1445px;
+}
+
+.pokemon-pokemon-battle-sprites_3221 {
+  width: 80px;
+  height: 80px;
+  background-position: -2525px -1445px;
+}
+
+.pokemon-pokemon-battle-sprites_3223 {
+  width: 80px;
+  height: 80px;
+  background-position: -2615px -1445px;
+}
+
+.pokemon-pokemon-battle-sprites_3225 {
+  width: 80px;
+  height: 80px;
+  background-position: -2705px -1445px;
+}
+
+.pokemon-pokemon-battle-sprites_3227 {
+  width: 80px;
+  height: 80px;
+  background-position: -2795px -1445px;
+}
+
+.pokemon-pokemon-battle-sprites_3229 {
+  width: 80px;
+  height: 80px;
+  background-position: -2885px -1445px;
+}
+
+.pokemon-pokemon-battle-sprites_323 {
+  width: 80px;
+  height: 80px;
+  background-position: -2975px -1445px;
+}
+
+.pokemon-pokemon-battle-sprites_3231 {
+  width: 80px;
+  height: 80px;
+  background-position: -3065px -1445px;
+}
+
+.pokemon-pokemon-battle-sprites_3233 {
+  width: 80px;
+  height: 80px;
+  background-position: -3155px -1445px;
+}
+
+.pokemon-pokemon-battle-sprites_3235 {
+  width: 80px;
+  height: 80px;
+  background-position: -3245px -1445px;
+}
+
+.pokemon-pokemon-battle-sprites_3237 {
+  width: 80px;
+  height: 80px;
+  background-position: -5px -1535px;
+}
+
+.pokemon-pokemon-battle-sprites_3239 {
+  width: 80px;
+  height: 80px;
+  background-position: -95px -1535px;
+}
+
+.pokemon-pokemon-battle-sprites_3323 {
+  width: 80px;
+  height: 80px;
+  background-position: -185px -1535px;
+}
+
+.pokemon-pokemon-battle-sprites_3325 {
+  width: 80px;
+  height: 80px;
+  background-position: -275px -1535px;
+}
+
+.pokemon-pokemon-battle-sprites_3327 {
+  width: 80px;
+  height: 80px;
+  background-position: -365px -1535px;
+}
+
+.pokemon-pokemon-battle-sprites_3329 {
+  width: 80px;
+  height: 80px;
+  background-position: -455px -1535px;
+}
+
+.pokemon-pokemon-battle-sprites_3331 {
+  width: 80px;
+  height: 80px;
+  background-position: -545px -1535px;
+}
+
+.pokemon-pokemon-battle-sprites_3333 {
+  width: 80px;
+  height: 80px;
+  background-position: -635px -1535px;
+}
+
+.pokemon-pokemon-battle-sprites_3335 {
+  width: 80px;
+  height: 80px;
+  background-position: -725px -1535px;
+}
+
+.pokemon-pokemon-battle-sprites_3337 {
+  width: 80px;
+  height: 80px;
+  background-position: -815px -1535px;
+}
+
+.pokemon-pokemon-battle-sprites_3339 {
+  width: 80px;
+  height: 80px;
+  background-position: -905px -1535px;
+}
+
+.pokemon-pokemon-battle-sprites_3341 {
+  width: 80px;
+  height: 80px;
+  background-position: -995px -1535px;
+}
+
+.pokemon-pokemon-battle-sprites_3343 {
+  width: 80px;
+  height: 80px;
+  background-position: -1085px -1535px;
+}
+
+.pokemon-pokemon-battle-sprites_3345 {
+  width: 80px;
+  height: 80px;
+  background-position: -1175px -1535px;
+}
+
+.pokemon-pokemon-battle-sprites_3347 {
+  width: 80px;
+  height: 80px;
+  background-position: -1265px -1535px;
+}
+
+.pokemon-pokemon-battle-sprites_3349 {
+  width: 80px;
+  height: 80px;
+  background-position: -1355px -1535px;
+}
+
+.pokemon-pokemon-battle-sprites_3351 {
+  width: 80px;
+  height: 80px;
+  background-position: -1445px -1535px;
+}
+
+.pokemon-pokemon-battle-sprites_3353 {
+  width: 80px;
+  height: 80px;
+  background-position: -1535px -1535px;
+}
+
+.pokemon-pokemon-battle-sprites_3355 {
+  width: 80px;
+  height: 80px;
+  background-position: -1625px -1535px;
+}
+
+.pokemon-pokemon-battle-sprites_3357 {
+  width: 80px;
+  height: 80px;
+  background-position: -1715px -1535px;
+}
+
+.pokemon-pokemon-battle-sprites_3359 {
+  width: 80px;
+  height: 80px;
+  background-position: -1805px -1535px;
+}
+
+.pokemon-pokemon-battle-sprites_3361 {
+  width: 80px;
+  height: 80px;
+  background-position: -1895px -1535px;
+}
+
+.pokemon-pokemon-battle-sprites_3363 {
+  width: 80px;
+  height: 80px;
+  background-position: -1985px -1535px;
+}
+
+.pokemon-pokemon-battle-sprites_3365 {
+  width: 80px;
+  height: 80px;
+  background-position: -2075px -1535px;
+}
+
+.pokemon-pokemon-battle-sprites_3367 {
+  width: 80px;
+  height: 80px;
+  background-position: -2165px -1535px;
+}
+
+.pokemon-pokemon-battle-sprites_3369 {
+  width: 80px;
+  height: 80px;
+  background-position: -2255px -1535px;
+}
+
+.pokemon-pokemon-battle-sprites_3371 {
+  width: 80px;
+  height: 80px;
+  background-position: -2345px -1535px;
+}
+
+.pokemon-pokemon-battle-sprites_3373 {
+  width: 80px;
+  height: 80px;
+  background-position: -2435px -1535px;
+}
+
+.pokemon-pokemon-battle-sprites_3375 {
+  width: 80px;
+  height: 80px;
+  background-position: -2525px -1535px;
+}
+
+.pokemon-pokemon-battle-sprites_3377 {
+  width: 80px;
+  height: 80px;
+  background-position: -2615px -1535px;
+}
+
+.pokemon-pokemon-battle-sprites_3379 {
+  width: 80px;
+  height: 80px;
+  background-position: -2705px -1535px;
+}
+
+.pokemon-pokemon-battle-sprites_3381 {
+  width: 80px;
+  height: 80px;
+  background-position: -2795px -1535px;
+}
+
+.pokemon-pokemon-battle-sprites_3383 {
+  width: 80px;
+  height: 80px;
+  background-position: -2885px -1535px;
+}
+
+.pokemon-pokemon-battle-sprites_3385 {
+  width: 80px;
+  height: 80px;
+  background-position: -2975px -1535px;
+}
+
+.pokemon-pokemon-battle-sprites_3387 {
+  width: 80px;
+  height: 80px;
+  background-position: -3065px -1535px;
+}
+
+.pokemon-pokemon-battle-sprites_3389 {
+  width: 80px;
+  height: 80px;
+  background-position: -3155px -1535px;
+}
+
+.pokemon-pokemon-battle-sprites_3391 {
+  width: 80px;
+  height: 80px;
+  background-position: -3245px -1535px;
+}
+
+.pokemon-pokemon-battle-sprites_3393 {
+  width: 80px;
+  height: 80px;
+  background-position: -5px -1625px;
+}
+
+.pokemon-pokemon-battle-sprites_3395 {
+  width: 80px;
+  height: 80px;
+  background-position: -95px -1625px;
+}
+
+.pokemon-pokemon-battle-sprites_3397 {
+  width: 80px;
+  height: 80px;
+  background-position: -185px -1625px;
+}
+
+.pokemon-pokemon-battle-sprites_3399 {
+  width: 80px;
+  height: 80px;
+  background-position: -275px -1625px;
+}
+
+.pokemon-pokemon-battle-sprites_3401 {
+  width: 80px;
+  height: 80px;
+  background-position: -365px -1625px;
+}
+
+.pokemon-pokemon-battle-sprites_3485 {
+  width: 80px;
+  height: 80px;
+  background-position: -455px -1625px;
+}
+
+.pokemon-pokemon-battle-sprites_3487 {
+  width: 80px;
+  height: 80px;
+  background-position: -545px -1625px;
+}
+
+.pokemon-pokemon-battle-sprites_3489 {
+  width: 80px;
+  height: 80px;
+  background-position: -635px -1625px;
+}
+
+.pokemon-pokemon-battle-sprites_3491 {
+  width: 80px;
+  height: 80px;
+  background-position: -725px -1625px;
+}
+
+.pokemon-pokemon-battle-sprites_3493 {
+  width: 80px;
+  height: 80px;
+  background-position: -815px -1625px;
+}
+
+.pokemon-pokemon-battle-sprites_3495 {
+  width: 80px;
+  height: 80px;
+  background-position: -905px -1625px;
+}
+
+.pokemon-pokemon-battle-sprites_3497 {
+  width: 80px;
+  height: 80px;
+  background-position: -995px -1625px;
+}
+
+.pokemon-pokemon-battle-sprites_3499 {
+  width: 80px;
+  height: 80px;
+  background-position: -1085px -1625px;
+}
+
+.pokemon-pokemon-battle-sprites_3501 {
+  width: 80px;
+  height: 80px;
+  background-position: -1175px -1625px;
+}
+
+.pokemon-pokemon-battle-sprites_3503 {
+  width: 80px;
+  height: 80px;
+  background-position: -1265px -1625px;
+}
+
+.pokemon-pokemon-battle-sprites_3505 {
+  width: 80px;
+  height: 80px;
+  background-position: -1355px -1625px;
+}
+
+.pokemon-pokemon-battle-sprites_3507 {
+  width: 80px;
+  height: 80px;
+  background-position: -1445px -1625px;
+}
+
+.pokemon-pokemon-battle-sprites_3509 {
+  width: 80px;
+  height: 80px;
+  background-position: -1535px -1625px;
+}
+
+.pokemon-pokemon-battle-sprites_3511 {
+  width: 80px;
+  height: 80px;
+  background-position: -1625px -1625px;
+}
+
+.pokemon-pokemon-battle-sprites_3513 {
+  width: 80px;
+  height: 80px;
+  background-position: -1715px -1625px;
+}
+
+.pokemon-pokemon-battle-sprites_3515 {
+  width: 80px;
+  height: 80px;
+  background-position: -1805px -1625px;
+}
+
+.pokemon-pokemon-battle-sprites_3517 {
+  width: 80px;
+  height: 80px;
+  background-position: -1895px -1625px;
+}
+
+.pokemon-pokemon-battle-sprites_3519 {
+  width: 80px;
+  height: 80px;
+  background-position: -1985px -1625px;
+}
+
+.pokemon-pokemon-battle-sprites_3521 {
+  width: 80px;
+  height: 80px;
+  background-position: -2075px -1625px;
+}
+
+.pokemon-pokemon-battle-sprites_3523 {
+  width: 80px;
+  height: 80px;
+  background-position: -2165px -1625px;
+}
+
+.pokemon-pokemon-battle-sprites_3525 {
+  width: 80px;
+  height: 80px;
+  background-position: -2255px -1625px;
+}
+
+.pokemon-pokemon-battle-sprites_3527 {
+  width: 80px;
+  height: 80px;
+  background-position: -2345px -1625px;
+}
+
+.pokemon-pokemon-battle-sprites_3529 {
+  width: 80px;
+  height: 80px;
+  background-position: -2435px -1625px;
+}
+
+.pokemon-pokemon-battle-sprites_3531 {
+  width: 80px;
+  height: 80px;
+  background-position: -2525px -1625px;
+}
+
+.pokemon-pokemon-battle-sprites_3533 {
+  width: 80px;
+  height: 80px;
+  background-position: -2615px -1625px;
+}
+
+.pokemon-pokemon-battle-sprites_3535 {
+  width: 80px;
+  height: 80px;
+  background-position: -2705px -1625px;
+}
+
+.pokemon-pokemon-battle-sprites_3537 {
+  width: 80px;
+  height: 80px;
+  background-position: -2795px -1625px;
+}
+
+.pokemon-pokemon-battle-sprites_3539 {
+  width: 80px;
+  height: 80px;
+  background-position: -2885px -1625px;
+}
+
+.pokemon-pokemon-battle-sprites_3541 {
+  width: 80px;
+  height: 80px;
+  background-position: -2975px -1625px;
+}
+
+.pokemon-pokemon-battle-sprites_3543 {
+  width: 80px;
+  height: 80px;
+  background-position: -3065px -1625px;
+}
+
+.pokemon-pokemon-battle-sprites_3545 {
+  width: 80px;
+  height: 80px;
+  background-position: -3155px -1625px;
+}
+
+.pokemon-pokemon-battle-sprites_3547 {
+  width: 80px;
+  height: 80px;
+  background-position: -3245px -1625px;
+}
+
+.pokemon-pokemon-battle-sprites_3549 {
+  width: 80px;
+  height: 80px;
+  background-position: -5px -1715px;
+}
+
+.pokemon-pokemon-battle-sprites_3551 {
+  width: 80px;
+  height: 80px;
+  background-position: -95px -1715px;
+}
+
+.pokemon-pokemon-battle-sprites_3553 {
+  width: 80px;
+  height: 80px;
+  background-position: -185px -1715px;
+}
+
+.pokemon-pokemon-battle-sprites_3555 {
+  width: 80px;
+  height: 80px;
+  background-position: -275px -1715px;
+}
+
+.pokemon-pokemon-battle-sprites_3557 {
+  width: 80px;
+  height: 80px;
+  background-position: -365px -1715px;
+}
+
+.pokemon-pokemon-battle-sprites_3559 {
+  width: 80px;
+  height: 80px;
+  background-position: -455px -1715px;
+}
+
+.pokemon-pokemon-battle-sprites_3561 {
+  width: 80px;
+  height: 80px;
+  background-position: -545px -1715px;
+}
+
+.pokemon-pokemon-battle-sprites_3563 {
+  width: 80px;
+  height: 80px;
+  background-position: -635px -1715px;
+}
+
+.pokemon-pokemon-battle-sprites_3647 {
+  width: 80px;
+  height: 80px;
+  background-position: -725px -1715px;
+}
+
+.pokemon-pokemon-battle-sprites_3649 {
+  width: 80px;
+  height: 80px;
+  background-position: -815px -1715px;
+}
+
+.pokemon-pokemon-battle-sprites_3651 {
+  width: 80px;
+  height: 80px;
+  background-position: -905px -1715px;
+}
+
+.pokemon-pokemon-battle-sprites_3653 {
+  width: 80px;
+  height: 80px;
+  background-position: -995px -1715px;
+}
+
+.pokemon-pokemon-battle-sprites_3655 {
+  width: 80px;
+  height: 80px;
+  background-position: -1085px -1715px;
+}
+
+.pokemon-pokemon-battle-sprites_3657 {
+  width: 80px;
+  height: 80px;
+  background-position: -1175px -1715px;
+}
+
+.pokemon-pokemon-battle-sprites_3659 {
+  width: 80px;
+  height: 80px;
+  background-position: -1265px -1715px;
+}
+
+.pokemon-pokemon-battle-sprites_3661 {
+  width: 80px;
+  height: 80px;
+  background-position: -1355px -1715px;
+}
+
+.pokemon-pokemon-battle-sprites_3663 {
+  width: 80px;
+  height: 80px;
+  background-position: -1445px -1715px;
+}
+
+.pokemon-pokemon-battle-sprites_3665 {
+  width: 80px;
+  height: 80px;
+  background-position: -1535px -1715px;
+}
+
+.pokemon-pokemon-battle-sprites_3667 {
+  width: 80px;
+  height: 80px;
+  background-position: -1625px -1715px;
+}
+
+.pokemon-pokemon-battle-sprites_3669 {
+  width: 80px;
+  height: 80px;
+  background-position: -1715px -1715px;
+}
+
+.pokemon-pokemon-battle-sprites_3671 {
+  width: 80px;
+  height: 80px;
+  background-position: -1805px -1715px;
+}
+
+.pokemon-pokemon-battle-sprites_3673 {
+  width: 80px;
+  height: 80px;
+  background-position: -1895px -1715px;
+}
+
+.pokemon-pokemon-battle-sprites_3675 {
+  width: 80px;
+  height: 80px;
+  background-position: -1985px -1715px;
+}
+
+.pokemon-pokemon-battle-sprites_3677 {
+  width: 80px;
+  height: 80px;
+  background-position: -2075px -1715px;
+}
+
+.pokemon-pokemon-battle-sprites_3679 {
+  width: 80px;
+  height: 80px;
+  background-position: -2165px -1715px;
+}
+
+.pokemon-pokemon-battle-sprites_3681 {
+  width: 80px;
+  height: 80px;
+  background-position: -2255px -1715px;
+}
+
+.pokemon-pokemon-battle-sprites_3683 {
+  width: 80px;
+  height: 80px;
+  background-position: -2345px -1715px;
+}
+
+.pokemon-pokemon-battle-sprites_3685 {
+  width: 80px;
+  height: 80px;
+  background-position: -2435px -1715px;
+}
+
+.pokemon-pokemon-battle-sprites_3687 {
+  width: 80px;
+  height: 80px;
+  background-position: -2525px -1715px;
+}
+
+.pokemon-pokemon-battle-sprites_3689 {
+  width: 80px;
+  height: 80px;
+  background-position: -2615px -1715px;
+}
+
+.pokemon-pokemon-battle-sprites_3691 {
+  width: 80px;
+  height: 80px;
+  background-position: -2705px -1715px;
+}
+
+.pokemon-pokemon-battle-sprites_3693 {
+  width: 80px;
+  height: 80px;
+  background-position: -2795px -1715px;
+}
+
+.pokemon-pokemon-battle-sprites_3695 {
+  width: 80px;
+  height: 80px;
+  background-position: -2885px -1715px;
+}
+
+.pokemon-pokemon-battle-sprites_3697 {
+  width: 80px;
+  height: 80px;
+  background-position: -2975px -1715px;
+}
+
+.pokemon-pokemon-battle-sprites_3699 {
+  width: 80px;
+  height: 80px;
+  background-position: -3065px -1715px;
+}
+
+.pokemon-pokemon-battle-sprites_3701 {
+  width: 80px;
+  height: 80px;
+  background-position: -3155px -1715px;
+}
+
+.pokemon-pokemon-battle-sprites_3703 {
+  width: 80px;
+  height: 80px;
+  background-position: -3245px -1715px;
+}
+
+.pokemon-pokemon-battle-sprites_3705 {
+  width: 80px;
+  height: 80px;
+  background-position: -5px -1805px;
+}
+
+.pokemon-pokemon-battle-sprites_3707 {
+  width: 80px;
+  height: 80px;
+  background-position: -95px -1805px;
+}
+
+.pokemon-pokemon-battle-sprites_3709 {
+  width: 80px;
+  height: 80px;
+  background-position: -185px -1805px;
+}
+
+.pokemon-pokemon-battle-sprites_3711 {
+  width: 80px;
+  height: 80px;
+  background-position: -275px -1805px;
+}
+
+.pokemon-pokemon-battle-sprites_3713 {
+  width: 80px;
+  height: 80px;
+  background-position: -365px -1805px;
+}
+
+.pokemon-pokemon-battle-sprites_3715 {
+  width: 80px;
+  height: 80px;
+  background-position: -455px -1805px;
+}
+
+.pokemon-pokemon-battle-sprites_3717 {
+  width: 80px;
+  height: 80px;
+  background-position: -545px -1805px;
+}
+
+.pokemon-pokemon-battle-sprites_3719 {
+  width: 80px;
+  height: 80px;
+  background-position: -635px -1805px;
+}
+
+.pokemon-pokemon-battle-sprites_3721 {
+  width: 80px;
+  height: 80px;
+  background-position: -725px -1805px;
+}
+
+.pokemon-pokemon-battle-sprites_3723 {
+  width: 80px;
+  height: 80px;
+  background-position: -815px -1805px;
+}
+
+.pokemon-pokemon-battle-sprites_3725 {
+  width: 80px;
+  height: 80px;
+  background-position: -905px -1805px;
+}
+
+.pokemon-pokemon-battle-sprites_3809 {
+  width: 80px;
+  height: 80px;
+  background-position: -995px -1805px;
+}
+
+.pokemon-pokemon-battle-sprites_3811 {
+  width: 80px;
+  height: 80px;
+  background-position: -1085px -1805px;
+}
+
+.pokemon-pokemon-battle-sprites_3813 {
+  width: 80px;
+  height: 80px;
+  background-position: -1175px -1805px;
+}
+
+.pokemon-pokemon-battle-sprites_3815 {
+  width: 80px;
+  height: 80px;
+  background-position: -1265px -1805px;
+}
+
+.pokemon-pokemon-battle-sprites_3817 {
+  width: 80px;
+  height: 80px;
+  background-position: -1355px -1805px;
+}
+
+.pokemon-pokemon-battle-sprites_3819 {
+  width: 80px;
+  height: 80px;
+  background-position: -1445px -1805px;
+}
+
+.pokemon-pokemon-battle-sprites_3821 {
+  width: 80px;
+  height: 80px;
+  background-position: -1535px -1805px;
+}
+
+.pokemon-pokemon-battle-sprites_3823 {
+  width: 80px;
+  height: 80px;
+  background-position: -1625px -1805px;
+}
+
+.pokemon-pokemon-battle-sprites_3825 {
+  width: 80px;
+  height: 80px;
+  background-position: -1715px -1805px;
+}
+
+.pokemon-pokemon-battle-sprites_3827 {
+  width: 80px;
+  height: 80px;
+  background-position: -1805px -1805px;
+}
+
+.pokemon-pokemon-battle-sprites_3829 {
+  width: 80px;
+  height: 80px;
+  background-position: -1895px -1805px;
+}
+
+.pokemon-pokemon-battle-sprites_3831 {
+  width: 80px;
+  height: 80px;
+  background-position: -1985px -1805px;
+}
+
+.pokemon-pokemon-battle-sprites_3833 {
+  width: 80px;
+  height: 80px;
+  background-position: -2075px -1805px;
+}
+
+.pokemon-pokemon-battle-sprites_3835 {
+  width: 80px;
+  height: 80px;
+  background-position: -2165px -1805px;
+}
+
+.pokemon-pokemon-battle-sprites_3837 {
+  width: 80px;
+  height: 80px;
+  background-position: -2255px -1805px;
+}
+
+.pokemon-pokemon-battle-sprites_3839 {
+  width: 80px;
+  height: 80px;
+  background-position: -2345px -1805px;
+}
+
+.pokemon-pokemon-battle-sprites_3841 {
+  width: 80px;
+  height: 80px;
+  background-position: -2435px -1805px;
+}
+
+.pokemon-pokemon-battle-sprites_3843 {
+  width: 80px;
+  height: 80px;
+  background-position: -2525px -1805px;
+}
+
+.pokemon-pokemon-battle-sprites_3845 {
+  width: 80px;
+  height: 80px;
+  background-position: -2615px -1805px;
+}
+
+.pokemon-pokemon-battle-sprites_3847 {
+  width: 80px;
+  height: 80px;
+  background-position: -2705px -1805px;
+}
+
+.pokemon-pokemon-battle-sprites_3849 {
+  width: 80px;
+  height: 80px;
+  background-position: -2795px -1805px;
+}
+
+.pokemon-pokemon-battle-sprites_3851 {
+  width: 80px;
+  height: 80px;
+  background-position: -2885px -1805px;
+}
+
+.pokemon-pokemon-battle-sprites_3853 {
+  width: 80px;
+  height: 80px;
+  background-position: -2975px -1805px;
+}
+
+.pokemon-pokemon-battle-sprites_3855 {
+  width: 80px;
+  height: 80px;
+  background-position: -3065px -1805px;
+}
+
+.pokemon-pokemon-battle-sprites_3857 {
+  width: 80px;
+  height: 80px;
+  background-position: -3155px -1805px;
+}
+
+.pokemon-pokemon-battle-sprites_3859 {
+  width: 80px;
+  height: 80px;
+  background-position: -3245px -1805px;
+}
+
+.pokemon-pokemon-battle-sprites_3861 {
+  width: 80px;
+  height: 80px;
+  background-position: -5px -1895px;
+}
+
+.pokemon-pokemon-battle-sprites_3863 {
+  width: 80px;
+  height: 80px;
+  background-position: -95px -1895px;
+}
+
+.pokemon-pokemon-battle-sprites_3865 {
+  width: 80px;
+  height: 80px;
+  background-position: -185px -1895px;
+}
+
+.pokemon-pokemon-battle-sprites_3867 {
+  width: 80px;
+  height: 80px;
+  background-position: -275px -1895px;
+}
+
+.pokemon-pokemon-battle-sprites_3869 {
+  width: 80px;
+  height: 80px;
+  background-position: -365px -1895px;
+}
+
+.pokemon-pokemon-battle-sprites_3871 {
+  width: 80px;
+  height: 80px;
+  background-position: -455px -1895px;
+}
+
+.pokemon-pokemon-battle-sprites_3873 {
+  width: 80px;
+  height: 80px;
+  background-position: -545px -1895px;
+}
+
+.pokemon-pokemon-battle-sprites_3875 {
+  width: 80px;
+  height: 80px;
+  background-position: -635px -1895px;
+}
+
+.pokemon-pokemon-battle-sprites_3877 {
+  width: 80px;
+  height: 80px;
+  background-position: -725px -1895px;
+}
+
+.pokemon-pokemon-battle-sprites_3879 {
+  width: 80px;
+  height: 80px;
+  background-position: -815px -1895px;
+}
+
+.pokemon-pokemon-battle-sprites_3881 {
+  width: 80px;
+  height: 80px;
+  background-position: -905px -1895px;
+}
+
+.pokemon-pokemon-battle-sprites_3883 {
+  width: 80px;
+  height: 80px;
+  background-position: -995px -1895px;
+}
+
+.pokemon-pokemon-battle-sprites_3885 {
+  width: 80px;
+  height: 80px;
+  background-position: -1085px -1895px;
+}
+
+.pokemon-pokemon-battle-sprites_3887 {
+  width: 80px;
+  height: 80px;
+  background-position: -1175px -1895px;
+}
+
+.pokemon-pokemon-battle-sprites_3971 {
+  width: 80px;
+  height: 80px;
+  background-position: -1265px -1895px;
+}
+
+.pokemon-pokemon-battle-sprites_3973 {
+  width: 80px;
+  height: 80px;
+  background-position: -1355px -1895px;
+}
+
+.pokemon-pokemon-battle-sprites_3975 {
+  width: 80px;
+  height: 80px;
+  background-position: -1445px -1895px;
+}
+
+.pokemon-pokemon-battle-sprites_3977 {
+  width: 80px;
+  height: 80px;
+  background-position: -1535px -1895px;
+}
+
+.pokemon-pokemon-battle-sprites_3979 {
+  width: 80px;
+  height: 80px;
+  background-position: -1625px -1895px;
+}
+
+.pokemon-pokemon-battle-sprites_3981 {
+  width: 80px;
+  height: 80px;
+  background-position: -1715px -1895px;
+}
+
+.pokemon-pokemon-battle-sprites_3983 {
+  width: 80px;
+  height: 80px;
+  background-position: -1805px -1895px;
+}
+
+.pokemon-pokemon-battle-sprites_3985 {
+  width: 80px;
+  height: 80px;
+  background-position: -1895px -1895px;
+}
+
+.pokemon-pokemon-battle-sprites_3987 {
+  width: 80px;
+  height: 80px;
+  background-position: -1985px -1895px;
+}
+
+.pokemon-pokemon-battle-sprites_3989 {
+  width: 80px;
+  height: 80px;
+  background-position: -2075px -1895px;
+}
+
+.pokemon-pokemon-battle-sprites_3991 {
+  width: 80px;
+  height: 80px;
+  background-position: -2165px -1895px;
+}
+
+.pokemon-pokemon-battle-sprites_3993 {
+  width: 80px;
+  height: 80px;
+  background-position: -2255px -1895px;
+}
+
+.pokemon-pokemon-battle-sprites_3995 {
+  width: 80px;
+  height: 80px;
+  background-position: -2345px -1895px;
+}
+
+.pokemon-pokemon-battle-sprites_3997 {
+  width: 80px;
+  height: 80px;
+  background-position: -2435px -1895px;
+}
+
+.pokemon-pokemon-battle-sprites_3999 {
+  width: 80px;
+  height: 80px;
+  background-position: -2525px -1895px;
+}
+
+.pokemon-pokemon-battle-sprites_4001 {
+  width: 80px;
+  height: 80px;
+  background-position: -2615px -1895px;
+}
+
+.pokemon-pokemon-battle-sprites_4003 {
+  width: 80px;
+  height: 80px;
+  background-position: -2705px -1895px;
+}
+
+.pokemon-pokemon-battle-sprites_4005 {
+  width: 80px;
+  height: 80px;
+  background-position: -2795px -1895px;
+}
+
+.pokemon-pokemon-battle-sprites_4007 {
+  width: 80px;
+  height: 80px;
+  background-position: -2885px -1895px;
+}
+
+.pokemon-pokemon-battle-sprites_4009 {
+  width: 80px;
+  height: 80px;
+  background-position: -2975px -1895px;
+}
+
+.pokemon-pokemon-battle-sprites_4011 {
+  width: 80px;
+  height: 80px;
+  background-position: -3065px -1895px;
+}
+
+.pokemon-pokemon-battle-sprites_4013 {
+  width: 80px;
+  height: 80px;
+  background-position: -3155px -1895px;
+}
+
+.pokemon-pokemon-battle-sprites_4015 {
+  width: 80px;
+  height: 80px;
+  background-position: -3245px -1895px;
+}
+
+.pokemon-pokemon-battle-sprites_4017 {
+  width: 80px;
+  height: 80px;
+  background-position: -5px -1985px;
+}
+
+.pokemon-pokemon-battle-sprites_4019 {
+  width: 80px;
+  height: 80px;
+  background-position: -95px -1985px;
+}
+
+.pokemon-pokemon-battle-sprites_4021 {
+  width: 80px;
+  height: 80px;
+  background-position: -185px -1985px;
+}
+
+.pokemon-pokemon-battle-sprites_4023 {
+  width: 80px;
+  height: 80px;
+  background-position: -275px -1985px;
+}
+
+.pokemon-pokemon-battle-sprites_4025 {
+  width: 80px;
+  height: 80px;
+  background-position: -365px -1985px;
+}
+
+.pokemon-pokemon-battle-sprites_4027 {
+  width: 80px;
+  height: 80px;
+  background-position: -455px -1985px;
+}
+
+.pokemon-pokemon-battle-sprites_4029 {
+  width: 80px;
+  height: 80px;
+  background-position: -545px -1985px;
+}
+
+.pokemon-pokemon-battle-sprites_4031 {
+  width: 80px;
+  height: 80px;
+  background-position: -635px -1985px;
+}
+
+.pokemon-pokemon-battle-sprites_4033 {
+  width: 80px;
+  height: 80px;
+  background-position: -725px -1985px;
+}
+
+.pokemon-pokemon-battle-sprites_4035 {
+  width: 80px;
+  height: 80px;
+  background-position: -815px -1985px;
+}
+
+.pokemon-pokemon-battle-sprites_4037 {
+  width: 80px;
+  height: 80px;
+  background-position: -905px -1985px;
+}
+
+.pokemon-pokemon-battle-sprites_4039 {
+  width: 80px;
+  height: 80px;
+  background-position: -995px -1985px;
+}
+
+.pokemon-pokemon-battle-sprites_4041 {
+  width: 80px;
+  height: 80px;
+  background-position: -1085px -1985px;
+}
+
+.pokemon-pokemon-battle-sprites_4043 {
+  width: 80px;
+  height: 80px;
+  background-position: -1175px -1985px;
+}
+
+.pokemon-pokemon-battle-sprites_4045 {
+  width: 80px;
+  height: 80px;
+  background-position: -1265px -1985px;
+}
+
+.pokemon-pokemon-battle-sprites_4047 {
+  width: 80px;
+  height: 80px;
+  background-position: -1355px -1985px;
+}
+
+.pokemon-pokemon-battle-sprites_4049 {
+  width: 80px;
+  height: 80px;
+  background-position: -1445px -1985px;
+}
+
+.pokemon-pokemon-battle-sprites_407 {
+  width: 80px;
+  height: 80px;
+  background-position: -1535px -1985px;
+}
+
+.pokemon-pokemon-battle-sprites_409 {
+  width: 80px;
+  height: 80px;
+  background-position: -1625px -1985px;
+}
+
+.pokemon-pokemon-battle-sprites_411 {
+  width: 80px;
+  height: 80px;
+  background-position: -1715px -1985px;
+}
+
+.pokemon-pokemon-battle-sprites_413 {
+  width: 80px;
+  height: 80px;
+  background-position: -1805px -1985px;
+}
+
+.pokemon-pokemon-battle-sprites_4133 {
+  width: 80px;
+  height: 80px;
+  background-position: -1895px -1985px;
+}
+
+.pokemon-pokemon-battle-sprites_4135 {
+  width: 80px;
+  height: 80px;
+  background-position: -1985px -1985px;
+}
+
+.pokemon-pokemon-battle-sprites_4137 {
+  width: 80px;
+  height: 80px;
+  background-position: -2075px -1985px;
+}
+
+.pokemon-pokemon-battle-sprites_4139 {
+  width: 80px;
+  height: 80px;
+  background-position: -2165px -1985px;
+}
+
+.pokemon-pokemon-battle-sprites_4141 {
+  width: 80px;
+  height: 80px;
+  background-position: -2255px -1985px;
+}
+
+.pokemon-pokemon-battle-sprites_4143 {
+  width: 80px;
+  height: 80px;
+  background-position: -2345px -1985px;
+}
+
+.pokemon-pokemon-battle-sprites_4145 {
+  width: 80px;
+  height: 80px;
+  background-position: -2435px -1985px;
+}
+
+.pokemon-pokemon-battle-sprites_4147 {
+  width: 80px;
+  height: 80px;
+  background-position: -2525px -1985px;
+}
+
+.pokemon-pokemon-battle-sprites_4149 {
+  width: 80px;
+  height: 80px;
+  background-position: -2615px -1985px;
+}
+
+.pokemon-pokemon-battle-sprites_415 {
+  width: 80px;
+  height: 80px;
+  background-position: -2705px -1985px;
+}
+
+.pokemon-pokemon-battle-sprites_4151 {
+  width: 80px;
+  height: 80px;
+  background-position: -2795px -1985px;
+}
+
+.pokemon-pokemon-battle-sprites_4153 {
+  width: 80px;
+  height: 80px;
+  background-position: -2885px -1985px;
+}
+
+.pokemon-pokemon-battle-sprites_4155 {
+  width: 80px;
+  height: 80px;
+  background-position: -2975px -1985px;
+}
+
+.pokemon-pokemon-battle-sprites_4157 {
+  width: 80px;
+  height: 80px;
+  background-position: -3065px -1985px;
+}
+
+.pokemon-pokemon-battle-sprites_4159 {
+  width: 80px;
+  height: 80px;
+  background-position: -3155px -1985px;
+}
+
+.pokemon-pokemon-battle-sprites_4161 {
+  width: 80px;
+  height: 80px;
+  background-position: -3245px -1985px;
+}
+
+.pokemon-pokemon-battle-sprites_4163 {
+  width: 80px;
+  height: 80px;
+  background-position: -5px -2075px;
+}
+
+.pokemon-pokemon-battle-sprites_4165 {
+  width: 80px;
+  height: 80px;
+  background-position: -95px -2075px;
+}
+
+.pokemon-pokemon-battle-sprites_4167 {
+  width: 80px;
+  height: 80px;
+  background-position: -185px -2075px;
+}
+
+.pokemon-pokemon-battle-sprites_4169 {
+  width: 80px;
+  height: 80px;
+  background-position: -275px -2075px;
+}
+
+.pokemon-pokemon-battle-sprites_417 {
+  width: 80px;
+  height: 80px;
+  background-position: -365px -2075px;
+}
+
+.pokemon-pokemon-battle-sprites_4171 {
+  width: 80px;
+  height: 80px;
+  background-position: -455px -2075px;
+}
+
+.pokemon-pokemon-battle-sprites_4173 {
+  width: 80px;
+  height: 80px;
+  background-position: -545px -2075px;
+}
+
+.pokemon-pokemon-battle-sprites_4175 {
+  width: 80px;
+  height: 80px;
+  background-position: -635px -2075px;
+}
+
+.pokemon-pokemon-battle-sprites_4177 {
+  width: 80px;
+  height: 80px;
+  background-position: -725px -2075px;
+}
+
+.pokemon-pokemon-battle-sprites_4179 {
+  width: 80px;
+  height: 80px;
+  background-position: -815px -2075px;
+}
+
+.pokemon-pokemon-battle-sprites_4181 {
+  width: 80px;
+  height: 80px;
+  background-position: -905px -2075px;
+}
+
+.pokemon-pokemon-battle-sprites_4183 {
+  width: 80px;
+  height: 80px;
+  background-position: -995px -2075px;
+}
+
+.pokemon-pokemon-battle-sprites_4185 {
+  width: 80px;
+  height: 80px;
+  background-position: -1085px -2075px;
+}
+
+.pokemon-pokemon-battle-sprites_4187 {
+  width: 80px;
+  height: 80px;
+  background-position: -1175px -2075px;
+}
+
+.pokemon-pokemon-battle-sprites_4189 {
+  width: 80px;
+  height: 80px;
+  background-position: -1265px -2075px;
+}
+
+.pokemon-pokemon-battle-sprites_419 {
+  width: 80px;
+  height: 80px;
+  background-position: -1355px -2075px;
+}
+
+.pokemon-pokemon-battle-sprites_4191 {
+  width: 80px;
+  height: 80px;
+  background-position: -1445px -2075px;
+}
+
+.pokemon-pokemon-battle-sprites_4193 {
+  width: 80px;
+  height: 80px;
+  background-position: -1535px -2075px;
+}
+
+.pokemon-pokemon-battle-sprites_4195 {
+  width: 80px;
+  height: 80px;
+  background-position: -1625px -2075px;
+}
+
+.pokemon-pokemon-battle-sprites_4197 {
+  width: 80px;
+  height: 80px;
+  background-position: -1715px -2075px;
+}
+
+.pokemon-pokemon-battle-sprites_4199 {
+  width: 80px;
+  height: 80px;
+  background-position: -1805px -2075px;
+}
+
+.pokemon-pokemon-battle-sprites_4201 {
+  width: 80px;
+  height: 80px;
+  background-position: -1895px -2075px;
+}
+
+.pokemon-pokemon-battle-sprites_4203 {
+  width: 80px;
+  height: 80px;
+  background-position: -1985px -2075px;
+}
+
+.pokemon-pokemon-battle-sprites_4205 {
+  width: 80px;
+  height: 80px;
+  background-position: -2075px -2075px;
+}
+
+.pokemon-pokemon-battle-sprites_4207 {
+  width: 80px;
+  height: 80px;
+  background-position: -2165px -2075px;
+}
+
+.pokemon-pokemon-battle-sprites_4209 {
+  width: 80px;
+  height: 80px;
+  background-position: -2255px -2075px;
+}
+
+.pokemon-pokemon-battle-sprites_421 {
+  width: 80px;
+  height: 80px;
+  background-position: -2345px -2075px;
+}
+
+.pokemon-pokemon-battle-sprites_4211 {
+  width: 80px;
+  height: 80px;
+  background-position: -2435px -2075px;
+}
+
+.pokemon-pokemon-battle-sprites_423 {
+  width: 80px;
+  height: 80px;
+  background-position: -2525px -2075px;
+}
+
+.pokemon-pokemon-battle-sprites_425 {
+  width: 80px;
+  height: 80px;
+  background-position: -2615px -2075px;
+}
+
+.pokemon-pokemon-battle-sprites_427 {
+  width: 80px;
+  height: 80px;
+  background-position: -2705px -2075px;
+}
+
+.pokemon-pokemon-battle-sprites_429 {
+  width: 80px;
+  height: 80px;
+  background-position: -2795px -2075px;
+}
+
+.pokemon-pokemon-battle-sprites_4295 {
+  width: 80px;
+  height: 80px;
+  background-position: -2885px -2075px;
+}
+
+.pokemon-pokemon-battle-sprites_4297 {
+  width: 80px;
+  height: 80px;
+  background-position: -2975px -2075px;
+}
+
+.pokemon-pokemon-battle-sprites_4299 {
+  width: 80px;
+  height: 80px;
+  background-position: -3065px -2075px;
+}
+
+.pokemon-pokemon-battle-sprites_4301 {
+  width: 80px;
+  height: 80px;
+  background-position: -3155px -2075px;
+}
+
+.pokemon-pokemon-battle-sprites_4303 {
+  width: 80px;
+  height: 80px;
+  background-position: -3245px -2075px;
+}
+
+.pokemon-pokemon-battle-sprites_4305 {
+  width: 80px;
+  height: 80px;
+  background-position: -5px -2165px;
+}
+
+.pokemon-pokemon-battle-sprites_4307 {
+  width: 80px;
+  height: 80px;
+  background-position: -95px -2165px;
+}
+
+.pokemon-pokemon-battle-sprites_4309 {
+  width: 80px;
+  height: 80px;
+  background-position: -185px -2165px;
+}
+
+.pokemon-pokemon-battle-sprites_431 {
+  width: 80px;
+  height: 80px;
+  background-position: -275px -2165px;
+}
+
+.pokemon-pokemon-battle-sprites_4311 {
+  width: 80px;
+  height: 80px;
+  background-position: -365px -2165px;
+}
+
+.pokemon-pokemon-battle-sprites_4313 {
+  width: 80px;
+  height: 80px;
+  background-position: -455px -2165px;
+}
+
+.pokemon-pokemon-battle-sprites_4315 {
+  width: 80px;
+  height: 80px;
+  background-position: -545px -2165px;
+}
+
+.pokemon-pokemon-battle-sprites_4317 {
+  width: 80px;
+  height: 80px;
+  background-position: -635px -2165px;
+}
+
+.pokemon-pokemon-battle-sprites_4319 {
+  width: 80px;
+  height: 80px;
+  background-position: -725px -2165px;
+}
+
+.pokemon-pokemon-battle-sprites_4321 {
+  width: 80px;
+  height: 80px;
+  background-position: -815px -2165px;
+}
+
+.pokemon-pokemon-battle-sprites_4323 {
+  width: 80px;
+  height: 80px;
+  background-position: -905px -2165px;
+}
+
+.pokemon-pokemon-battle-sprites_4325 {
+  width: 80px;
+  height: 80px;
+  background-position: -995px -2165px;
+}
+
+.pokemon-pokemon-battle-sprites_4327 {
+  width: 80px;
+  height: 80px;
+  background-position: -1085px -2165px;
+}
+
+.pokemon-pokemon-battle-sprites_4329 {
+  width: 80px;
+  height: 80px;
+  background-position: -1175px -2165px;
+}
+
+.pokemon-pokemon-battle-sprites_433 {
+  width: 80px;
+  height: 80px;
+  background-position: -1265px -2165px;
+}
+
+.pokemon-pokemon-battle-sprites_4331 {
+  width: 80px;
+  height: 80px;
+  background-position: -1355px -2165px;
+}
+
+.pokemon-pokemon-battle-sprites_4333 {
+  width: 80px;
+  height: 80px;
+  background-position: -1445px -2165px;
+}
+
+.pokemon-pokemon-battle-sprites_4335 {
+  width: 80px;
+  height: 80px;
+  background-position: -1535px -2165px;
+}
+
+.pokemon-pokemon-battle-sprites_4337 {
+  width: 80px;
+  height: 80px;
+  background-position: -1625px -2165px;
+}
+
+.pokemon-pokemon-battle-sprites_4339 {
+  width: 80px;
+  height: 80px;
+  background-position: -1715px -2165px;
+}
+
+.pokemon-pokemon-battle-sprites_4341 {
+  width: 80px;
+  height: 80px;
+  background-position: -1805px -2165px;
+}
+
+.pokemon-pokemon-battle-sprites_4343 {
+  width: 80px;
+  height: 80px;
+  background-position: -1895px -2165px;
+}
+
+.pokemon-pokemon-battle-sprites_4345 {
+  width: 80px;
+  height: 80px;
+  background-position: -1985px -2165px;
+}
+
+.pokemon-pokemon-battle-sprites_4347 {
+  width: 80px;
+  height: 80px;
+  background-position: -2075px -2165px;
+}
+
+.pokemon-pokemon-battle-sprites_4349 {
+  width: 80px;
+  height: 80px;
+  background-position: -2165px -2165px;
+}
+
+.pokemon-pokemon-battle-sprites_435 {
+  width: 80px;
+  height: 80px;
+  background-position: -2255px -2165px;
+}
+
+.pokemon-pokemon-battle-sprites_4351 {
+  width: 80px;
+  height: 80px;
+  background-position: -2345px -2165px;
+}
+
+.pokemon-pokemon-battle-sprites_4353 {
+  width: 80px;
+  height: 80px;
+  background-position: -2435px -2165px;
+}
+
+.pokemon-pokemon-battle-sprites_4355 {
+  width: 80px;
+  height: 80px;
+  background-position: -2525px -2165px;
+}
+
+.pokemon-pokemon-battle-sprites_4357 {
+  width: 80px;
+  height: 80px;
+  background-position: -2615px -2165px;
+}
+
+.pokemon-pokemon-battle-sprites_4359 {
+  width: 80px;
+  height: 80px;
+  background-position: -2705px -2165px;
+}
+
+.pokemon-pokemon-battle-sprites_4361 {
+  width: 80px;
+  height: 80px;
+  background-position: -2795px -2165px;
+}
+
+.pokemon-pokemon-battle-sprites_4363 {
+  width: 80px;
+  height: 80px;
+  background-position: -2885px -2165px;
+}
+
+.pokemon-pokemon-battle-sprites_4365 {
+  width: 80px;
+  height: 80px;
+  background-position: -2975px -2165px;
+}
+
+.pokemon-pokemon-battle-sprites_4367 {
+  width: 80px;
+  height: 80px;
+  background-position: -3065px -2165px;
+}
+
+.pokemon-pokemon-battle-sprites_4369 {
+  width: 80px;
+  height: 80px;
+  background-position: -3155px -2165px;
+}
+
+.pokemon-pokemon-battle-sprites_437 {
+  width: 80px;
+  height: 80px;
+  background-position: -3245px -2165px;
+}
+
+.pokemon-pokemon-battle-sprites_4371 {
+  width: 80px;
+  height: 80px;
+  background-position: -5px -2255px;
+}
+
+.pokemon-pokemon-battle-sprites_4373 {
+  width: 80px;
+  height: 80px;
+  background-position: -95px -2255px;
+}
+
+.pokemon-pokemon-battle-sprites_439 {
+  width: 80px;
+  height: 80px;
+  background-position: -185px -2255px;
+}
+
+.pokemon-pokemon-battle-sprites_441 {
+  width: 80px;
+  height: 80px;
+  background-position: -275px -2255px;
+}
+
+.pokemon-pokemon-battle-sprites_443 {
+  width: 80px;
+  height: 80px;
+  background-position: -365px -2255px;
+}
+
+.pokemon-pokemon-battle-sprites_445 {
+  width: 80px;
+  height: 80px;
+  background-position: -455px -2255px;
+}
+
+.pokemon-pokemon-battle-sprites_4457 {
+  width: 80px;
+  height: 80px;
+  background-position: -545px -2255px;
+}
+
+.pokemon-pokemon-battle-sprites_4459 {
+  width: 80px;
+  height: 80px;
+  background-position: -635px -2255px;
+}
+
+.pokemon-pokemon-battle-sprites_4461 {
+  width: 80px;
+  height: 80px;
+  background-position: -725px -2255px;
+}
+
+.pokemon-pokemon-battle-sprites_4463 {
+  width: 80px;
+  height: 80px;
+  background-position: -815px -2255px;
+}
+
+.pokemon-pokemon-battle-sprites_4465 {
+  width: 80px;
+  height: 80px;
+  background-position: -905px -2255px;
+}
+
+.pokemon-pokemon-battle-sprites_4467 {
+  width: 80px;
+  height: 80px;
+  background-position: -995px -2255px;
+}
+
+.pokemon-pokemon-battle-sprites_4469 {
+  width: 80px;
+  height: 80px;
+  background-position: -1085px -2255px;
+}
+
+.pokemon-pokemon-battle-sprites_447 {
+  width: 80px;
+  height: 80px;
+  background-position: -1175px -2255px;
+}
+
+.pokemon-pokemon-battle-sprites_4471 {
+  width: 80px;
+  height: 80px;
+  background-position: -1265px -2255px;
+}
+
+.pokemon-pokemon-battle-sprites_4473 {
+  width: 80px;
+  height: 80px;
+  background-position: -1355px -2255px;
+}
+
+.pokemon-pokemon-battle-sprites_4475 {
+  width: 80px;
+  height: 80px;
+  background-position: -1445px -2255px;
+}
+
+.pokemon-pokemon-battle-sprites_4477 {
+  width: 80px;
+  height: 80px;
+  background-position: -1535px -2255px;
+}
+
+.pokemon-pokemon-battle-sprites_4479 {
+  width: 80px;
+  height: 80px;
+  background-position: -1625px -2255px;
+}
+
+.pokemon-pokemon-battle-sprites_4481 {
+  width: 80px;
+  height: 80px;
+  background-position: -1715px -2255px;
+}
+
+.pokemon-pokemon-battle-sprites_4483 {
+  width: 80px;
+  height: 80px;
+  background-position: -1805px -2255px;
+}
+
+.pokemon-pokemon-battle-sprites_4485 {
+  width: 80px;
+  height: 80px;
+  background-position: -1895px -2255px;
+}
+
+.pokemon-pokemon-battle-sprites_4487 {
+  width: 80px;
+  height: 80px;
+  background-position: -1985px -2255px;
+}
+
+.pokemon-pokemon-battle-sprites_4489 {
+  width: 80px;
+  height: 80px;
+  background-position: -2075px -2255px;
+}
+
+.pokemon-pokemon-battle-sprites_449 {
+  width: 80px;
+  height: 80px;
+  background-position: -2165px -2255px;
+}
+
+.pokemon-pokemon-battle-sprites_4491 {
+  width: 80px;
+  height: 80px;
+  background-position: -2255px -2255px;
+}
+
+.pokemon-pokemon-battle-sprites_4493 {
+  width: 80px;
+  height: 80px;
+  background-position: -2345px -2255px;
+}
+
+.pokemon-pokemon-battle-sprites_4495 {
+  width: 80px;
+  height: 80px;
+  background-position: -2435px -2255px;
+}
+
+.pokemon-pokemon-battle-sprites_4497 {
+  width: 80px;
+  height: 80px;
+  background-position: -2525px -2255px;
+}
+
+.pokemon-pokemon-battle-sprites_4499 {
+  width: 80px;
+  height: 80px;
+  background-position: -2615px -2255px;
+}
+
+.pokemon-pokemon-battle-sprites_4501 {
+  width: 80px;
+  height: 80px;
+  background-position: -2705px -2255px;
+}
+
+.pokemon-pokemon-battle-sprites_4503 {
+  width: 80px;
+  height: 80px;
+  background-position: -2795px -2255px;
+}
+
+.pokemon-pokemon-battle-sprites_4505 {
+  width: 80px;
+  height: 80px;
+  background-position: -2885px -2255px;
+}
+
+.pokemon-pokemon-battle-sprites_4507 {
+  width: 80px;
+  height: 80px;
+  background-position: -2975px -2255px;
+}
+
+.pokemon-pokemon-battle-sprites_4509 {
+  width: 80px;
+  height: 80px;
+  background-position: -3065px -2255px;
+}
+
+.pokemon-pokemon-battle-sprites_451 {
+  width: 80px;
+  height: 80px;
+  background-position: -3155px -2255px;
+}
+
+.pokemon-pokemon-battle-sprites_4511 {
+  width: 80px;
+  height: 80px;
+  background-position: -3245px -2255px;
+}
+
+.pokemon-pokemon-battle-sprites_4513 {
+  width: 80px;
+  height: 80px;
+  background-position: -5px -2345px;
+}
+
+.pokemon-pokemon-battle-sprites_4515 {
+  width: 80px;
+  height: 80px;
+  background-position: -95px -2345px;
+}
+
+.pokemon-pokemon-battle-sprites_4517 {
+  width: 80px;
+  height: 80px;
+  background-position: -185px -2345px;
+}
+
+.pokemon-pokemon-battle-sprites_4519 {
+  width: 80px;
+  height: 80px;
+  background-position: -275px -2345px;
+}
+
+.pokemon-pokemon-battle-sprites_4521 {
+  width: 80px;
+  height: 80px;
+  background-position: -365px -2345px;
+}
+
+.pokemon-pokemon-battle-sprites_4523 {
+  width: 80px;
+  height: 80px;
+  background-position: -455px -2345px;
+}
+
+.pokemon-pokemon-battle-sprites_4525 {
+  width: 80px;
+  height: 80px;
+  background-position: -545px -2345px;
+}
+
+.pokemon-pokemon-battle-sprites_4527 {
+  width: 80px;
+  height: 80px;
+  background-position: -635px -2345px;
+}
+
+.pokemon-pokemon-battle-sprites_4529 {
+  width: 80px;
+  height: 80px;
+  background-position: -725px -2345px;
+}
+
+.pokemon-pokemon-battle-sprites_453 {
+  width: 80px;
+  height: 80px;
+  background-position: -815px -2345px;
+}
+
+.pokemon-pokemon-battle-sprites_4531 {
+  width: 80px;
+  height: 80px;
+  background-position: -905px -2345px;
+}
+
+.pokemon-pokemon-battle-sprites_4533 {
+  width: 80px;
+  height: 80px;
+  background-position: -995px -2345px;
+}
+
+.pokemon-pokemon-battle-sprites_4535 {
+  width: 80px;
+  height: 80px;
+  background-position: -1085px -2345px;
+}
+
+.pokemon-pokemon-battle-sprites_455 {
+  width: 80px;
+  height: 80px;
+  background-position: -1175px -2345px;
+}
+
+.pokemon-pokemon-battle-sprites_457 {
+  width: 80px;
+  height: 80px;
+  background-position: -1265px -2345px;
+}
+
+.pokemon-pokemon-battle-sprites_459 {
+  width: 80px;
+  height: 80px;
+  background-position: -1355px -2345px;
+}
+
+.pokemon-pokemon-battle-sprites_461 {
+  width: 80px;
+  height: 80px;
+  background-position: -1445px -2345px;
+}
+
+.pokemon-pokemon-battle-sprites_4619 {
+  width: 80px;
+  height: 80px;
+  background-position: -1535px -2345px;
+}
+
+.pokemon-pokemon-battle-sprites_4621 {
+  width: 80px;
+  height: 80px;
+  background-position: -1625px -2345px;
+}
+
+.pokemon-pokemon-battle-sprites_4623 {
+  width: 80px;
+  height: 80px;
+  background-position: -1715px -2345px;
+}
+
+.pokemon-pokemon-battle-sprites_4625 {
+  width: 80px;
+  height: 80px;
+  background-position: -1805px -2345px;
+}
+
+.pokemon-pokemon-battle-sprites_4627 {
+  width: 80px;
+  height: 80px;
+  background-position: -1895px -2345px;
+}
+
+.pokemon-pokemon-battle-sprites_4629 {
+  width: 80px;
+  height: 80px;
+  background-position: -1985px -2345px;
+}
+
+.pokemon-pokemon-battle-sprites_463 {
+  width: 80px;
+  height: 80px;
+  background-position: -2075px -2345px;
+}
+
+.pokemon-pokemon-battle-sprites_4631 {
+  width: 80px;
+  height: 80px;
+  background-position: -2165px -2345px;
+}
+
+.pokemon-pokemon-battle-sprites_4633 {
+  width: 80px;
+  height: 80px;
+  background-position: -2255px -2345px;
+}
+
+.pokemon-pokemon-battle-sprites_4635 {
+  width: 80px;
+  height: 80px;
+  background-position: -2345px -2345px;
+}
+
+.pokemon-pokemon-battle-sprites_4637 {
+  width: 80px;
+  height: 80px;
+  background-position: -2435px -2345px;
+}
+
+.pokemon-pokemon-battle-sprites_4639 {
+  width: 80px;
+  height: 80px;
+  background-position: -2525px -2345px;
+}
+
+.pokemon-pokemon-battle-sprites_4641 {
+  width: 80px;
+  height: 80px;
+  background-position: -2615px -2345px;
+}
+
+.pokemon-pokemon-battle-sprites_4643 {
+  width: 80px;
+  height: 80px;
+  background-position: -2705px -2345px;
+}
+
+.pokemon-pokemon-battle-sprites_4645 {
+  width: 80px;
+  height: 80px;
+  background-position: -2795px -2345px;
+}
+
+.pokemon-pokemon-battle-sprites_4647 {
+  width: 80px;
+  height: 80px;
+  background-position: -2885px -2345px;
+}
+
+.pokemon-pokemon-battle-sprites_4649 {
+  width: 80px;
+  height: 80px;
+  background-position: -2975px -2345px;
+}
+
+.pokemon-pokemon-battle-sprites_465 {
+  width: 80px;
+  height: 80px;
+  background-position: -3065px -2345px;
+}
+
+.pokemon-pokemon-battle-sprites_4651 {
+  width: 80px;
+  height: 80px;
+  background-position: -3155px -2345px;
+}
+
+.pokemon-pokemon-battle-sprites_4653 {
+  width: 80px;
+  height: 80px;
+  background-position: -3245px -2345px;
+}
+
+.pokemon-pokemon-battle-sprites_4655 {
+  width: 80px;
+  height: 80px;
+  background-position: -5px -2435px;
+}
+
+.pokemon-pokemon-battle-sprites_4657 {
+  width: 80px;
+  height: 80px;
+  background-position: -95px -2435px;
+}
+
+.pokemon-pokemon-battle-sprites_4659 {
+  width: 80px;
+  height: 80px;
+  background-position: -185px -2435px;
+}
+
+.pokemon-pokemon-battle-sprites_4661 {
+  width: 80px;
+  height: 80px;
+  background-position: -275px -2435px;
+}
+
+.pokemon-pokemon-battle-sprites_4663 {
+  width: 80px;
+  height: 80px;
+  background-position: -365px -2435px;
+}
+
+.pokemon-pokemon-battle-sprites_4665 {
+  width: 80px;
+  height: 80px;
+  background-position: -455px -2435px;
+}
+
+.pokemon-pokemon-battle-sprites_4667 {
+  width: 80px;
+  height: 80px;
+  background-position: -545px -2435px;
+}
+
+.pokemon-pokemon-battle-sprites_4669 {
+  width: 80px;
+  height: 80px;
+  background-position: -635px -2435px;
+}
+
+.pokemon-pokemon-battle-sprites_467 {
+  width: 80px;
+  height: 80px;
+  background-position: -725px -2435px;
+}
+
+.pokemon-pokemon-battle-sprites_4671 {
+  width: 80px;
+  height: 80px;
+  background-position: -815px -2435px;
+}
+
+.pokemon-pokemon-battle-sprites_4673 {
+  width: 80px;
+  height: 80px;
+  background-position: -905px -2435px;
+}
+
+.pokemon-pokemon-battle-sprites_4675 {
+  width: 80px;
+  height: 80px;
+  background-position: -995px -2435px;
+}
+
+.pokemon-pokemon-battle-sprites_4677 {
+  width: 80px;
+  height: 80px;
+  background-position: -1085px -2435px;
+}
+
+.pokemon-pokemon-battle-sprites_4679 {
+  width: 80px;
+  height: 80px;
+  background-position: -1175px -2435px;
+}
+
+.pokemon-pokemon-battle-sprites_4681 {
+  width: 80px;
+  height: 80px;
+  background-position: -1265px -2435px;
+}
+
+.pokemon-pokemon-battle-sprites_4683 {
+  width: 80px;
+  height: 80px;
+  background-position: -1355px -2435px;
+}
+
+.pokemon-pokemon-battle-sprites_4685 {
+  width: 80px;
+  height: 80px;
+  background-position: -1445px -2435px;
+}
+
+.pokemon-pokemon-battle-sprites_4687 {
+  width: 80px;
+  height: 80px;
+  background-position: -1535px -2435px;
+}
+
+.pokemon-pokemon-battle-sprites_4689 {
+  width: 80px;
+  height: 80px;
+  background-position: -1625px -2435px;
+}
+
+.pokemon-pokemon-battle-sprites_469 {
+  width: 80px;
+  height: 80px;
+  background-position: -1715px -2435px;
+}
+
+.pokemon-pokemon-battle-sprites_4691 {
+  width: 80px;
+  height: 80px;
+  background-position: -1805px -2435px;
+}
+
+.pokemon-pokemon-battle-sprites_4693 {
+  width: 80px;
+  height: 80px;
+  background-position: -1895px -2435px;
+}
+
+.pokemon-pokemon-battle-sprites_4695 {
+  width: 80px;
+  height: 80px;
+  background-position: -1985px -2435px;
+}
+
+.pokemon-pokemon-battle-sprites_4697 {
+  width: 80px;
+  height: 80px;
+  background-position: -2075px -2435px;
+}
+
+.pokemon-pokemon-battle-sprites_471 {
+  width: 80px;
+  height: 80px;
+  background-position: -2165px -2435px;
+}
+
+.pokemon-pokemon-battle-sprites_473 {
+  width: 80px;
+  height: 80px;
+  background-position: -2255px -2435px;
+}
+
+.pokemon-pokemon-battle-sprites_475 {
+  width: 80px;
+  height: 80px;
+  background-position: -2345px -2435px;
+}
+
+.pokemon-pokemon-battle-sprites_477 {
+  width: 80px;
+  height: 80px;
+  background-position: -2435px -2435px;
+}
+
+.pokemon-pokemon-battle-sprites_4781 {
+  width: 80px;
+  height: 80px;
+  background-position: -2525px -2435px;
+}
+
+.pokemon-pokemon-battle-sprites_4783 {
+  width: 80px;
+  height: 80px;
+  background-position: -2615px -2435px;
+}
+
+.pokemon-pokemon-battle-sprites_4785 {
+  width: 80px;
+  height: 80px;
+  background-position: -2705px -2435px;
+}
+
+.pokemon-pokemon-battle-sprites_4787 {
+  width: 80px;
+  height: 80px;
+  background-position: -2795px -2435px;
+}
+
+.pokemon-pokemon-battle-sprites_4789 {
+  width: 80px;
+  height: 80px;
+  background-position: -2885px -2435px;
+}
+
+.pokemon-pokemon-battle-sprites_479 {
+  width: 80px;
+  height: 80px;
+  background-position: -2975px -2435px;
+}
+
+.pokemon-pokemon-battle-sprites_4791 {
+  width: 80px;
+  height: 80px;
+  background-position: -3065px -2435px;
+}
+
+.pokemon-pokemon-battle-sprites_4793 {
+  width: 80px;
+  height: 80px;
+  background-position: -3155px -2435px;
+}
+
+.pokemon-pokemon-battle-sprites_4795 {
+  width: 80px;
+  height: 80px;
+  background-position: -3245px -2435px;
+}
+
+.pokemon-pokemon-battle-sprites_4797 {
+  width: 80px;
+  height: 80px;
+  background-position: -5px -2525px;
+}
+
+.pokemon-pokemon-battle-sprites_4799 {
+  width: 80px;
+  height: 80px;
+  background-position: -95px -2525px;
+}
+
+.pokemon-pokemon-battle-sprites_4801 {
+  width: 80px;
+  height: 80px;
+  background-position: -185px -2525px;
+}
+
+.pokemon-pokemon-battle-sprites_4803 {
+  width: 80px;
+  height: 80px;
+  background-position: -275px -2525px;
+}
+
+.pokemon-pokemon-battle-sprites_4805 {
+  width: 80px;
+  height: 80px;
+  background-position: -365px -2525px;
+}
+
+.pokemon-pokemon-battle-sprites_4807 {
+  width: 80px;
+  height: 80px;
+  background-position: -455px -2525px;
+}
+
+.pokemon-pokemon-battle-sprites_4809 {
+  width: 80px;
+  height: 80px;
+  background-position: -545px -2525px;
+}
+
+.pokemon-pokemon-battle-sprites_481 {
+  width: 80px;
+  height: 80px;
+  background-position: -635px -2525px;
+}
+
+.pokemon-pokemon-battle-sprites_4811 {
+  width: 80px;
+  height: 80px;
+  background-position: -725px -2525px;
+}
+
+.pokemon-pokemon-battle-sprites_4813 {
+  width: 80px;
+  height: 80px;
+  background-position: -815px -2525px;
+}
+
+.pokemon-pokemon-battle-sprites_4815 {
+  width: 80px;
+  height: 80px;
+  background-position: -905px -2525px;
+}
+
+.pokemon-pokemon-battle-sprites_4817 {
+  width: 80px;
+  height: 80px;
+  background-position: -995px -2525px;
+}
+
+.pokemon-pokemon-battle-sprites_4819 {
+  width: 80px;
+  height: 80px;
+  background-position: -1085px -2525px;
+}
+
+.pokemon-pokemon-battle-sprites_4821 {
+  width: 80px;
+  height: 80px;
+  background-position: -1175px -2525px;
+}
+
+.pokemon-pokemon-battle-sprites_4823 {
+  width: 80px;
+  height: 80px;
+  background-position: -1265px -2525px;
+}
+
+.pokemon-pokemon-battle-sprites_4825 {
+  width: 80px;
+  height: 80px;
+  background-position: -1355px -2525px;
+}
+
+.pokemon-pokemon-battle-sprites_4827 {
+  width: 80px;
+  height: 80px;
+  background-position: -1445px -2525px;
+}
+
+.pokemon-pokemon-battle-sprites_4829 {
+  width: 80px;
+  height: 80px;
+  background-position: -1535px -2525px;
+}
+
+.pokemon-pokemon-battle-sprites_483 {
+  width: 80px;
+  height: 80px;
+  background-position: -1625px -2525px;
+}
+
+.pokemon-pokemon-battle-sprites_4831 {
+  width: 80px;
+  height: 80px;
+  background-position: -1715px -2525px;
+}
+
+.pokemon-pokemon-battle-sprites_4833 {
+  width: 80px;
+  height: 80px;
+  background-position: -1805px -2525px;
+}
+
+.pokemon-pokemon-battle-sprites_4835 {
+  width: 80px;
+  height: 80px;
+  background-position: -1895px -2525px;
+}
+
+.pokemon-pokemon-battle-sprites_4837 {
+  width: 80px;
+  height: 80px;
+  background-position: -1985px -2525px;
+}
+
+.pokemon-pokemon-battle-sprites_4839 {
+  width: 80px;
+  height: 80px;
+  background-position: -2075px -2525px;
+}
+
+.pokemon-pokemon-battle-sprites_4841 {
+  width: 80px;
+  height: 80px;
+  background-position: -2165px -2525px;
+}
+
+.pokemon-pokemon-battle-sprites_4843 {
+  width: 80px;
+  height: 80px;
+  background-position: -2255px -2525px;
+}
+
+.pokemon-pokemon-battle-sprites_4845 {
+  width: 80px;
+  height: 80px;
+  background-position: -2345px -2525px;
+}
+
+.pokemon-pokemon-battle-sprites_4847 {
+  width: 80px;
+  height: 80px;
+  background-position: -2435px -2525px;
+}
+
+.pokemon-pokemon-battle-sprites_4849 {
+  width: 80px;
+  height: 80px;
+  background-position: -2525px -2525px;
+}
+
+.pokemon-pokemon-battle-sprites_485 {
+  width: 80px;
+  height: 80px;
+  background-position: -2615px -2525px;
+}
+
+.pokemon-pokemon-battle-sprites_4851 {
+  width: 80px;
+  height: 80px;
+  background-position: -2705px -2525px;
+}
+
+.pokemon-pokemon-battle-sprites_4853 {
+  width: 80px;
+  height: 80px;
+  background-position: -2795px -2525px;
+}
+
+.pokemon-pokemon-battle-sprites_4855 {
+  width: 80px;
+  height: 80px;
+  background-position: -2885px -2525px;
+}
+
+.pokemon-pokemon-battle-sprites_4857 {
+  width: 80px;
+  height: 80px;
+  background-position: -2975px -2525px;
+}
+
+.pokemon-pokemon-battle-sprites_4859 {
+  width: 80px;
+  height: 80px;
+  background-position: -3065px -2525px;
+}
+
+.pokemon-pokemon-battle-sprites_4943 {
+  width: 80px;
+  height: 80px;
+  background-position: -3155px -2525px;
+}
+
+.pokemon-pokemon-battle-sprites_4945 {
+  width: 80px;
+  height: 80px;
+  background-position: -3245px -2525px;
+}
+
+.pokemon-pokemon-battle-sprites_4947 {
+  width: 80px;
+  height: 80px;
+  background-position: -5px -2615px;
+}
+
+.pokemon-pokemon-battle-sprites_4949 {
+  width: 80px;
+  height: 80px;
+  background-position: -95px -2615px;
+}
+
+.pokemon-pokemon-battle-sprites_4951 {
+  width: 80px;
+  height: 80px;
+  background-position: -185px -2615px;
+}
+
+.pokemon-pokemon-battle-sprites_4953 {
+  width: 80px;
+  height: 80px;
+  background-position: -275px -2615px;
+}
+
+.pokemon-pokemon-battle-sprites_4955 {
+  width: 80px;
+  height: 80px;
+  background-position: -365px -2615px;
+}
+
+.pokemon-pokemon-battle-sprites_4957 {
+  width: 80px;
+  height: 80px;
+  background-position: -455px -2615px;
+}
+
+.pokemon-pokemon-battle-sprites_4959 {
+  width: 80px;
+  height: 80px;
+  background-position: -545px -2615px;
+}
+
+.pokemon-pokemon-battle-sprites_4961 {
+  width: 80px;
+  height: 80px;
+  background-position: -635px -2615px;
+}
+
+.pokemon-pokemon-battle-sprites_4963 {
+  width: 80px;
+  height: 80px;
+  background-position: -725px -2615px;
+}
+
+.pokemon-pokemon-battle-sprites_4965 {
+  width: 80px;
+  height: 80px;
+  background-position: -815px -2615px;
+}
+
+.pokemon-pokemon-battle-sprites_4967 {
+  width: 80px;
+  height: 80px;
+  background-position: -905px -2615px;
+}
+
+.pokemon-pokemon-battle-sprites_4969 {
+  width: 80px;
+  height: 80px;
+  background-position: -995px -2615px;
+}
+
+.pokemon-pokemon-battle-sprites_4971 {
+  width: 80px;
+  height: 80px;
+  background-position: -1085px -2615px;
+}
+
+.pokemon-pokemon-battle-sprites_4973 {
+  width: 80px;
+  height: 80px;
+  background-position: -1175px -2615px;
+}
+
+.pokemon-pokemon-battle-sprites_4975 {
+  width: 80px;
+  height: 80px;
+  background-position: -1265px -2615px;
+}
+
+.pokemon-pokemon-battle-sprites_4977 {
+  width: 80px;
+  height: 80px;
+  background-position: -1355px -2615px;
+}
+
+.pokemon-pokemon-battle-sprites_4979 {
+  width: 80px;
+  height: 80px;
+  background-position: -1445px -2615px;
+}
+
+.pokemon-pokemon-battle-sprites_4981 {
+  width: 80px;
+  height: 80px;
+  background-position: -1535px -2615px;
+}
+
+.pokemon-pokemon-battle-sprites_4983 {
+  width: 80px;
+  height: 80px;
+  background-position: -1625px -2615px;
+}
+
+.pokemon-pokemon-battle-sprites_4985 {
+  width: 80px;
+  height: 80px;
+  background-position: -1715px -2615px;
+}
+
+.pokemon-pokemon-battle-sprites_4987 {
+  width: 80px;
+  height: 80px;
+  background-position: -1805px -2615px;
+}
+
+.pokemon-pokemon-battle-sprites_4989 {
+  width: 80px;
+  height: 80px;
+  background-position: -1895px -2615px;
+}
+
+.pokemon-pokemon-battle-sprites_4991 {
+  width: 80px;
+  height: 80px;
+  background-position: -1985px -2615px;
+}
+
+.pokemon-pokemon-battle-sprites_4993 {
+  width: 80px;
+  height: 80px;
+  background-position: -2075px -2615px;
+}
+
+.pokemon-pokemon-battle-sprites_4995 {
+  width: 80px;
+  height: 80px;
+  background-position: -2165px -2615px;
+}
+
+.pokemon-pokemon-battle-sprites_4997 {
+  width: 80px;
+  height: 80px;
+  background-position: -2255px -2615px;
+}
+
+.pokemon-pokemon-battle-sprites_4999 {
+  width: 80px;
+  height: 80px;
+  background-position: -2345px -2615px;
+}
+
+.pokemon-pokemon-battle-sprites_5001 {
+  width: 80px;
+  height: 80px;
+  background-position: -2435px -2615px;
+}
+
+.pokemon-pokemon-battle-sprites_5003 {
+  width: 80px;
+  height: 80px;
+  background-position: -2525px -2615px;
+}
+
+.pokemon-pokemon-battle-sprites_5005 {
+  width: 80px;
+  height: 80px;
+  background-position: -2615px -2615px;
+}
+
+.pokemon-pokemon-battle-sprites_5007 {
+  width: 80px;
+  height: 80px;
+  background-position: -2705px -2615px;
+}
+
+.pokemon-pokemon-battle-sprites_5009 {
+  width: 80px;
+  height: 80px;
+  background-position: -2795px -2615px;
+}
+
+.pokemon-pokemon-battle-sprites_5011 {
+  width: 80px;
+  height: 80px;
+  background-position: -2885px -2615px;
+}
+
+.pokemon-pokemon-battle-sprites_5013 {
+  width: 80px;
+  height: 80px;
+  background-position: -2975px -2615px;
+}
+
+.pokemon-pokemon-battle-sprites_5015 {
+  width: 80px;
+  height: 80px;
+  background-position: -3065px -2615px;
+}
+
+.pokemon-pokemon-battle-sprites_5017 {
+  width: 80px;
+  height: 80px;
+  background-position: -3155px -2615px;
+}
+
+.pokemon-pokemon-battle-sprites_5019 {
+  width: 80px;
+  height: 80px;
+  background-position: -3245px -2615px;
+}
+
+.pokemon-pokemon-battle-sprites_5021 {
+  width: 80px;
+  height: 80px;
+  background-position: -5px -2705px;
+}
+
+.pokemon-pokemon-battle-sprites_5105 {
+  width: 80px;
+  height: 80px;
+  background-position: -95px -2705px;
+}
+
+.pokemon-pokemon-battle-sprites_5107 {
+  width: 80px;
+  height: 80px;
+  background-position: -185px -2705px;
+}
+
+.pokemon-pokemon-battle-sprites_5109 {
+  width: 80px;
+  height: 80px;
+  background-position: -275px -2705px;
+}
+
+.pokemon-pokemon-battle-sprites_5111 {
+  width: 80px;
+  height: 80px;
+  background-position: -365px -2705px;
+}
+
+.pokemon-pokemon-battle-sprites_5113 {
+  width: 80px;
+  height: 80px;
+  background-position: -455px -2705px;
+}
+
+.pokemon-pokemon-battle-sprites_5115 {
+  width: 80px;
+  height: 80px;
+  background-position: -545px -2705px;
+}
+
+.pokemon-pokemon-battle-sprites_5117 {
+  width: 80px;
+  height: 80px;
+  background-position: -635px -2705px;
+}
+
+.pokemon-pokemon-battle-sprites_5119 {
+  width: 80px;
+  height: 80px;
+  background-position: -725px -2705px;
+}
+
+.pokemon-pokemon-battle-sprites_5121 {
+  width: 80px;
+  height: 80px;
+  background-position: -815px -2705px;
+}
+
+.pokemon-pokemon-battle-sprites_5123 {
+  width: 80px;
+  height: 80px;
+  background-position: -905px -2705px;
+}
+
+.pokemon-pokemon-battle-sprites_5125 {
+  width: 80px;
+  height: 80px;
+  background-position: -995px -2705px;
+}
+
+.pokemon-pokemon-battle-sprites_5127 {
+  width: 80px;
+  height: 80px;
+  background-position: -1085px -2705px;
+}
+
+.pokemon-pokemon-battle-sprites_5129 {
+  width: 80px;
+  height: 80px;
+  background-position: -1175px -2705px;
+}
+
+.pokemon-pokemon-battle-sprites_5131 {
+  width: 80px;
+  height: 80px;
+  background-position: -1265px -2705px;
+}
+
+.pokemon-pokemon-battle-sprites_5133 {
+  width: 80px;
+  height: 80px;
+  background-position: -1355px -2705px;
+}
+
+.pokemon-pokemon-battle-sprites_5135 {
+  width: 80px;
+  height: 80px;
+  background-position: -1445px -2705px;
+}
+
+.pokemon-pokemon-battle-sprites_5137 {
+  width: 80px;
+  height: 80px;
+  background-position: -1535px -2705px;
+}
+
+.pokemon-pokemon-battle-sprites_5139 {
+  width: 80px;
+  height: 80px;
+  background-position: -1625px -2705px;
+}
+
+.pokemon-pokemon-battle-sprites_5141 {
+  width: 80px;
+  height: 80px;
+  background-position: -1715px -2705px;
+}
+
+.pokemon-pokemon-battle-sprites_5143 {
+  width: 80px;
+  height: 80px;
+  background-position: -1805px -2705px;
+}
+
+.pokemon-pokemon-battle-sprites_5145 {
+  width: 80px;
+  height: 80px;
+  background-position: -1895px -2705px;
+}
+
+.pokemon-pokemon-battle-sprites_5147 {
+  width: 80px;
+  height: 80px;
+  background-position: -1985px -2705px;
+}
+
+.pokemon-pokemon-battle-sprites_5149 {
+  width: 80px;
+  height: 80px;
+  background-position: -2075px -2705px;
+}
+
+.pokemon-pokemon-battle-sprites_5151 {
+  width: 80px;
+  height: 80px;
+  background-position: -2165px -2705px;
+}
+
+.pokemon-pokemon-battle-sprites_5153 {
+  width: 80px;
+  height: 80px;
+  background-position: -2255px -2705px;
+}
+
+.pokemon-pokemon-battle-sprites_5155 {
+  width: 80px;
+  height: 80px;
+  background-position: -2345px -2705px;
+}
+
+.pokemon-pokemon-battle-sprites_5157 {
+  width: 80px;
+  height: 80px;
+  background-position: -2435px -2705px;
+}
+
+.pokemon-pokemon-battle-sprites_5159 {
+  width: 80px;
+  height: 80px;
+  background-position: -2525px -2705px;
+}
+
+.pokemon-pokemon-battle-sprites_5161 {
+  width: 80px;
+  height: 80px;
+  background-position: -2615px -2705px;
+}
+
+.pokemon-pokemon-battle-sprites_5163 {
+  width: 80px;
+  height: 80px;
+  background-position: -2705px -2705px;
+}
+
+.pokemon-pokemon-battle-sprites_5165 {
+  width: 80px;
+  height: 80px;
+  background-position: -2795px -2705px;
+}
+
+.pokemon-pokemon-battle-sprites_5167 {
+  width: 80px;
+  height: 80px;
+  background-position: -2885px -2705px;
+}
+
+.pokemon-pokemon-battle-sprites_5169 {
+  width: 80px;
+  height: 80px;
+  background-position: -2975px -2705px;
+}
+
+.pokemon-pokemon-battle-sprites_5171 {
+  width: 80px;
+  height: 80px;
+  background-position: -3065px -2705px;
+}
+
+.pokemon-pokemon-battle-sprites_5173 {
+  width: 80px;
+  height: 80px;
+  background-position: -3155px -2705px;
+}
+
+.pokemon-pokemon-battle-sprites_5175 {
+  width: 80px;
+  height: 80px;
+  background-position: -3245px -2705px;
+}
+
+.pokemon-pokemon-battle-sprites_5177 {
+  width: 80px;
+  height: 80px;
+  background-position: -5px -2795px;
+}
+
+.pokemon-pokemon-battle-sprites_5179 {
+  width: 80px;
+  height: 80px;
+  background-position: -95px -2795px;
+}
+
+.pokemon-pokemon-battle-sprites_5181 {
+  width: 80px;
+  height: 80px;
+  background-position: -185px -2795px;
+}
+
+.pokemon-pokemon-battle-sprites_5183 {
+  width: 80px;
+  height: 80px;
+  background-position: -275px -2795px;
+}
+
+.pokemon-pokemon-battle-sprites_5267 {
+  width: 80px;
+  height: 80px;
+  background-position: -365px -2795px;
+}
+
+.pokemon-pokemon-battle-sprites_5269 {
+  width: 80px;
+  height: 80px;
+  background-position: -455px -2795px;
+}
+
+.pokemon-pokemon-battle-sprites_5271 {
+  width: 80px;
+  height: 80px;
+  background-position: -545px -2795px;
+}
+
+.pokemon-pokemon-battle-sprites_5273 {
+  width: 80px;
+  height: 80px;
+  background-position: -635px -2795px;
+}
+
+.pokemon-pokemon-battle-sprites_5275 {
+  width: 80px;
+  height: 80px;
+  background-position: -725px -2795px;
+}
+
+.pokemon-pokemon-battle-sprites_5277 {
+  width: 80px;
+  height: 80px;
+  background-position: -815px -2795px;
+}
+
+.pokemon-pokemon-battle-sprites_5279 {
+  width: 80px;
+  height: 80px;
+  background-position: -905px -2795px;
+}
+
+.pokemon-pokemon-battle-sprites_5281 {
+  width: 80px;
+  height: 80px;
+  background-position: -995px -2795px;
+}
+
+.pokemon-pokemon-battle-sprites_5283 {
+  width: 80px;
+  height: 80px;
+  background-position: -1085px -2795px;
+}
+
+.pokemon-pokemon-battle-sprites_5285 {
+  width: 80px;
+  height: 80px;
+  background-position: -1175px -2795px;
+}
+
+.pokemon-pokemon-battle-sprites_5287 {
+  width: 80px;
+  height: 80px;
+  background-position: -1265px -2795px;
+}
+
+.pokemon-pokemon-battle-sprites_5289 {
+  width: 80px;
+  height: 80px;
+  background-position: -1355px -2795px;
+}
+
+.pokemon-pokemon-battle-sprites_5291 {
+  width: 80px;
+  height: 80px;
+  background-position: -1445px -2795px;
+}
+
+.pokemon-pokemon-battle-sprites_5293 {
+  width: 80px;
+  height: 80px;
+  background-position: -1535px -2795px;
+}
+
+.pokemon-pokemon-battle-sprites_5295 {
+  width: 80px;
+  height: 80px;
+  background-position: -1625px -2795px;
+}
+
+.pokemon-pokemon-battle-sprites_5297 {
+  width: 80px;
+  height: 80px;
+  background-position: -1715px -2795px;
+}
+
+.pokemon-pokemon-battle-sprites_5299 {
+  width: 80px;
+  height: 80px;
+  background-position: -1805px -2795px;
+}
+
+.pokemon-pokemon-battle-sprites_5301 {
+  width: 80px;
+  height: 80px;
+  background-position: -1895px -2795px;
+}
+
+.pokemon-pokemon-battle-sprites_5303 {
+  width: 80px;
+  height: 80px;
+  background-position: -1985px -2795px;
+}
+
+.pokemon-pokemon-battle-sprites_5305 {
+  width: 80px;
+  height: 80px;
+  background-position: -2075px -2795px;
+}
+
+.pokemon-pokemon-battle-sprites_5307 {
+  width: 80px;
+  height: 80px;
+  background-position: -2165px -2795px;
+}
+
+.pokemon-pokemon-battle-sprites_5309 {
+  width: 80px;
+  height: 80px;
+  background-position: -2255px -2795px;
+}
+
+.pokemon-pokemon-battle-sprites_5311 {
+  width: 80px;
+  height: 80px;
+  background-position: -2345px -2795px;
+}
+
+.pokemon-pokemon-battle-sprites_5313 {
+  width: 80px;
+  height: 80px;
+  background-position: -2435px -2795px;
+}
+
+.pokemon-pokemon-battle-sprites_5315 {
+  width: 80px;
+  height: 80px;
+  background-position: -2525px -2795px;
+}
+
+.pokemon-pokemon-battle-sprites_5317 {
+  width: 80px;
+  height: 80px;
+  background-position: -2615px -2795px;
+}
+
+.pokemon-pokemon-battle-sprites_5319 {
+  width: 80px;
+  height: 80px;
+  background-position: -2705px -2795px;
+}
+
+.pokemon-pokemon-battle-sprites_5321 {
+  width: 80px;
+  height: 80px;
+  background-position: -2795px -2795px;
+}
+
+.pokemon-pokemon-battle-sprites_5323 {
+  width: 80px;
+  height: 80px;
+  background-position: -2885px -2795px;
+}
+
+.pokemon-pokemon-battle-sprites_5325 {
+  width: 80px;
+  height: 80px;
+  background-position: -2975px -2795px;
+}
+
+.pokemon-pokemon-battle-sprites_5327 {
+  width: 80px;
+  height: 80px;
+  background-position: -3065px -2795px;
+}
+
+.pokemon-pokemon-battle-sprites_5329 {
+  width: 80px;
+  height: 80px;
+  background-position: -3155px -2795px;
+}
+
+.pokemon-pokemon-battle-sprites_5331 {
+  width: 80px;
+  height: 80px;
+  background-position: -3245px -2795px;
+}
+
+.pokemon-pokemon-battle-sprites_5333 {
+  width: 80px;
+  height: 80px;
+  background-position: -5px -2885px;
+}
+
+.pokemon-pokemon-battle-sprites_5335 {
+  width: 80px;
+  height: 80px;
+  background-position: -95px -2885px;
+}
+
+.pokemon-pokemon-battle-sprites_5337 {
+  width: 80px;
+  height: 80px;
+  background-position: -185px -2885px;
+}
+
+.pokemon-pokemon-battle-sprites_5339 {
+  width: 80px;
+  height: 80px;
+  background-position: -275px -2885px;
+}
+
+.pokemon-pokemon-battle-sprites_5341 {
+  width: 80px;
+  height: 80px;
+  background-position: -365px -2885px;
+}
+
+.pokemon-pokemon-battle-sprites_5343 {
+  width: 80px;
+  height: 80px;
+  background-position: -455px -2885px;
+}
+
+.pokemon-pokemon-battle-sprites_5345 {
+  width: 80px;
+  height: 80px;
+  background-position: -545px -2885px;
+}
+
+.pokemon-pokemon-battle-sprites_5429 {
+  width: 80px;
+  height: 80px;
+  background-position: -635px -2885px;
+}
+
+.pokemon-pokemon-battle-sprites_5431 {
+  width: 80px;
+  height: 80px;
+  background-position: -725px -2885px;
+}
+
+.pokemon-pokemon-battle-sprites_5433 {
+  width: 80px;
+  height: 80px;
+  background-position: -815px -2885px;
+}
+
+.pokemon-pokemon-battle-sprites_5435 {
+  width: 80px;
+  height: 80px;
+  background-position: -905px -2885px;
+}
+
+.pokemon-pokemon-battle-sprites_5437 {
+  width: 80px;
+  height: 80px;
+  background-position: -995px -2885px;
+}
+
+.pokemon-pokemon-battle-sprites_5439 {
+  width: 80px;
+  height: 80px;
+  background-position: -1085px -2885px;
+}
+
+.pokemon-pokemon-battle-sprites_5441 {
+  width: 80px;
+  height: 80px;
+  background-position: -1175px -2885px;
+}
+
+.pokemon-pokemon-battle-sprites_5443 {
+  width: 80px;
+  height: 80px;
+  background-position: -1265px -2885px;
+}
+
+.pokemon-pokemon-battle-sprites_5445 {
+  width: 80px;
+  height: 80px;
+  background-position: -1355px -2885px;
+}
+
+.pokemon-pokemon-battle-sprites_5447 {
+  width: 80px;
+  height: 80px;
+  background-position: -1445px -2885px;
+}
+
+.pokemon-pokemon-battle-sprites_5449 {
+  width: 80px;
+  height: 80px;
+  background-position: -1535px -2885px;
+}
+
+.pokemon-pokemon-battle-sprites_5451 {
+  width: 80px;
+  height: 80px;
+  background-position: -1625px -2885px;
+}
+
+.pokemon-pokemon-battle-sprites_5453 {
+  width: 80px;
+  height: 80px;
+  background-position: -1715px -2885px;
+}
+
+.pokemon-pokemon-battle-sprites_5455 {
+  width: 80px;
+  height: 80px;
+  background-position: -1805px -2885px;
+}
+
+.pokemon-pokemon-battle-sprites_5457 {
+  width: 80px;
+  height: 80px;
+  background-position: -1895px -2885px;
+}
+
+.pokemon-pokemon-battle-sprites_5459 {
+  width: 80px;
+  height: 80px;
+  background-position: -1985px -2885px;
+}
+
+.pokemon-pokemon-battle-sprites_5461 {
+  width: 80px;
+  height: 80px;
+  background-position: -2075px -2885px;
+}
+
+.pokemon-pokemon-battle-sprites_5463 {
+  width: 80px;
+  height: 80px;
+  background-position: -2165px -2885px;
+}
+
+.pokemon-pokemon-battle-sprites_5465 {
+  width: 80px;
+  height: 80px;
+  background-position: -2255px -2885px;
+}
+
+.pokemon-pokemon-battle-sprites_5467 {
+  width: 80px;
+  height: 80px;
+  background-position: -2345px -2885px;
+}
+
+.pokemon-pokemon-battle-sprites_5469 {
+  width: 80px;
+  height: 80px;
+  background-position: -2435px -2885px;
+}
+
+.pokemon-pokemon-battle-sprites_5471 {
+  width: 80px;
+  height: 80px;
+  background-position: -2525px -2885px;
+}
+
+.pokemon-pokemon-battle-sprites_5473 {
+  width: 80px;
+  height: 80px;
+  background-position: -2615px -2885px;
+}
+
+.pokemon-pokemon-battle-sprites_5475 {
+  width: 80px;
+  height: 80px;
+  background-position: -2705px -2885px;
+}
+
+.pokemon-pokemon-battle-sprites_5477 {
+  width: 80px;
+  height: 80px;
+  background-position: -2795px -2885px;
+}
+
+.pokemon-pokemon-battle-sprites_5479 {
+  width: 80px;
+  height: 80px;
+  background-position: -2885px -2885px;
+}
+
+.pokemon-pokemon-battle-sprites_5481 {
+  width: 80px;
+  height: 80px;
+  background-position: -2975px -2885px;
+}
+
+.pokemon-pokemon-battle-sprites_5483 {
+  width: 80px;
+  height: 80px;
+  background-position: -3065px -2885px;
+}
+
+.pokemon-pokemon-battle-sprites_5485 {
+  width: 80px;
+  height: 80px;
+  background-position: -3155px -2885px;
+}
+
+.pokemon-pokemon-battle-sprites_5487 {
+  width: 80px;
+  height: 80px;
+  background-position: -3245px -2885px;
+}
+
+.pokemon-pokemon-battle-sprites_5489 {
+  width: 80px;
+  height: 80px;
+  background-position: -5px -2975px;
+}
+
+.pokemon-pokemon-battle-sprites_5491 {
+  width: 80px;
+  height: 80px;
+  background-position: -95px -2975px;
+}
+
+.pokemon-pokemon-battle-sprites_5493 {
+  width: 80px;
+  height: 80px;
+  background-position: -185px -2975px;
+}
+
+.pokemon-pokemon-battle-sprites_5495 {
+  width: 80px;
+  height: 80px;
+  background-position: -275px -2975px;
+}
+
+.pokemon-pokemon-battle-sprites_5497 {
+  width: 80px;
+  height: 80px;
+  background-position: -365px -2975px;
+}
+
+.pokemon-pokemon-battle-sprites_5499 {
+  width: 80px;
+  height: 80px;
+  background-position: -455px -2975px;
+}
+
+.pokemon-pokemon-battle-sprites_5501 {
+  width: 80px;
+  height: 80px;
+  background-position: -545px -2975px;
+}
+
+.pokemon-pokemon-battle-sprites_5503 {
+  width: 80px;
+  height: 80px;
+  background-position: -635px -2975px;
+}
+
+.pokemon-pokemon-battle-sprites_5505 {
+  width: 80px;
+  height: 80px;
+  background-position: -725px -2975px;
+}
+
+.pokemon-pokemon-battle-sprites_5507 {
+  width: 80px;
+  height: 80px;
+  background-position: -815px -2975px;
+}
+
+.pokemon-pokemon-battle-sprites_5591 {
+  width: 80px;
+  height: 80px;
+  background-position: -905px -2975px;
+}
+
+.pokemon-pokemon-battle-sprites_5593 {
+  width: 80px;
+  height: 80px;
+  background-position: -995px -2975px;
+}
+
+.pokemon-pokemon-battle-sprites_5595 {
+  width: 80px;
+  height: 80px;
+  background-position: -1085px -2975px;
+}
+
+.pokemon-pokemon-battle-sprites_5597 {
+  width: 80px;
+  height: 80px;
+  background-position: -1175px -2975px;
+}
+
+.pokemon-pokemon-battle-sprites_5599 {
+  width: 80px;
+  height: 80px;
+  background-position: -1265px -2975px;
+}
+
+.pokemon-pokemon-battle-sprites_5601 {
+  width: 80px;
+  height: 80px;
+  background-position: -1355px -2975px;
+}
+
+.pokemon-pokemon-battle-sprites_5603 {
+  width: 80px;
+  height: 80px;
+  background-position: -1445px -2975px;
+}
+
+.pokemon-pokemon-battle-sprites_5605 {
+  width: 80px;
+  height: 80px;
+  background-position: -1535px -2975px;
+}
+
+.pokemon-pokemon-battle-sprites_5607 {
+  width: 80px;
+  height: 80px;
+  background-position: -1625px -2975px;
+}
+
+.pokemon-pokemon-battle-sprites_5609 {
+  width: 80px;
+  height: 80px;
+  background-position: -1715px -2975px;
+}
+
+.pokemon-pokemon-battle-sprites_5611 {
+  width: 80px;
+  height: 80px;
+  background-position: -1805px -2975px;
+}
+
+.pokemon-pokemon-battle-sprites_5613 {
+  width: 80px;
+  height: 80px;
+  background-position: -1895px -2975px;
+}
+
+.pokemon-pokemon-battle-sprites_569 {
+  width: 80px;
+  height: 80px;
+  background-position: -1985px -2975px;
+}
+
+.pokemon-pokemon-battle-sprites_571 {
+  width: 80px;
+  height: 80px;
+  background-position: -2075px -2975px;
+}
+
+.pokemon-pokemon-battle-sprites_573 {
+  width: 80px;
+  height: 80px;
+  background-position: -2165px -2975px;
+}
+
+.pokemon-pokemon-battle-sprites_575 {
+  width: 80px;
+  height: 80px;
+  background-position: -2255px -2975px;
+}
+
+.pokemon-pokemon-battle-sprites_5753 {
+  width: 80px;
+  height: 80px;
+  background-position: -2345px -2975px;
+}
+
+.pokemon-pokemon-battle-sprites_5755 {
+  width: 80px;
+  height: 80px;
+  background-position: -2435px -2975px;
+}
+
+.pokemon-pokemon-battle-sprites_5757 {
+  width: 80px;
+  height: 80px;
+  background-position: -2525px -2975px;
+}
+
+.pokemon-pokemon-battle-sprites_5759 {
+  width: 80px;
+  height: 80px;
+  background-position: -2615px -2975px;
+}
+
+.pokemon-pokemon-battle-sprites_5761 {
+  width: 80px;
+  height: 80px;
+  background-position: -2705px -2975px;
+}
+
+.pokemon-pokemon-battle-sprites_5763 {
+  width: 80px;
+  height: 80px;
+  background-position: -2795px -2975px;
+}
+
+.pokemon-pokemon-battle-sprites_5765 {
+  width: 80px;
+  height: 80px;
+  background-position: -2885px -2975px;
+}
+
+.pokemon-pokemon-battle-sprites_5767 {
+  width: 80px;
+  height: 80px;
+  background-position: -2975px -2975px;
+}
+
+.pokemon-pokemon-battle-sprites_5769 {
+  width: 80px;
+  height: 80px;
+  background-position: -3065px -2975px;
+}
+
+.pokemon-pokemon-battle-sprites_577 {
+  width: 80px;
+  height: 80px;
+  background-position: -3155px -2975px;
+}
+
+.pokemon-pokemon-battle-sprites_5771 {
+  width: 80px;
+  height: 80px;
+  background-position: -3245px -2975px;
+}
+
+.pokemon-pokemon-battle-sprites_5773 {
+  width: 80px;
+  height: 80px;
+  background-position: -5px -3065px;
+}
+
+.pokemon-pokemon-battle-sprites_5775 {
+  width: 80px;
+  height: 80px;
+  background-position: -95px -3065px;
+}
+
+.pokemon-pokemon-battle-sprites_579 {
+  width: 80px;
+  height: 80px;
+  background-position: -185px -3065px;
+}
+
+.pokemon-pokemon-battle-sprites_581 {
+  width: 80px;
+  height: 80px;
+  background-position: -275px -3065px;
+}
+
+.pokemon-pokemon-battle-sprites_583 {
+  width: 80px;
+  height: 80px;
+  background-position: -365px -3065px;
+}
+
+.pokemon-pokemon-battle-sprites_585 {
+  width: 80px;
+  height: 80px;
+  background-position: -455px -3065px;
+}
+
+.pokemon-pokemon-battle-sprites_587 {
+  width: 80px;
+  height: 80px;
+  background-position: -545px -3065px;
+}
+
+.pokemon-pokemon-battle-sprites_589 {
+  width: 80px;
+  height: 80px;
+  background-position: -635px -3065px;
+}
+
+.pokemon-pokemon-battle-sprites_591 {
+  width: 80px;
+  height: 80px;
+  background-position: -725px -3065px;
+}
+
+.pokemon-pokemon-battle-sprites_593 {
+  width: 80px;
+  height: 80px;
+  background-position: -815px -3065px;
+}
+
+.pokemon-pokemon-battle-sprites_595 {
+  width: 80px;
+  height: 80px;
+  background-position: -905px -3065px;
+}
+
+.pokemon-pokemon-battle-sprites_597 {
+  width: 80px;
+  height: 80px;
+  background-position: -995px -3065px;
+}
+
+.pokemon-pokemon-battle-sprites_599 {
+  width: 80px;
+  height: 80px;
+  background-position: -1085px -3065px;
+}
+
+.pokemon-pokemon-battle-sprites_601 {
+  width: 80px;
+  height: 80px;
+  background-position: -1175px -3065px;
+}
+
+.pokemon-pokemon-battle-sprites_603 {
+  width: 80px;
+  height: 80px;
+  background-position: -1265px -3065px;
+}
+
+.pokemon-pokemon-battle-sprites_605 {
+  width: 80px;
+  height: 80px;
+  background-position: -1355px -3065px;
+}
+
+.pokemon-pokemon-battle-sprites_607 {
+  width: 80px;
+  height: 80px;
+  background-position: -1445px -3065px;
+}
+
+.pokemon-pokemon-battle-sprites_609 {
+  width: 80px;
+  height: 80px;
+  background-position: -1535px -3065px;
+}
+
+.pokemon-pokemon-battle-sprites_611 {
+  width: 80px;
+  height: 80px;
+  background-position: -1625px -3065px;
+}
+
+.pokemon-pokemon-battle-sprites_613 {
+  width: 80px;
+  height: 80px;
+  background-position: -1715px -3065px;
+}
+
+.pokemon-pokemon-battle-sprites_615 {
+  width: 80px;
+  height: 80px;
+  background-position: -1805px -3065px;
+}
+
+.pokemon-pokemon-battle-sprites_617 {
+  width: 80px;
+  height: 80px;
+  background-position: -1895px -3065px;
+}
+
+.pokemon-pokemon-battle-sprites_619 {
+  width: 80px;
+  height: 80px;
+  background-position: -1985px -3065px;
+}
+
+.pokemon-pokemon-battle-sprites_621 {
+  width: 80px;
+  height: 80px;
+  background-position: -2075px -3065px;
+}
+
+.pokemon-pokemon-battle-sprites_623 {
+  width: 80px;
+  height: 80px;
+  background-position: -2165px -3065px;
+}
+
+.pokemon-pokemon-battle-sprites_625 {
+  width: 80px;
+  height: 80px;
+  background-position: -2255px -3065px;
+}
+
+.pokemon-pokemon-battle-sprites_627 {
+  width: 80px;
+  height: 80px;
+  background-position: -2345px -3065px;
+}
+
+.pokemon-pokemon-battle-sprites_629 {
+  width: 80px;
+  height: 80px;
+  background-position: -2435px -3065px;
+}
+
+.pokemon-pokemon-battle-sprites_631 {
+  width: 80px;
+  height: 80px;
+  background-position: -2525px -3065px;
+}
+
+.pokemon-pokemon-battle-sprites_633 {
+  width: 80px;
+  height: 80px;
+  background-position: -2615px -3065px;
+}
+
+.pokemon-pokemon-battle-sprites_635 {
+  width: 80px;
+  height: 80px;
+  background-position: -2705px -3065px;
+}
+
+.pokemon-pokemon-battle-sprites_637 {
+  width: 80px;
+  height: 80px;
+  background-position: -2795px -3065px;
+}
+
+.pokemon-pokemon-battle-sprites_639 {
+  width: 80px;
+  height: 80px;
+  background-position: -2885px -3065px;
+}
+
+.pokemon-pokemon-battle-sprites_641 {
+  width: 80px;
+  height: 80px;
+  background-position: -2975px -3065px;
+}
+
+.pokemon-pokemon-battle-sprites_643 {
+  width: 80px;
+  height: 80px;
+  background-position: -3065px -3065px;
+}
+
+.pokemon-pokemon-battle-sprites_645 {
+  width: 80px;
+  height: 80px;
+  background-position: -3155px -3065px;
+}
+
+.pokemon-pokemon-battle-sprites_647 {
+  width: 80px;
+  height: 80px;
+  background-position: -3245px -3065px;
+}
+
+.pokemon-pokemon-battle-sprites_731 {
+  width: 80px;
+  height: 80px;
+  background-position: -5px -3155px;
+}
+
+.pokemon-pokemon-battle-sprites_733 {
+  width: 80px;
+  height: 80px;
+  background-position: -95px -3155px;
+}
+
+.pokemon-pokemon-battle-sprites_735 {
+  width: 80px;
+  height: 80px;
+  background-position: -185px -3155px;
+}
+
+.pokemon-pokemon-battle-sprites_737 {
+  width: 80px;
+  height: 80px;
+  background-position: -275px -3155px;
+}
+
+.pokemon-pokemon-battle-sprites_739 {
+  width: 80px;
+  height: 80px;
+  background-position: -365px -3155px;
+}
+
+.pokemon-pokemon-battle-sprites_741 {
+  width: 80px;
+  height: 80px;
+  background-position: -455px -3155px;
+}
+
+.pokemon-pokemon-battle-sprites_743 {
+  width: 80px;
+  height: 80px;
+  background-position: -545px -3155px;
+}
+
+.pokemon-pokemon-battle-sprites_745 {
+  width: 80px;
+  height: 80px;
+  background-position: -635px -3155px;
+}
+
+.pokemon-pokemon-battle-sprites_747 {
+  width: 80px;
+  height: 80px;
+  background-position: -725px -3155px;
+}
+
+.pokemon-pokemon-battle-sprites_749 {
+  width: 80px;
+  height: 80px;
+  background-position: -815px -3155px;
+}
+
+.pokemon-pokemon-battle-sprites_751 {
+  width: 80px;
+  height: 80px;
+  background-position: -905px -3155px;
+}
+
+.pokemon-pokemon-battle-sprites_753 {
+  width: 80px;
+  height: 80px;
+  background-position: -995px -3155px;
+}
+
+.pokemon-pokemon-battle-sprites_755 {
+  width: 80px;
+  height: 80px;
+  background-position: -1085px -3155px;
+}
+
+.pokemon-pokemon-battle-sprites_757 {
+  width: 80px;
+  height: 80px;
+  background-position: -1175px -3155px;
+}
+
+.pokemon-pokemon-battle-sprites_759 {
+  width: 80px;
+  height: 80px;
+  background-position: -1265px -3155px;
+}
+
+.pokemon-pokemon-battle-sprites_761 {
+  width: 80px;
+  height: 80px;
+  background-position: -1355px -3155px;
+}
+
+.pokemon-pokemon-battle-sprites_763 {
+  width: 80px;
+  height: 80px;
+  background-position: -1445px -3155px;
+}
+
+.pokemon-pokemon-battle-sprites_765 {
+  width: 80px;
+  height: 80px;
+  background-position: -1535px -3155px;
+}
+
+.pokemon-pokemon-battle-sprites_767 {
+  width: 80px;
+  height: 80px;
+  background-position: -1625px -3155px;
+}
+
+.pokemon-pokemon-battle-sprites_769 {
+  width: 80px;
+  height: 80px;
+  background-position: -1715px -3155px;
+}
+
+.pokemon-pokemon-battle-sprites_771 {
+  width: 80px;
+  height: 80px;
+  background-position: -1805px -3155px;
+}
+
+.pokemon-pokemon-battle-sprites_773 {
+  width: 80px;
+  height: 80px;
+  background-position: -1895px -3155px;
+}
+
+.pokemon-pokemon-battle-sprites_775 {
+  width: 80px;
+  height: 80px;
+  background-position: -1985px -3155px;
+}
+
+.pokemon-pokemon-battle-sprites_777 {
+  width: 80px;
+  height: 80px;
+  background-position: -2075px -3155px;
+}
+
+.pokemon-pokemon-battle-sprites_779 {
+  width: 80px;
+  height: 80px;
+  background-position: -2165px -3155px;
+}
+
+.pokemon-pokemon-battle-sprites_781 {
+  width: 80px;
+  height: 80px;
+  background-position: -2255px -3155px;
+}
+
+.pokemon-pokemon-battle-sprites_783 {
+  width: 80px;
+  height: 80px;
+  background-position: -2345px -3155px;
+}
+
+.pokemon-pokemon-battle-sprites_785 {
+  width: 80px;
+  height: 80px;
+  background-position: -2435px -3155px;
+}
+
+.pokemon-pokemon-battle-sprites_787 {
+  width: 80px;
+  height: 80px;
+  background-position: -2525px -3155px;
+}
+
+.pokemon-pokemon-battle-sprites_789 {
+  width: 80px;
+  height: 80px;
+  background-position: -2615px -3155px;
+}
+
+.pokemon-pokemon-battle-sprites_791 {
+  width: 80px;
+  height: 80px;
+  background-position: -2705px -3155px;
+}
+
+.pokemon-pokemon-battle-sprites_793 {
+  width: 80px;
+  height: 80px;
+  background-position: -2795px -3155px;
+}
+
+.pokemon-pokemon-battle-sprites_795 {
+  width: 80px;
+  height: 80px;
+  background-position: -2885px -3155px;
+}
+
+.pokemon-pokemon-battle-sprites_797 {
+  width: 80px;
+  height: 80px;
+  background-position: -2975px -3155px;
+}
+
+.pokemon-pokemon-battle-sprites_799 {
+  width: 80px;
+  height: 80px;
+  background-position: -3065px -3155px;
+}
+
+.pokemon-pokemon-battle-sprites_801 {
+  width: 80px;
+  height: 80px;
+  background-position: -3155px -3155px;
+}
+
+.pokemon-pokemon-battle-sprites_803 {
+  width: 80px;
+  height: 80px;
+  background-position: -3245px -3155px;
+}
+
+.pokemon-pokemon-battle-sprites_805 {
+  width: 80px;
+  height: 80px;
+  background-position: -5px -3245px;
+}
+
+.pokemon-pokemon-battle-sprites_807 {
+  width: 80px;
+  height: 80px;
+  background-position: -95px -3245px;
+}
+
+.pokemon-pokemon-battle-sprites_809 {
+  width: 80px;
+  height: 80px;
+  background-position: -185px -3245px;
+}
+
+.pokemon-pokemon-battle-sprites_83 {
+  width: 80px;
+  height: 80px;
+  background-position: -275px -3245px;
+}
+
+.pokemon-pokemon-battle-sprites_85 {
+  width: 80px;
+  height: 80px;
+  background-position: -365px -3245px;
+}
+
+.pokemon-pokemon-battle-sprites_87 {
+  width: 80px;
+  height: 80px;
+  background-position: -455px -3245px;
+}
+
+.pokemon-pokemon-battle-sprites_89 {
+  width: 80px;
+  height: 80px;
+  background-position: -545px -3245px;
+}
+
+.pokemon-pokemon-battle-sprites_893 {
+  width: 80px;
+  height: 80px;
+  background-position: -635px -3245px;
+}
+
+.pokemon-pokemon-battle-sprites_895 {
+  width: 80px;
+  height: 80px;
+  background-position: -725px -3245px;
+}
+
+.pokemon-pokemon-battle-sprites_897 {
+  width: 80px;
+  height: 80px;
+  background-position: -815px -3245px;
+}
+
+.pokemon-pokemon-battle-sprites_899 {
+  width: 80px;
+  height: 80px;
+  background-position: -905px -3245px;
+}
+
+.pokemon-pokemon-battle-sprites_901 {
+  width: 80px;
+  height: 80px;
+  background-position: -995px -3245px;
+}
+
+.pokemon-pokemon-battle-sprites_903 {
+  width: 80px;
+  height: 80px;
+  background-position: -1085px -3245px;
+}
+
+.pokemon-pokemon-battle-sprites_905 {
+  width: 80px;
+  height: 80px;
+  background-position: -1175px -3245px;
+}
+
+.pokemon-pokemon-battle-sprites_907 {
+  width: 80px;
+  height: 80px;
+  background-position: -1265px -3245px;
+}
+
+.pokemon-pokemon-battle-sprites_909 {
+  width: 80px;
+  height: 80px;
+  background-position: -1355px -3245px;
+}
+
+.pokemon-pokemon-battle-sprites_91 {
+  width: 80px;
+  height: 80px;
+  background-position: -1445px -3245px;
+}
+
+.pokemon-pokemon-battle-sprites_911 {
+  width: 80px;
+  height: 80px;
+  background-position: -1535px -3245px;
+}
+
+.pokemon-pokemon-battle-sprites_913 {
+  width: 80px;
+  height: 80px;
+  background-position: -1625px -3245px;
+}
+
+.pokemon-pokemon-battle-sprites_915 {
+  width: 80px;
+  height: 80px;
+  background-position: -1715px -3245px;
+}
+
+.pokemon-pokemon-battle-sprites_917 {
+  width: 80px;
+  height: 80px;
+  background-position: -1805px -3245px;
+}
+
+.pokemon-pokemon-battle-sprites_919 {
+  width: 80px;
+  height: 80px;
+  background-position: -1895px -3245px;
+}
+
+.pokemon-pokemon-battle-sprites_921 {
+  width: 80px;
+  height: 80px;
+  background-position: -1985px -3245px;
+}
+
+.pokemon-pokemon-battle-sprites_923 {
+  width: 80px;
+  height: 80px;
+  background-position: -2075px -3245px;
+}
+
+.pokemon-pokemon-battle-sprites_925 {
+  width: 80px;
+  height: 80px;
+  background-position: -2165px -3245px;
+}
+
+.pokemon-pokemon-battle-sprites_927 {
+  width: 80px;
+  height: 80px;
+  background-position: -2255px -3245px;
+}
+
+.pokemon-pokemon-battle-sprites_929 {
+  width: 80px;
+  height: 80px;
+  background-position: -2345px -3245px;
+}
+
+.pokemon-pokemon-battle-sprites_93 {
+  width: 80px;
+  height: 80px;
+  background-position: -2435px -3245px;
+}
+
+.pokemon-pokemon-battle-sprites_931 {
+  width: 80px;
+  height: 80px;
+  background-position: -2525px -3245px;
+}
+
+.pokemon-pokemon-battle-sprites_933 {
+  width: 80px;
+  height: 80px;
+  background-position: -2615px -3245px;
+}
+
+.pokemon-pokemon-battle-sprites_935 {
+  width: 80px;
+  height: 80px;
+  background-position: -2705px -3245px;
+}
+
+.pokemon-pokemon-battle-sprites_937 {
+  width: 80px;
+  height: 80px;
+  background-position: -2795px -3245px;
+}
+
+.pokemon-pokemon-battle-sprites_939 {
+  width: 80px;
+  height: 80px;
+  background-position: -2885px -3245px;
+}
+
+.pokemon-pokemon-battle-sprites_941 {
+  width: 80px;
+  height: 80px;
+  background-position: -2975px -3245px;
+}
+
+.pokemon-pokemon-battle-sprites_943 {
+  width: 80px;
+  height: 80px;
+  background-position: -3065px -3245px;
+}
+
+.pokemon-pokemon-battle-sprites_945 {
+  width: 80px;
+  height: 80px;
+  background-position: -3155px -3245px;
+}
+
+.pokemon-pokemon-battle-sprites_947 {
+  width: 80px;
+  height: 80px;
+  background-position: -3245px -3245px;
+}
+
+.pokemon-pokemon-battle-sprites_949 {
+  width: 80px;
+  height: 80px;
+  background-position: -3335px -5px;
+}
+
+.pokemon-pokemon-battle-sprites_95 {
+  width: 80px;
+  height: 80px;
+  background-position: -3335px -95px;
+}
+
+.pokemon-pokemon-battle-sprites_951 {
+  width: 80px;
+  height: 80px;
+  background-position: -3335px -185px;
+}
+
+.pokemon-pokemon-battle-sprites_953 {
+  width: 80px;
+  height: 80px;
+  background-position: -3335px -275px;
+}
+
+.pokemon-pokemon-battle-sprites_955 {
+  width: 80px;
+  height: 80px;
+  background-position: -3335px -365px;
+}
+
+.pokemon-pokemon-battle-sprites_957 {
+  width: 80px;
+  height: 80px;
+  background-position: -3335px -455px;
+}
+
+.pokemon-pokemon-battle-sprites_959 {
+  width: 80px;
+  height: 80px;
+  background-position: -3335px -545px;
+}
+
+.pokemon-pokemon-battle-sprites_961 {
+  width: 80px;
+  height: 80px;
+  background-position: -3335px -635px;
+}
+
+.pokemon-pokemon-battle-sprites_963 {
+  width: 80px;
+  height: 80px;
+  background-position: -3335px -725px;
+}
+
+.pokemon-pokemon-battle-sprites_965 {
+  width: 80px;
+  height: 80px;
+  background-position: -3335px -815px;
+}
+
+.pokemon-pokemon-battle-sprites_967 {
+  width: 80px;
+  height: 80px;
+  background-position: -3335px -905px;
+}
+
+.pokemon-pokemon-battle-sprites_969 {
+  width: 80px;
+  height: 80px;
+  background-position: -3335px -995px;
+}
+
+.pokemon-pokemon-battle-sprites_97 {
+  width: 80px;
+  height: 80px;
+  background-position: -3335px -1085px;
+}
+
+.pokemon-pokemon-battle-sprites_971 {
+  width: 80px;
+  height: 80px;
+  background-position: -3335px -1175px;
+}
+
+.pokemon-pokemon-battle-sprites_99 {
+  width: 80px;
+  height: 80px;
+  background-position: -3335px -1265px;
+}

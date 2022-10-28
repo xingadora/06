@@ -1,5 +1,5 @@
 // set up text to print, each item in array is new line
-let a = "pokeee"
+let a = "text effect test";
 var aText = new Array(a);
 var iSpeed = 50; // time delay of print out
 var iIndex = 0; // start printing array at this posision
