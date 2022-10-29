@@ -1,4 +1,4 @@
-import { typewriter } from "./textrenderer.js";
+import { textRenderer } from "./textrenderer.js";
 
 function showNext() {
   nextId = document.querySelectorAll(".hidden");
@@ -38,5 +38,12 @@ function showStart() {
   overlay.style.animationDirection = "reverse";
   overlay.style.animationFillMode = "none";
   document.getElementById("textbox").classList.add("textbox");
-  overlay.addEventListener("animationend", typewriter);
+  overlay.addEventListener("animationend", finishStart);
+}
+
+function finishStart() {
+  overlay.removeEventListener("animationend", finishStart);
+  overlay.style.display = "none";
+  document.getElementById("press-enter").style.display = "none";
+  textRenderer("Welcome to the world of Pokemon!+Please select an option", "typedtext");
 }

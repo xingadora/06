@@ -12,7 +12,8 @@ html {
 
 div {
   font-family: pokeFont;
-  font-size: 50px;
+  color: rgb(78, 78, 78);
+  font-size: 3em;
   background-image: none;
 }
 
@@ -30,22 +31,26 @@ div {
 }
 
 .textbox {
-  text-shadow: 3px 3px grey;
+  text-shadow: 1px 1px 2px rgb(146, 146, 146), 2px 2px 2px rgb(146, 146, 146),
+    3px 2px 1px rgb(146, 146, 146);
   font-family: pokeFont;
-  font-size: 35px;
   background-image: url("img/textbox.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 30%;
-  height: 100%;
+  background-size: 15em;
+  width: 15em;
+  height: 2.7381em;
   position: relative;
-  top: 40%
+  top: 85%;
+  left: 50%;
+  margin-left: -7.5em;
 }
 
 .textboxtext {
+  text-align: start;
   position: absolute;
-  top: 44%;
-  left:37%;
+  top: -0.65em;
+  left: 0.75em;
 }
 
 .start {
@@ -89,7 +94,7 @@ div {
 
 @keyframes pulse {
   0% {
-    transform: scale(.95);
+    transform: scale(0.95);
   }
 
   50% {
@@ -97,13 +102,17 @@ div {
   }
 
   100% {
-    transform: scale(.95);
+    transform: scale(0.95);
   }
 }
 
 @keyframes fadeout {
   0% {
     background-color: rgba(0, 0, 0, 0);
+  }
+
+  75% {
+    background-color: rgb(0, 0, 0);
   }
 
   100% {
