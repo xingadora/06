@@ -10,6 +10,7 @@ export function textRenderer(textGroup, destinationId, textIndex) {
   let displayText = dialogues[textGroup].line[texti];
   let text = Array.from(displayText);
   let speed = 20;
+  let skipped = false;
   textRendered = false;
 
   document.addEventListener("keyup", skipText);
@@ -18,12 +19,13 @@ export function textRenderer(textGroup, destinationId, textIndex) {
     if (event.key === "Enter") {
       destination.innerHTML = displayText;
       textRendered = true;
+      skipped = true;
       document.removeEventListener("keyup", skipText);
     }
   }
 
   setInterval(() => {
-    if (text.length > 0 && !textRendered) {
+    if (text.length > 0 && !textRendered && !skipped) {
       let a = text.shift();
       if (a === "+") {
         destination.innerHTML += "<br>";
@@ -34,11 +36,16 @@ export function textRenderer(textGroup, destinationId, textIndex) {
   }, speed);
 
   setTimeout(() => {
+    destination.innerHTML = displayText;
     textRendered = true;
     document.removeEventListener("keyup", skipText);
     if (type === "multi") {
-      document.getElementById("textboxarrow").style.visibility = "visible";
-      document.addEventListener("keyup", nextText);
+      if (texti < dialogues[textGroup].line.length - 1) {
+        document.getElementById("textboxarrow").style.visibility = "visible";
+        document.addEventListener("keyup", nextText);
+      } else {
+        document.getElementById("textboxarrow").style.visibility = "hidden";
+      }
     }
   }, speed * text.length);
 
@@ -46,11 +53,12 @@ export function textRenderer(textGroup, destinationId, textIndex) {
     if (event.key === "Enter") {
       document.removeEventListener("keyup", nextText);
       document.getElementById("textboxarrow").style.visibility = "hidden";
-      console.log (texti);
-      console.log (dialogues[textGroup].line.length);
       if (texti < dialogues.intro.line.length - 1) {
         destination.innerHTML = "";
         textRenderer(textGroup, destinationId, texti + 1);
+      } else {
+        textRendered = true;
+        destination.innerHTML = "";
       }
     }
   }
