@@ -1,4 +1,5 @@
-import { textRenderer } from "./textrenderer.js";
+import { textRenderer, textRendered } from "./textrenderer.js";
+import dialogues from "../data/dialogue.json" assert { type: "json" };
 
 function showNext() {
   nextId = document.querySelectorAll(".hidden");
@@ -18,26 +19,33 @@ function hideInvalid() {
 
 document.addEventListener("keydown", hideStart);
 let overlay = document.getElementById("overlay");
+let texti = 0;
 
 function hideStart() {
   let pressEnter = document.getElementById("press-enter");
-  document.removeEventListener("keydown", hideStart);
-  pressEnter.classList.remove("press-enter");
-  pressEnter.classList.add("pressed-enter");
-  overlay.classList.add("overlay");
-  overlay.addEventListener("animationend", showStart);
+  if (event.key === "Enter") {
+    document.removeEventListener("keydown", hideStart);
+    pressEnter.classList.remove("press-enter");
+    pressEnter.classList.add("pressed-enter");
+    overlay.classList.add("overlay");
+    overlay.addEventListener("animationend", showStart);
+  }
 }
 
 function showStart() {
+  let textbox = document.getElementById("textbox");
   overlay.removeEventListener("animationend", showStart);
   document.body.classList.remove("container");
-  document.body.style.backgroundImage = "url('/src/img/start_background.jpg')";
+  document.getElementById("logo").style.display = "none";
+  document.body.style.backgroundColor = "black";
+  document.body.style.backgroundImage = "url()";
   overlay.classList.remove("overlay");
   void overlay.offsetWidth;
   overlay.classList.add("overlay");
   overlay.style.animationDirection = "reverse";
   overlay.style.animationFillMode = "none";
-  document.getElementById("textbox").classList.add("textbox");
+  textbox.classList.add("textbox");
+  textbox.style.top = "45%";
   overlay.addEventListener("animationend", finishStart);
 }
 
@@ -45,5 +53,16 @@ function finishStart() {
   overlay.removeEventListener("animationend", finishStart);
   overlay.style.display = "none";
   document.getElementById("press-enter").style.display = "none";
-  textRenderer("Welcome to the world of Pokemon!+Please select an option", "typedtext");
+  textRenderer("intro", "typedtext");
 }
+
+/* function showArrow() {
+  if (!textRendered) {
+    window.setTimeout(showArrow, 300);
+  } else {
+    document.getElementById("textboxarrow").style.visibility = "visible";
+    texti++;
+    return;
+  }
+} */
+

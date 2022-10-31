@@ -1,0 +1,9 @@
+{
+  "intro": {
+    "type": "multi",
+    "line": [
+      "Welcome to the world of Pokémon!",
+      "Would you like a tutorial on how to play?"
+    ]
+  }
+}

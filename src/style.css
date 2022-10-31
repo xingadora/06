@@ -12,7 +12,7 @@ html {
 
 div {
   font-family: pokeFont;
-  color: rgb(78, 78, 78);
+  color: rgba(82, 82, 90, 1);
   font-size: 3em;
   background-image: none;
 }
@@ -31,8 +31,7 @@ div {
 }
 
 .textbox {
-  text-shadow: 1px 1px 2px rgb(146, 146, 146), 2px 2px 2px rgb(146, 146, 146),
-    3px 2px 1px rgb(146, 146, 146);
+  text-shadow: 0.065em 0em rgb(165, 165, 173), 0em 0.065em rgb(165, 165, 173), 0.065em 0.065em rgb(165, 165, 173);
   font-family: pokeFont;
   background-image: url("img/textbox.png");
   background-repeat: no-repeat;
@@ -40,26 +39,44 @@ div {
   background-size: 15em;
   width: 15em;
   height: 2.7381em;
-  position: relative;
+  position: absolute;
   top: 85%;
   left: 50%;
   margin-left: -7.5em;
 }
 
+.textboxarrow {
+  position: absolute;
+  top: 52%;
+  left: 94.6%;
+  width: 4.181818182%;
+  height: auto;
+  animation-name: bounce;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
 .textboxtext {
   text-align: start;
   position: absolute;
-  top: -0.65em;
-  left: 0.75em;
+  top: -0.55em;
+  left: 0.85em;
 }
 
 .start {
-  background-image: url("img/start_background.png");
+  background-image: url("img/start_background.jpg");
   background-color: transparent;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100%;
+}
+
+.logo {
+  width: 80em;
+  position: absolute;
+  top: 20%;
 }
 
 .container {
@@ -69,20 +86,20 @@ div {
 }
 
 .press-enter {
-  position: relative;
-  top: 10%;
-  height: 28px;
-  width: 356px;
+  position: absolute;
+  top: 65%;
+  width: 20em;
+  height: auto;
   animation-name: pulse;
   animation-duration: 1.3s;
   animation-iteration-count: infinite;
 }
 
 .pressed-enter {
-  position: relative;
-  top: 10%;
-  height: 28px;
-  width: 356px;
+  position: absolute;
+  top: 65%;
+  width: 20em;
+  height: auto;
   animation-name: pressed;
   animation-duration: 1s;
   animation-fill-mode: forwards;
@@ -129,5 +146,19 @@ div {
   100% {
     transform: scale(20);
     opacity: 0;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(0.125em);
+  }
+
+  100% {
+    transform: translateY(0);
   }
 }
