@@ -180,8 +180,8 @@ while (i < 151) {
   }
 }
 
-console.log(possible);
+// console.log(possible);
 let h = possible.length;
 let randomi = randomNumber(0, h)
-console.log(possible[randomi].total)
-console.log(u)
+// console.log(possible[randomi].total)
+// console.log(u)
