@@ -11,9 +11,7 @@ import { getLevel } from "/src/function/getlevel.js";
 import { getGender } from "/src/function/getgender.js";
 import { getShiny } from "/src/function/getshiny.js";
 
-
 class pokemon {
-
   get gender() {
     return getGender(this.id);
   }
@@ -164,3 +162,26 @@ duplicateElements.forEach((element) => {
 });
 
 // console.log(array);
+
+// let random = randomNumber(1, 151);
+let u = pokemon[50].total;
+let low = u - 50;
+let high = u + 50;
+
+let possible = [];
+
+let i = 1;
+while (i < 151) {
+  if (pokemon[i].total >= low && pokemon[i].total <= high) {
+    possible.push(pokemon[i]);
+    i++;
+  } else {
+    i++;
+  }
+}
+
+console.log(possible);
+let h = possible.length;
+let randomi = randomNumber(0, h)
+console.log(possible[randomi].total)
+console.log(u)
