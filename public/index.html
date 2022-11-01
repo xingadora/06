@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
@@ -9,15 +9,18 @@
   <body class="start container">
     <div id="testId"></div>
     <div id="textbox">
-      <image class="textboxarrow" id="textboxarrow" style="visibility: hidden;" src="/src/img/textbox-arrow.png" />
+      <image class="textboxarrow" id="textboxarrow" style="visibility: hidden;" src="/src/img/textbox-arrow.png" alt="next arrow" />
       <p id="typedtext" class="textboxtext"></p>
     </div>
-    <image id="logo" class="logo" src="/src/img/pokemon_logo.png" />
+    <image id="logo" class="logo" src="/src/img/pokemon_logo.webp" alt="pokemon logo" />
     <div id="overlay"></div>
-    <img class="press-enter" id="press-enter" src="/src/img/start.png" />
+    <img class="press-enter" id="press-enter" src="/src/img/start.png" alt="press enter" />
     <script type="module" src="/src/function/getlevel.js"></script>
     <script type="module" src="/src/function/showstart.js"></script>
     <script src="/src/class/newuser.js"></script>
     <script type="module" src="/src/class/newpokemon.js"></script>
+
+    <link rel="preload" href="/src/pokemonsprites.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/src/pokemonsprites.css"></noscript>
   </body>
 </html>
