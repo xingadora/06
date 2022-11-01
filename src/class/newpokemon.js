@@ -8,8 +8,15 @@ import {
 } from "/src/function/typescalculator.js";
 import { getLearnSet } from "/src/function/getlearnset.js";
 import { getLevel } from "/src/function/getlevel.js";
+import { getGender } from "/src/function/getgender.js";
+import { getShiny } from "/src/function/getshiny.js";
+
 
 class pokemon {
+
+  get gender() {
+    return getGender(this.id);
+  }
   get weaknesses() {
     return getWeaknesses(this.type1, this.type2);
   }
@@ -48,10 +55,12 @@ class pokemon {
     this.speed = speed;
     this.total = total;
     this.level = getLevel();
-    this._weaknesses = undefined; //getWeaknesses(type1, type2);
-    this._strengths = undefined; //getStrengths(type1, type2);
-    this._immunities = undefined; //getImmunities(type1, type2);
-    this._learnset = undefined; //getLearnSet(name);
+    this.isShiny = getShiny();
+    this._gender = undefined; // getGender(id);
+    this._weaknesses = undefined; // getWeaknesses(type1, type2);
+    this._strengths = undefined; // getStrengths(type1, type2);
+    this._immunities = undefined; // getImmunities(type1, type2);
+    this._learnset = undefined; // getLearnSet(name);
     this.attacktype = undefined; // getAttackType();
     this.retreatCost = 2;
     // this.damage = damageCalculation(this.level, this.speed, this.attack, this.defence, this.spAtk, this.spDef, this.type1, this.type2, this.attacktype);
@@ -137,8 +146,8 @@ stats.forEach((element) => {
   }
 });
 
-//console.log(pokemon[1].weaknesses);
-console.log(pokemon[1]);
+// console.log(pokemon[13].isShiny);
+// console.log(pokemon[1]);
 // console.log(stats[67])
 // console.log(pokemon[1].learnset)
 
