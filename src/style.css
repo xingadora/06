@@ -73,7 +73,8 @@ div {
 }
 
 .logo {
-  width: 80em;
+  width: 85%;
+  max-width: 80em;
   position: absolute;
   top: 20%;
 }
@@ -87,7 +88,7 @@ div {
 .press-enter {
   position: absolute;
   top: 65%;
-  width: 20em;
+  max-width: 15em;
   height: auto;
   animation-name: pulse;
   animation-duration: 1.3s;
@@ -97,7 +98,8 @@ div {
 .pressed-enter {
   position: absolute;
   top: 65%;
-  width: 20em;
+  width: 30%;
+  max-width: 15%;
   height: auto;
   animation-name: pressed;
   animation-duration: 1s;
