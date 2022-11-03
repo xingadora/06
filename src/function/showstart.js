@@ -54,15 +54,10 @@ function finishStart() {
   overlay.style.display = "none";
   document.getElementById("press-enter").style.display = "none";
   textRenderer("intro", "typedtext");
+  tutorialChoice();
 }
 
-/* function showArrow() {
-  if (!textRendered) {
-    window.setTimeout(showArrow, 300);
-  } else {
-    document.getElementById("textboxarrow").style.visibility = "visible";
-    texti++;
-    return;
-  }
+/* function tutorialChoice() {
+  let button = document.getElementById("tutorial-button");
+  button.style.display = "block";
 } */
-
