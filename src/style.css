@@ -29,7 +29,8 @@ div {
 }
 
 .textbox {
-  text-shadow: 0.065em 0em rgb(165, 165, 173), 0em 0.065em rgb(165, 165, 173), 0.065em 0.065em rgb(165, 165, 173);
+  text-shadow: 0.065em 0em rgb(165, 165, 173), 0em 0.065em rgb(165, 165, 173),
+    0.065em 0.065em rgb(165, 165, 173);
   font-family: pokeFont;
   background-image: url("img/textbox.png");
   background-repeat: no-repeat;
@@ -41,6 +42,23 @@ div {
   top: 85%;
   left: 50%;
   margin-left: -7.5em;
+}
+
+.clickbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("img/clickbox.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 12.1em;
+  z-index: 10;
+  width: 12.2em;
+  height: 2.6em;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  margin-left: -5em;
 }
 
 .textboxarrow {
@@ -61,6 +79,26 @@ div {
   top: -0.55em;
   left: 0.85em;
   margin-right: 1.5em;
+}
+
+.clickboxtext {
+  z-index: 11;
+  position: absolute;
+  height: 0.75em;
+}
+
+.clickbox-selector {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 12.2em;
+  height: 2.6em;
+  display: none;
+}
+
+.clickbox:hover .clickbox-selector {
+  animation: selector 0.8s infinite;
+  display: block;
 }
 
 .start {
@@ -161,5 +199,19 @@ div {
 
   100% {
     transform: translateY(0);
+  }
+}
+
+@keyframes selector {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
   }
 }
