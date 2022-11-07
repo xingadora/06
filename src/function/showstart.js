@@ -57,7 +57,13 @@ function finishStart() {
   tutorialChoice();
 }
 
-/* function tutorialChoice() {
-  let button = document.getElementById("tutorial-button");
-  button.style.display = "block";
-} */
+function tutorialChoice() {
+  let buttonY = document.getElementById("clickboxY");
+  let buttonN = document.getElementById("clickboxN");
+  buttonY.style.animationName = "fadein";
+  buttonN.style.animationName = "fadein";
+  buttonY.style.animationDuration = "1s";
+  buttonN.style.animationDuration = "1s";
+  buttonY.style.animationFillMode = "forwards";
+  buttonN.style.animationFillMode = "forwards";
+}

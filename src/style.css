@@ -44,7 +44,7 @@ div {
   margin-left: -7.5em;
 }
 
-.clickbox {
+.clickboxY {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,9 +56,29 @@ div {
   width: 12.2em;
   height: 2.6em;
   position: absolute;
-  top: 85%;
+  top: 60%;
   left: 50%;
-  margin-left: -5em;
+  margin-left: -6.1em;
+  opacity: 0;
+}
+
+.clickboxN {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("img/clickbox.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 12.1em;
+  z-index: 10;
+  width: 12.2em;
+  height: 2.6em;
+  position: absolute;
+  top: 72.5%;
+  left: 50%;
+  margin-left: -6.1em;
+  opacity: 0;
 }
 
 .textboxarrow {
@@ -96,7 +116,12 @@ div {
   display: none;
 }
 
-.clickbox:hover .clickbox-selector {
+.clickboxY:hover .clickbox-selector {
+  animation: selector 0.8s infinite;
+  display: block;
+}
+
+.clickboxN:hover .clickbox-selector {
   animation: selector 0.8s infinite;
   display: block;
 }
@@ -173,6 +198,16 @@ div {
 
   100% {
     background-color: rgb(0, 0, 0);
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
 
