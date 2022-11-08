@@ -1,4 +1,9 @@
 import { textRenderer, textRenderedFinal, choice } from "./textrenderer.js";
+let typedText = document.getElementById("typedtext");
+let overlay = document.getElementById("overlay");
+let textbox = document.getElementById("textbox");
+let textboxArrow = document.getElementById("textboxarrow");
+let tutorialStart, letsStartPromise, intervalRenderedFinal;
 
 function showNext() {
   nextId = document.querySelectorAll(".hidden");
@@ -17,7 +22,6 @@ function hideInvalid() {
 }
 
 document.addEventListener("keydown", hideStart);
-let overlay = document.getElementById("overlay");
 let texti = 0;
 
 function hideStart() {
@@ -32,7 +36,6 @@ function hideStart() {
 }
 
 function showStart() {
-  let textbox = document.getElementById("textbox");
   overlay.removeEventListener("animationend", showStart);
   document.body.classList.remove("container");
   document.getElementById("logo").style.display = "none";
@@ -70,7 +73,7 @@ function finishStart() {
       showTutorial();
     },
     function (error) {
-      startGame();
+      readyGame();
     }
   );
 }
@@ -78,8 +81,6 @@ function finishStart() {
 function showTutorial() {
   let tutorialPromise = new Promise((resolve, reject) => {
     textRenderer("tutorial", "typedtext");
-    let typedText = document.getElementById("typedtext");
-    typedText.addEventListener("keyup", skipTutorial);
     setInterval(() => {
       if (textRenderedFinal === true) {
         resolve();
@@ -87,15 +88,53 @@ function showTutorial() {
     }, 50);
   });
 
-  function skipTutorial() {
-    if (event.key === "Escape") {
-      
-    }
-  }
-
   tutorialPromise.then(() => {
-    startGame();
+    textboxArrow.style.visibility = "visible";
+    window.addEventListener("keyup", readyStart);
+    window.addEventListener("click", readyStart);
   });
 }
 
-function startGame() {}
+function readyStart() {
+  if (event.key === "Enter" || event.key === " " || event.type === "click") {
+    window.removeEventListener("keyup", readyStart);
+    window.removeEventListener("click", readyStart);
+    textboxArrow.style.visibility = "hidden";
+    tutorialStart = true;
+    readyGame();
+  }
+}
+
+function readyGame() {
+  letsStartPromise = new Promise((resolve, reject) => {
+    if (tutorialStart) {
+      resolve();
+    } else {
+      textRenderer("letsStart", "typedtext");
+      intervalRenderedFinal = setInterval(() => {
+        if (textRenderedFinal === true) {
+          resolve();
+        }
+      }, 50);
+    }
+  });
+
+
+  letsStartPromise.then(() => {
+    clearInterval(intervalRenderedFinal);
+    if (tutorialStart) {
+      showGame();
+    } else {
+      textboxArrow.style.visibility = "visible";
+      window.addEventListener("keyup", readyStart);
+      window.addEventListener("click", readyStart);
+    }
+  });
+}
+
+function showGame() {
+  textbox.removeEventListener("animationend", showGame);
+  document.getElementById("typedtext").innerHTML = "";
+  textbox.style.transition = "top 1s"
+  textbox.style.top = "60%";
+}

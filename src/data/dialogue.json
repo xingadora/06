@@ -9,7 +9,7 @@
   "tutorial": {
     "type": "multi",
     "line": [
-      "Great! You can skip this tutorial any time by pressing the escape button.",
+      "Great! The game is simple:",
       "You will first be assigned a set of 6 Pokémon to battle with.",
       "The levels of your Pokémon are random and will reflect their respective stats.",
       "If you don't like your current team, you can 're-roll' to get another 6.",
@@ -20,6 +20,12 @@
       "Keep in mind that some attacks are stronger on certain types of Pokémon.",
       "Your goal is to defeat all of the enemy's Pokémon.",
       "Good luck!"
+    ]
+  },
+  "letsStart": {
+    "type": "multi",
+    "line": [
+      "Awesome! Let's start!"
     ]
   }
 }
