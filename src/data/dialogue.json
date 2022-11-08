@@ -1,6 +1,6 @@
 {
   "intro": {
-    "type": "multi",
+    "type": "choice",
     "line": [
       "Welcome to the world of Pokémon!",
       "Would you like a tutorial on how to play?"

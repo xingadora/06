@@ -1,6 +1,7 @@
 body,
 html {
   height: 100%;
+  user-select: none;
 }
 
 @font-face {
@@ -21,7 +22,7 @@ div {
   left: 0;
   right: 0;
   bottom: 0;
-  animation-name: fadeout;
+  animation-name: intro-fadeout;
   animation-duration: 1s;
   animation-fill-mode: forwards;
   z-index: 100;
@@ -38,31 +39,17 @@ div {
   background-size: 15em;
   width: 15em;
   height: 2.7381em;
-  position: absolute;
-  top: 85%;
+  position: relative;
+  top: 50%;
   left: 50%;
   margin-left: -7.5em;
 }
 
 .clickboxY {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url("img/clickbox.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 12.1em;
-  z-index: 10;
-  width: 12.2em;
-  height: 2.6em;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  margin-left: -6.1em;
-  opacity: 0;
-}
-
-.clickboxN {
+  --variable-width: 70vw;
+  width: 70vw;
+  --variable-max-width: 10em;
+  max-width: 10em;
   background-color: black;
   display: flex;
   justify-content: center;
@@ -70,14 +57,38 @@ div {
   background-image: url("img/clickbox.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 12.1em;
+  background-size: min(calc(var(--variable-width) * 0.991735), calc(var(--variable-max-width) * 0.991735));
   z-index: 10;
-  width: 12.2em;
-  height: 2.6em;
-  position: absolute;
-  top: 72.5%;
+  height: calc(var(--variable-width) * 0.213);
+  max-height: calc(var(--variable-max-width) * 0.213);
+  position: relative;
+  top: 45%;
   left: 50%;
-  margin-left: -6.1em;
+  margin-left: calc(calc(min(var(--variable-width), var(--variable-max-width)) / -2) / 0.991735);
+  opacity: 0;
+  margin-top: 0.5em;
+}
+
+.clickboxN {
+  --variable-width: 70vw;
+  width: 70vw;
+  --variable-max-width: 10em;
+  max-width: 10em;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("img/clickbox.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: min(calc(var(--variable-width) * 0.991735), calc(var(--variable-max-width) * 0.991735));
+  z-index: 10;
+  height: calc(var(--variable-width) * 0.213);
+  max-height: calc(var(--variable-max-width) * 0.213);
+  position: relative;
+  top: 47.5%;
+  left: 50%;
+  margin-left: calc(calc(min(var(--variable-width), var(--variable-max-width)) / -2) / 0.991735);
   opacity: 0;
 }
 
@@ -99,30 +110,33 @@ div {
   top: -0.55em;
   left: 0.85em;
   margin-right: 1.5em;
+  height: 1.85em;
+  overflow: auto;
 }
 
 .clickboxtext {
   z-index: 11;
   position: absolute;
-  height: 0.75em;
+  height: calc(calc(var(--variable-width) * 0.213) / 3.5);
+  max-height: calc(calc(var(--variable-max-width) * 0.213) / 3.5);
 }
 
 .clickbox-selector {
   position: absolute;
   top: 0;
   left: 0;
-  width: 12.2em;
-  height: 2.6em;
+  width: 70vw;
+  max-width: 10em;
+  height: calc(var(--variable-width) * 0.213);
+  max-height: calc(var(--variable-max-width) * 0.213);
   display: none;
 }
 
 .clickboxY:hover .clickbox-selector {
-  animation: selector 0.8s infinite;
   display: block;
 }
 
 .clickboxN:hover .clickbox-selector {
-  animation: selector 0.8s infinite;
   display: block;
 }
 
@@ -187,7 +201,7 @@ div {
   }
 }
 
-@keyframes fadeout {
+@keyframes intro-fadeout {
   0% {
     background-color: rgba(0, 0, 0, 0);
   }
@@ -202,12 +216,22 @@ div {
 }
 
 @keyframes fadein {
-  0% {
+  from {
     opacity: 0;
   }
 
-  100% {
+  to {
     opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
   }
 }
 
@@ -224,29 +248,13 @@ div {
 }
 
 @keyframes bounce {
-  0% {
-    transform: translateY(0);
-  }
-
   50% {
     transform: translateY(0.125em);
-  }
-
-  100% {
-    transform: translateY(0);
   }
 }
 
 @keyframes selector {
-  0% {
-    opacity: 0;
-  }
-
   50% {
-    opacity: 1;
-  }
-
-  100% {
     opacity: 0;
   }
 }

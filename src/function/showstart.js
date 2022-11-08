@@ -1,5 +1,4 @@
-import { textRenderer, textRendered } from "./textrenderer.js";
-import dialogues from "../data/dialogue.json" assert { type: "json" };
+import { textRenderer, textRenderedFinal, choice } from "./textrenderer.js";
 
 function showNext() {
   nextId = document.querySelectorAll(".hidden");
@@ -53,17 +52,17 @@ function finishStart() {
   overlay.removeEventListener("animationend", finishStart);
   overlay.style.display = "none";
   document.getElementById("press-enter").style.display = "none";
-  textRenderer("intro", "typedtext");
-  tutorialChoice();
-}
+  let promiseA = new Promise((resolve, reject) => {
+    textRenderer("intro", "typedtext");
 
-function tutorialChoice() {
-  let buttonY = document.getElementById("clickboxY");
-  let buttonN = document.getElementById("clickboxN");
-  buttonY.style.animationName = "fadein";
-  buttonN.style.animationName = "fadein";
-  buttonY.style.animationDuration = "1s";
-  buttonN.style.animationDuration = "1s";
-  buttonY.style.animationFillMode = "forwards";
-  buttonN.style.animationFillMode = "forwards";
+    setInterval(() => {
+      if (textRenderedFinal === true && choice === "yes") {
+        resolve();
+      }
+    }, 50);
+  });
+
+  promiseA.then(() => {
+    textRenderer("tutorial", "typedtext");
+  });
 }
