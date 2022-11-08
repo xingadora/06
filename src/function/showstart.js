@@ -52,17 +52,50 @@ function finishStart() {
   overlay.removeEventListener("animationend", finishStart);
   overlay.style.display = "none";
   document.getElementById("press-enter").style.display = "none";
-  let promiseA = new Promise((resolve, reject) => {
+  let introPromise = new Promise((resolve, reject) => {
     textRenderer("intro", "typedtext");
-
     setInterval(() => {
-      if (textRenderedFinal === true && choice === "yes") {
+      if (textRenderedFinal === true) {
+        if (choice === "yes") {
+          resolve();
+        } else if (choice === "no") {
+          reject();
+        }
+      }
+    }, 50);
+  });
+
+  introPromise.then(
+    function (value) {
+      showTutorial();
+    },
+    function (error) {
+      startGame();
+    }
+  );
+}
+
+function showTutorial() {
+  let tutorialPromise = new Promise((resolve, reject) => {
+    textRenderer("tutorial", "typedtext");
+    let typedText = document.getElementById("typedtext");
+    typedText.addEventListener("keyup", skipTutorial);
+    setInterval(() => {
+      if (textRenderedFinal === true) {
         resolve();
       }
     }, 50);
   });
 
-  promiseA.then(() => {
-    textRenderer("tutorial", "typedtext");
+  function skipTutorial() {
+    if (event.key === "Escape") {
+      
+    }
+  }
+
+  tutorialPromise.then(() => {
+    startGame();
   });
 }
+
+function startGame() {}
