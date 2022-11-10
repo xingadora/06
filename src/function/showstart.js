@@ -54,6 +54,8 @@ function showStart() {
 function finishStart() {
   overlay.removeEventListener("animationend", finishStart);
   overlay.style.display = "none";
+  overlay.classList.remove("overlay");
+  overlay.style = "";
   document.getElementById("press-enter").style.display = "none";
   let introPromise = new Promise((resolve, reject) => {
     textRenderer("intro", "typedtext");
@@ -119,7 +121,6 @@ function readyGame() {
     }
   });
 
-
   letsStartPromise.then(() => {
     clearInterval(intervalRenderedFinal);
     if (tutorialStart) {
@@ -134,7 +135,18 @@ function readyGame() {
 
 function showGame() {
   textbox.removeEventListener("animationend", showGame);
-  document.getElementById("typedtext").innerHTML = "";
-  textbox.style.transition = "top 1s"
-  textbox.style.top = "60%";
+  textbox.style.transition = "opacity 1s";
+  textbox.style.opacity = "0";
+  document.body.style.boxShadow = "inset 0 0 0 10000px black";
+  textbox.addEventListener("transitionend", () => {
+    document.getElementById("typedtext").innerHTML = "";
+    textbox.style.top = "60%";
+    document.body.style.transition = "box-shadow 2s";
+    setTimeout(() => {
+      document.body.style.boxShadow = "inset 0 0 0 10000px transparent";
+      textbox.style.opacity = "1";
+      document.body.style.backgroundImage =
+        "url(/src/img/start_background.webp)";
+    }, 300);
+  });
 }
