@@ -10,6 +10,11 @@ html {
   src: url(fonts/pokemon-ds-font.ttf);
 }
 
+#canvas {
+  height: 0px;
+  width: 0px;
+}
+
 div {
   font-family: pokeFont;
   color: rgba(82, 82, 90, 1);

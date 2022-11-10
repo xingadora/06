@@ -6,14 +6,21 @@ let textRendered = false;
 let choice = false;
 
 export function textRenderer(textGroup, destinationId, textIndex) {
+  const canvas = document.getElementById("canvas");
+  const ctx = canvas.getContext("2d");
+  ctx.font = "3em pokeFont";
   let destination = document.getElementById(destinationId);
   let buttonY = document.getElementById("clickboxY");
   let buttonN = document.getElementById("clickboxN");
   let selectorY = document.getElementById("clickbox-selectorY");
   let selectorN = document.getElementById("clickbox-selectorN");
+  let textbox = document.getElementById("textbox");
+  let typedText = document.getElementById("typedtext");
   let type = dialogues[textGroup].type;
   let texti = textIndex || 0;
   let displayText = dialogues[textGroup].line[texti];
+  let textWidth = ctx.measureText(displayText).width;
+  let textBoxWidth = textbox.offsetWidth - typedText.offsetLeft - parseInt(window.getComputedStyle(typedText).marginRight)
   let text = Array.from(displayText);
   let speed = 20;
   let skipped = false;
