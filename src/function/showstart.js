@@ -144,6 +144,7 @@ function showGame() {
     document.body.style.transition = "box-shadow 2s";
     setTimeout(() => {
       document.body.style.boxShadow = "inset 0 0 0 10000px transparent";
+      textbox.style.transition = "opacity 1s";
       textbox.style.opacity = "1";
       document.body.style.backgroundImage =
         "url(/src/img/start_background.webp)";
