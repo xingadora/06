@@ -20,7 +20,10 @@ export function textRenderer(textGroup, destinationId, textIndex) {
   let texti = textIndex || 0;
   let displayText = dialogues[textGroup].line[texti];
   let textWidth = ctx.measureText(displayText).width;
-  let textBoxWidth = textbox.offsetWidth - typedText.offsetLeft - parseInt(window.getComputedStyle(typedText).marginRight)
+  let textBoxWidth =
+    textbox.offsetWidth -
+    typedText.offsetLeft -
+    parseInt(window.getComputedStyle(typedText).marginRight);
   let text = Array.from(displayText);
   let speed = 20;
   let skipped = false;
@@ -30,6 +33,20 @@ export function textRenderer(textGroup, destinationId, textIndex) {
 
   document.addEventListener("keyup", skipText);
   document.addEventListener("click", skipText);
+
+  let checkArray = [];
+  let found = false;
+  let replaceAt;
+
+  text.forEach((letter) => {
+    checkArray.push(letter);
+    let testWidth = ctx.measureText(checkArray.join("")).width;
+    if (!found && testWidth > textBoxWidth) {
+      found = true
+      replaceAt = checkArray.lastIndexOf(" ");
+      text[replaceAt] = "<br>";
+    }
+  });
 
   function skipText() {
     if (event.key === "Enter" || event.key === " " || event.type === "click") {
@@ -45,11 +62,7 @@ export function textRenderer(textGroup, destinationId, textIndex) {
   const intervalID = setInterval(() => {
     if (text.length > 0 && !textRendered && !skipped) {
       let a = text.shift();
-      if (a === "+") {
-        destination.innerHTML += "<br>";
-      } else {
-        destination.innerHTML += a;
-      }
+      destination.innerHTML += a;
     } else {
       clearInterval(intervalID);
       destination.innerHTML = displayText;
@@ -135,7 +148,6 @@ export function textRenderer(textGroup, destinationId, textIndex) {
 }
 
 window.textRenderer = textRenderer;
-
 
 setInterval(() => {
   if (!textRendered) {
