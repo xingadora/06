@@ -24,8 +24,6 @@
   },
   "letsStart": {
     "type": "multi",
-    "line": [
-      "Awesome! Let's start!"
-    ]
+    "line": ["Awesome! Let's start!"]
   }
 }

@@ -1,45 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="omg!" />
+    <title>idk</title>
+    <link href="/src/style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-  <meta name="description" content="omg!" />
-  <title>idk</title>
-  <link href="/src/style.css" rel="stylesheet" type="text/css" />
-</head>
+  <body class="start container">
+    <div id="testId"></div>
+    <canvas id="canvas"></canvas>
+    <div id="textbox">
+      <image
+        class="textboxArrow"
+        id="textboxArrow"
+        style="display: none"
+        src="/src/img/textbox-arrow.png"
+        alt="next arrow"
+      />
+      <p id="textboxText" class="textboxText"></p>
+    </div>
 
-<body class="start container">
-  <div id="testId"></div>
-  <canvas id="canvas"></canvas>
-  <div id="textbox">
-    <image class="textboxarrow" id="textboxarrow" style="visibility: hidden" src="/src/img/textbox-arrow.png"
-      alt="next arrow" />
-    <p id="typedtext" class="textboxtext"></p>
-  </div>
+    <div id="buttonY" class="buttonY">
+      <image id="clickboxText" class="clickboxText" src="/src/img/YES.png" />
+      <image
+        class="selector"
+        id="selectorY"
+        src="/src/img/selector.png"
+        alt="clickbox selector"
+      />
+    </div>
+    <div id="buttonN" class="buttonN">
+      <image id="clickboxText" class="clickboxText" src="/src/img/NO.png" />
+      <image
+        class="selector"
+        id="selectorN"
+        src="/src/img/selector.png"
+        alt="clickbox selector"
+      />
+    </div>
+    <image
+      id="logo"
+      class="logo"
+      src="/src/img/pokemon_logo.webp"
+      alt="pokemon logo"
+    />
+    <div id="overlay"></div>
+    <img
+      class="press-enter"
+      id="press-enter"
+      src="/src/img/start.png"
+      alt="press enter"
+    />
+    <script type="module" src="/src/function/getlevel.js"></script>
+    <script type="module" src="/src/function/showstart.js"></script>
+    <script src="/src/class/newuser.js"></script>
+    <script type="module" src="/src/class/newpokemon.js"></script>
 
-  <div id="clickboxY" class="clickboxY">
-    <image id="clickboxtext" class="clickboxtext" src="/src/img/YES.png" />
-    <image class="clickbox-selector" id="clickbox-selectorY" src="/src/img/clickbox-selector.png"
-      alt="clickbox selector" />
-  </div>
-  <div id="clickboxN" class="clickboxN">
-    <image id="clickboxtext" class="clickboxtext" src="/src/img/NO.png" />
-    <image class="clickbox-selector" id="clickbox-selectorN" src="/src/img/clickbox-selector.png"
-      alt="clickbox selector" />
-  </div>
-  <image id="logo" class="logo" src="/src/img/pokemon_logo.webp" alt="pokemon logo" />
-  <div id="overlay"></div>
-  <img class="press-enter" id="press-enter" src="/src/img/start.png" alt="press enter" />
-  <script type="module" src="/src/function/getlevel.js"></script>
-  <script type="module" src="/src/function/showstart.js"></script>
-  <script src="/src/class/newuser.js"></script>
-  <script type="module" src="/src/class/newpokemon.js"></script>
-
-  <link rel="preload" href="/src/pokemonsprites.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <noscript>
-    <link rel="stylesheet" href="/src/pokemonsprites.css" />
-  </noscript>
-</body>
-
+    <link
+      rel="preload"
+      href="/src/pokemonsprites.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link rel="stylesheet" href="/src/pokemonsprites.css" />
+    </noscript>
+  </body>
 </html>

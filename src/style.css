@@ -51,7 +51,7 @@ div {
   margin-left: -7.5em;
 }
 
-.clickboxY {
+.buttonY {
   --variable-width: 70vw;
   width: 70vw;
   --variable-max-width: 10em;
@@ -63,19 +63,24 @@ div {
   background-image: url("img/clickbox.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: min(calc(var(--variable-width) * 0.991735), calc(var(--variable-max-width) * 0.991735));
+  background-size: min(
+    calc(var(--variable-width) * 0.991735),
+    calc(var(--variable-max-width) * 0.991735)
+  );
   z-index: 10;
   height: calc(var(--variable-width) * 0.213);
   max-height: calc(var(--variable-max-width) * 0.213);
   position: relative;
   top: 45%;
   left: 50%;
-  margin-left: calc(calc(min(var(--variable-width), var(--variable-max-width)) / -2) / 0.991735);
+  margin-left: calc(
+    calc(min(var(--variable-width), var(--variable-max-width)) / -2) / 0.991735
+  );
   opacity: 0;
   margin-top: 0.5em;
 }
 
-.clickboxN {
+.buttonN {
   --variable-width: 70vw;
   width: 70vw;
   --variable-max-width: 10em;
@@ -87,18 +92,23 @@ div {
   background-image: url("img/clickbox.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: min(calc(var(--variable-width) * 0.991735), calc(var(--variable-max-width) * 0.991735));
+  background-size: min(
+    calc(var(--variable-width) * 0.991735),
+    calc(var(--variable-max-width) * 0.991735)
+  );
   z-index: 10;
   height: calc(var(--variable-width) * 0.213);
   max-height: calc(var(--variable-max-width) * 0.213);
   position: relative;
   top: 47.5%;
   left: 50%;
-  margin-left: calc(calc(min(var(--variable-width), var(--variable-max-width)) / -2) / 0.991735);
+  margin-left: calc(
+    calc(min(var(--variable-width), var(--variable-max-width)) / -2) / 0.991735
+  );
   opacity: 0;
 }
 
-.textboxarrow {
+.textboxArrow {
   position: absolute;
   top: 52%;
   left: 94.6%;
@@ -110,7 +120,7 @@ div {
   animation-fill-mode: both;
 }
 
-.textboxtext {
+.textboxText {
   text-align: start;
   position: absolute;
   top: -0.55em;
@@ -120,14 +130,14 @@ div {
   overflow: auto;
 }
 
-.clickboxtext {
+.clickboxText {
   z-index: 11;
   position: absolute;
   height: calc(calc(var(--variable-width) * 0.213) / 3.5);
   max-height: calc(calc(var(--variable-max-width) * 0.213) / 3.5);
 }
 
-.clickbox-selector {
+.selector {
   position: absolute;
   top: 0;
   left: 0;
@@ -138,11 +148,11 @@ div {
   display: none;
 }
 
-.clickboxY:hover .clickbox-selector {
+.buttonY:hover .selector {
   display: block;
 }
 
-.clickboxN:hover .clickbox-selector {
+.buttonN:hover .selector {
   display: block;
 }
 

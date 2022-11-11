@@ -1,85 +1,128 @@
 import dialogues from "../data/dialogue.json" assert { type: "json" };
 export { textRenderedFinal, choice };
 
+window.textRenderer = textRenderer;
+
 let textRenderedFinal = false;
 let textRendered = false;
+let textSkipped = false;
 let choice = false;
 
-export function textRenderer(textGroup, destinationId, textIndex) {
-  const canvas = document.getElementById("canvas");
-  const ctx = canvas.getContext("2d");
-  ctx.font = "3em pokeFont";
-  let destination = document.getElementById(destinationId);
-  let buttonY = document.getElementById("clickboxY");
-  let buttonN = document.getElementById("clickboxN");
-  let selectorY = document.getElementById("clickbox-selectorY");
-  let selectorN = document.getElementById("clickbox-selectorN");
-  let textbox = document.getElementById("textbox");
-  let typedText = document.getElementById("typedtext");
+const canvas = element("canvas");
+const ctx = canvas.getContext("2d");
+ctx.font = "3em pokeFont";
+
+export function element(element) {
+  return document.getElementById(element);
+}
+
+export function fadeIn(element, duration, delay) {
+  duration = duration || "1s";
+  delay = delay || "0s";
+  element.style.transition = `opacity ${duration} ${delay}`;
+  element.style.opacity = "1";
+}
+
+export function fadeOut(element, duration, delay) {
+  duration = duration || "1s";
+  delay = delay || "0s";
+  element.style.transition = `opacity ${duration} ${delay}`;
+  element.style.opacity = "0";
+}
+
+export function show(element) {
+  element.style.display = "block";
+}
+
+export function hide(element) {
+  element.style.display = "none";
+}
+
+export function textRenderer(textGroup, destinationId, textIndex, speed) {
+  speed = speed || 20;
+  textIndex = textIndex || 0;
   let type = dialogues[textGroup].type;
-  let texti = textIndex || 0;
-  let displayText = dialogues[textGroup].line[texti];
-  let textWidth = ctx.measureText(displayText).width;
-  let textBoxWidth =
-    textbox.offsetWidth -
-    typedText.offsetLeft -
-    parseInt(window.getComputedStyle(typedText).marginRight);
+  let displayText = dialogues[textGroup].line[textIndex];
   let text = Array.from(displayText);
-  let speed = 20;
-  let skipped = false;
+  let destination = element(destinationId);
+
+  const buttonY = element("buttonY");
+  const buttonN = element("buttonN");
+  const selectorY = element("selectorY");
+  const selectorN = element("selectorN");
+  const textbox = element("textbox");
+  const textboxText = element("textboxText");
+  const textboxArrow = element("textboxArrow");
+
   choice = false;
+  textSkipped = false;
   textRendered = false;
   textRenderedFinal = false;
 
-  document.addEventListener("keyup", skipText);
-  document.addEventListener("click", skipText);
+  function clearText() {
+    destination.innerHTML = "";
+  }
+
+  let textBoxWidth =
+    textbox.offsetWidth -
+    textboxText.offsetLeft -
+    parseInt(window.getComputedStyle(textboxText).marginRight);
 
   let checkArray = [];
   let found = false;
-  let replaceAt;
 
   text.forEach((letter) => {
-    checkArray.push(letter);
     let testWidth = ctx.measureText(checkArray.join("")).width;
+    checkArray.push(letter);
+
     if (!found && testWidth > textBoxWidth) {
-      found = true
-      replaceAt = checkArray.lastIndexOf(" ");
+      found = true;
+      let replaceAt = checkArray.lastIndexOf(" ");
       text[replaceAt] = "<br>";
     }
   });
 
-  function skipText() {
-    if (event.key === "Enter" || event.key === " " || event.type === "click") {
-      destination.innerHTML = displayText;
-      destination.scrollTo(0, 100);
-      textRendered = true;
-      skipped = true;
+  document.addEventListener("keyup", skipText);
+  document.addEventListener("click", skipText);
+
+  function skipText(e) {
+    if (e.key === "Enter" || e.key === " " || e.type === "click") {
       document.removeEventListener("keyup", skipText);
       document.removeEventListener("click", skipText);
+
+      destination.innerHTML = displayText;
+      destination.scrollTo(0, 100);
+
+      textSkipped = textRendered = true;
     }
   }
 
-  const intervalID = setInterval(() => {
-    if (text.length > 0 && !textRendered && !skipped) {
-      let a = text.shift();
-      destination.innerHTML += a;
+  const textInterval = setInterval(() => {
+    if (text.length > 0 && !textRendered && !textSkipped) {
+      let currentLetter = text.shift();
+      destination.innerHTML += currentLetter;
     } else {
-      clearInterval(intervalID);
-      destination.innerHTML = displayText;
-      textRendered = true;
       document.removeEventListener("keyup", skipText);
       document.removeEventListener("click", skipText);
+
+      clearInterval(textInterval);
+      destination.innerHTML = displayText;
+      textRendered = true;
+
       if (type === "multi" || type === "choice") {
-        if (texti < dialogues[textGroup].line.length - 1) {
-          document.getElementById("textboxarrow").style.visibility = "visible";
+        if (textIndex < dialogues[textGroup].line.length - 1) {
+          show(textboxArrow);
+
           document.addEventListener("keyup", nextText);
           document.addEventListener("click", nextText);
         } else {
           textRenderedFinal = true;
-          document.getElementById("textboxarrow").style.visibility = "hidden";
+          hide(textboxArrow);
+
           if (type === "choice") {
-            buttonY.style.animation = "fadein 1s forwards";
-            buttonN.style.animation = "fadein 1s forwards";
+            fadeIn(buttonY, "1s", "0.2s");
+            fadeIn(buttonN, "1s", "0.2s");
+
             buttonY.addEventListener("click", yesChoice);
             buttonN.addEventListener("click", noChoice);
           }
@@ -89,68 +132,68 @@ export function textRenderer(textGroup, destinationId, textIndex) {
   }, speed);
 
   function yesChoice() {
-    selectorY.style.display = "block";
-    selectorN.style.display = "none";
-    selectorY.style.animation = "selector 0.4s step-start 0s infinite";
     buttonY.removeEventListener("click", yesChoice);
     buttonN.removeEventListener("click", noChoice);
-    buttonY.style.animation = "fadeout 0.5s forwards";
-    buttonN.style.animation = "fadeout 0.5s forwards";
-    buttonY.style.animationDelay = "0.6s";
-    buttonN.style.animationDelay = "0.6s";
-    buttonY.style.opacity = "1";
-    buttonN.style.opacity = "1";
+
+    show(selectorY);
+    hide(selectorN);
+    selectorY.style.animation = "selector 0.4s step-start 0s infinite";
+
+    fadeOut(buttonY, "0.5s", "0.6s");
+    fadeOut(buttonN, "0.5s", "0.6s");
+
     buttonY.addEventListener("animationend", removeButtons);
+
     setTimeout(() => {
       choice = "yes";
-      destination.innerHTML = "";
+      clearText();
     }, 600);
   }
 
   function noChoice() {
-    selectorN.style.display = "block";
-    selectorY.style.display = "none";
-    selectorN.style.animation = "selector 0.4s step-start 0s infinite";
     buttonY.removeEventListener("click", yesChoice);
     buttonN.removeEventListener("click", noChoice);
-    buttonY.style.animation = "fadeout 0.5s forwards";
-    buttonN.style.animation = "fadeout 0.5s forwards";
-    buttonY.style.animationDelay = "0.6s";
-    buttonN.style.animationDelay = "0.6s";
-    buttonY.style.opacity = "1";
-    buttonN.style.opacity = "1";
+
+    show(selectorN);
+    hide(selectorY);
+    selectorN.style.animation = "selector 0.4s step-start 0s infinite";
+
+    fadeOut(buttonY, "0.5s", "0.6s");
+    fadeOut(buttonN, "0.5s", "0.6s");
+
     buttonN.addEventListener("animationend", removeButtons);
+
     setTimeout(() => {
       choice = "no";
-      destination.innerHTML = "";
+      clearText();
     }, 600);
   }
 
   function removeButtons() {
-    buttonY.style.visibility = "hidden";
-    buttonN.style.visibility = "hidden";
+    hide(buttonY);
+    hide(buttonN);
   }
 
   function nextText() {
     if (event.key === "Enter" || event.key === " " || event.type === "click") {
       document.removeEventListener("keyup", nextText);
       document.removeEventListener("click", nextText);
-      document.getElementById("textboxarrow").style.visibility = "hidden";
-      if (texti < dialogues[textGroup].line.length - 1) {
-        destination.innerHTML = "";
-        textRenderer(textGroup, destinationId, texti + 1);
+
+      hide(textboxArrow);
+
+      if (textIndex < dialogues[textGroup].line.length - 1) {
+        clearText();
+        textRenderer(textGroup, destinationId, textIndex + 1);
       } else {
         textRendered = true;
-        destination.innerHTML = "";
+        clearText();
       }
     }
   }
+
+  setInterval(() => {
+    if (!textRendered) {
+      textboxText.scrollTo(0, 100);
+    }
+  }, 20);
 }
-
-window.textRenderer = textRenderer;
-
-setInterval(() => {
-  if (!textRendered) {
-    document.getElementById("typedtext").scrollTo(0, 100);
-  }
-}, 20);
