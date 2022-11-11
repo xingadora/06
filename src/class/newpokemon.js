@@ -11,7 +11,7 @@ import { getLevel } from "/src/function/getlevel.js";
 import { getGender } from "/src/function/getgender.js";
 import { getShiny } from "/src/function/getshiny.js";
 
-class pokemon {
+export class pokemon {
   get gender() {
     return getGender(this.id);
   }
@@ -185,3 +185,4 @@ let h = possible.length;
 let randomi = randomNumber(0, h);
 // console.log(possible[randomi].total)
 // console.log(u)
+console.log(pokemon[76].learnset);
