@@ -173,24 +173,53 @@ duplicateElements.forEach((element) => {
 // console.log(array);
 
 // let random = randomNumber(1, 151);
-let u = pokemon[50].total;
-let low = u - 50;
-let high = u + 50;
+function getEnemySet(userSet) {
 
-let possible = [];
+  userSet.forEach((element) => {
 
-let i = 1;
-while (i < 151) {
-  if (pokemon[i].total >= low && pokemon[i].total <= high) {
-    possible.push(pokemon[i]);
-    i++;
-  } else {
-    i++;
-  }
+    const userId = element.id
+    const total = pokemon[userId].total;
+    const low = total - 50;
+    const high = total + 50;
+
+    let possible = [];
+
+    let i = 1;
+    while (i < 151) {
+      if (pokemon[i].total >= low && pokemon[i].total <= high) {
+/*      if (pokemon[i].id !== userId) {
+          possible.push(pokemon[i]);
+        } */
+        possible.push(pokemon[i]);
+        i++;
+      } else {
+        i++;
+      }
+    }
+
+
+  let randomi = randomNumber(0, possible.length - 1);
+
+  enemySet.push(possible[randomi]);
+  });
+}
+// console.log(u)
+
+
+
+
+
+let userSet = [];
+let enemySet = [];
+
+let index = 0;
+while (index < 6) {
+  let random = randomNumber(1, 151);
+  userSet.push(pokemon[random]);
+  index++;
 }
 
-// console.log(possible);
-let h = possible.length;
-let randomi = randomNumber(0, h);
-// console.log(possible[randomi].total)
-// console.log(u)
+getEnemySet(userSet);
+
+console.log("user:", userSet);
+console.log("enemy:", enemySet);

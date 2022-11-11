@@ -1,7 +1,6 @@
 import dialogues from "../data/dialogue.json" assert { type: "json" }; // import text that will be shown to the player
 export { textRenderedFinal, choice }; // export variables that will be used in other files
 
-
 let textRenderedFinal = false; // boolean to check if the all the text from a dialogue group has been rendered
 let textRendered = false; // boolean to check if the current text line from a dialogue group has been rendered
 let textSkipped = false; // boolean to check if the current text line from a dialogue group has been skipped

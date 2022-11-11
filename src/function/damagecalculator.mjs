@@ -2,8 +2,8 @@ import {
   criticalHitMultiplier,
   typeEffectiveness,
   sameTypeAttackBonus,
-} from "./attackbonuses.js";
-import { randomNumber } from "./randomnumbergen.js";
+} from "./attackbonuses.mjs";
+import { randomNumber } from "./randomnumbergenm.js";
 
 export function damageCalculation(
   level,
@@ -26,7 +26,7 @@ export function damageCalculation(
   const random = randomNumber(217, 255) / 255;
 
   damage =
-    ((((2 * level * critical) / 5 + 2) * power * (attack / defence)) / 50 + 2) *
+    ((((2 * level * critical) / 5 + 2) * power * (attackOrSpAttack  / enemyDefence)) / 50 + 2) *
     stab *
     type1effectiveness *
     type2effectiveness *
