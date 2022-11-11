@@ -43,22 +43,20 @@ function getAttacks(pokemonId) {
     applicableAttacks.forEach((element) => {
       if (element === moves[move].Name) {
         element = moves[move];
-        console.log(element);
-        attacks.push(new Attack(
-          element.Name,
-          element.Type,
-          element.Cat,
-          element.Power,
-          element.Acc,
-          element.PP,
-          element.Effect
-        ));
+        attacks.push(
+          new Attack(
+            element.Name,
+            element.Type,
+            element.Cat,
+            element.Power,
+            element.Acc,
+            element.PP,
+            element.Effect
+          )
+        );
       }
     });
   }
 
-
   return attacks;
 }
-
-console.log(getAttacks(76));

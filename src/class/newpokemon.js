@@ -7,25 +7,29 @@ import {
   getImmunities,
 } from "/src/function/typescalculator.js";
 import { getLearnSet } from "/src/function/getlearnset.js";
-import { getLevel } from "/src/function/getlevel.js";
-import { getGender } from "/src/function/getgender.js";
-import { getShiny } from "/src/function/getshiny.js";
+import { getLevel, getGender, getShiny, getHPIV, getStat } from "/src/function/getStats.js";
 
 export class pokemon {
-  get gender() {
-    return getGender(this.id);
+  get HPIV() {
+    return getHPIV(this.attackIV, this.defenceIV, this.spAtkIV, this.spDefIV);
   }
-  get weaknesses() {
-    return getWeaknesses(this.type1, this.type2);
+  get HP() {
+    return getStat(this._hp, this.HPIV, this.level, "hp");
   }
-  get strengths() {
-    return getStrengths(this.type1, this.type2);
+  get attack() {
+    return getStat(this._attack, this.attackIV, this.level, "attack");
   }
-  get immunities() {
-    return getImmunities(this.type1, this.type2);
+  get defence() {
+    return getStat(this._defence, this.defenceIV, this.level, "defence");
   }
-  get learnset() {
-    return getLearnSet(this.name);
+  get spAtk() {
+    return getStat(this._spAtk, this.spAtkIV, this.level, "spAtk");
+  }
+  get spDef() {
+    return getStat(this._spDef, this.spDefIV, this.level, "spDef");
+  }
+  get speed() {
+    return getStat(this._speed, this.speedIV, this.level, "speed");
   }
 
   constructor(
@@ -43,22 +47,27 @@ export class pokemon {
   ) {
     this.id = id;
     this.name = name;
-    this.hp = hp;
+    this._hp = hp;
     this.type1 = type1;
     this.type2 = type2;
-    this.attack = attack;
-    this.defence = defence;
-    this.spAtk = spAtk;
-    this.spDef = spDef;
-    this.speed = speed;
+    this._attack = attack;
+    this.attackIV = randomNumber(0, 15);
+    this._defence = defence;
+    this.defenceIV = randomNumber(0, 15);
+    this._spAtk = spAtk;
+    this.spAtkIV = randomNumber(0, 15);
+    this._spDef = spDef;
+    this.spDefIV = randomNumber(0, 15);
+    this._speed = speed;
+    this.speedIV = randomNumber(0, 15);
     this.total = total;
     this.level = getLevel();
     this.isShiny = getShiny();
-    this._gender = undefined; // getGender(id);
-    this._weaknesses = undefined; // getWeaknesses(type1, type2);
-    this._strengths = undefined; // getStrengths(type1, type2);
-    this._immunities = undefined; // getImmunities(type1, type2);
-    this._learnset = undefined; // getLearnSet(name);
+    this.gender = getGender(id);
+    this.weaknesses = getWeaknesses(type1, type2);
+    this.strengths = getStrengths(type1, type2);
+    this.immunities = getImmunities(type1, type2);
+    this.learnset = getLearnSet(name);
     this.attacktype = undefined; // getAttackType();
     this.retreatCost = 2;
     // this.damage = damageCalculation(this.level, this.speed, this.attack, this.defence, this.spAtk, this.spDef, this.type1, this.type2, this.attacktype);
@@ -145,9 +154,9 @@ stats.forEach((element) => {
 });
 
 // console.log(pokemon[13].isShiny);
-// console.log(pokemon[1]);
-// console.log(stats[67])
-// console.log(pokemon[1].learnset)
+
+// console.log("hp:", pokemon[1].HP, "attack:", pokemon[1].attack, "defence:", pokemon[1].defence, "spAtk:", pokemon[1].spAtk, "spDef:", pokemon[1].spDef, "speed:", pokemon[1].speed);
+// console.log("baseHP:", pokemon[1]._hp, "baseAttack:", pokemon[1]._attack, "baseDefence:", pokemon[1]._defence, "baseSpAtk:", pokemon[1]._spAtk, "baseSpDef:", pokemon[1]._spDef, "baseSpeed:", pokemon[1]._speed);
 
 const array = pokemon[1].weaknesses;
 
@@ -185,4 +194,3 @@ let h = possible.length;
 let randomi = randomNumber(0, h);
 // console.log(possible[randomi].total)
 // console.log(u)
-console.log(pokemon[76].learnset);
