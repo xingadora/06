@@ -1,8 +1,8 @@
 import { probability } from "./randomnumbergen.js";
 
-export function isCriticalHit(speed) {
-    if (probability(speed / 255)) {
-        return 2;
+export function criticalHitMultiplier(speed, level) {
+    if (probability((speed / 2) / 255)) {
+        return (((level * 2) + 5)) / (level + 5);
     } else {
         return 1;
     }

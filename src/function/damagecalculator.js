@@ -1,5 +1,5 @@
 import {
-  isCriticalHit,
+  criticalHitMultiplier,
   typeEffectiveness,
   sameTypeAttackBonus,
 } from "./attackbonuses.js";
@@ -18,7 +18,7 @@ export function damageCalculation(
 ) {
   let damage;
 
-  const critical = isCriticalHit(speed);
+  const critical = criticalHitMultiplier(speed, level);
   const stab = sameTypeAttackBonus(type1, type2, attacktype);
   const type1effectiveness = typeEffectiveness(type1, attacktype);
   const type2effectiveness = typeEffectiveness(type2, attacktype);
