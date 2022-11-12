@@ -7,7 +7,7 @@ import {
   fadeOut,
   show,
   hide,
-} from "./textrenderer.js";
+} from "./textrenderer.mjs";
 
 const textboxText = element("textboxText");
 const overlay = element("overlay");

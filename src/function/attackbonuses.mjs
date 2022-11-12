@@ -1,4 +1,4 @@
-import { probability } from "./randomnumbergenm.js";
+import { probability } from "./randomnumbergen.mjs";
 
 export function criticalHitMultiplier(speed, level) {
     if (probability((speed / 2) / 255)) {

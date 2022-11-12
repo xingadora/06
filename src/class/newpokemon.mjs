@@ -1,13 +1,13 @@
 import stats from "/src/data/pokemonstats.json" assert { type: "json" };
-import { randomNumber } from "/src/function/randomnumbergen.js";
-import { damageCalculation } from "/src/function/damagecalculator.js";
+import { randomNumber } from "/src/function/randomnumbergen.mjs";
+import { damageCalculation } from "/src/function/damagecalculator.mjs";
 import {
   getWeaknesses,
   getStrengths,
   getImmunities,
-} from "/src/function/typescalculator.js";
-import { getLearnSet } from "/src/function/getlearnset.js";
-import { getLevel, getGender, getShiny, getHPIV, getStat } from "/src/function/getStats.js";
+} from "/src/function/typescalculator.mjs";
+import { getLearnSet } from "/src/function/getlearnset.mjs";
+import { getLevel, getGender, getShiny, getHPIV, getStat } from "/src/function/getStats.mjs";
 
 export class pokemon {
   get HPIV() {
@@ -187,9 +187,6 @@ function getEnemySet(userSet) {
     let i = 1;
     while (i < 151) {
       if (pokemon[i].total >= low && pokemon[i].total <= high) {
-/*      if (pokemon[i].id !== userId) {
-          possible.push(pokemon[i]);
-        } */
         possible.push(pokemon[i]);
         i++;
       } else {
@@ -197,25 +194,40 @@ function getEnemySet(userSet) {
       }
     }
 
+  if (pokemon[i].id === userId) {
+    possible.splice(i, 1);
+  }
 
   let randomi = randomNumber(0, possible.length - 1);
 
   enemySet.push(possible[randomi]);
+
+  let image = document.createElement("div");
+  image.classList.add(`icon-${possible[randomi].id}`);
+  image.classList.add("icon");
+  image.classList.add("enemy");
+  document.body.appendChild(image);
   });
 }
-// console.log(u)
-
-
-
-
 
 let userSet = [];
 let enemySet = [];
+let lastIndex = [];
 
 let index = 0;
 while (index < 6) {
   let random = randomNumber(1, 151);
+  while (lastIndex.includes(random)) {
+    random = randomNumber(1, 151);
+  }
   userSet.push(pokemon[random]);
+  lastIndex.push(random);
+  let image = document.createElement("div");
+  image.classList.add(`icon-${random}`);
+  image.classList.add("icon");
+  image.classList.add("user");
+  document.body.appendChild(image);
+  
   index++;
 }
 

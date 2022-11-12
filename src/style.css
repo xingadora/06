@@ -20,6 +20,7 @@ div {
   color: rgba(82, 82, 90, 1);
   font-size: 3em;
   background-image: none;
+  image-rendering: pixelated;
 }
 
 .overlay {
@@ -118,6 +119,7 @@ div {
   animation-duration: 0.7s;
   animation-iteration-count: infinite;
   animation-fill-mode: both;
+  image-rendering: auto;
 }
 
 .textboxText {
@@ -135,6 +137,7 @@ div {
   position: absolute;
   height: calc(calc(var(--variable-width) * 0.213) / 3.5);
   max-height: calc(calc(var(--variable-max-width) * 0.213) / 3.5);
+  image-rendering: auto;
 }
 
 .selector {
@@ -170,6 +173,8 @@ div {
   max-width: 80em;
   position: absolute;
   top: 20%;
+  z-index: -1;
+  image-rendering: auto;
 }
 
 .container {
@@ -186,6 +191,7 @@ div {
   animation-name: pulse;
   animation-duration: 1.3s;
   animation-iteration-count: infinite;
+  image-rendering: auto;
 }
 
 .pressed-enter {
@@ -197,6 +203,7 @@ div {
   animation-name: pressed;
   animation-duration: 1s;
   animation-fill-mode: forwards;
+  image-rendering: auto;
 }
 
 * {

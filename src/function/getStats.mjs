@@ -1,4 +1,4 @@
-import { probability, randomNumber } from "./randomnumbergenm.js";
+import { probability, randomNumber } from "./randomnumbergen.mjs";
 
 // getLevel
 export function getLevel() {

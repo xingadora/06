@@ -3,7 +3,7 @@ import {
   typeEffectiveness,
   sameTypeAttackBonus,
 } from "./attackbonuses.mjs";
-import { randomNumber } from "./randomnumbergenm.js";
+import { randomNumber } from "./randomnumbergen.mjs";
 
 export function damageCalculation(
   level,

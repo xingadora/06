@@ -1,5 +1,5 @@
-import { pokemon } from "/src/class/newpokemon.js";
-import { randomNumber } from "/src/function/randomnumbergen.js";
+import { pokemon } from "/src/class/newpokemon.mjs";
+import { randomNumber } from "/src/function/randomnumbergen.mjs";
 import moves from "/src/data/moves.json" assert { type: "json" };
 
 function getAttacks(pokemonId) {
