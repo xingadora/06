@@ -10,9 +10,17 @@ html {
   src: url(fonts/pokemon-ds-font.ttf);
 }
 
-#canvas {
+#widthTestCanvas {
   height: 0px;
   width: 0px;
+}
+
+#gameCanvas {
+  background-color: #000000;
+  height: 384px;
+  width: 512px;
+  position: absolute;
+  image-rendering: pixelated;
 }
 
 div {

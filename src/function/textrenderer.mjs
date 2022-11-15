@@ -6,9 +6,10 @@ let textRendered = false; // boolean to check if the current text line from a di
 let textSkipped = false; // boolean to check if the current text line from a dialogue group has been skipped
 let choice = undefined; // variable to store the player's choice if a question is asked
 
-const canvas = element("canvas"); // canvas element to calculate the width of the text
-const ctx = canvas.getContext("2d"); // make sure the canvas is 2D so it can be used with text
-ctx.font = "3em pokeFont"; // set the proper font
+const widthTestCanvas = element("widthTestCanvas"); // canvas element to calculate the width of the text
+const widthCtx = widthTestCanvas.getContext("2d"); // make sure the canvas is 2D so it can be used with text
+widthCtx.font = "3em pokeFont"; // set the proper font
+void widthCtx.measureText("M"); // measure the width of a single character to make sure the font is loaded
 
 export function element(element) { // function to get an element from the DOM (this just makes the code easier to read and write)
   return document.getElementById(element); // return the element
@@ -73,7 +74,7 @@ export function textRenderer(textGroup, destinationId, textIndex, speed) { // fu
 
   text.forEach((letter) => { // loop through each letter in the text array
     checkArray.push(letter); // add the current letter to the check array
-    let textWidth = ctx.measureText(checkArray.join("")).width; // turn the array into a string and measure the width of the text in the test canvas
+    let textWidth = widthCtx.measureText(checkArray.join("")).width; // turn the array into a string and measure the width of the text in the test canvas
 
     if (!found && textWidth > textBoxWidth) { // if the text has not been found and the width of the text is greater than the width of the textbox
       found = true; // set the found boolean to true

@@ -210,8 +210,8 @@ function getEnemySet(userSet) {
   });
 }
 
-let userSet = [];
-let enemySet = [];
+export let userSet = [];
+export let enemySet = [];
 let lastIndex = [];
 
 let index = 0;
