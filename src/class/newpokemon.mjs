@@ -235,3 +235,4 @@ getEnemySet(userSet);
 
 console.log("user:", userSet);
 console.log("enemy:", enemySet);
+

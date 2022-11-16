@@ -10,6 +10,11 @@ html {
   src: url(fonts/pokemon-ds-font.ttf);
 }
 
+@font-face {
+  font-family: pokeNumbers;
+  src: url(fonts/pokemonnumbers.ttf);
+}
+
 #widthTestCanvas {
   height: 0px;
   width: 0px;
@@ -20,6 +25,13 @@ html {
   height: 384px;
   width: 512px;
   position: absolute;
+  image-rendering: pixelated;
+}
+
+#canvasBorder {
+  position: absolute;
+  height: 396px;
+  width: 524px;
   image-rendering: pixelated;
 }
 

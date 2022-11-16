@@ -3,5 +3,5 @@ export function randomNumber(min, max) {
 };
 
 export function probability(n) {
-  return !!n && Math.random() <= n;
+  return !!n && Math.random() < n;
 };
