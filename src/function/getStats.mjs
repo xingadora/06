@@ -47,6 +47,12 @@ export function getGender(id) {
       canBeFemale = true;
       hasfemaleSprite = true;
       break;
+    case 64:
+    case 65:
+      genderRatio = "1:3";
+      canBeFemale = true;
+      hasfemaleSprite = true;
+      break;
     case 12:
     case 19:
     case 20:
@@ -56,8 +62,6 @@ export function getGender(id) {
     case 42:
     case 44:
     case 45:
-    case 64:
-    case 65:
     case 84:
     case 85:
     case 97:
@@ -68,6 +72,7 @@ export function getGender(id) {
     case 123:
     case 129:
     case 130:
+      genderRatio = "1:1";
       hasfemaleSprite = true;
       canBeFemale = true;
       break;
@@ -77,7 +82,7 @@ export function getGender(id) {
     case 106:
     case 107:
     case 128:
-      genderRatio = "0:0";
+      genderRatio = "male";
       canBeFemale = false;
       hasfemaleSprite = false;
       break;
@@ -126,13 +131,14 @@ export function getGender(id) {
       genderRatio = "3:1";
       canBeFemale = true;
       hasfemaleSprite = false;
+      break;
     case 29:
     case 30:
     case 31:
     case 113:
     case 115:
     case 124:
-      genderRatio = "1:0";
+      genderRatio = "female";
       canBeFemale = true;
       hasfemaleSprite = false;
       break;
@@ -149,23 +155,38 @@ export function getGender(id) {
     case 146:
     case 150:
     case 151:
-      genderRatio = "0:0";
+      genderRatio = "none";
       hasfemaleSprite = false;
+      break;
     default:
       genderRatio = "1:1";
       hasfemaleSprite = false;
       canBeFemale = true;
   }
 
-  if (canBeFemale) {
-    if (Math.random() < 0.5) {
-      gender = "female";
-    } else {
+  switch (genderRatio) {
+    case "1:1":
+      gender = probability(0.5) ? "male" : "female";
+      break;
+    case "1:3":
+      gender = probability(1/3) ? "female" : "male";
+      break;
+    case "1:7":
+      gender = probability(1/7) ? "female" : "male";
+      break;
+    case "3:1":
+      gender = probability(1/3) ? "male" : "female";
+      break;
+    case "none":
+      gender = "none";
+      break;
+    case "male":
       gender = "male";
+      break;
+    case "female":
+      gender = "female";
+      break;
     }
-  } else {
-    gender = "male";
-  }
 
   return gender;
 }
@@ -191,7 +212,7 @@ export function getStat(hp, HPIV, level, stat) {
   switch (stat) {
     case "hp":
       statValue = Math.floor(
-        ((((hp + HPIV) * 2 + (Math.sqrt(EV) / 4)) * level) / 100) + level + 10
+        (((hp + HPIV) * 2 + Math.sqrt(EV) / 4) * level) / 100 + level + 10
       );
       break;
     case "attack":
@@ -200,7 +221,7 @@ export function getStat(hp, HPIV, level, stat) {
     case "spDef":
     case "speed":
       statValue = Math.floor(
-        ((((hp + HPIV) * 2 + (Math.sqrt(EV) / 4)) * level) / 100) + 5
+        (((hp + HPIV) * 2 + Math.sqrt(EV) / 4) * level) / 100 + 5
       );
       break;
   }
