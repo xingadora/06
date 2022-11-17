@@ -202,11 +202,7 @@ function getEnemySet(userSet) {
 
   enemySet.push(possible[randomi]);
 
-  let image = document.createElement("div");
-  image.classList.add(`icon-${possible[randomi].id}`);
-  image.classList.add("icon");
-  image.classList.add("enemy");
-  document.body.appendChild(image);
+
   });
 }
 
@@ -222,12 +218,7 @@ while (index < 6) {
   }
   userSet.push(pokemon[random]);
   lastIndex.push(random);
-  let image = document.createElement("div");
-  image.classList.add(`icon-${random}`);
-  image.classList.add("icon");
-  image.classList.add("user");
-  document.body.appendChild(image);
-  
+ 
   index++;
 }
 
