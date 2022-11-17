@@ -116,6 +116,11 @@ function render() {
       );
     }
   }
+  
+  
+  
+  ctx.font = '1em pokeFont'
+  ctx.fillText("Hello", 50, 50);
 }
 
 function main() {
