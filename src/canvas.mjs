@@ -1,5 +1,6 @@
 import { userSet, enemySet } from "./class/newpokemon.mjs";
 import position from "./data/canvasPositions.json" assert { type: "json" };
+import { Sprite } from "./class/newSprite.mjs";
 
 const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
@@ -36,16 +37,16 @@ function animate(image, canvasX, canvasY) {
     );
   }
 
-  window.requestAnimationFrame(step);
+  window.requestAnimationFrame(tick);
 
   const frames = [0, 1];
   let currentFrame = 0;
   let frameCount = 0;
 
-  function step() {
+  function tick() {
     frameCount++;
     if (frameCount < 20) {
-      window.requestAnimationFrame(step);
+      window.requestAnimationFrame(tick);
       return;
     }
     frameCount = 0;
@@ -58,24 +59,76 @@ function animate(image, canvasX, canvasY) {
       currentFrame = 0;
     }
 
-    window.requestAnimationFrame(step);
+    window.requestAnimationFrame(tick);
     x += 32;
   }
 }
 
+let pokeIcon = [];
+let i = 0;
 userSet.forEach((element) => {
-  let image = new Image();
-  image.src = `/src/img/icons/${element.id}.png`;
+  let elementImg = new Image();
+  elementImg.src = `/src/img/icons/${element.id}.png`;
 
-  image.onload = animate(image, x, 0);
+  pokeIcon[i] = new Sprite({
+    width: 32,
+    height: 64,
+    img: elementImg,
+    framesHzt: 1,
+    framesVtl: 2,
+    TpF: 20,
+    isLooped: true,
+    destWidth: 32,
+    destHeight: 32,
+  });
+
+  if (i < 5) {
+    i++;
+  }
   x += 32;
 });
 
+let iconsReady, MboxUReady, boxUReady;
+pokeIcon[5].img.onload = () => {
+  iconsReady = true;
+};
 
-MboxU.onload = () => ctx.drawImage(MboxU, position.box.unselected.X[0], position.box.unselected.Y[0]);
+function render() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  if (MboxUReady) {
+    ctx.drawImage(MboxU, position.box.unselected.X, position.box.unselected.Y);
+  }
+  if (boxUReady) {
+    for (let i = 0; i <= 5; i++) {
+      ctx.drawImage(
+        boxU,
+        position.box.unselected.X[i],
+        position.box.unselected.Y[i]
+      );
+    }
+  }
+  if (iconsReady) {
+    for (let i = 0; i <= pokeIcon.length - 1; i++) {
+      pokeIcon[i].updateC();
+      pokeIcon[i].renderC(
+        position.icon.unselected.X[i],
+        position.icon.unselected.Y[i]
+      );
+    }
+  }
+}
+
+function main() {
+  render();
+  window.requestAnimationFrame(main);
+}
+
+MboxU.onload = () => {
+  MboxUReady = true;
+};
 
 boxU.onload = () => {
-  for (let i = 1; i < 6; i++) {
-    ctx.drawImage(boxU, position.box.unselected.X[i], position.box.unselected.Y[i]);
-  }
+  boxUReady = true;
 };
+
+main();
