@@ -1,6 +1,8 @@
 import { userSet, enemySet } from "./class/newpokemon.mjs";
 import position from "./data/canvasPositions.json" assert { type: "json" };
 import { Sprite } from "./class/newSprite.mjs";
+import { textRenderer } from "./function/textrenderer.mjs";
+import { renderInfo } from "./function/selectionPokemon.mjs";
 
 const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
@@ -64,16 +66,35 @@ function animate(image, canvasX, canvasY) {
   }
 }
 
-let pokeIcon = [];
+let pokeIcon = [],
+  pokeGender = [],
+  hasGender = [];
 let i = 0;
 userSet.forEach((element) => {
-  let elementImg = new Image();
-  elementImg.src = `/src/img/icons/${element.id}.png`;
+  if (element.gender !== "none") {
+    let genderImg = new Image();
+    genderImg.src = `/src/img/selection/${element.gender}.png`;
+
+    pokeGender[i] = new Sprite({
+      width: 8,
+      height: 11,
+      img: genderImg,
+    });
+
+    pokeGender[i].img.onload = () => {
+      pokeGendersReady = true;
+    };
+  } else {
+    hasGender[i] = false;
+  }
+
+  let iconImg = new Image();
+  iconImg.src = `/src/img/icons/${element.id}.png`;
 
   pokeIcon[i] = new Sprite({
     width: 32,
     height: 64,
-    img: elementImg,
+    img: iconImg,
     framesHzt: 1,
     framesVtl: 2,
     TpF: 20,
@@ -82,16 +103,25 @@ userSet.forEach((element) => {
     destHeight: 32,
   });
 
+
   if (i < 5) {
     i++;
   }
   x += 32;
 });
 
-let iconsReady, MboxUReady, boxUReady;
+let pokeIconsReady, MboxUReady, boxUReady, pokeGendersReady;
 pokeIcon[5].img.onload = () => {
-  iconsReady = true;
+  pokeIconsReady = true;
 };
+
+
+renderInfo(0);
+renderInfo(1);
+renderInfo(2);
+renderInfo(3);
+renderInfo(4);
+renderInfo(5);
 
 function render() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -107,7 +137,7 @@ function render() {
       );
     }
   }
-  if (iconsReady) {
+  if (pokeIconsReady) {
     for (let i = 0; i <= pokeIcon.length - 1; i++) {
       pokeIcon[i].updateC();
       pokeIcon[i].renderC(
@@ -116,11 +146,13 @@ function render() {
       );
     }
   }
-  
-  
-  
-  ctx.font = '1em pokeFont'
-  ctx.fillText("Hello", 50, 50);
+  if (pokeGendersReady) {
+    for (let i = 0; i <= pokeGender.length - 1; i++) {
+      if(hasGender[i]){
+        pokeGender[i].renderC(position.gender.X[i], position.gender.Y[i]);
+      }
+    }
+  }
 }
 
 function main() {
@@ -137,3 +169,7 @@ boxU.onload = () => {
 };
 
 main();
+
+/* console.log("screen width: " + window.screen.width);
+console.log("screen height: " + window.screen.height); */
+

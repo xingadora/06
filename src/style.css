@@ -1,7 +1,7 @@
 * {
   overflow: hidden;
-  margin : 0;
-  padding : 0;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -29,8 +29,8 @@ html {
 
 #gameCanvas {
   background-color: #000000;
-  height: 384px;
-  width: 512px;
+  height: 192px;
+  width: 256px;
   position: absolute;
   image-rendering: pixelated;
 }
@@ -42,9 +42,39 @@ html {
   image-rendering: pixelated;
 }
 
+#game {
+  position: absolute;
+  width: 256px;
+  height: 192px;
+  position: absolute;
+  height: 192px;
+  width: 256px;
+  color: white;
+  overflow: hidden;
+  user-select: none;
+  text-shadow: 1px 0em rgb(41, 41, 41), 0em 1px rgb(41, 41, 41),
+    1px 1px rgb(41, 41, 41);
+}
+
+.gameTextNames {
+  position: absolute;
+  margin-top: -3px;
+  height: 15px;
+  padding: 0px;
+  font-family: pokeFont;
+  font-size: 16px;
+}
+
+.gameTextLevels, .gameTextHpCurrent, .gameTextHpTotal {
+  position: absolute;
+  font-family: pokeNumbers;
+  font-size: 1px;
+  height: 7px;
+}
+
+
 div {
   font-family: pokeFont;
-  color: rgba(82, 82, 90, 1);
   font-size: 3em;
   background-image: none;
   image-rendering: pixelated;
@@ -232,7 +262,6 @@ div {
   animation-fill-mode: forwards;
   image-rendering: auto;
 }
-
 
 @keyframes pulse {
   0% {

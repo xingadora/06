@@ -16,9 +16,7 @@ export class Sprite {
     destWidth = width / framesHzt,
     destHeight = height / framesVtl
   }) {
-    this.frameIHzt = 0;
-    this.frameIVtl = 0;
-    this.tick = 0;
+    this.frameIHzt = this.frameIVtl = this.tick = 0;
     this.TpF = TpF;
     this.framesHzt = framesHzt;
     this.framesVtl = framesVtl;
