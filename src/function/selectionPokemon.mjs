@@ -11,8 +11,8 @@ export function renderInfo(i) {
 
   name.innerHTML = userSet[i].name;
   level.innerHTML = "Lv." + userSet[i].level;
-  hpCurrent.innerHTML = userSet[i].HP;
-  hpTotal.innerHTML = userSet[i].HP;
+  hpCurrent.innerHTML = userSet[i].hp;
+  hpTotal.innerHTML = userSet[i].hp;
 
   name.style.left = position.name.X[i] * scale + "px";
   name.style.top = position.name.Y[i] * scale + "px";

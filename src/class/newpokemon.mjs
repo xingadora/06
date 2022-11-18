@@ -10,27 +10,27 @@ import { getLearnSet } from "/src/function/getlearnset.mjs";
 import { getLevel, getGender, getShiny, getHPIV, getStat } from "/src/function/getStats.mjs";
 
 export class pokemon {
-  get HPIV() {
+  /* get HPIV() {
     return getHPIV(this.attackIV, this.defenceIV, this.spAtkIV, this.spDefIV);
   }
   get HP() {
-    return getStat(this._hp, this.HPIV, this.level, "hp");
+    return getStat(this.baseHp, this.HPIV, this.level, "hp");
   }
-  get attack() {
-    return getStat(this._attack, this.attackIV, this.level, "attack");
+  get zattack() {
+    return getStat(this.baseAttack, this.attackIV, this.level, "attack");
   }
-  get defence() {
-    return getStat(this._defence, this.defenceIV, this.level, "defence");
+  get zdefence() {
+    return getStat(this.baseDefence, this.defenceIV, this.level, "defence");
   }
-  get spAtk() {
-    return getStat(this._spAtk, this.spAtkIV, this.level, "spAtk");
+  get zspAtk() {
+    return getStat(this.baseSpAtk, this.spAtkIV, this.level, "spAtk");
   }
-  get spDef() {
-    return getStat(this._spDef, this.spDefIV, this.level, "spDef");
+  get zspDef() {
+    return getStat(this.baseSpDef, this.spDefIV, this.level, "spDef");
   }
-  get speed() {
-    return getStat(this._speed, this.speedIV, this.level, "speed");
-  }
+  get zspeed() {
+    return getStat(this.baseSpeed, this.speedIV, this.level, "speed");
+  } */
 
   constructor(
     id,
@@ -47,18 +47,18 @@ export class pokemon {
   ) {
     this.id = id;
     this.name = name;
-    this._hp = hp;
+    this.baseHp = hp;
     this.type1 = type1;
     this.type2 = type2;
-    this._attack = attack;
+    this.baseAttack = attack;
     this.attackIV = randomNumber(0, 15);
-    this._defence = defence;
+    this.baseDefence = defence;
     this.defenceIV = randomNumber(0, 15);
-    this._spAtk = spAtk;
+    this.baseSpAtk = spAtk;
     this.spAtkIV = randomNumber(0, 15);
-    this._spDef = spDef;
+    this.baseSpDef = spDef;
     this.spDefIV = randomNumber(0, 15);
-    this._speed = speed;
+    this.baseSpeed = speed;
     this.speedIV = randomNumber(0, 15);
     this.total = total;
     this.level = getLevel();
@@ -70,6 +70,13 @@ export class pokemon {
     this.learnset = getLearnSet(name);
     this.attacktype = undefined; // getAttackType();
     this.retreatCost = 2;
+    this.hpIv = getHPIV(this.attackIV, this.defenceIV, this.spAtkIV, this.spDefIV);
+    this.hp = getStat(this.baseHp, this.hpIv, this.level, "hp");
+    this.attack = getStat(this.baseAttack, this.attackIV, this.level, "attack");
+    this.defence = getStat(this.baseDefence, this.defenceIV, this.level, "defence");
+    this.spAtk = getStat(this.baseSpAtk, this.spAtkIV, this.level, "spAtk");
+    this.spDef = getStat(this.baseSpDef, this.spDefIV, this.level, "spDef");
+    this.speed = getStat(this.baseSpeed, this.speedIV, this.level, "speed");
     // this.damage = damageCalculation(this.level, this.speed, this.attack, this.defence, this.spAtk, this.spDef, this.type1, this.type2, this.attacktype);
   }
 
