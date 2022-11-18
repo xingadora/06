@@ -17,8 +17,8 @@ export function renderInfo(i) {
   name.style.left = position.name.X[i] * scale + "px";
   name.style.top = position.name.Y[i] * scale + "px";
 
-  level.style.left = position.level.value.X[i] * scale + "px";
-  level.style.top = position.level.value.Y[i] * scale + "px";
+  level.style.left = position.level.prefix.X[i] * scale + "px";
+  level.style.top = position.level.prefix.Y[i] * scale + "px";
 
   hpCurrent.style.left = position.hpText.current.X[i] * scale + "px";
   hpCurrent.style.top = position.hpText.current.Y[i] * scale + "px";

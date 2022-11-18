@@ -126,10 +126,10 @@ renderInfo(5);
 function render() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   if (MboxUReady) {
-    ctx.drawImage(MboxU, position.box.unselected.X, position.box.unselected.Y);
+    ctx.drawImage(MboxU, position.box.unselected.X[0], position.box.unselected.Y[0]);
   }
   if (boxUReady) {
-    for (let i = 0; i <= 5; i++) {
+    for (let i = 1; i <= 5; i++) {
       ctx.drawImage(
         boxU,
         position.box.unselected.X[i],
