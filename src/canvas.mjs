@@ -20,6 +20,19 @@ const boxU = new Image(126, 45);
 boxU.src = "/src/img/selection/pokemon-box-unselected.png";
 const boxS = new Image(128, 49);
 boxS.src = "/src/img/selection/pokemon-box-selected.png";
+const backRerollImg = new Image();
+backRerollImg.src = "/src/img/selection/button-small.png";
+
+const backReroll = new Sprite({
+  width: 56,
+  height: 24,
+  img: backRerollImg,
+})
+
+let backRerollReady = false;
+backReroll.img.onload = () => {
+  backRerollReady = true;
+}
 
 const frameWidth = 32;
 const frameHeight = 32;
@@ -153,6 +166,9 @@ function render() {
       }
     }
   }
+  if (backRerollReady) {
+    backReroll.renderC(position.backReroll.X, position.backReroll.Y);
+  }
 }
 
 function main() {
@@ -173,3 +189,11 @@ main();
 /* console.log("screen width: " + window.screen.width);
 console.log("screen height: " + window.screen.height); */
 
+function scaleGameWindow(scale) {
+  document.getElementById("game").style.scale = scale * 2;
+  //document.getElementById("canvasBorder").style.scale = scale;
+}
+
+scaleGameWindow(2);
+
+document.getElementById("backReroll").innerHTML = "CANCEL";
