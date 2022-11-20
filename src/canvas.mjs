@@ -4,21 +4,20 @@ import { Sprite } from "./class/newSprite.mjs";
 import { textRenderer } from "./function/textrenderer.mjs";
 import { renderInfo } from "./function/selectionPokemon.mjs";
 
+const background = document.getElementById("gameBackground");
 const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
 ctx.font = "3em pokeFont";
 canvas.width = 256;
 canvas.height = 192;
-canvas.style.backgroundImage = "url(/src/img/pokemon-selection-background.png)";
-canvas.style.backgroundSize = "cover";
 
-const MboxU = new Image(126, 45);
+const MboxU = new Image();
 MboxU.src = "/src/img/selection/main-pokemon-box-unselected.png";
-const MboxS = new Image(128, 49);
+const MboxS = new Image();
 MboxS.src = "/src/img/selection/main-pokemon-box-selected.png";
-const boxU = new Image(126, 45);
+const boxU = new Image();
 boxU.src = "/src/img/selection/pokemon-box-unselected.png";
-const boxS = new Image(128, 49);
+const boxS = new Image();
 boxS.src = "/src/img/selection/pokemon-box-selected.png";
 const backRerollImg = new Image();
 backRerollImg.src = "/src/img/selection/button-small.png";
@@ -169,6 +168,11 @@ function render() {
   if (backRerollReady) {
     backReroll.renderC(position.backReroll.X, position.backReroll.Y);
   }
+  ctx.fillStyle = '#a58c63';
+  ctx.fillRect(0, 0, 1, 1);
+  ctx.fillRect(255, 0, 1, 1)
+  ctx.fillRect(0, 191, 1, 1);
+  ctx.fillRect(255, 191, 1, 1);
 }
 
 function main() {

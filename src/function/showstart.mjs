@@ -16,6 +16,8 @@ const textboxArrow = element("textboxArrow");
 const pressEnter = element("press-enter");
 let tutorialStart, letsStartPromise, intervalRenderedFinal;
 
+//document.getElementById("game").style.display = "none"
+
 document.addEventListener("keydown", hideStart);
 
 function hideStart(e) {

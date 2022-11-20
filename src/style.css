@@ -15,11 +15,13 @@ html {
 @font-face {
   font-family: pokeFont;
   src: url(fonts/pokemon-ds-font.ttf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: pokeNumbers;
   src: url(fonts/pokemonnumbers.ttf);
+  font-display: swap;
 }
 
 #widthTestCanvas {
@@ -27,14 +29,24 @@ html {
   width: 0px;
 }
 
+#gameBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/src/img/pokemon-selection-background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+
 #gameCanvas {
-  background-color: #000000;
   height: 192px;
   width: 256px;
   position: absolute;
   image-rendering: pixelated;
-  border-image: url('img/canvas-border.png');
-  border: 1px solid transparent;
 }
 
 #canvasBorder {
@@ -56,6 +68,7 @@ html {
   user-select: none;
   text-shadow: 1px 0em rgb(41, 41, 41), 0em 1px rgb(41, 41, 41),
     1px 1px rgb(41, 41, 41);
+  border-image: url(img/canvas-border.png) 30 fill / 30px / 3px space;
 }
 
 #backReroll {
@@ -74,6 +87,8 @@ html {
 
 #backReroll:hover {
   background-image: url(img/selection/button-small-hover-overlay.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .gameTextNames {
@@ -85,13 +100,14 @@ html {
   font-size: 16px;
 }
 
-.gameTextLevels, .gameTextHpCurrent, .gameTextHpTotal {
+.gameTextLevels,
+.gameTextHpCurrent,
+.gameTextHpTotal {
   position: absolute;
   font-family: pokeNumbers;
   font-size: 1px;
   height: 7px;
 }
-
 
 div {
   font-family: pokeFont;
@@ -127,6 +143,7 @@ div {
   top: 50%;
   left: 50%;
   margin-left: -7.5em;
+  box-sizing: content-box ;
 }
 
 .buttonY {
