@@ -200,4 +200,4 @@ function scaleGameWindow(scale) {
 
 scaleGameWindow(2);
 
-document.getElementById("backReroll").innerHTML = "CANCEL";
+document.getElementById("backReroll").innerHTML = "RE-ROLL";
