@@ -1,4 +1,4 @@
-import { userSet, enemySet } from "./class/newpokemon.mjs";
+import { userSet, enemySet, rollSet } from "./class/newpokemon.mjs";
 import position from "./data/canvasPositions.json" assert { type: "json" };
 import { Sprite } from "./class/newSprite.mjs";
 import { textRenderer } from "./function/textrenderer.mjs";
@@ -11,193 +11,222 @@ ctx.font = "3em pokeFont";
 canvas.width = 256;
 canvas.height = 192;
 
-const MboxU = new Image();
-MboxU.src = "/src/img/selection/main-pokemon-box-unselected.png";
-const MboxS = new Image();
-MboxS.src = "/src/img/selection/main-pokemon-box-selected.png";
-const boxU = new Image();
-boxU.src = "/src/img/selection/pokemon-box-unselected.png";
-const boxS = new Image();
-boxS.src = "/src/img/selection/pokemon-box-selected.png";
-const backRerollImg = new Image();
-backRerollImg.src = "/src/img/selection/button-small.png";
+let backRerollImg = new Image();
 
-const backReroll = new Sprite({
-  width: 56,
-  height: 24,
-  img: backRerollImg,
-})
+function reroll() {
 
-let backRerollReady = false;
-backReroll.img.onload = () => {
-  backRerollReady = true;
-}
+  const MboxU = new Image();
+  MboxU.src = "/src/img/selection/main-pokemon-box-unselected.png";
+  const MboxS = new Image();
+  MboxS.src = "/src/img/selection/main-pokemon-box-selected.png";
+  const boxU = new Image();
+  boxU.src = "/src/img/selection/pokemon-box-unselected.png";
+  const boxS = new Image();
+  boxS.src = "/src/img/selection/pokemon-box-selected.png";
+  backRerollImg = new Image();
+  backRerollImg.src = "/src/img/selection/button-small.png";
 
-const frameWidth = 32;
-const frameHeight = 32;
-let x = 0;
-function animate(image, canvasX, canvasY) {
-  function drawFrame(frameX, frameY, canvasX, canvasY) {
-    ctx.drawImage(
-      image,
-      frameX * frameWidth,
-      frameY * frameHeight,
-      frameWidth,
-      frameHeight,
-      canvasX,
-      canvasY,
-      frameWidth,
-      frameHeight
-    );
+
+  const backReroll = new Sprite({
+    width: 56,
+    height: 24,
+    img: backRerollImg,
+  })
+
+  let backRerollReady = false;
+  backReroll.img.onload = () => {
+    backRerollReady = true;
   }
 
-  window.requestAnimationFrame(tick);
 
-  const frames = [0, 1];
-  let currentFrame = 0;
-  let frameCount = 0;
 
-  function tick() {
-    frameCount++;
-    if (frameCount < 20) {
-      window.requestAnimationFrame(tick);
-      return;
-    }
-    frameCount = 0;
-    ctx.clearRect(canvasX, canvasY, frameWidth, frameHeight);
-    ctx.imageSmoothingEnabled = false;
-    drawFrame(0, frames[currentFrame], canvasX, canvasY);
-    currentFrame++;
-
-    if (currentFrame >= frames.length) {
-      currentFrame = 0;
+  const frameWidth = 32;
+  const frameHeight = 32;
+  let x = 0;
+  function animate(image, canvasX, canvasY) {
+    function drawFrame(frameX, frameY, canvasX, canvasY) {
+      ctx.drawImage(
+        image,
+        frameX * frameWidth,
+        frameY * frameHeight,
+        frameWidth,
+        frameHeight,
+        canvasX,
+        canvasY,
+        frameWidth,
+        frameHeight
+      );
     }
 
     window.requestAnimationFrame(tick);
-    x += 32;
+
+    const frames = [0, 1];
+    let currentFrame = 0;
+    let frameCount = 0;
+
+    function tick() {
+      frameCount++;
+      if (frameCount < 20) {
+        window.requestAnimationFrame(tick);
+        return;
+      }
+      frameCount = 0;
+      ctx.clearRect(canvasX, canvasY, frameWidth, frameHeight);
+      ctx.imageSmoothingEnabled = false;
+      drawFrame(0, frames[currentFrame], canvasX, canvasY);
+      currentFrame++;
+
+      if (currentFrame >= frames.length) {
+        currentFrame = 0;
+      }
+
+      window.requestAnimationFrame(tick);
+      x += 32;
+    }
   }
-}
 
-let pokeIcon = [],
-  pokeGender = [],
-  hasGender = [];
-let i = 0;
-userSet.forEach((element) => {
-  if (element.gender !== "none") {
-    let genderImg = new Image();
-    genderImg.src = `/src/img/selection/${element.gender}.png`;
+  let pokeIcon = [],
+    pokeGender = [],
+    hasGender = [];
+  let i = 0;
 
-    pokeGender[i] = new Sprite({
-      width: 8,
-      height: 11,
-      img: genderImg,
+
+  userSet.forEach((element) => {
+    if (element.gender !== "none") {
+      let genderImg = new Image();
+      genderImg.src = `/src/img/selection/${element.gender}.png`;
+
+      pokeGender[i] = new Sprite({
+        width: 8,
+        height: 11,
+        img: genderImg,
+      });
+
+      pokeGender[i].img.onload = () => {
+        pokeGendersReady = true;
+      };
+    } else {
+      hasGender[i] = false;
+    }
+
+    let iconImg = new Image();
+    iconImg.src = `/src/img/icons/${element.id}.png`;
+
+    pokeIcon[i] = new Sprite({
+      width: 32,
+      height: 64,
+      img: iconImg,
+      framesHzt: 1,
+      framesVtl: 2,
+      TpF: 20,
+      isLooped: true,
+      destWidth: 32,
+      destHeight: 32,
     });
 
-    pokeGender[i].img.onload = () => {
-      pokeGendersReady = true;
-    };
-  } else {
-    hasGender[i] = false;
-  }
 
-  let iconImg = new Image();
-  iconImg.src = `/src/img/icons/${element.id}.png`;
-
-  pokeIcon[i] = new Sprite({
-    width: 32,
-    height: 64,
-    img: iconImg,
-    framesHzt: 1,
-    framesVtl: 2,
-    TpF: 20,
-    isLooped: true,
-    destWidth: 32,
-    destHeight: 32,
+    if (i < 5) {
+      i++;
+    }
+    x += 32;
   });
 
 
-  if (i < 5) {
-    i++;
-  }
-  x += 32;
-});
-
-let pokeIconsReady, MboxUReady, boxUReady, pokeGendersReady;
-pokeIcon[5].img.onload = () => {
-  pokeIconsReady = true;
-};
 
 
-renderInfo(0);
-renderInfo(1);
-renderInfo(2);
-renderInfo(3);
-renderInfo(4);
-renderInfo(5);
+  let pokeIconsReady, MboxUReady, boxUReady, pokeGendersReady;
+  pokeIcon[5].img.onload = () => {
+    pokeIconsReady = true;
+  };
 
-function render() {
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-  if (MboxUReady) {
-    ctx.drawImage(MboxU, position.box.unselected.X[0], position.box.unselected.Y[0]);
-  }
-  if (boxUReady) {
-    for (let i = 1; i <= 5; i++) {
-      ctx.drawImage(
-        boxU,
-        position.box.unselected.X[i],
-        position.box.unselected.Y[i]
-      );
+
+  renderInfo(0);
+  renderInfo(1);
+  renderInfo(2);
+  renderInfo(3);
+  renderInfo(4);
+  renderInfo(5);
+
+  function render() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    if (MboxUReady) {
+      ctx.drawImage(MboxU, position.box.unselected.X[0], position.box.unselected.Y[0]);
     }
-  }
-  if (pokeIconsReady) {
-    for (let i = 0; i <= pokeIcon.length - 1; i++) {
-      pokeIcon[i].updateC();
-      pokeIcon[i].renderC(
-        position.icon.unselected.X[i],
-        position.icon.unselected.Y[i]
-      );
-    }
-  }
-  if (pokeGendersReady) {
-    for (let i = 0; i <= pokeGender.length - 1; i++) {
-      if(hasGender[i]){
-        pokeGender[i].renderC(position.gender.X[i], position.gender.Y[i]);
+    if (boxUReady) {
+      for (let i = 1; i <= 5; i++) {
+        ctx.drawImage(
+          boxU,
+          position.box.unselected.X[i],
+          position.box.unselected.Y[i]
+        );
       }
     }
+    if (pokeIconsReady) {
+      for (let i = 0; i <= pokeIcon.length - 1; i++) {
+        pokeIcon[i].updateC();
+        pokeIcon[i].renderC(
+          position.icon.unselected.X[i],
+          position.icon.unselected.Y[i]
+        );
+      }
+    }
+    if (pokeGendersReady) {
+      for (let i = 0; i <= pokeGender.length - 1; i++) {
+        if (hasGender[i]) {
+          pokeGender[i].renderC(position.gender.X[i], position.gender.Y[i]);
+        }
+      }
+    }
+    if (backRerollReady) {
+      backReroll.renderC(position.backReroll.X, position.backReroll.Y);
+    }
+    ctx.fillStyle = '#a58c63';
+    ctx.fillRect(0, 0, 1, 1);
+    ctx.fillRect(255, 0, 1, 1)
+    ctx.fillRect(0, 191, 1, 1);
+    ctx.fillRect(255, 191, 1, 1);
   }
-  if (backRerollReady) {
-    backReroll.renderC(position.backReroll.X, position.backReroll.Y);
+
+  function main() {
+    render();
+    window.requestAnimationFrame(main);
   }
-  ctx.fillStyle = '#a58c63';
-  ctx.fillRect(0, 0, 1, 1);
-  ctx.fillRect(255, 0, 1, 1)
-  ctx.fillRect(0, 191, 1, 1);
-  ctx.fillRect(255, 191, 1, 1);
+
+  MboxU.onload = () => {
+    MboxUReady = true;
+  };
+
+  boxU.onload = () => {
+    boxUReady = true;
+  };
+
+  main();
+
+  /* console.log("screen width: " + window.screen.width);
+  console.log("screen height: " + window.screen.height); */
+
+  function scaleGameWindow(scale) {
+    document.getElementById("game").style.scale = scale * 2;
+    //document.getElementById("canvasBorder").style.scale = scale;
+  }
+
+  scaleGameWindow(2);
 }
 
-function main() {
-  render();
-  window.requestAnimationFrame(main);
-}
+reroll();
 
-MboxU.onload = () => {
-  MboxUReady = true;
-};
+let rerollButton = document.getElementById("backReroll")
+rerollButton.innerHTML = "RE-ROLL";
 
-boxU.onload = () => {
-  boxUReady = true;
-};
-
-main();
-
-/* console.log("screen width: " + window.screen.width);
-console.log("screen height: " + window.screen.height); */
-
-function scaleGameWindow(scale) {
-  document.getElementById("game").style.scale = scale * 2;
-  //document.getElementById("canvasBorder").style.scale = scale;
-}
-
-scaleGameWindow(2);
-
-document.getElementById("backReroll").innerHTML = "RE-ROLL";
+rerollButton.addEventListener("click", () => {
+  document.getElementById("shutterTop").style.height = "50%";
+  document.getElementById("shutterBottom").style.height = "50%";
+  backRerollImg.src = "/src/img/selection/button-small-selected.png";
+  setTimeout(() => {
+    rollSet();
+    reroll();
+    document.getElementById("shutterTop").style.height = "0%";
+    document.getElementById("shutterBottom").style.height = "0%";
+    backRerollImg.src = "/src/img/selection/button-small.png";
+  }, 500);
+})

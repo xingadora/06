@@ -201,13 +201,13 @@ function getEnemySet(userSet) {
       }
     }
 
-  if (pokemon[i].id === userId) {
-    possible.splice(i, 1);
-  }
+    if (pokemon[i].id === userId) {
+      possible.splice(i, 1);
+    }
 
-  let randomi = randomNumber(0, possible.length - 1);
+    let randomi = randomNumber(0, possible.length - 1);
 
-  enemySet.push(possible[randomi]);
+    enemySet.push(possible[randomi]);
 
 
   });
@@ -217,20 +217,27 @@ export let userSet = [];
 export let enemySet = [];
 let lastIndex = [];
 
-let index = 0;
-while (index < 6) {
-  let random = randomNumber(1, 151);
-  while (lastIndex.includes(random)) {
-    random = randomNumber(1, 151);
+export function rollSet() {
+  userSet = [];
+  enemySet = [];
+  lastIndex = [];
+  let index = 0;
+  while (index < 6) {
+    let random = randomNumber(1, 151);
+    while (lastIndex.includes(random)) {
+      random = randomNumber(1, 151);
+    }
+    userSet.push(pokemon[random]);
+    lastIndex.push(random);
+
+    index++;
   }
-  userSet.push(pokemon[random]);
-  lastIndex.push(random);
- 
-  index++;
+
+  getEnemySet(userSet);
+
+  console.log("user:", userSet);
+  console.log("enemy:", enemySet);
 }
+rollSet();
 
-getEnemySet(userSet);
-
-console.log("user:", userSet);
-console.log("enemy:", enemySet);
 
