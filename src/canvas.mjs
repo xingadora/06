@@ -211,22 +211,38 @@ function reroll() {
   }
 
   scaleGameWindow(2);
+
+
+
+
+  canvas.addEventListener("mousemove", function (event) {
+
+  });
 }
 
+
 reroll();
+
+const shutterTop = document.getElementById("shutterTop")
+const shutterBottom = document.getElementById("shutterBottom")
 
 let rerollButton = document.getElementById("backReroll")
 rerollButton.innerHTML = "RE-ROLL";
 
 rerollButton.addEventListener("click", () => {
-  document.getElementById("shutterTop").style.height = "50%";
-  document.getElementById("shutterBottom").style.height = "50%";
+  shutterTop.style.height = "50%";
+  shutterBottom.style.height = "50%";
   backRerollImg.src = "/src/img/selection/button-small-selected.png";
   setTimeout(() => {
     rollSet();
     reroll();
-    document.getElementById("shutterTop").style.height = "0%";
-    document.getElementById("shutterBottom").style.height = "0%";
+    shutterTop.style.height = "0%";
+    shutterBottom.style.height = "0%";
     backRerollImg.src = "/src/img/selection/button-small.png";
   }, 500);
 })
+
+
+
+
+
