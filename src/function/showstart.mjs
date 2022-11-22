@@ -147,17 +147,24 @@ function readyGame() {
 function showGame() {
   textbox.removeEventListener("animationend", showGame);
 
+  document.getElementById("buttonY").style.display = "none";
+  document.getElementById("buttonN").style.display = "none";
+
+
   fadeOut(textbox);
   document.body.style.boxShadow = "inset 0 0 0 10000px black";
 
   textbox.addEventListener("transitionend", () => {
+    textbox.style.display = "none";
     textboxText.innerHTML = "";
-    textbox.style.top = "60%";
+    document.getElementById("selectionReady").style.top = "70%";
     document.body.style.transition = "box-shadow 2s";
+    fadeIn(document.getElementById("game"));
+    document.getElementById("game").style.display = "block";
 
     setTimeout(() => {
       document.body.style.boxShadow = "inset 0 0 0 10000px transparent";
-      fadeIn(textbox);
+      fadeIn(document.getElementById("selectionReady"));
       document.body.style.backgroundImage =
         "url(/src/img/start_background.webp)";
     }, 300);

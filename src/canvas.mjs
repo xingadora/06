@@ -15,14 +15,14 @@ let backRerollImg = new Image();
 
 function reroll() {
 
-  const MboxU = new Image();
+  /* const MboxU = new Image();
   MboxU.src = "/src/img/selection/main-pokemon-box-unselected.png";
   const MboxS = new Image();
   MboxS.src = "/src/img/selection/main-pokemon-box-selected.png";
   const boxU = new Image();
   boxU.src = "/src/img/selection/pokemon-box-unselected.png";
   const boxS = new Image();
-  boxS.src = "/src/img/selection/pokemon-box-selected.png";
+  boxS.src = "/src/img/selection/pokemon-box-selected.png"; */
   backRerollImg = new Image();
   backRerollImg.src = "/src/img/selection/button-small.png";
 
@@ -149,7 +149,7 @@ function reroll() {
 
   function render() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    if (MboxUReady) {
+    /* if (MboxUReady) {
       ctx.drawImage(MboxU, position.box.unselected.X[0], position.box.unselected.Y[0]);
     }
     if (boxUReady) {
@@ -160,7 +160,7 @@ function reroll() {
           position.box.unselected.Y[i]
         );
       }
-    }
+    } */
     if (pokeIconsReady) {
       for (let i = 0; i <= pokeIcon.length - 1; i++) {
         pokeIcon[i].updateC();
@@ -192,13 +192,13 @@ function reroll() {
     window.requestAnimationFrame(main);
   }
 
-  MboxU.onload = () => {
+/*   MboxU.onload = () => {
     MboxUReady = true;
   };
 
   boxU.onload = () => {
     boxUReady = true;
-  };
+  }; */
 
   main();
 
@@ -211,7 +211,6 @@ function reroll() {
   }
 
   scaleGameWindow(2);
-
 
 
 
@@ -228,6 +227,8 @@ const shutterBottom = document.getElementById("shutterBottom")
 
 let rerollButton = document.getElementById("backReroll")
 rerollButton.innerHTML = "RE-ROLL";
+
+document.getElementById("selectionTextBox").innerHTML = "Choose your team.";
 
 rerollButton.addEventListener("click", () => {
   shutterTop.style.height = "50%";

@@ -23,7 +23,7 @@
     </div>
 
     <div id="buttonY" class="buttonY">
-      <image id="clickboxText" class="clickboxText" src="/src/img/YES.png" />
+      <image id="clickboxText" class="clickboxText" src="/src/img/YES.png" alt="clickbox text" />
       <image
         class="selector"
         id="selectorY"
@@ -32,7 +32,7 @@
       />
     </div>
     <div id="buttonN" class="buttonN">
-      <image id="clickboxText" class="clickboxText" src="/src/img/NO.png" />
+      <image id="clickboxText" class="clickboxText" src="/src/img/NO.png" alt="clickbox text" />
       <image
         class="selector"
         id="selectorN"
@@ -86,13 +86,20 @@
       <p id="hpTotal4" class="gameTextHpTotal"></p>
       <p id="hpTotal5" class="gameTextHpTotal"></p>
 
-      
+      <p id="selectionTextBox"></p>
       <p id="backReroll"></p>
 
       <div id="shutterTop"></div>
       <div id="shutterBottom"></div>
       
     </div>
+
+    <div id="selectionReady">
+      <img id="selectionReadyImg" src="/src/img/selection/ready.png" alt="selection ready" />
+      <span id="selectionReadySelector"></span>
+      <span id="selectionReadyText">READY</span>
+    </div>
+
     <script type="module" src="/src/canvas.mjs"></script>
     <script type="module" src="/src/function/showstart.mjs"></script>
     <script src="/src/class/newuser.js"></script>

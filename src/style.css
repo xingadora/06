@@ -63,7 +63,7 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(/src/img/pokemon-selection-background.png);
+  background-image: url(/src/img/selection-background.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -84,19 +84,77 @@ html {
   image-rendering: pixelated;
 }
 
+#selectionTextBox {
+  position: absolute;
+  top: 168px;
+  left: 15px;
+  font-size: 16px;
+  color: #52525a;
+  text-shadow: 0.065em 0em rgb(165, 165, 173), 0em 0.065em rgb(165, 165, 173),
+    0.065em 0.065em rgb(165, 165, 173);
+}
+
+#selectionReady {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18.8em;
+  height: 5.2em;
+  position: absolute;
+  top: 72%;
+  left: calc(50% - 9.4em);
+  text-align: center;
+  font-size: 1em;
+  opacity: 0;
+}
+
+#selectionReadyImg {
+  position: absolute;
+  width: 18.8em;
+  height: 4.8em;
+}
+
+#selectionReadySelector {
+  position: absolute;
+  width: 18.8em;
+  height: 5.2em;
+}
+
+#selectionReadyText {
+  width: calc(18.8em / 3);
+  height: calc(5.2em / 3);
+  font-size: 3em;
+  color: #ffffff;
+  text-shadow: 0.065em 0em rgb(0, 0, 0), 0em 0.065em rgb(0, 0, 0),
+    0.065em 0.065em rgb(0, 0, 0);
+  display: block;
+  opacity: 1;
+  z-index: 100;
+  padding-top: 0.35em;
+}
+
+#selectionReady :hover {
+  background-image: url(/src/img/selection/ready-selector.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 #game {
-  position: absolute;
+  display: none;
+  opacity: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25%;
   width: 256px;
   height: 192px;
-  position: absolute;
-  height: 192px;
-  width: 256px;
   color: white;
   overflow: hidden;
   user-select: none;
   text-shadow: 1px 0em rgb(41, 41, 41), 0em 1px rgb(41, 41, 41),
     1px 1px rgb(41, 41, 41);
   border-image: url(img/canvas-border.png) 30 fill / 30px / 3px space;
+  transition: opacity 1s ease-in-out;
 }
 
 #backReroll {
@@ -171,7 +229,7 @@ div {
   top: 50%;
   left: 50%;
   margin-left: -7.5em;
-  box-sizing: content-box ;
+  box-sizing: content-box;
 }
 
 .buttonY {
@@ -247,11 +305,12 @@ div {
 .textboxText {
   text-align: start;
   position: absolute;
-  top: -0.55em;
+  top: 0.45em;
   left: 0.85em;
   margin-right: 1.5em;
   height: 1.85em;
   overflow: auto;
+  color: #52525a;
 }
 
 .clickboxText {
