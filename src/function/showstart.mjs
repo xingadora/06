@@ -144,12 +144,15 @@ function readyGame() {
   });
 }
 
+const shutterTop = document.getElementById("shutterTop")
+const shutterBottom = document.getElementById("shutterBottom")
+
 function showGame() {
   textbox.removeEventListener("animationend", showGame);
 
   document.getElementById("buttonY").style.display = "none";
   document.getElementById("buttonN").style.display = "none";
-  document.getElementById("game").style.display = "block";
+  document.getElementById("selection").style.display = "block";
 
 
   fadeOut(textbox);
@@ -160,7 +163,7 @@ function showGame() {
     textboxText.innerHTML = "";
     document.getElementById("selectionReady").style.top = "75%";
     document.body.style.transition = "box-shadow 2s";
-    fadeIn(document.getElementById("game"));
+    fadeIn(document.getElementById("selection"));
     fadeIn(document.getElementById("selectionReady"));
 
     setTimeout(() => {
@@ -168,5 +171,10 @@ function showGame() {
       document.body.style.backgroundImage =
         "url(/src/img/start_background.webp)";
     }, 300);
+
+    document.getElementById("selectionReady").addEventListener("click", () => {
+      shutterTop.style.height = "50%";
+      shutterBottom.style.height = "50%";
+    });
   });
 }

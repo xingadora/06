@@ -4,10 +4,10 @@ import position from "../data/canvasPositions.json" assert { type: "json" };
 export function renderInfo(i) {
   let scale = 1;
 
-  const name = document.getElementById("name" + i);
-  const level = document.getElementById("level" + i);
-  const hpCurrent = document.getElementById("hpCurrent" + i);
-  const hpTotal = document.getElementById("hpTotal" + i);
+  const name = document.getElementById("selectionName" + i);
+  const level = document.getElementById("selectionLevel" + i);
+  const hpCurrent = document.getElementById("selectionHpCurrent" + i);
+  const hpTotal = document.getElementById("selectionHpTotal" + i);
 
   name.innerHTML = userSet[i].name;
   level.innerHTML = "Lv." + userSet[i].level;

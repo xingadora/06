@@ -57,7 +57,7 @@ html {
   width: 0px;
 }
 
-#gameBackground {
+#selectionBackground {
   position: absolute;
   top: 0;
   left: 0;
@@ -70,7 +70,7 @@ html {
   z-index: -1;
 }
 
-#gameCanvas {
+#selectionCanvas {
   height: 192px;
   width: 256px;
   position: absolute;
@@ -106,6 +106,7 @@ html {
   text-align: center;
   font-size: 1em;
   opacity: 0;
+  margin-top: 2em;
 }
 
 #selectionReadyImg {
@@ -140,7 +141,7 @@ html {
   background-position: center;
 }
 
-#game {
+#selection {
   display: none;
   opacity: 0;
   position: absolute;
@@ -155,6 +156,7 @@ html {
     1px 1px rgb(41, 41, 41);
   border-image: url(img/canvas-border.png) 30 fill / 30px / 3px space;
   transition: opacity 1s ease-in-out;
+  max-width: calc(100% - 128px);
 }
 
 #backReroll {
@@ -177,7 +179,7 @@ html {
   background-position: center;
 }
 
-.gameTextNames {
+.selectionTextNames {
   position: absolute;
   margin-top: -3px;
   height: 15px;
@@ -186,9 +188,9 @@ html {
   font-size: 16px;
 }
 
-.gameTextLevels,
-.gameTextHpCurrent,
-.gameTextHpTotal {
+.selectionTextLevels,
+.selectionTextHpCurrent,
+.selectionTextHpTotal {
   position: absolute;
   font-family: pokeNumbers;
   font-size: 1px;

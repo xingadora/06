@@ -1,4 +1,4 @@
-const canvas = document.getElementById("gameCanvas"),
+const canvas = document.getElementById("selectionCanvas"),
   ctx = canvas.getContext("2d");
 ctx.font = "3em pokeFont";
 canvas.width = 256,

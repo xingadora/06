@@ -4,8 +4,8 @@ import { Sprite } from "./class/newSprite.mjs";
 import { textRenderer } from "./function/textrenderer.mjs";
 import { renderInfo } from "./function/selectionPokemon.mjs";
 
-const background = document.getElementById("gameBackground");
-const canvas = document.getElementById("gameCanvas");
+const background = document.getElementById("selectionBackground");
+const canvas = document.getElementById("selectionCanvas");
 const ctx = canvas.getContext("2d");
 ctx.font = "3em pokeFont";
 canvas.width = 256;
@@ -14,6 +14,7 @@ canvas.height = 192;
 let backRerollImg = new Image();
 
 function reroll() {
+
 
   /* const MboxU = new Image();
   MboxU.src = "/src/img/selection/main-pokemon-box-unselected.png";
@@ -93,6 +94,8 @@ function reroll() {
 
   userSet.forEach((element) => {
     if (element.gender !== "none") {
+      hasGender[i] = true;
+
       let genderImg = new Image();
       genderImg.src = `/src/img/selection/${element.gender}.png`;
 
@@ -108,6 +111,8 @@ function reroll() {
     } else {
       hasGender[i] = false;
     }
+
+
 
     let iconImg = new Image();
     iconImg.src = `/src/img/icons/${element.id}.png`;
@@ -192,13 +197,13 @@ function reroll() {
     window.requestAnimationFrame(main);
   }
 
-/*   MboxU.onload = () => {
-    MboxUReady = true;
-  };
-
-  boxU.onload = () => {
-    boxUReady = true;
-  }; */
+  /*   MboxU.onload = () => {
+      MboxUReady = true;
+    };
+  
+    boxU.onload = () => {
+      boxUReady = true;
+    }; */
 
   main();
 
@@ -206,17 +211,27 @@ function reroll() {
   console.log("screen height: " + window.screen.height); */
 
   function scaleGameWindow(scale) {
-    document.getElementById("game").style.scale = scale * 2;
+    document.getElementById("selection").style.scale = scale <= 0 ? 1 : scale;
     //document.getElementById("canvasBorder").style.scale = scale;
   }
 
-  scaleGameWindow(2);
+  setInterval(() => {
+    let scale;
+
+    if (Math.floor(((window.innerWidth - window.innerWidth % 256) - 128)) > 1024) {
+      scale = 3;
+    } else {
+      scale = Math.floor(((window.innerWidth - window.innerWidth % 256) - 128) / 256)
+    }
+    scaleGameWindow(scale);
+  }, 100);
 
 
 
   canvas.addEventListener("mousemove", function (event) {
 
   });
+
 }
 
 
