@@ -243,7 +243,11 @@ rerollButton.addEventListener("click", () => {
   }, 500);
 })
 
-
-
-
-
+document.getElementById("selectionReady").addEventListener("mousedown", () => {
+  document.getElementById("selectionReadyImg").src = "/src/img/selection/ready-selected.png";
+  document.getElementById("selectionReadyText").style.paddingTop = "0.4em";
+  setTimeout(() => {
+    document.getElementById("selectionReadyImg").src = "/src/img/selection/ready.png";
+    document.getElementById("selectionReadyText").style.paddingTop = "0.35em";
+  }, 100);
+});
