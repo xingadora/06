@@ -237,8 +237,8 @@ function reroll() {
 
 reroll();
 
-const shutterTop = document.getElementById("shutterTop")
-const shutterBottom = document.getElementById("shutterBottom")
+const shutterTop = document.getElementById("selectionShutterTop")
+const shutterBottom = document.getElementById("selectionShutterBottom")
 
 let rerollButton = document.getElementById("backReroll")
 rerollButton.innerHTML = "RE-ROLL";
@@ -255,7 +255,7 @@ rerollButton.addEventListener("click", () => {
     shutterTop.style.height = "0%";
     shutterBottom.style.height = "0%";
     backRerollImg.src = "/src/img/selection/button-small.png";
-  }, 500);
+  }, 400);
 })
 
 document.getElementById("selectionReady").addEventListener("mousedown", () => {

@@ -144,8 +144,10 @@ function readyGame() {
   });
 }
 
-const shutterTop = document.getElementById("shutterTop")
-const shutterBottom = document.getElementById("shutterBottom")
+const selectionShutterTop = document.getElementById("selectionShutterTop")
+const selecitonShutterBottom = document.getElementById("selectionShutterBottom")
+const gameShutterTop = document.getElementById("gameShutterTop");
+const gameShutterBottom = document.getElementById("gameShutterBottom");
 
 function showGame() {
   textbox.removeEventListener("animationend", showGame);
@@ -172,9 +174,23 @@ function showGame() {
         "url(/src/img/start_background.webp)";
     }, 300);
 
-    document.getElementById("selectionReady").addEventListener("click", () => {
-      shutterTop.style.height = "50%";
-      shutterBottom.style.height = "50%";
-    });
+    document.getElementById("selectionReady").addEventListener("click", afterSelection);
+  });
+}
+
+function afterSelection() {
+  selectionShutterTop.style.height = "50%";
+  selecitonShutterBottom.style.height = "50%";
+  gameShutterTop.style.height = "50%";
+  gameShutterBottom.style.height = "50%";
+
+  selectionShutterTop.addEventListener("transitionend", () => {
+    document.getElementById("selection").style.display = "none";
+    document.getElementById("game").style.display = "block";
+
+    setTimeout(() => {
+      gameShutterTop.style.height = "0%";
+      gameShutterBottom.style.height = "0%";
+    }, 600);
   });
 }

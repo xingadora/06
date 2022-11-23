@@ -89,8 +89,8 @@
       <p id="selectionTextBox"></p>
       <p id="backReroll"></p>
 
-      <div id="shutterTop"></div>
-      <div id="shutterBottom"></div>
+      <div id="selectionShutterTop"></div>
+      <div id="selectionShutterBottom"></div>
       
     </div>
 
@@ -100,8 +100,17 @@
       <span id="selectionReadyText">READY</span>
     </div>
 
+    <div id="game">
+      <div id="gameBackground"></div>
+      <canvas id="gameCanvas"></canvas>
+
+      <div id="gameShutterTop"></div>
+      <div id="gameShutterBottom"></div>
+    </div>
+
     <script type="module" src="/src/selectionCanvas.mjs"></script>
     <script type="module" src="/src/function/showstart.mjs"></script>
+    <script type="module" src="/src/gameCanvas.mjs"></script>
     <script src="/src/class/newuser.js"></script>
     <script type="module" src="/src/class/newpokemon.mjs"></script>
     <script type="module" src="/src/function/pokemonattacks.mjs"></script>
