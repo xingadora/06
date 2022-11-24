@@ -9,6 +9,9 @@ import {
   hide,
 } from "./textrenderer.mjs";
 
+import { drawBattleSprite } from "../gameCanvas.mjs";
+import { userSet, enemySet } from "../class/newpokemon.mjs";
+
 const textboxText = element("textboxText");
 const overlay = element("overlay");
 const textbox = element("textbox");
@@ -191,6 +194,8 @@ function afterSelection() {
     setTimeout(() => {
       gameShutterTop.style.height = "0%";
       gameShutterBottom.style.height = "0%";
+      drawBattleSprite(userSet[0]);
+      drawBattleSprite(enemySet[0]);
     }, 600);
   });
 }

@@ -3,6 +3,7 @@ import position from "./data/canvasPositions.json" assert { type: "json" };
 import { Sprite } from "./class/newSprite.mjs";
 import { textRenderer } from "./function/textrenderer.mjs";
 import { renderInfo } from "./function/selectionPokemon.mjs";
+import { drawBattleSprite } from "./gameCanvas.mjs";
 
 const background = document.getElementById("selectionBackground");
 const canvas = document.getElementById("selectionCanvas");
@@ -231,7 +232,6 @@ function reroll() {
   canvas.addEventListener("mousemove", function (event) {
 
   });
-
 }
 
 
