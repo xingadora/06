@@ -194,8 +194,10 @@ function afterSelection() {
     setTimeout(() => {
       gameShutterTop.style.height = "0%";
       gameShutterBottom.style.height = "0%";
-      drawBattleSprite(userSet[0]);
-      drawBattleSprite(enemySet[0]);
+      drawBattleSprite(userSet[0], "user");
+      drawBattleSprite(enemySet[0], "enemy");
+
+      
     }, 600);
   });
 }

@@ -220,7 +220,7 @@ function reroll() {
     let scale;
 
     if (Math.floor(((window.innerWidth - window.innerWidth % 256) - 128)) > 1024) {
-      scale = 3;
+      scale = 4;
     } else {
       scale = Math.floor(((window.innerWidth - window.innerWidth % 256) - 128) / 256)
     }
