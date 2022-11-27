@@ -1,5 +1,4 @@
 import { userSet, enemySet } from "./class/newpokemon.mjs";
-import spriteSheet from "./pokemonSprites.json" assert { type: "json" };
 
 function scaleGameWindow(scale) {
   document.getElementById("game").style.scale = scale <= 0 ? 1 : scale;
@@ -27,12 +26,11 @@ setInterval(() => {
 export function drawBattleSprite(spriteElement, player) {
   let destX, destY;
   let pokeImage = new Image();
+  pokeImage.src = `/src/img/spritesheets/full/${spriteElement.id}.png`;
   if (player === "user") {
-    pokeImage.src = `/src/img/spritesheets/pokemon/back-regular-male-frame1.png`;
     destX = 24;
     destY = 86;
   } else if (player === "enemy") {
-    pokeImage.src = `/src/img/spritesheets/pokemon/front-regular-male-frame1.png`;
     destX = 152;
     destY = 22;
   }
