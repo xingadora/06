@@ -4,13 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content="omg!" />
-    <title>idk</title>
+    <title>Pokémon!</title>
     <link href="/src/style.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body class="start container">
     <div id="testId"></div>
-    <canvas id="canvas"></canvas>
+    <canvas id="widthTestCanvas"></canvas>
     <div id="textbox">
       <image
         class="textboxArrow"
@@ -23,7 +23,7 @@
     </div>
 
     <div id="buttonY" class="buttonY">
-      <image id="clickboxText" class="clickboxText" src="/src/img/YES.png" />
+      <image id="clickboxText" class="clickboxText" src="/src/img/YES.png" alt="clickbox text" />
       <image
         class="selector"
         id="selectorY"
@@ -32,7 +32,7 @@
       />
     </div>
     <div id="buttonN" class="buttonN">
-      <image id="clickboxText" class="clickboxText" src="/src/img/NO.png" />
+      <image id="clickboxText" class="clickboxText" src="/src/img/NO.png" alt="clickbox text" />
       <image
         class="selector"
         id="selectorN"
@@ -53,7 +53,64 @@
       src="/src/img/start.png"
       alt="press enter"
     />
+
+    <div id="selection">
+      <div id="selectionBackground"></div>
+      <canvas id="selectionCanvas"></canvas>
+
+      <p id="selectionName0" class="selectionTextNames"></p>
+      <p id="selectionName1" class="selectionTextNames"></p>
+      <p id="selectionName2" class="selectionTextNames"></p>
+      <p id="selectionName3" class="selectionTextNames"></p>
+      <p id="selectionName4" class="selectionTextNames"></p>
+      <p id="selectionName5" class="selectionTextNames"></p>
+
+      <p id="selectionLevel0" class="selectionTextLevels"></p>
+      <p id="selectionLevel1" class="selectionTextLevels"></p>
+      <p id="selectionLevel2" class="selectionTextLevels"></p>
+      <p id="selectionLevel3" class="selectionTextLevels"></p>
+      <p id="selectionLevel4" class="selectionTextLevels"></p>
+      <p id="selectionLevel5" class="selectionTextLevels"></p>
+
+      <p id="selectionHpCurrent0" class="selectionTextHpCurrent"></p>
+      <p id="selectionHpCurrent1" class="selectionTextHpCurrent"></p>
+      <p id="selectionHpCurrent2" class="selectionTextHpCurrent"></p>
+      <p id="selectionHpCurrent3" class="selectionTextHpCurrent"></p>
+      <p id="selectionHpCurrent4" class="selectionTextHpCurrent"></p>
+      <p id="selectionHpCurrent5" class="selectionTextHpCurrent"></p>
+
+      <p id="selectionHpTotal0" class="selectionTextHpTotal"></p>
+      <p id="selectionHpTotal1" class="selectionTextHpTotal"></p>
+      <p id="selectionHpTotal2" class="selectionTextHpTotal"></p>
+      <p id="selectionHpTotal3" class="selectionTextHpTotal"></p>
+      <p id="selectionHpTotal4" class="selectionTextHpTotal"></p>
+      <p id="selectionHpTotal5" class="selectionTextHpTotal"></p>
+
+      <p id="selectionTextBox"></p>
+      <p id="backReroll"></p>
+
+      <div id="selectionShutterTop"></div>
+      <div id="selectionShutterBottom"></div>
+      
+    </div>
+
+    <div id="selectionReady">
+      <img id="selectionReadyImg" src="/src/img/selection/ready.png" alt="selection ready" />
+      <span id="selectionReadySelector"></span>
+      <span id="selectionReadyText">READY</span>
+    </div>
+
+    <div id="game">
+      <div id="gameBackground"></div>
+      <canvas id="gameCanvas"></canvas>
+
+      <div id="gameShutterTop"></div>
+      <div id="gameShutterBottom"></div>
+    </div>
+
+    <script type="module" src="/src/selectionCanvas.mjs"></script>
     <script type="module" src="/src/function/showstart.mjs"></script>
+    <script type="module" src="/src/gameCanvas.mjs"></script>
     <script src="/src/class/newuser.js"></script>
     <script type="module" src="/src/class/newpokemon.mjs"></script>
     <script type="module" src="/src/function/pokemonattacks.mjs"></script>

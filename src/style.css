@@ -1,3 +1,10 @@
+* {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body,
 html {
   height: 100%;
@@ -8,16 +15,219 @@ html {
 @font-face {
   font-family: pokeFont;
   src: url(fonts/pokemon-ds-font.ttf);
+  font-display: swap;
 }
 
-#canvas {
+@font-face {
+  font-family: pokeNumbers;
+  src: url(fonts/pokemonnumbers.ttf);
+  font-display: swap;
+}
+
+#selectionShutterTop, #gameShutterTop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: rgb(0, 0, 0);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: height 0.2s ease-in-out;
+}
+
+#selectionShutterBottom, #gameShutterBottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: rgb(0, 0, 0);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: height 0.2s ease-in-out;
+}
+
+#widthTestCanvas {
   height: 0px;
   width: 0px;
 }
 
+#selectionBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/src/img/selection-background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+
+#gameBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/src/img/t1.png);
+
+  background-repeat: no-repeat;
+  background-position: top;
+  z-index: -1;
+}
+
+canvas {
+  height: 192px;
+  width: 256px;
+  position: absolute;
+  image-rendering: pixelated;
+}
+
+#canvasBorder {
+  position: absolute;
+  height: 396px;
+  width: 524px;
+  image-rendering: pixelated;
+}
+
+#selectionTextBox {
+  position: absolute;
+  top: 168px;
+  left: 15px;
+  font-size: 16px;
+  color: #52525a;
+  text-shadow: 0.065em 0em rgb(165, 165, 173), 0em 0.065em rgb(165, 165, 173),
+    0.065em 0.065em rgb(165, 165, 173);
+}
+
+#selectionReady {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18.8em;
+  height: 5.2em;
+  position: absolute;
+  top: 72%;
+  left: calc(50% - 9.4em);
+  text-align: center;
+  font-size: 1em;
+  opacity: 0;
+  margin-top: 2em;
+}
+
+#selectionReadyImg {
+  position: absolute;
+  width: 18.8em;
+  height: 4.8em;
+}
+
+#selectionReadySelector {
+  position: absolute;
+  width: 18.8em;
+  height: 5.2em;
+}
+
+#selectionReadyText {
+  width: calc(18.8em / 3);
+  height: calc(5.2em / 3);
+  font-size: 3em;
+  color: #ffffff;
+  text-shadow: 0.065em 0em rgb(0, 0, 0), 0em 0.065em rgb(0, 0, 0),
+    0.065em 0.065em rgb(0, 0, 0);
+  display: block;
+  opacity: 1;
+  z-index: 100;
+  padding-top: 0.35em;
+}
+
+#selectionReady :hover {
+  background-image: url(/src/img/selection/ready-selector.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#selection {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  top: 35%;
+  left: calc(50% - 128px);
+  width: 256px;
+  height: 192px;
+  color: white;
+  overflow: hidden;
+  user-select: none;
+  text-shadow: 1px 0em rgb(41, 41, 41), 0em 1px rgb(41, 41, 41),
+    1px 1px rgb(41, 41, 41);
+  border-image: url(img/canvas-border.png) 30 fill / 30px / 3px space;
+  transition: opacity 1s ease-in-out;
+  max-width: calc(100% - 128px);
+}
+
+#game {
+  display: none;
+  position: absolute;
+  top: 35%;
+  left: calc(50% - 128px);
+  width: 256px;
+  height: 192px;
+  color: white;
+  overflow: hidden;
+  user-select: none;
+  text-shadow: 1px 0em rgb(41, 41, 41), 0em 1px rgb(41, 41, 41),
+    1px 1px rgb(41, 41, 41);
+  border-image: url(img/canvas-border.png) 30 fill / 30px / 3px space;
+  max-width: calc(100% - 128px);
+}
+
+#backReroll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 200px;
+  top: 164px;
+  width: 56px;
+  height: 24px;
+  text-align: center;
+  font-size: 16px;
+  padding-bottom: 3px;
+}
+
+#backReroll:hover {
+  background-image: url(img/selection/button-small-hover-overlay.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.selectionTextNames {
+  position: absolute;
+  margin-top: -3px;
+  height: 15px;
+  padding: 0px;
+  font-family: pokeFont;
+  font-size: 16px;
+}
+
+.selectionTextLevels,
+.selectionTextHpCurrent,
+.selectionTextHpTotal {
+  position: absolute;
+  font-family: pokeNumbers;
+  font-size: 1px;
+  height: 7px;
+}
+
 div {
   font-family: pokeFont;
-  color: rgba(82, 82, 90, 1);
   font-size: 3em;
   background-image: none;
   image-rendering: pixelated;
@@ -50,6 +260,7 @@ div {
   top: 50%;
   left: 50%;
   margin-left: -7.5em;
+  box-sizing: content-box;
 }
 
 .buttonY {
@@ -125,11 +336,12 @@ div {
 .textboxText {
   text-align: start;
   position: absolute;
-  top: -0.55em;
+  top: 0.45em;
   left: 0.85em;
   margin-right: 1.5em;
   height: 1.85em;
   overflow: auto;
+  color: #52525a;
 }
 
 .clickboxText {
@@ -204,10 +416,6 @@ div {
   animation-duration: 1s;
   animation-fill-mode: forwards;
   image-rendering: auto;
-}
-
-* {
-  overflow: hidden;
 }
 
 @keyframes pulse {

@@ -9,12 +9,17 @@ import {
   hide,
 } from "./textrenderer.mjs";
 
+import { drawBattleSprite } from "../gameCanvas.mjs";
+import { userSet, enemySet } from "../class/newpokemon.mjs";
+
 const textboxText = element("textboxText");
 const overlay = element("overlay");
 const textbox = element("textbox");
 const textboxArrow = element("textboxArrow");
 const pressEnter = element("press-enter");
 let tutorialStart, letsStartPromise, intervalRenderedFinal;
+
+//document.getElementById("game").style.display = "none"
 
 document.addEventListener("keydown", hideStart);
 
@@ -142,22 +147,57 @@ function readyGame() {
   });
 }
 
+const selectionShutterTop = document.getElementById("selectionShutterTop")
+const selecitonShutterBottom = document.getElementById("selectionShutterBottom")
+const gameShutterTop = document.getElementById("gameShutterTop");
+const gameShutterBottom = document.getElementById("gameShutterBottom");
+
 function showGame() {
   textbox.removeEventListener("animationend", showGame);
+
+  document.getElementById("buttonY").style.display = "none";
+  document.getElementById("buttonN").style.display = "none";
+  document.getElementById("selection").style.display = "block";
+
 
   fadeOut(textbox);
   document.body.style.boxShadow = "inset 0 0 0 10000px black";
 
   textbox.addEventListener("transitionend", () => {
+    textbox.style.display = "none";
     textboxText.innerHTML = "";
-    textbox.style.top = "60%";
+    document.getElementById("selectionReady").style.top = "75%";
     document.body.style.transition = "box-shadow 2s";
+    fadeIn(document.getElementById("selection"));
+    fadeIn(document.getElementById("selectionReady"));
 
     setTimeout(() => {
       document.body.style.boxShadow = "inset 0 0 0 10000px transparent";
-      fadeIn(textbox);
       document.body.style.backgroundImage =
         "url(/src/img/start_background.webp)";
     }, 300);
+
+    document.getElementById("selectionReady").addEventListener("click", afterSelection);
+  });
+}
+
+function afterSelection() {
+  selectionShutterTop.style.height = "50%";
+  selecitonShutterBottom.style.height = "50%";
+  gameShutterTop.style.height = "50%";
+  gameShutterBottom.style.height = "50%";
+
+  selectionShutterTop.addEventListener("transitionend", () => {
+    document.getElementById("selection").style.display = "none";
+    document.getElementById("game").style.display = "block";
+
+    setTimeout(() => {
+      gameShutterTop.style.height = "0%";
+      gameShutterBottom.style.height = "0%";
+      drawBattleSprite(userSet[0], "user");
+      drawBattleSprite(enemySet[0], "enemy");
+
+      
+    }, 600);
   });
 }
