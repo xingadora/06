@@ -24,32 +24,28 @@ setInterval(() => {
 }, 100);
 
 export function drawBattleSprite(spriteElement, player) {
-  let destX, destY;
+  let destX, destY, x, y;
   let pokeImage = new Image();
   pokeImage.src = `/src/img/spritesheets/full/${spriteElement.id}.png`;
   if (player === "user") {
     destX = 24;
-    destY = 86;
+    destY = 72;
+    x = 163;
+    y = 34;
   } else if (player === "enemy") {
     destX = 152;
     destY = 22;
+    x = 1;
+    y = 34;
   }
-  let id = spriteElement.id;
-  let sprite = spriteSheet.back_regular_male_frame1[id];
 
-  let commaIndex = sprite.backgroundPosition.indexOf(", ");
-  let x = sprite.backgroundPosition.slice(0, commaIndex);
-  let y = sprite.backgroundPosition.slice(
-    commaIndex + 2,
-    sprite.backgroundPosition.length
-  );
   pokeImage.onload = () => {
     ctx.drawImage(
       pokeImage,
       x,
       y,
-      sprite.width,
-      sprite.height,
+      80,
+      80,
       destX,
       destY,
       80,
@@ -70,6 +66,21 @@ userBattlePad.onload = () => {
 enemyBattlePad.onload = () => {
   ctx.drawImage(enemyBattlePad, 129, 72);
 };
+
+const canvas2 = document.getElementById("gameCanvas2");
+const ctx2 = canvas2.getContext("2d");
+canvas2.height = 192;
+canvas2.width = 256;
+
+ctx2.fillStyle = "#212121";
+ctx2.fillRect(0, 144, 256, 48)
+
+const textbox = new Image();
+textbox.src = "/src/img/textboxSmall.png";
+
+textbox.onload = () => {
+    ctx2.drawImage(textbox, 2, 145);
+}
 
 /* function trim(c) {
   var ctx = c.getContext("2d"),
