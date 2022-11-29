@@ -1,6 +1,6 @@
 import { userSet, enemySet, rollSet } from "./class/newpokemon.mjs";
 import position from "./data/canvasPositions.json" assert { type: "json" };
-import { Sprite } from "./class/newSprite.mjs";
+import { selectionSprite } from "./class/newSelectionSprite.mjs";
 import { textRenderer } from "./function/textrenderer.mjs";
 import { renderInfo } from "./function/selectionPokemon.mjs";
 import { drawBattleSprite } from "./gameCanvas.mjs";
@@ -29,7 +29,7 @@ function reroll() {
   backRerollImg.src = "/src/img/selection/button-small.png";
 
 
-  const backReroll = new Sprite({
+  const backReroll = new selectionSprite({
     width: 56,
     height: 24,
     img: backRerollImg,
@@ -100,7 +100,7 @@ function reroll() {
       let genderImg = new Image();
       genderImg.src = `/src/img/selection/${element.gender}.png`;
 
-      pokeGender[i] = new Sprite({
+      pokeGender[i] = new selectionSprite({
         width: 8,
         height: 11,
         img: genderImg,
@@ -118,7 +118,7 @@ function reroll() {
     let iconImg = new Image();
     iconImg.src = `/src/img/icons/${element.id}.png`;
 
-    pokeIcon[i] = new Sprite({
+    pokeIcon[i] = new selectionSprite({
       width: 32,
       height: 64,
       img: iconImg,

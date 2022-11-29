@@ -4,7 +4,7 @@ ctx.font = "3em pokeFont";
 canvas.width = 256,
   canvas.height = 192;
 
-export class Sprite {
+export class selectionSprite {
   constructor({
     TpF = 0,
     framesHzt = 1,

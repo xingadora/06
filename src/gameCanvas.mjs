@@ -1,4 +1,5 @@
 import { userSet, enemySet } from "./class/newpokemon.mjs";
+import { gameSprite } from "./class/newGameSprite.mjs";
 
 function scaleGameWindow(scale) {
   document.getElementById("game").style.scale = scale <= 0 ? 1 : scale;
@@ -81,6 +82,41 @@ textbox.src = "/src/img/textboxSmall.png";
 textbox.onload = () => {
     ctx2.drawImage(textbox, 2, 145);
 }
+
+let battleSheetReady = false;
+
+const battleIntroSheet = new Image();
+battleIntroSheet.src = "/src/img/spritesheets/battle-start-anim.png";
+
+let battleIntro = new gameSprite({
+  TpF: 50,
+  framesHzt: 8,
+  framesVtl: 8,
+  width: 2048,
+  height: 1536,
+  img: battleIntroSheet,
+  isLooped: false,
+  destWidth: 256,
+  destHeight: 192
+})
+
+battleIntroSheet.onload = () => {
+  battleSheetReady = true;
+};
+
+function battleIntroAnim() {
+  ctx2.clearRect(0, 0, 256, 192);
+  if (battleSheetReady) {
+    battleIntro.updateC();
+    battleIntro.renderC(0, 0);
+  }
+}
+
+export function battleIntroAnimStart() {
+  battleIntroAnim();
+  window.requestAnimationFrame(battleIntroAnimStart);
+}
+
 
 /* function trim(c) {
   var ctx = c.getContext("2d"),
