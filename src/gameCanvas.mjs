@@ -11,6 +11,14 @@ const ctx = canvas.getContext("2d");
 canvas.height = 192;
 canvas.width = 256;
 
+let battleRequestAnim, pokespinRequestAnim;
+
+let battleSheetReady = false;
+let pokespinSheetReady = false;
+let pokeImageReady = false;
+let userBattlePadReady = false;
+let enemyBattlePadReady = false;
+
 setInterval(() => {
   let scale;
 
@@ -41,17 +49,8 @@ export function drawBattleSprite(spriteElement, player) {
   }
 
   pokeImage.onload = () => {
-    ctx.drawImage(
-      pokeImage,
-      x,
-      y,
-      80,
-      80,
-      destX,
-      destY,
-      80,
-      80
-    );
+    pokeImageReady = true;
+    //ctx.drawImage(pokeImage, x, y, 80, 80, destX, destY, 80, 80);
   };
 }
 
@@ -61,11 +60,13 @@ const enemyBattlePad = new Image();
 enemyBattlePad.src = "/src/img/t3.png";
 
 userBattlePad.onload = () => {
-  ctx.drawImage(userBattlePad, 0, 122);
+  userBattlePadReady = true;
+  //ctx.drawImage(userBattlePad, 0, 122);
 };
 
 enemyBattlePad.onload = () => {
-  ctx.drawImage(enemyBattlePad, 129, 72);
+  enemyBattlePadReady = true;
+  //ctx.drawImage(enemyBattlePad, 129, 72);
 };
 
 const canvas2 = document.getElementById("gameCanvas2");
@@ -74,22 +75,23 @@ canvas2.height = 192;
 canvas2.width = 256;
 
 ctx2.fillStyle = "#212121";
-ctx2.fillRect(0, 144, 256, 48)
+
 
 const textbox = new Image();
 textbox.src = "/src/img/textboxSmall.png";
 
-textbox.onload = () => {
+
+
+export function drawTextbox() {
+    ctx2.fillRect(0, 144, 256, 48);
     ctx2.drawImage(textbox, 2, 145);
 }
-
-let battleSheetReady = false;
 
 const battleIntroSheet = new Image();
 battleIntroSheet.src = "/src/img/spritesheets/battle-start-anim.png";
 
 let battleIntro = new gameSprite({
-  TpF: 50,
+  TpF: 2,
   framesHzt: 8,
   framesVtl: 8,
   width: 2048,
@@ -97,26 +99,93 @@ let battleIntro = new gameSprite({
   img: battleIntroSheet,
   isLooped: false,
   destWidth: 256,
-  destHeight: 192
-})
+  destHeight: 192,
+});
 
 battleIntroSheet.onload = () => {
   battleSheetReady = true;
 };
 
 function battleIntroAnim() {
-  ctx2.clearRect(0, 0, 256, 192);
+  battleRequestAnim = undefined;
+  ctx.clearRect(0, 0, 256, 192);
   if (battleSheetReady) {
     battleIntro.updateC();
     battleIntro.renderC(0, 0);
   }
+  battleIntroAnimStart();
 }
 
 export function battleIntroAnimStart() {
-  battleIntroAnim();
-  window.requestAnimationFrame(battleIntroAnimStart);
+  if (!battleRequestAnim) {
+    battleRequestAnim = window.requestAnimationFrame(battleIntroAnim);
+  }
 }
 
+export function battleIntroAnimStop() {
+  if (battleRequestAnim) {
+    window.cancelAnimationFrame(battleRequestAnim);
+    battleRequestAnim = undefined;
+  }
+}
+
+const pokespinSheet = new Image();
+pokespinSheet.src = "/src/img/spritesheets/pokespin.png";
+
+let pokespin = new gameSprite({
+  TpF: 5,
+  framesHzt: 5,
+  framesVtl: 4,
+  width: 1280,
+  height: 768,
+  img: pokespinSheet,
+  isLooped: false,
+  destWidth: 256,
+  destHeight: 192,
+});
+
+pokespinSheet.onload = () => {
+  pokespinSheetReady = true;
+};
+
+function pokespinAnim() {
+  pokespinRequestAnim = undefined;
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  if (pokespinSheetReady) {
+    pokespin.updateC();
+    pokespin.renderC(0, 0);
+  }
+  pokespinAnimStart();
+}
+
+export function pokespinAnimStart() {
+  if (!pokespinRequestAnim) {
+    pokespinRequestAnim = window.requestAnimationFrame(pokespinAnim);
+  }
+}
+
+export function pokespinAnimStop() {
+  if (pokespinRequestAnim) {
+    window.cancelAnimationFrame(pokespinRequestAnim);
+    pokespinRequestAnim = undefined;
+  }
+}
+
+function updateBattlePads() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  if (userBattlePadReady) {
+    ctx.drawImage(userBattlePad, 0, 122);
+  }
+  if (enemyBattlePadReady) {
+    ctx.drawImage(enemyBattlePad, 129, 72);
+  }
+
+  animateBattlePads();
+}
+
+export function animateBattlePads() {
+  requestAnimationFrame(updateBattlePads);
+}
 
 /* function trim(c) {
   var ctx = c.getContext("2d"),

@@ -1,8 +1,9 @@
 const canvas = document.getElementById("gameCanvas"),
   ctx = canvas.getContext("2d");
 ctx.font = "3em pokeFont";
-canvas.width = 256,
-  canvas.height = 192;
+(canvas.width = 256), (canvas.height = 192);
+
+import { battleIntroAnimStop } from "../gameCanvas.mjs";
 
 export class gameSprite {
   constructor({
@@ -14,7 +15,7 @@ export class gameSprite {
     img,
     isLooped,
     destWidth = width / framesHzt,
-    destHeight = height / framesVtl
+    destHeight = height / framesVtl,
   }) {
     this.frameIHzt = 0;
     this.frameIVtl = 0;
@@ -49,9 +50,13 @@ export class gameSprite {
     if (this.tick <= this.TpF) return;
     this.tick = 0;
 
-    console.log(this)
-    if (this.frameIHzt < this.framesHzt) return void this.frameIHzt++;
-    if (this.frameIVtl < this.framesVtl) return void this.frameIVtl++;
-    this.isLooped && (this.frameIVtl = 0);
+    console.log(this);
+    if (this.frameIHzt < this.framesHzt - 1) {
+      this.frameIHzt++;
+    } else {
+      this.frameIHzt = 0;
+      this.frameIVtl++;
+    }
+  
   }
 }

@@ -9,7 +9,15 @@ import {
   hide,
 } from "./textrenderer.mjs";
 
-import { drawBattleSprite, battleIntroAnimStart } from "../gameCanvas.mjs";
+import {
+  drawBattleSprite,
+  battleIntroAnimStart,
+  battleIntroAnimStop,
+  pokespinAnimStart,
+  pokespinAnimStop,
+  animateBattlePads,
+  drawTextbox
+} from "../gameCanvas.mjs";
 import { userSet, enemySet } from "../class/newpokemon.mjs";
 
 const textboxText = element("textboxText");
@@ -147,8 +155,10 @@ function readyGame() {
   });
 }
 
-const selectionShutterTop = document.getElementById("selectionShutterTop")
-const selecitonShutterBottom = document.getElementById("selectionShutterBottom")
+const selectionShutterTop = document.getElementById("selectionShutterTop");
+const selecitonShutterBottom = document.getElementById(
+  "selectionShutterBottom"
+);
 const gameShutterTop = document.getElementById("gameShutterTop");
 const gameShutterBottom = document.getElementById("gameShutterBottom");
 
@@ -158,7 +168,6 @@ function showGame() {
   document.getElementById("buttonY").style.display = "none";
   document.getElementById("buttonN").style.display = "none";
   document.getElementById("selection").style.display = "block";
-
 
   fadeOut(textbox);
   document.body.style.boxShadow = "inset 0 0 0 10000px black";
@@ -177,7 +186,9 @@ function showGame() {
         "url(/src/img/start_background.webp)";
     }, 300);
 
-    document.getElementById("selectionReady").addEventListener("click", afterSelection);
+    document
+      .getElementById("selectionReady")
+      .addEventListener("click", afterSelection);
   });
 }
 
@@ -196,11 +207,34 @@ function afterSelection() {
       gameShutterBottom.style.height = "0%";
       drawBattleSprite(userSet[0], "user");
       drawBattleSprite(enemySet[0], "enemy");
-      
-      setTimeout(() => {
-        battleIntroAnimStart();
-      }, 1000);
-      
+      document.getElementById("gameCanvas").style.backgroundColor = "black";
+      showBattleIntros();
     }, 600);
   });
+}
+
+function showBattleIntros() {
+  setTimeout(() => {
+    pokespinAnimStart();
+  }, 50);
+  setTimeout(() => {
+    pokespinAnimStop();
+    document.getElementById("gameCanvas").style.transition = "background-color 0.4s ease-in-out";
+    document.getElementById("gameCanvas").style.backgroundColor = "#0086be";
+    setTimeout(() => {
+      battleIntroAnimStart();
+      document.getElementById("gameCanvas").style.backgroundColor = "white";
+    }, 400);
+    setTimeout(() => {
+      document.getElementById("textboxOverlay").style.backgroundColor = "black"
+      document.getElementById("textboxOverlay").style.transition = "background-color 0.4s ease-in-out";
+    }, 800);
+    setTimeout(() => {
+      battleIntroAnimStop();
+      document.getElementById("gameCanvas").style.backgroundColor = "transparent";
+      animateBattlePads();
+      document.getElementById("textboxOverlay").style.backgroundColor = "transparent";
+      drawTextbox();
+    }, 2100);
+  }, 1250);
 }

@@ -52,6 +52,14 @@ html {
   transition: height 0.2s ease-in-out;
 }
 
+#textboxOverlay {
+  position: absolute;
+  top: 144px;
+  left: 0;
+  height: 48px;
+  width: 100%;
+}
+
 #widthTestCanvas {
   height: 0px;
   width: 0px;
