@@ -16,7 +16,8 @@ import {
   pokespinAnimStart,
   pokespinAnimStop,
   animateBattlePads,
-  drawTextbox
+  drawTextbox,
+  animateBackground
 } from "../gameCanvas.mjs";
 import { userSet, enemySet } from "../class/newpokemon.mjs";
 
@@ -205,8 +206,6 @@ function afterSelection() {
     setTimeout(() => {
       gameShutterTop.style.height = "0%";
       gameShutterBottom.style.height = "0%";
-      drawBattleSprite(userSet[0], "user");
-      drawBattleSprite(enemySet[0], "enemy");
       document.getElementById("gameCanvas").style.backgroundColor = "black";
       showBattleIntros();
     }, 600);
@@ -228,13 +227,18 @@ function showBattleIntros() {
     setTimeout(() => {
       document.getElementById("textboxOverlay").style.backgroundColor = "black"
       document.getElementById("textboxOverlay").style.transition = "background-color 0.4s ease-in-out";
-    }, 800);
+    }, 1000);
     setTimeout(() => {
       battleIntroAnimStop();
       document.getElementById("gameCanvas").style.backgroundColor = "transparent";
+      //drawBattleSprite(userSet[0], "user");
+      //drawBattleSprite(enemySet[0], "enemy");
       animateBattlePads();
-      document.getElementById("textboxOverlay").style.backgroundColor = "transparent";
+      animateBackground();
       drawTextbox();
+      setTimeout(() => {
+        document.getElementById("textboxOverlay").style.backgroundColor = "transparent";
+      }, 500);
     }, 2100);
   }, 1250);
 }

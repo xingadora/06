@@ -11,6 +11,21 @@ const ctx = canvas.getContext("2d");
 canvas.height = 192;
 canvas.width = 256;
 
+const canvas2 = document.getElementById("gameCanvas2");
+const ctx2 = canvas2.getContext("2d");
+canvas2.height = 192;
+canvas2.width = 256;
+
+const canvas3 = document.getElementById("gameCanvas3");
+const ctx3 = canvas3.getContext("2d");
+canvas3.height = 192;
+canvas3.width = 256;
+
+const backgroundCanvas = document.getElementById("gameBackground");
+const backgroundCtx = backgroundCanvas.getContext("2d");
+backgroundCanvas.height = 192;
+backgroundCanvas.width = 256;
+
 let battleRequestAnim, pokespinRequestAnim;
 
 let battleSheetReady = false;
@@ -18,6 +33,7 @@ let pokespinSheetReady = false;
 let pokeImageReady = false;
 let userBattlePadReady = false;
 let enemyBattlePadReady = false;
+let backgroundReady = false;
 
 setInterval(() => {
   let scale;
@@ -50,29 +66,22 @@ export function drawBattleSprite(spriteElement, player) {
 
   pokeImage.onload = () => {
     pokeImageReady = true;
-    //ctx.drawImage(pokeImage, x, y, 80, 80, destX, destY, 80, 80);
+    ctx2.drawImage(pokeImage, x, y, 80, 80, destX, destY, 80, 80);
   };
 }
 
 const userBattlePad = new Image();
-userBattlePad.src = "/src/img/t2.png";
+userBattlePad.src = "/src/img/t2-fixed.png";
 const enemyBattlePad = new Image();
 enemyBattlePad.src = "/src/img/t3.png";
 
 userBattlePad.onload = () => {
   userBattlePadReady = true;
-  //ctx.drawImage(userBattlePad, 0, 122);
 };
 
 enemyBattlePad.onload = () => {
   enemyBattlePadReady = true;
-  //ctx.drawImage(enemyBattlePad, 129, 72);
 };
-
-const canvas2 = document.getElementById("gameCanvas2");
-const ctx2 = canvas2.getContext("2d");
-canvas2.height = 192;
-canvas2.width = 256;
 
 ctx2.fillStyle = "#212121";
 
@@ -83,15 +92,15 @@ textbox.src = "/src/img/textboxSmall.png";
 
 
 export function drawTextbox() {
-    ctx2.fillRect(0, 144, 256, 48);
-    ctx2.drawImage(textbox, 2, 145);
+    ctx3.fillRect(0, 144, 256, 48);
+    ctx3.drawImage(textbox, 2, 145);
 }
 
 const battleIntroSheet = new Image();
 battleIntroSheet.src = "/src/img/spritesheets/battle-start-anim.png";
 
 let battleIntro = new gameSprite({
-  TpF: 2,
+  TpF: 1,
   framesHzt: 8,
   framesVtl: 8,
   width: 2048,
@@ -133,7 +142,7 @@ const pokespinSheet = new Image();
 pokespinSheet.src = "/src/img/spritesheets/pokespin.png";
 
 let pokespin = new gameSprite({
-  TpF: 5,
+  TpF: 2,
   framesHzt: 5,
   framesVtl: 4,
   width: 1280,
@@ -171,13 +180,27 @@ export function pokespinAnimStop() {
   }
 }
 
+let enemyBattlePadXpos = -77;
+let userBattlePadXpos = 170;
+
 function updateBattlePads() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   if (userBattlePadReady) {
-    ctx.drawImage(userBattlePad, 0, 122);
+    ctx.drawImage(userBattlePad, userBattlePadXpos, 122);
+    //ctx.drawImage(userBattlePad, -42, 122);
   }
   if (enemyBattlePadReady) {
-    ctx.drawImage(enemyBattlePad, 129, 72);
+    ctx.drawImage(enemyBattlePad, enemyBattlePadXpos, 72);
+  }
+
+  userBattlePadXpos -= 3;
+  if (userBattlePadXpos < -42) {
+    userBattlePadXpos = -42;
+  }
+
+  enemyBattlePadXpos += 3;
+  if (enemyBattlePadXpos > 129) {
+    enemyBattlePadXpos = 129;
   }
 
   animateBattlePads();
@@ -185,6 +208,33 @@ function updateBattlePads() {
 
 export function animateBattlePads() {
   requestAnimationFrame(updateBattlePads);
+}
+
+const backgroundImg = new Image();
+backgroundImg.src = "/src/img/t1-long.png";
+
+backgroundImg.onload = () => {
+  backgroundReady = true;
+};
+
+let backgroundXpos = -54;
+
+function updateBackground() {
+  backgroundCtx.clearRect(0, 0, backgroundCanvas.width, backgroundCanvas.height);
+  if (backgroundReady) {
+    backgroundCtx.drawImage(backgroundImg, backgroundXpos, 0);
+  }
+
+  backgroundXpos -= 3;
+  if (backgroundXpos < -256) {
+    backgroundXpos = -256;
+  }
+
+  animateBackground();
+}
+
+export function animateBackground() {
+  requestAnimationFrame(updateBackground);
 }
 
 /* function trim(c) {
