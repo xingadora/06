@@ -52,6 +52,54 @@ html {
   transition: height 0.2s ease-in-out;
 }
 
+#attackButton {
+  display: none;
+  position: absolute;
+  left: 126px;
+  top: 147px;
+  width: 128px;
+  height: 23px;
+  background: url(img/attack-button.png) 0px 0px;
+  z-index: 2;
+}
+
+#attackButton:hover {
+  background: url(img/attack-button.png) 0px 23px;
+  z-index: 3;
+}
+
+#pokemonButton {
+  display: none;
+  position: absolute;
+  left: 126px;
+  top: 168px;
+  width: 65px;
+  height: 23px;
+  background: url(img/pokemon-button.png) 0px 0px;
+  z-index: 2;
+}
+
+#pokemonButton:hover {
+  background: url(img/pokemon-button.png) 65px 0px;
+  z-index: 3;
+}
+
+#bagButton {
+  display: none;
+  position: absolute;
+  left: 189px;
+  top: 168px;
+  width: 65px;
+  height: 23px;
+  background: url(img/bag-button.png) 0px 0px;
+  z-index: 2;
+}
+
+#bagButton:hover {
+  background: url(img/bag-button.png) 65px 0px;
+  z-index: 3;
+}
+
 #textboxOverlay {
   position: absolute;
   top: 144px;

@@ -34,6 +34,7 @@ let pokeImageReady = false;
 let userBattlePadReady = false;
 let enemyBattlePadReady = false;
 let backgroundReady = false;
+let trainerSilverReady = false;
 
 setInterval(() => {
   let scale;
@@ -83,24 +84,37 @@ enemyBattlePad.onload = () => {
   enemyBattlePadReady = true;
 };
 
-ctx2.fillStyle = "#212121";
-
+const fieldMessage = new Image();
+fieldMessage.src = "/src/img/field_message.png";
 
 const textbox = new Image();
-textbox.src = "/src/img/textboxSmall.png";
-
-
+textbox.src = "/src/img/textbox-half.png";
 
 export function drawTextbox() {
-    ctx3.fillRect(0, 144, 256, 48);
-    ctx3.drawImage(textbox, 2, 145);
+    ctx3.drawImage(fieldMessage, 0, 144);
+    ctx3.drawImage(textbox, 2, 147);
 }
+
+const attackButton = document.getElementById("attackButton");
+
+
+const pokemonButton = document.getElementById("pokemonButton");
+
+
+const bagButton = document.getElementById("bagButton");
+
+export function drawBattleButtons() {
+    attackButton.style.display = "block";
+    pokemonButton.style.display = "block";
+    bagButton.style.display = "block";
+}
+
 
 const battleIntroSheet = new Image();
 battleIntroSheet.src = "/src/img/spritesheets/battle-start-anim.png";
 
 let battleIntro = new gameSprite({
-  TpF: 1,
+  TpF: 2,
   framesHzt: 8,
   framesVtl: 8,
   width: 2048,
@@ -142,7 +156,7 @@ const pokespinSheet = new Image();
 pokespinSheet.src = "/src/img/spritesheets/pokespin.png";
 
 let pokespin = new gameSprite({
-  TpF: 2,
+  TpF: 5,
   framesHzt: 5,
   framesVtl: 4,
   width: 1280,
@@ -180,17 +194,32 @@ export function pokespinAnimStop() {
   }
 }
 
+const trainerSilver = new Image();
+trainerSilver.src = "/src/img/trainers/trainer_silver.png";
+
+trainerSilver.onload = () => {
+  trainerSilverReady = true;
+};
+
 let enemyBattlePadXpos = -77;
 let userBattlePadXpos = 170;
+let trainerBattleXpos = -55;
 
 function updateBattlePads() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   if (userBattlePadReady) {
     ctx.drawImage(userBattlePad, userBattlePadXpos, 122);
-    //ctx.drawImage(userBattlePad, -42, 122);
   }
   if (enemyBattlePadReady) {
     ctx.drawImage(enemyBattlePad, enemyBattlePadXpos, 72);
+  }
+  if (trainerSilverReady) {
+    ctx.drawImage(trainerSilver, trainerBattleXpos, 10);
+  }
+
+  trainerBattleXpos += 3;
+  if (trainerBattleXpos > 152) {
+    trainerBattleXpos = 152;
   }
 
   userBattlePadXpos -= 3;

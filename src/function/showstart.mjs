@@ -17,7 +17,8 @@ import {
   pokespinAnimStop,
   animateBattlePads,
   drawTextbox,
-  animateBackground
+  animateBackground,
+  drawBattleButtons
 } from "../gameCanvas.mjs";
 import { userSet, enemySet } from "../class/newpokemon.mjs";
 
@@ -156,6 +157,8 @@ function readyGame() {
   });
 }
 
+const selectionReady = element("selectionReady")
+
 const selectionShutterTop = document.getElementById("selectionShutterTop");
 const selecitonShutterBottom = document.getElementById(
   "selectionShutterBottom"
@@ -176,10 +179,10 @@ function showGame() {
   textbox.addEventListener("transitionend", () => {
     textbox.style.display = "none";
     textboxText.innerHTML = "";
-    document.getElementById("selectionReady").style.top = "75%";
+    selectionReady.style.top = "75%";
     document.body.style.transition = "box-shadow 2s";
     fadeIn(document.getElementById("selection"));
-    fadeIn(document.getElementById("selectionReady"));
+    fadeIn(selectionReady);
 
     setTimeout(() => {
       document.body.style.boxShadow = "inset 0 0 0 10000px transparent";
@@ -194,6 +197,12 @@ function showGame() {
 }
 
 function afterSelection() {
+  selectionReady.removeEventListener("click", afterSelection);
+  selectionReady.style.transition = "opacity 0.5s";
+  selectionReady.style.opacity = "0";
+  selectionReady.addEventListener("transitionend", () => {
+    selectionReady.style.display = "none";
+  });
   selectionShutterTop.style.height = "50%";
   selecitonShutterBottom.style.height = "50%";
   gameShutterTop.style.height = "50%";
@@ -225,6 +234,7 @@ function showBattleIntros() {
       document.getElementById("gameCanvas").style.backgroundColor = "white";
     }, 400);
     setTimeout(() => {
+      document.getElementById("textboxOverlay").style.zIndex = "3";
       document.getElementById("textboxOverlay").style.backgroundColor = "black"
       document.getElementById("textboxOverlay").style.transition = "background-color 0.4s ease-in-out";
     }, 1000);
@@ -236,8 +246,12 @@ function showBattleIntros() {
       animateBattlePads();
       animateBackground();
       drawTextbox();
+      drawBattleButtons();
       setTimeout(() => {
         document.getElementById("textboxOverlay").style.backgroundColor = "transparent";
+        document.getElementById("textboxOverlay").addEventListener("transitionend", () => {
+          document.getElementById("textboxOverlay").style.display = "none";
+        })
       }, 500);
     }, 2100);
   }, 1250);
