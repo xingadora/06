@@ -246,7 +246,7 @@ function showBattleIntros() {
       animateBattlePads();
       animateBackground();
       drawTextbox();
-      drawBattleButtons();
+      //drawBattleButtons();
       setTimeout(() => {
         document.getElementById("textboxOverlay").style.backgroundColor = "transparent";
         document.getElementById("textboxOverlay").addEventListener("transitionend", () => {

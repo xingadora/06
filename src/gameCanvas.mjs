@@ -87,12 +87,15 @@ enemyBattlePad.onload = () => {
 const fieldMessage = new Image();
 fieldMessage.src = "/src/img/field_message.png";
 
+const overlayMessage = new Image();
+overlayMessage.src = "/src/img/overlay_message.png";
+
 const textbox = new Image();
 textbox.src = "/src/img/textbox-half.png";
 
 export function drawTextbox() {
     ctx3.drawImage(fieldMessage, 0, 144);
-    ctx3.drawImage(textbox, 2, 147);
+    ctx3.drawImage(overlayMessage, 2, 147);
 }
 
 const attackButton = document.getElementById("attackButton");
@@ -217,17 +220,17 @@ function updateBattlePads() {
     ctx.drawImage(trainerSilver, trainerBattleXpos, 10);
   }
 
-  trainerBattleXpos += 3;
+  trainerBattleXpos += 2;
   if (trainerBattleXpos > 152) {
     trainerBattleXpos = 152;
   }
 
-  userBattlePadXpos -= 3;
+  userBattlePadXpos -= 2;
   if (userBattlePadXpos < -42) {
     userBattlePadXpos = -42;
   }
 
-  enemyBattlePadXpos += 3;
+  enemyBattlePadXpos += 2;
   if (enemyBattlePadXpos > 129) {
     enemyBattlePadXpos = 129;
   }
