@@ -22,6 +22,8 @@ import {
 } from "../gameCanvas.mjs";
 import { userSet, enemySet } from "../class/newpokemon.mjs";
 
+import dialogues from "../data/dialogue.json" assert { type: "json" };
+
 const textboxText = element("textboxText");
 const overlay = element("overlay");
 const textbox = element("textbox");
@@ -159,19 +161,17 @@ function readyGame() {
 
 const selectionReady = element("selectionReady")
 
-const selectionShutterTop = document.getElementById("selectionShutterTop");
-const selecitonShutterBottom = document.getElementById(
-  "selectionShutterBottom"
-);
-const gameShutterTop = document.getElementById("gameShutterTop");
-const gameShutterBottom = document.getElementById("gameShutterBottom");
+const selectionShutterTop = element("selectionShutterTop");
+const selecitonShutterBottom = element("selectionShutterBottom");
+const gameShutterTop = element("gameShutterTop");
+const gameShutterBottom = element("gameShutterBottom");
 
 function showGame() {
   textbox.removeEventListener("animationend", showGame);
 
-  document.getElementById("buttonY").style.display = "none";
-  document.getElementById("buttonN").style.display = "none";
-  document.getElementById("selection").style.display = "block";
+  element("buttonY").style.display = "none";
+  element("buttonN").style.display = "none";
+  element("selection").style.display = "block";
 
   fadeOut(textbox);
   document.body.style.boxShadow = "inset 0 0 0 10000px black";
@@ -181,7 +181,7 @@ function showGame() {
     textboxText.innerHTML = "";
     selectionReady.style.top = "75%";
     document.body.style.transition = "box-shadow 2s";
-    fadeIn(document.getElementById("selection"));
+    fadeIn(element("selection"));
     fadeIn(selectionReady);
 
     setTimeout(() => {
@@ -195,6 +195,8 @@ function showGame() {
       .addEventListener("click", afterSelection);
   });
 }
+
+
 
 function afterSelection() {
   selectionReady.removeEventListener("click", afterSelection);
@@ -251,6 +253,10 @@ function showBattleIntros() {
         document.getElementById("textboxOverlay").style.backgroundColor = "transparent";
         document.getElementById("textboxOverlay").addEventListener("transitionend", () => {
           document.getElementById("textboxOverlay").style.display = "none";
+          dialogues.trainerChallenge.line[0] = "You are challenged by Rival Silver!";
+          textRenderer("trainerChallenge", "challengeText");
+          dialogues.trainerChallenge.line[0] = "Rival Silver sent out " + enemySet[0].name + "!";
+          //element("challengeText").innerHTML = "A wild " + enemySet[0].name + " appeared!";
         })
       }, 500);
     }, 2100);

@@ -11,32 +11,48 @@ const widthCtx = widthTestCanvas.getContext("2d"); // make sure the canvas is 2D
 widthCtx.font = "3em pokeFont"; // set the proper font
 void widthCtx.measureText("M"); // measure the width of a single character to make sure the font is loaded
 
-export function element(element) { // function to get an element from the DOM (this just makes the code easier to read and write)
+let scale;
+
+if (Math.floor(window.innerWidth - (window.innerWidth % 256) - 128) > 1024) {
+  scale = 4;
+} else {
+  scale = Math.floor(
+    (window.innerWidth - (window.innerWidth % 256) - 128) / 256
+  );
+}
+
+export function element(element) {
+  // function to get an element from the DOM (this just makes the code easier to read and write)
   return document.getElementById(element); // return the element
 }
 
-export function fadeIn(element, duration, delay) { // function to fade in an element
+export function fadeIn(element, duration, delay) {
+  // function to fade in an element
   duration = duration || "1s"; // set the duration to 1 second if no duration is provided
   delay = delay || "0s"; // set the delay to 0 seconds if no delay is provided
   element.style.transition = `opacity ${duration} ${delay}`; // set the transition for the element using the parameters
   element.style.opacity = "1"; // set the opacity to 1 to fade in the element
 }
 
-export function fadeOut(element, duration, delay) { // function to fade out an element (same as the fadeIn function but with opacity set to 0)
+export function fadeOut(element, duration, delay) {
+  // function to fade out an element (same as the fadeIn function but with opacity set to 0)
   duration = duration || "1s";
   delay = delay || "0s";
   element.style.transition = `opacity ${duration} ${delay}`;
   element.style.opacity = "0";
 }
 
-export function show(element) { // function to show an element
+export function show(element) {
+  // function to show an element
   element.style.display = "block"; // set the display to block to show the element (again, this just makes the code easier to read and write)
 } // I use the display property instead of the visibility property because the visibility property still takes up space
-export function hide(element) { // function to hide an element (same as the show function but with display set to none)
+export function hide(element) {
+  // function to hide an element (same as the show function but with display set to none)
   element.style.display = "none";
 }
 
-export function textRenderer(textGroup, destinationId, textIndex, speed) { // function to render text to the textbox
+export function textRenderer(textGroup, destinationId, textIndex, speed) {
+  // function to render text to the textbox
   speed = speed || 20; // set the speed to 20 milliseconds if no speed is provided
   textIndex = textIndex || 0; // set the text index to 0 if no text index is provided (you would use this if you want to render a specific line of text from a dialogue group)
   let type = dialogues[textGroup].type; // get the type of dialogue group (this is used to determine if the dialogue group is a question or not)
@@ -51,43 +67,54 @@ export function textRenderer(textGroup, destinationId, textIndex, speed) { // fu
   const selectorN = element("selectorN");
   const textbox = element("textbox");
   const textboxText = element("textboxText");
-  const textboxArrow = element("textboxArrow"); 
+  const textboxArrow = element("textboxArrow");
 
   // reset the variables to their default values
   choice = undefined;
-  textSkipped = false; 
+  textSkipped = false;
   textRendered = false;
   textRenderedFinal = false;
 
-  function clearText() { // function to clear the text from the textbox
+  function clearText() {
+    // function to clear the text from the textbox
     destination.innerHTML = ""; // set the innerHTML of the destination element to an empty string
   }
 
   // get the width of the textbox minus the margins
-  let textBoxWidth = 
-    textbox.offsetWidth - 
+  let textBoxWidth =
+    textbox.offsetWidth -
     textboxText.offsetLeft -
     parseInt(window.getComputedStyle(textboxText).marginRight);
+
+  if (type === "multiShort") {
+    textBoxWidth = parseInt(window.getComputedStyle(gameCanvas).width) / 2;
+    widthCtx.font = "16px pokeFont";
+  }
 
   let checkArray = []; // array to store the text so its width can be checked
   let found = false; // boolean to check if the text has been found
 
-  text.forEach((letter) => { // loop through each letter in the text array
+  text.forEach((letter) => {
+    // loop through each letter in the text array
     checkArray.push(letter); // add the current letter to the check array
     let textWidth = widthCtx.measureText(checkArray.join("")).width; // turn the array into a string and measure the width of the text in the test canvas
-
-    if (!found && textWidth > textBoxWidth) { // if the text has not been found and the width of the text is greater than the width of the textbox
+    if (!found && textWidth > textBoxWidth) {
+      // if the text has not been found and the width of the text is greater than the width of the textbox
       found = true; // set the found boolean to true
       let replaceAt = checkArray.lastIndexOf(" "); // get the index of the last space in the check array
       text[replaceAt] = "<br>"; // replace the space with a line break
     }
   }); // this makes the text print more nicely by adding line breaks when the text is too long instead of adding letters on one line then jumping to the next line
 
-  document.addEventListener("keyup", skipText); // add an event listener to the document to check if the player has pressed a key to skip the text
-  document.addEventListener("click", skipText); // same thing but checks if the player has clicked the mouse
+  if (type !== "multiShort") {
+    document.addEventListener("keyup", skipText); // add an event listener to the document to check if the player has pressed a key to skip the text
+    document.addEventListener("click", skipText); // same thing but checks if the player has clicked the mouse
+  }
 
-  function skipText(e) { // function to skip the text ("e" is the event that triggered the function)
-    if (e.key === "Enter" || e.key === " " || e.type === "click") { // if the player has pressed the enter key, spacebar, or clicked the mouse
+  function skipText(e) {
+    // function to skip the text ("e" is the event that triggered the function)
+    if (e.key === "Enter" || e.key === " " || e.type === "click") {
+      // if the player has pressed the enter key, spacebar, or clicked the mouse
       // remove the event listeners from the document
       document.removeEventListener("keyup", skipText);
       document.removeEventListener("click", skipText);
@@ -99,33 +126,46 @@ export function textRenderer(textGroup, destinationId, textIndex, speed) { // fu
     }
   }
 
-  const textInterval = setInterval(() => { // set an interval to render the text letter by letter
-    if (text.length > 0 && !textRendered && !textSkipped) { // if there is still text to render and the text has not been rendered or skipped
+  const textInterval = setInterval(() => {
+    // set an interval to render the text letter by letter
+    if (text.length > 0 && !textRendered && !textSkipped) {
+      // if there is still text to render and the text has not been rendered or skipped
       let currentLetter = text.shift(); // get and store the first letter in the text array then remove it from the array
       destination.innerHTML += currentLetter; // add the current letter to the innerHTML of the destination element
-    } else { // if there is no more text to render or the text has been rendered or skipped
+    } else {
+      // if there is no more text to render or the text has been rendered or skipped
       // remove the event listeners from the document
-      document.removeEventListener("keyup", skipText); 
+      document.removeEventListener("keyup", skipText);
       document.removeEventListener("click", skipText);
 
       clearInterval(textInterval); // clear the interval
-      destination.innerHTML = displayText; // set the innerHTML of the destination element directly to the text (just to make sure the text is fully rendered)
+      //destination.innerHTML = displayText; // set the innerHTML of the destination element directly to the text (just to make sure the text is fully rendered)
       textRendered = true; // set the text rendered boolean to true
 
-      if (type === "multi" || type === "choice") { // make sure the dialogue is valid
-        if (textIndex < dialogues[textGroup].line.length - 1) { // if the current line of text is not the last line of text
+      if (type === "multiShort" && textRendered) {
+        setTimeout(() => {
+          nextText();
+        }, 1000);
+      }
+
+      if (type === "multi" || type === "choice") {
+        // make sure the dialogue is valid
+        if (textIndex < dialogues[textGroup].line.length - 1) {
+          // if the current line of text is not the last line of text
           show(textboxArrow); // show the textbox arrow
 
           // add event listeners to the document to check if the player has pressed a key to go to the next line of text
           document.addEventListener("keyup", nextText);
           document.addEventListener("click", nextText);
-        } else { // if the current line of text is the last line of text
+        } else {
+          // if the current line of text is the last line of text
           textRenderedFinal = true; // set the text rendered final boolean to true
           hide(textboxArrow); // hide the textbox arrow
 
-          if (type === "choice") { // if the dialogue is a choice
+          if (type === "choice") {
+            // if the dialogue is a choice
             // fade in the buttons
-            fadeIn(buttonY, "1s", "0.2s"); 
+            fadeIn(buttonY, "1s", "0.2s");
             fadeIn(buttonN, "1s", "0.2s");
 
             // add event listeners to the buttons to check if the player has clicked the buttons
@@ -137,7 +177,8 @@ export function textRenderer(textGroup, destinationId, textIndex, speed) { // fu
     }
   }, speed); // the speed is the amount of time between each letter being rendered
 
-  function yesChoice() { // function to handle the player choosing yes
+  function yesChoice() {
+    // function to handle the player choosing yes
     // remove the event listeners from the buttons
     buttonY.removeEventListener("click", yesChoice);
     buttonN.removeEventListener("click", noChoice);
@@ -152,13 +193,15 @@ export function textRenderer(textGroup, destinationId, textIndex, speed) { // fu
 
     buttonY.addEventListener("animationend", removeButtons); // add an event listener to the yes button to check when the animation has ended then hide the buttons
 
-    setTimeout(() => { // set a timeout to wait for the animation delay
+    setTimeout(() => {
+      // set a timeout to wait for the animation delay
       choice = "yes"; // set the choice variable to "yes" (this one gets exported)
       clearText(); // clear the text from the textbox
-    }, 600); 
+    }, 600);
   }
 
-  function noChoice() { // function to handle the player choosing no (same as the yes choice function but with the no button)
+  function noChoice() {
+    // function to handle the player choosing no (same as the yes choice function but with the no button)
     buttonY.removeEventListener("click", yesChoice);
     buttonN.removeEventListener("click", noChoice);
 
@@ -177,32 +220,44 @@ export function textRenderer(textGroup, destinationId, textIndex, speed) { // fu
     }, 600);
   }
 
-  function removeButtons() { // function to remove the buttons from the DOM
+  function removeButtons() {
+    // function to remove the buttons from the DOM
     // hides the buttons
     hide(buttonY);
     hide(buttonN);
   }
 
-  function nextText() { // function to go to the next line of text in the dialogue group
-    if (event.key === "Enter" || event.key === " " || event.type === "click") { // if the player has pressed the enter key, spacebar, or clicked the mouse
-      // remove the event listeners from the document
-      document.removeEventListener("keyup", nextText);
-      document.removeEventListener("click", nextText);
+  function nextText() {
+    // function to go to the next line of text in the dialogue group
+    if (type !== "multiShort") {
+      if (
+        event.key === "Enter" ||
+        event.key === " " ||
+        event.type === "click"
+      ) {
+        // if the player has pressed the enter key, spacebar, or clicked the mouse
+        // remove the event listeners from the document
+        document.removeEventListener("keyup", nextText);
+        document.removeEventListener("click", nextText);
 
-      hide(textboxArrow); // hide the textbox arrow
-
-      if (textIndex < dialogues[textGroup].line.length - 1) { // if the current line of text is not the last line of text
-        clearText(); // clear the text from the textbox
-        textRenderer(textGroup, destinationId, textIndex + 1); // render the next line of text
-      } else { // if the current line of text is the last line of text
-        textRendered = true; // set the text rendered boolean to true
-        clearText(); // clear the text from the textbox
+        hide(textboxArrow); // hide the textbox arrow
       }
+    }
+    if (textIndex < dialogues[textGroup].line.length - 1) {
+      // if the current line of text is not the last line of text
+      clearText(); // clear the text from the textbox
+      textRenderer(textGroup, destinationId, textIndex + 1); // render the next line of text
+    } else {
+      // if the current line of text is the last line of text
+      textRendered = true; // set the text rendered boolean to true
+      clearText(); // clear the text from the textbox
     }
   }
 
-  setInterval(() => { // set an interval to scroll the text to the bottom if the text is too long
-    if (!textRendered) { // if the text has not been rendered
+  setInterval(() => {
+    // set an interval to scroll the text to the bottom if the text is too long
+    if (!textRendered) {
+      // if the text has not been rendered
       textboxText.scrollTo(0, 100); // scroll the text to the bottom
     }
   }, speed); // the interval is the same speed as the text rendering interval

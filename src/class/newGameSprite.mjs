@@ -50,7 +50,6 @@ export class gameSprite {
     if (this.tick <= this.TpF) return;
     this.tick = 0;
 
-    console.log(this);
     if (this.frameIHzt < this.framesHzt - 1) {
       this.frameIHzt++;
     } else {

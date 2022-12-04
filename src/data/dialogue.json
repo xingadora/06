@@ -25,5 +25,13 @@
   "letsStart": {
     "type": "multi",
     "line": ["Awesome! Let's start!"]
+  },
+  "trainerChallenge":{
+    "type": "multiShort",
+    "line": [
+      "You have been challenged by Trainer !",
+      "Trainer sent out a !",
+      "Go, !"
+    ]
   }
 }

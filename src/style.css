@@ -215,6 +215,16 @@ canvas {
   max-width: calc(100% - 128px);
 }
 
+#challengeText {
+  position: absolute;
+  top: 154px;
+  left: 16px;
+  font-size: 16px;
+  color: #52525a;
+  text-shadow: 1px 0em rgb(165, 165, 173), 0em 1px rgb(165, 165, 173),
+  1px 1px rgb(165, 165, 173);
+}
+
 #game {
   display: none;
   position: absolute;
