@@ -35,6 +35,7 @@ let userBattlePadReady = false;
 let enemyBattlePadReady = false;
 let backgroundReady = false;
 let trainerSilverReady = false;
+let trainerUserReady = false;
 
 setInterval(() => {
   let scale;
@@ -204,9 +205,17 @@ trainerSilver.onload = () => {
   trainerSilverReady = true;
 };
 
+const trainerUser = new Image();
+trainerUser.src = "/src/img/trainers/user.png";
+
+trainerUser.onload = () => {
+  trainerUserReady = true;
+};
+
 let enemyBattlePadXpos = -77;
 let userBattlePadXpos = 170;
 let trainerBattleXpos = -55;
+let trainerUserXpos = 236;
 
 function updateBattlePads() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -218,6 +227,14 @@ function updateBattlePads() {
   }
   if (trainerSilverReady) {
     ctx.drawImage(trainerSilver, trainerBattleXpos, 10);
+  }
+  if (trainerUserReady) {
+    ctx.drawImage(trainerUser, trainerUserXpos, 72);
+  }
+
+  trainerUserXpos -= 2;
+  if (trainerUserXpos < 24) {
+    trainerUserXpos = 24;
   }
 
   trainerBattleXpos += 2;
